@@ -1,0 +1,223 @@
+/* RecuperoViewer Styles */
+
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.section {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.section-title {
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #007bff;
+}
+
+.section-content {
+    color: #6c757d;
+}
+
+.bundle-item {
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border-left: 4px solid transparent;
+}
+
+.bundle-item:hover {
+    background-color: #f8f9fa;
+    border-left-color: #007bff;
+}
+
+.bundle-item.selected {
+    background-color: #e3f2fd;
+    border-left-color: #007bff;
+}
+
+.bundle-item .bundle-id {
+    font-weight: 600;
+    color: #495057;
+}
+
+.bundle-item .bundle-date {
+    font-size: 0.9em;
+    color: #6c757d;
+}
+
+.bundle-item .bundle-type {
+    font-size: 0.8em;
+    color: #28a745;
+    font-weight: 500;
+}
+
+.data-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f3f4;
+}
+
+.data-row:last-child {
+    border-bottom: none;
+}
+
+.data-label {
+    font-weight: 600;
+    color: #495057;
+    min-width: 150px;
+}
+
+.data-value {
+    color: #6c757d;
+    text-align: right;
+    flex: 1;
+}
+
+.procedure-item {
+    background-color: #f8f9fa;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid #28a745;
+}
+
+.procedure-code {
+    font-weight: 600;
+    color: #495057;
+}
+
+.procedure-description {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
+.procedure-date {
+    color: #007bff;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.attachment-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.attachment-link:hover {
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+}
+
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+    border-radius: 10px 10px 0 0 !important;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .data-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .data-value {
+        text-align: left;
+        margin-top: 4px;
+    }
+    
+    .section {
+        padding: 15px;
+    }
+}
+
+/* Animation for bundle selection */
+.bundle-item {
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Status indicators */
+.status-active {
+    color: #28a745;
+    font-weight: 500;
+}
+
+.status-pending {
+    color: #ffc107;
+    font-weight: 500;
+}
+
+.status-completed {
+    color: #007bff;
+    font-weight: 500;
+}
+
+/* Empty state styling */
+.empty-state {
+    text-align: center;
+    padding: 40px 20px;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 3em;
+    margin-bottom: 15px;
+    opacity: 0.5;
+} 

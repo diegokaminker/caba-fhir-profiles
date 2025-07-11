@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecuperoViewer - Visor de Bundles FHIR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="bg-primary text-white p-3 mb-4">
+            <h1 class="text-center">RecuperoViewer</h1>
+            <p class="text-center mb-0">Visor y Analizador de Bundles FHIR</p>
+        </header>
+
+        <!-- Server Configuration -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Configuración del Servidor</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label for="serverUrl" class="form-label">URL del Servidor FHIR:</label>
+                            <input type="url" class="form-control" id="serverUrl" 
+                                   value="http://fhirserver.hl7fundamentals.org/fhir/Bundle" 
+                                   placeholder="Ingrese la URL del servidor FHIR">
+                        </div>
+                        <div class="mb-3">
+                            <label for="dateFilter" class="form-label">Filtro de Fecha:</label>
+                            <input type="datetime-local" class="form-control" id="dateFilter">
+                        </div>
+                        <button class="btn btn-primary" onclick="searchBundles()">
+                            <i class="bi bi-search"></i> Buscar Bundles
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bundle Selection -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Selección de Bundle</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="bundleList" class="list-group">
+                            <div class="text-muted text-center">No hay bundles cargados</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bundle Details -->
+        <div id="bundleDetails" class="row" style="display: none;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h5>Detalles del Bundle</h5>
+                        <button class="btn btn-outline-secondary btn-sm" onclick="exportBundle()">
+                            <i class="bi bi-download"></i> Exportar JSON
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <!-- Patient Demographics -->
+                        <div class="section mb-4">
+                            <h6 class="section-title">Datos Demográficos del Paciente</h6>
+                            <div id="patientDemographics" class="section-content">
+                                <!-- Patient data will be populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Service Details -->
+                        <div class="section mb-4">
+                            <h6 class="section-title">Detalles del Servicio</h6>
+                            <div id="serviceDetails" class="section-content">
+                                <!-- Service and procedure data will be populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Coverage -->
+                        <div class="section mb-4">
+                            <h6 class="section-title">Cobertura</h6>
+                            <div id="coverageDetails" class="section-content">
+                                <!-- Coverage data will be populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Requesting Clinician -->
+                        <div class="section mb-4">
+                            <h6 class="section-title">Médico Solicitante</h6>
+                            <div id="requestingClinician" class="section-content">
+                                <!-- Requesting clinician data will be populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Performing Clinician -->
+                        <div class="section mb-4">
+                            <h6 class="section-title">Médico Ejecutante</h6>
+                            <div id="performingClinician" class="section-content">
+                                <!-- Performing clinician data will be populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Insurance -->
+                        <div class="section mb-4">
+                            <h6 class="section-title">Seguro</h6>
+                            <div id="insuranceDetails" class="section-content">
+                                <!-- Insurance data will be populated here -->
+                            </div>
+                        </div>
+
+                        <!-- Attachments -->
+                        <div class="section mb-4">
+                            <h6 class="section-title">Adjuntos</h6>
+                            <div id="attachments" class="section-content">
+                                <!-- Attachment links will be populated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Loading Spinner -->
+        <div id="loadingSpinner" class="text-center" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+            <p class="mt-2">Cargando bundles...</p>
+        </div>
+
+        <!-- Error Messages -->
+        <div id="errorMessage" class="alert alert-danger" style="display: none;"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
