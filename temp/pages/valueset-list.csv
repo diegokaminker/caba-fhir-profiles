@@ -1,7 +1,0 @@
-URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
-http://recuperocaba.gob.ar/ValueSet/recuperocoberturas-valueset,0.1.0,active,,RecuperoCoberturasVS,Recupero Coberturas ValueSet,"ValueSet que incluye todos los códigos del sistema recupero coberturas",,"Internal"
-http://recuperocaba.gob.ar/ValueSet/recuperodiagnosticos-valueset,0.1.0,active,,RecuperoDiagnosticosVS,Recupero Diagnosticos ValueSet,"ValueSet que incluye todos los códigos del sistema recupero diagnosticos",,"Internal"
-http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset,0.1.0,active,,RecuperoProcedimientosVS,Recupero Procedimientos ValueSet,"ValueSet que incluye todos los códigos del sistema recupero procedimientos",,"Internal"
-http://recuperocaba.gob.ar/ValueSet/recuperoprofesiones-valueset,0.1.0,active,,RecuperoProfesionesVS,Recupero Profesiones ValueSet,"ValueSet que incluye todos los códigos del sistema recupero profesiones",,"Internal"
-http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset,0.1.0,active,,RecuperoTiposDocumentoVS,Recupero TiposDocumento ValueSet,"ValueSet que incluye todos los códigos del sistema recupero tiposdocumento",,"Internal"
-http://recuperocaba.gob.ar/ValueSet/recuperotiposmatricula-valueset,0.1.0,active,,RecuperoTiposMatriculaVS,Recupero TiposMatricula ValueSet,"ValueSet que incluye todos los códigos del sistema recupero tiposmatricula",,"Internal"
