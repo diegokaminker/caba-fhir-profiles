@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recupero Web App - Generador de Bundles FHIR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="styles.css?v=1.1" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="bg-primary text-white p-3 mb-4">
+            <div class="row align-items-center">
+                <div class="col-md-8">
+                    <h1><i class="fas fa-hospital"></i> Recupero Web App</h1>
+                    <p class="mb-0">Generador de Bundles FHIR para Recupero</p>
+                </div>
+                <div class="col-md-4 text-end">
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="modeToggle">
+                        <label class="form-check-label" for="modeToggle">
+                            <span id="modeLabel">Modo Aleatorio</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- FHIR Server Configuration -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-server"></i> Configuración del Servidor FHIR</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <input type="url" class="form-control" id="fhirServer" 
+                                       value="https://fhirserver.hl7fundamentals.org/fhir" 
+                                       placeholder="URL del servidor FHIR">
+                            </div>
+                            <div class="col-md-4">
+                                <button class="btn btn-outline-primary" id="testServer">
+                                    <i class="fas fa-test-tube"></i> Probar Conexión
+                                </button>
+                            </div>
+                        </div>
+                        <div id="serverStatus" class="mt-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="row">
+            <!-- Left Panel - Manual Mode Controls -->
+            <div class="col-md-6" id="manualControls">
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5><i class="fas fa-hand-pointer"></i> Selección Manual</h5>
+                    </div>
+                    <div class="card-body">
+                        <!-- Patient Selection -->
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Paciente:</strong></label>
+                            <select class="form-select" id="patientSelect">
+                                <option value="">Seleccionar paciente...</option>
+                            </select>
+                        </div>
+
+                        <!-- Clinician Selection -->
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Solicitante (Clínico):</strong></label>
+                            <select class="form-select" id="requesterSelect">
+                                <option value="">Seleccionar solicitante...</option>
+                            </select>
+                        </div>
+
+                        <!-- Biochemist Selection -->
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Ejecutante (Bioquímico):</strong></label>
+                            <select class="form-select" id="performerSelect">
+                                <option value="">Seleccionar ejecutante...</option>
+                            </select>
+                        </div>
+
+                        <!-- Sites Selection -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label class="form-label"><strong>Sitio Solicitante:</strong></label>
+                                <select class="form-select" id="requesterSiteSelect">
+                                    <option value="">Seleccionar sitio...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label"><strong>Sitio Ejecutante:</strong></label>
+                                <select class="form-select" id="performerSiteSelect">
+                                    <option value="">Seleccionar sitio...</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Insurance Selection -->
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Cobertura:</strong></label>
+                            <select class="form-select" id="insuranceSelect">
+                                <option value="">Seleccionar cobertura...</option>
+                            </select>
+                        </div>
+
+                        <!-- Procedures Selection -->
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Prestaciones (3-20):</strong></label>
+                            <div class="d-flex align-items-center mb-2">
+                                <input type="number" class="form-control me-2" id="procedureCount" 
+                                       min="3" max="20" value="5" style="width: 80px;">
+                                <button class="btn btn-sm btn-outline-secondary" id="randomizeProcedures">
+                                    <i class="fas fa-random"></i> Aleatorizar
+                                </button>
+                            </div>
+                            <div id="selectedProcedures" class="border rounded p-2" style="max-height: 200px; overflow-y: auto;">
+                                <!-- Selected procedures will be displayed here -->
+                            </div>
+                        </div>
+
+                        <!-- PDF Upload -->
+                        <div class="mb-3">
+                            <label class="form-label"><strong>Adjunto PDF:</strong></label>
+                            <input type="file" class="form-control" id="pdfUpload" accept=".pdf">
+                            <small class="text-muted">O se generará automáticamente un PDF con el nombre del paciente</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Panel - Random Mode and Actions -->
+            <div class="col-md-6">
+                <!-- Random Mode Panel -->
+                <div class="card mb-4" id="randomPanel">
+                    <div class="card-header">
+                        <h5><i class="fas fa-dice"></i> Modo Aleatorio</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="text-muted">Haz clic en el botón para generar un bundle completamente aleatorio</p>
+                        <button class="btn btn-success btn-lg" id="generateRandom">
+                            <i class="fas fa-magic"></i> Generar Bundle Aleatorio
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Current Selection Display -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5><i class="fas fa-eye"></i> Selección Actual</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="currentSelection">
+                            <p class="text-muted">No hay selección actual</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bundle Preview and Validation -->
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5><i class="fas fa-code"></i> Vista Previa del Bundle</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <button class="btn btn-outline-info me-2" id="generatePreview">
+                                <i class="fas fa-eye"></i> Generar Vista Previa
+                            </button>
+                            <button class="btn btn-outline-warning" id="validateBundle">
+                                <i class="fas fa-check-circle"></i> Validar Bundle
+                            </button>
+                        </div>
+                        <div id="validationStatus" class="mb-3"></div>
+                        <textarea class="form-control" id="bundlePreview" rows="15" 
+                                  placeholder="El bundle aparecerá aquí después de generar la vista previa..." 
+                                  readonly></textarea>
+                    </div>
+                </div>
+
+                <!-- Generate and Send -->
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-paper-plane"></i> Generar y Enviar</h5>
+                    </div>
+                    <div class="card-body">
+                        <button class="btn btn-primary btn-lg w-100" id="generateAndSend">
+                            <i class="fas fa-rocket"></i> Generar Bundle y Enviar al Servidor
+                        </button>
+                        <div id="generationStatus" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Section -->
+        <div class="row mt-4" id="resultsSection" style="display: none;">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h5><i class="fas fa-chart-bar"></i> Resultados</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="resultsContent"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Modal -->
+    <div class="modal fade" id="loadingModal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="visually-hidden">Cargando...</span>
+                    </div>
+                    <p class="mt-2 mb-0" id="loadingMessage">Procesando...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="app.js?v=1.3"></script>
+</body>
+</html> 
