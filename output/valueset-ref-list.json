@@ -65,7 +65,21 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA"
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesionesefectores-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoProfesionesEfectoresVS",
+      "title" : "Recupero Profesiones Efectores ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero profesiones efectores",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA"
     },
     {
       "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset",

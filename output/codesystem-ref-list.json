@@ -50,11 +50,22 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "RecuperoProfesionesCS",
-      "title" : "Profesiones para Recupero",
-      "description" : "Listado de profesiones",
+      "title" : "Profesiones Solicitantes para Recupero",
+      "description" : "Listado de Profesiones para Solicitantes",
       "uses" : {
       },
       "ValueSet-recuperoprofesiones-valueset.html" : "Recupero Profesiones ValueSet"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RecuperoProfesionesEfectoresCS",
+      "title" : "Profesiones Efectores para Recupero",
+      "description" : "Listado de Profesiones para Efectores",
+      "uses" : {
+      },
+      "ValueSet-recuperoprofesionesefectores-valueset.html" : "Recupero Profesiones Efectores ValueSet"
     },
     {
       "url" : "http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem",

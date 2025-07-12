@@ -29,8 +29,16 @@
       "version" : "0.1.0",
       "status" : "draft",
       "name" : "RecuperoProfesionesCS",
-      "title" : "Profesiones para Recupero",
-      "description" : "Listado de profesiones"
+      "title" : "Profesiones Solicitantes para Recupero",
+      "description" : "Listado de Profesiones para Solicitantes"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RecuperoProfesionesEfectoresCS",
+      "title" : "Profesiones Efectores para Recupero",
+      "description" : "Listado de Profesiones para Efectores"
     },
     {
       "url" : "http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem",

@@ -10,7 +10,7 @@
   "name" : "RecuperoCABA",
   "title" : "Recupero CABA",
   "status" : "draft",
-  "date" : "2025-07-12T16:20:05-03:00",
+  "date" : "2025-07-12T17:02:17-03:00",
   "publisher" : "HL7 Argentina",
   "contact" : [{
     "name" : "HL7 Argentina",
@@ -716,10 +716,34 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/PractitionerCabaFirmanteRecupero"
+      },
+      "name" : "Practitioner Firmante para Recupero CABA",
+      "description" : "Perfil de Practitioner Firmante Para RECUPERO CABA",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/PractitionerCabaRecupero"
       },
       "name" : "Practitioner para Recupero CABA",
       "description" : "Perfil de Practitioner Para RECUPERO CABA",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PractitionerCabaSolicitanteRecupero"
+      },
+      "name" : "Practitioner Solicitante para Recupero CABA",
+      "description" : "Perfil de Practitioner Solicitante Para RECUPERO CABA",
       "exampleBoolean" : false
     },
     {
@@ -740,10 +764,22 @@
         "valueString" : "CodeSystem"
       }],
       "reference" : {
+        "reference" : "CodeSystem/profesiones-efectores-codesystem"
+      },
+      "name" : "Profesiones Efectores para Recupero",
+      "description" : "Listado de Profesiones para Efectores",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
         "reference" : "CodeSystem/profesiones-codesystem"
       },
-      "name" : "Profesiones para Recupero",
-      "description" : "Listado de profesiones",
+      "name" : "Profesiones Solicitantes para Recupero",
+      "description" : "Listado de Profesiones para Solicitantes",
       "exampleBoolean" : false
     },
     {
@@ -780,6 +816,18 @@
       },
       "name" : "Recupero Procedimientos ValueSet",
       "description" : "ValueSet que incluye todos los códigos del sistema recupero procedimientos",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/recuperoprofesionesefectores-valueset"
+      },
+      "name" : "Recupero Profesiones Efectores ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero profesiones efectores",
       "exampleBoolean" : false
     },
     {

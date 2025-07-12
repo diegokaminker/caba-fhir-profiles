@@ -16,8 +16,8 @@ Description:    "Perfil de ServiceRequest Para RECUPERO CABA"
 * requester 1..1
 * performer 1..1
 
-* requester only Reference(PractitionerCabaRecupero)
-* performer only Reference(PractitionerCabaRecupero)
+* requester only Reference(PractitionerCabaSolicitanteRecupero)
+* performer only Reference(PractitionerCabaFirmanteRecupero)
 * encounter only Reference(EncounterCabaRecupero)
 * subject only Reference(PatientCabaRecupero)
 

@@ -13,17 +13,17 @@ Usage: #example
 * entry[DatosServicio].resource = RecuperoCABAServiceRequestEjemplo
 * entry[DatosEncuentro].fullUrl = "urn:uuid:108abd93-5b06-415b-9c66-0fe8b2c29ccf"
 * entry[DatosEncuentro].resource = RecuperoCABAEncounterEjemplo
-* entry[DatosFirmante].fullUrl = "urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8"
-* entry[DatosFirmante].resource = RecuperoCABAProfesionalFirmanteEjemplo
-* entry[DatosSolicitante].fullUrl = "urn:uuid:511b97a7-5ac5-4c5f-9e4f-94e17db97958"
-* entry[DatosSolicitante].resource = RecuperoCABAProfesionalSolicitanteEjemplo
+* entry[DatosProfesionalFirmante].fullUrl = "urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8"
+* entry[DatosProfesionalFirmante].resource = RecuperoCABAProfesionalFirmanteEjemplo
+* entry[DatosProfesionalSolicitante].fullUrl = "urn:uuid:511b97a7-5ac5-4c5f-9e4f-94e17db97958"
+* entry[DatosProfesionalSolicitante].resource = RecuperoCABAProfesionalSolicitanteEjemplo
 * entry[DatosAdjunto].fullUrl = "urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0"
 * entry[DatosAdjunto].resource = RecuperoCABADocumentacionAdicionalEjemplo
 
 Instance: RecuperoCABAClaimEjemplo
 InstanceOf: ClaimCabaRecupero
 Usage: #inline
-* priority = #routine
+* priority = http://terminology.hl7.org/CodeSystem/processpriority#normal
 * status = #active
 * type = $claim-type#institutional "Institutional"
 * patient = Reference(urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c)
@@ -40,19 +40,19 @@ Usage: #inline
 * diagnosis.diagnosisCodeableConcept = $recupero-diagnosticos#A010 "Fiebre tifoidea"
 * procedure[0].sequence = 1
 * procedure[=].date = "2025-03-13"
-* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#475 "HEMOGRAMA"
+* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#475 "HEMOGRAMA COMPLETO"
 * procedure[+].sequence = 2
 * procedure[=].date = "2025-03-13"
-* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#171 "COAGULOGRAMA"
+* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#171 "COAGULOGRAMA COMPLETO"
 * procedure[+].sequence = 3
 * procedure[=].date = "2025-03-13"
-* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#481 "HEPATOGRAMA"
+* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#481 "HEPATOGRAMA COMPLETO"
 * procedure[+].sequence = 4
 * procedure[=].date = "2025-03-13"
-* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#902 "UREA, SERICA"
+* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#902 "UREMIA"
 * procedure[+].sequence = 5
 * procedure[=].date = "2025-03-13"
-* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#192 "CREATININA, EN SANGRE"
+* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#192 "CREATININA"
 * supportingInfo.sequence = 1
 * supportingInfo.category = $claiminformationcategory#attachment "Attachment"
 * supportingInfo.valueReference = Reference(urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0)
@@ -111,7 +111,7 @@ Usage: #inline
 * identifier.system = "http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000"
 * identifier.value = "116772b"
 * name.text = "DELIA JUAN"
-* qualification.code = $recupero-profesiones#27 "Bioquímico"
+* qualification.code = $recupero-profesiones-efectores#27 "Bioquímico"
 
 Instance: RecuperoCABAProfesionalSolicitanteEjemplo
 InstanceOf: PractitionerCabaRecupero

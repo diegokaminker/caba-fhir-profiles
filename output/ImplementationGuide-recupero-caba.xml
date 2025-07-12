@@ -11,7 +11,7 @@
   <name value="RecuperoCABA"/>
   <title value="Recupero CABA"/>
   <status value="draft"/>
-  <date value="2025-07-12T16:20:05-03:00"/>
+  <date value="2025-07-12T17:02:17-03:00"/>
   <publisher value="HL7 Argentina"/>
   <contact>
     <name value="HL7 Argentina"/>
@@ -552,10 +552,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/PractitionerCabaFirmanteRecupero"/>
+      </reference>
+      <name value="Practitioner Firmante para Recupero CABA"/>
+      <description value="Perfil de Practitioner Firmante Para RECUPERO CABA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/PractitionerCabaRecupero"/>
       </reference>
       <name value="Practitioner para Recupero CABA"/>
       <description value="Perfil de Practitioner Para RECUPERO CABA"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/PractitionerCabaSolicitanteRecupero"/>
+      </reference>
+      <name value="Practitioner Solicitante para Recupero CABA"/>
+      <description value="Perfil de Practitioner Solicitante Para RECUPERO CABA"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -574,10 +596,21 @@
         <valueString value="CodeSystem"/>
       </extension>
       <reference>
+        <reference value="CodeSystem/profesiones-efectores-codesystem"/>
+      </reference>
+      <name value="Profesiones Efectores para Recupero"/>
+      <description value="Listado de Profesiones para Efectores"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
         <reference value="CodeSystem/profesiones-codesystem"/>
       </reference>
-      <name value="Profesiones para Recupero"/>
-      <description value="Listado de profesiones"/>
+      <name value="Profesiones Solicitantes para Recupero"/>
+      <description value="Listado de Profesiones para Solicitantes"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -611,6 +644,17 @@
       </reference>
       <name value="Recupero Procedimientos ValueSet"/>
       <description value="ValueSet que incluye todos los códigos del sistema recupero procedimientos"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/recuperoprofesionesefectores-valueset"/>
+      </reference>
+      <name value="Recupero Profesiones Efectores ValueSet"/>
+      <description value="ValueSet que incluye todos los códigos del sistema recupero profesiones efectores"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

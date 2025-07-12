@@ -45,6 +45,17 @@
       ]
     },
     {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesionesefectores-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoProfesionesEfectoresVS",
+      "title" : "Recupero Profesiones Efectores ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero profesiones efectores",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem"
+      ]
+    },
+    {
       "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset",
       "version" : "0.1.0",
       "status" : "active",

@@ -51,8 +51,16 @@
     ],
     "Practitioner": [
       {
+        "url": "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero",
+        "title": "Practitioner Firmante para Recupero CABA"
+      },
+      {
         "url": "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero",
         "title": "Practitioner para Recupero CABA"
+      },
+      {
+        "url": "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero",
+        "title": "Practitioner Solicitante para Recupero CABA"
       }
     ],
     "ServiceRequest": [

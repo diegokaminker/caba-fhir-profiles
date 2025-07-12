@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "RecuperoCABA"] ; # 
   fhir:title [ fhir:v "Recupero CABA"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-12T16:20:05-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-12T17:02:17-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Argentina"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Argentina" ] ;
@@ -994,11 +994,47 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero> ;
+         fhir:reference [ fhir:v "StructureDefinition/PractitionerCabaFirmanteRecupero" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Firmante para Recupero CABA" ] ;
+       fhir:description [ fhir:v "Perfil de Practitioner Firmante Para RECUPERO CABA" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero> ;
          fhir:reference [ fhir:v "StructureDefinition/PractitionerCabaRecupero" ]
        ] ;
        fhir:name [ fhir:v "Practitioner para Recupero CABA" ] ;
        fhir:description [ fhir:v "Perfil de Practitioner Para RECUPERO CABA" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "StructureDefinition:resource"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero> ;
+         fhir:reference [ fhir:v "StructureDefinition/PractitionerCabaSolicitanteRecupero" ]
+       ] ;
+       fhir:name [ fhir:v "Practitioner Solicitante para Recupero CABA" ] ;
+       fhir:description [ fhir:v "Perfil de Practitioner Solicitante Para RECUPERO CABA" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1030,11 +1066,29 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem> ;
+         fhir:reference [ fhir:v "CodeSystem/profesiones-efectores-codesystem" ]
+       ] ;
+       fhir:name [ fhir:v "Profesiones Efectores para Recupero" ] ;
+       fhir:description [ fhir:v "Listado de Profesiones para Efectores" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:link <http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem> ;
          fhir:reference [ fhir:v "CodeSystem/profesiones-codesystem" ]
        ] ;
-       fhir:name [ fhir:v "Profesiones para Recupero" ] ;
-       fhir:description [ fhir:v "Listado de profesiones" ] ;
+       fhir:name [ fhir:v "Profesiones Solicitantes para Recupero" ] ;
+       fhir:description [ fhir:v "Listado de Profesiones para Solicitantes" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1089,6 +1143,24 @@
        ] ;
        fhir:name [ fhir:v "Recupero Procedimientos ValueSet" ] ;
        fhir:description [ fhir:v "ValueSet que incluye todos los códigos del sistema recupero procedimientos" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/ValueSet/recuperoprofesionesefectores-valueset> ;
+         fhir:reference [ fhir:v "ValueSet/recuperoprofesionesefectores-valueset" ]
+       ] ;
+       fhir:name [ fhir:v "Recupero Profesiones Efectores ValueSet" ] ;
+       fhir:description [ fhir:v "ValueSet que incluye todos los códigos del sistema recupero profesiones efectores" ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false

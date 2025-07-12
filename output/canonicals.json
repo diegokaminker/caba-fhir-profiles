@@ -28,6 +28,13 @@
     "name" : "RecuperoProfesionesCS"
   },
   {
+    "id" : "profesiones-efectores-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem",
+    "version" : "0.1.0",
+    "name" : "RecuperoProfesionesEfectoresCS"
+  },
+  {
     "id" : "tipos-documento-codesystem",
     "type" : "CodeSystem",
     "url" : "http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem",
@@ -98,11 +105,25 @@
     "name" : "PatientCabaRecupero"
   },
   {
+    "id" : "PractitionerCabaFirmanteRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero",
+    "version" : "0.1.0",
+    "name" : "PractitionerCabaFirmanteRecupero"
+  },
+  {
     "id" : "PractitionerCabaRecupero",
     "type" : "StructureDefinition",
     "url" : "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero",
     "version" : "0.1.0",
     "name" : "PractitionerCabaRecupero"
+  },
+  {
+    "id" : "PractitionerCabaSolicitanteRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero",
+    "version" : "0.1.0",
+    "name" : "PractitionerCabaSolicitanteRecupero"
   },
   {
     "id" : "RecuperoLaboratorioPrestacion",
@@ -152,6 +173,13 @@
     "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesiones-valueset",
     "version" : "0.1.0",
     "name" : "RecuperoProfesionesVS"
+  },
+  {
+    "id" : "recuperoprofesionesefectores-valueset",
+    "type" : "ValueSet",
+    "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesionesefectores-valueset",
+    "version" : "0.1.0",
+    "name" : "RecuperoProfesionesEfectoresVS"
   },
   {
     "id" : "recuperotiposdocumento-valueset",

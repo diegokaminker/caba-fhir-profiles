@@ -1,15 +1,16 @@
 RecuperoCABA : Validation Results
 =========================================
 
-err = 20, warn = 129, info = 16
+err = 11, warn = 131, info = 23
 IG Publisher Version: 2.0.8 Out of date - current version is 2.0.9
-Generated Sat Jul 12 16:22:21 ART 2025. FHIR version 4.0.1 for recupero-caba#0.1.0 (canonical = http://recuperocaba.gob.ar)
+Generated Sat Jul 12 17:04:44 ART 2025. FHIR version 4.0.1 for recupero-caba#0.1.0 (canonical = http://recuperocaba.gob.ar)
  Build Errors : 0 / 5 / 0
- /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo : 20 / 10 / 24
+ /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo : 11 / 10 / 26
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-coberturas-codesystem : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-diagnosticos-codesystem : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-procedimientos-codesystem : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-profesiones-codesystem : 0 / 2 / 2
+ /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-profesiones-efectores-codesystem : 0 / 2 / 2
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-tipos-documento-codesystem : 0 / 2 / 2
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-tipos-matricula-codesystem : 0 / 5 / 2
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ImplementationGuide-recupero-caba : 0 / 0 / 1
@@ -20,7 +21,9 @@ Generated Sat Jul 12 16:22:21 ART 2025. FHIR version 4.0.1 for recupero-caba#0.1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ExtensionFathersFamilyName : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ExtensionMothersFamilyName : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PatientCabaRecupero : 0 / 0 / 3
+ /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PractitionerCabaFirmanteRecupero : 0 / 0 / 2
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PractitionerCabaRecupero : 0 / 0 / 2
+ /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PractitionerCabaSolicitanteRecupero : 0 / 0 / 2
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-RecuperoLaboratorioPrestacion : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-RecuperoLaboratorioSolicitud : 0 / 105 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ServiceRequestCabaRecupero : 0 / 0 / 2
@@ -28,6 +31,7 @@ Generated Sat Jul 12 16:22:21 ART 2025. FHIR version 4.0.1 for recupero-caba#0.1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperodiagnosticos-valueset : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperoprocedimientos-valueset : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperoprofesiones-valueset : 0 / 0 / 1
+ /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperoprofesionesefectores-valueset : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperotiposdocumento-valueset : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperotiposmatricula-valueset : 0 / 0 / 1
 </table>
@@ -38,37 +42,32 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json ==
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[4]: Profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0, Element matches more than one slice - DatosSolicitante, DatosFirmante
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[5]: Profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0, Element matches more than one slice - DatosSolicitante, DatosFirmante
 INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0]: This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[2]: This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
+INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[4]: This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[6]: This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)
 ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle: Slice 'Bundle.entry:DatosClaim': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle: Bundle.entry:DatosSolicitante: max allowed = 1, but found 2 (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0)
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle: Slice 'Bundle.entry:DatosFirmante': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle: Slice 'Bundle.entry:DatosServicio': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice
+ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle: Slice 'Bundle.entry:DatosProfesionalFirmante': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice
 ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle: Slice 'Bundle.entry:DatosAdjunto': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice
 WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.identifier.system: No definition could be found for URL value 'http://hospital1.gob.ar/recuperos'
-WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource/*Claim/RecuperoCABAClaimEjemplo*/.priority.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource/*Claim/RecuperoCABAClaimEjemplo*/.procedure[0].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'HEMOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475. Valid display is 'HEMOGRAMA COMPLETO' (for the language(s) 'en-US')
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource/*Claim/RecuperoCABAClaimEjemplo*/.procedure[2].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'HEPATOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481. Valid display is 'HEPATOGRAMA COMPLETO' (for the language(s) 'en-US')
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource/*Claim/RecuperoCABAClaimEjemplo*/.procedure[3].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'UREA, SERICA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902. Valid display is 'UREMIA' (for the language(s) 'en-US')
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource/*Claim/RecuperoCABAClaimEjemplo*/.procedure[4].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CREATININA, EN SANGRE' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192. Valid display is 'CREATININA' (for the language(s) 'en-US')
-WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.priority.coding[0]: Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided
+INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource/*Claim/RecuperoCABAClaimEjemplo*/.referral: Details for urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c matching against profile http://hl7.org/fhir/StructureDefinition/ServiceRequest|4.0.1
+ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource/*Claim/RecuperoCABAClaimEjemplo*/.procedure[1].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'COAGULOGRAMA COMPLETO' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#171. Valid display is 'COAGULOGRAMA' (for the language(s) 'en-US')
+ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.referral: Unable to find a profile match for urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c among choices: http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero
+INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.referral: Details for urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c matching against profile http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero|0.1.0
 ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.supportingInfo[0].value.ofType(Reference): Unable to find a profile match for urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0 among choices: http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero
 INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.supportingInfo[0].value.ofType(Reference): Details for urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0 matching against profile http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero|0.1.0
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[0].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'HEMOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475. Valid display is 'HEMOGRAMA COMPLETO' (for the language(s) 'en-US')
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[0].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475)
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[2].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'HEPATOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481. Valid display is 'HEPATOGRAMA COMPLETO' (for the language(s) 'en-US')
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[2].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481)
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[3].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'UREA, SERICA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902. Valid display is 'UREMIA' (for the language(s) 'en-US')
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[3].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902)
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[4].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CREATININA, EN SANGRE' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192. Valid display is 'CREATININA' (for the language(s) 'en-US')
-ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[4].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192)
+ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[1].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'COAGULOGRAMA COMPLETO' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#171. Valid display is 'COAGULOGRAMA' (for the language(s) 'en-US')
+ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[0].resource.procedure[1].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#171)
 WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[1].resource/*Patient/RecuperoCABAPacienteEjemplo*/.identifier[0].system: No definition could be found for URL value 'http://hospital1.gob.ar/pacientes'
 WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[1].resource/*Patient/RecuperoCABAPacienteEjemplo*/.identifier[1].system: No definition could be found for URL value 'http://renaper.gob.ar/dni'
 WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[2].resource/*ServiceRequest/RecuperoCABAServiceRequestEjemplo*/.identifier[0].system: No definition could be found for URL value 'http://hospital1.gob.ar/pedidos'
+ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[2].resource/*ServiceRequest/RecuperoCABAServiceRequestEjemplo*/.performer[0]: Unable to find a profile match for urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8 among choices: http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero
+INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[2].resource/*ServiceRequest/RecuperoCABAServiceRequestEjemplo*/.performer[0]: Details for urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8 matching against profile http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero|0.1.0
 WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[3].resource/*Encounter/RecuperoCABAEncounterEjemplo*/.identifier[0].system: No definition could be found for URL value 'http://hospital1.gob.ar/episodios'
 WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[4].resource/*Practitioner/RecuperoCABAProfesionalFirmanteEjemplo*/.identifier[0].system: No definition could be found for URL value 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000'
-INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[4].resource/*Practitioner/RecuperoCABAProfesionalFirmanteEjemplo*/.qualification[0].code: Reference to draft CodeSystem http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem|0.1.0
+WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[4].resource/*Practitioner/RecuperoCABAProfesionalFirmanteEjemplo*/.qualification[0].code.coding[0]: A definition for CodeSystem 'http://recuperocaba.gob.ar/CodeSystem/profesionesefectores-codesystem' could not be found, so the code cannot be validated
+WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[4].resource/*Practitioner/RecuperoCABAProfesionalFirmanteEjemplo*/.qualification[0].code.coding[0].system: No definition could be found for URL value 'http://recuperocaba.gob.ar/CodeSystem/profesionesefectores-codesystem'
 WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[5].resource/*Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo*/.identifier[0].system: No definition could be found for URL value 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10006441714000'
 INFORMATION: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[5].resource/*Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo*/.qualification[0].code: Reference to draft CodeSystem http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem|0.1.0
 ERROR: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[6].resource/*DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo*/.content[0].attachment: The base64 content in the data element is not valid base64: Illegal base64 character 20
@@ -80,6 +79,10 @@ WARNING: Bundle/RecuperoCABABundleEjemplo: Bundle.entry[6].resource/*DocumentRef
 INFORMATION: CodeSystem/profesiones-codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/profesiones-codesystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
 WARNING: CodeSystem/profesiones-codesystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
+== fsh-generated/resources/CodeSystem-profesiones-efectores-codesystem.json ==
+INFORMATION: CodeSystem/profesiones-efectores-codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
+WARNING: CodeSystem/profesiones-efectores-codesystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
+WARNING: CodeSystem/profesiones-efectores-codesystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present
 == fsh-generated/resources/CodeSystem-tipos-documento-codesystem.json ==
 INFORMATION: CodeSystem/tipos-documento-codesystem: CodeSystem: CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly
 WARNING: CodeSystem/tipos-documento-codesystem: CodeSystem: Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present
@@ -105,8 +108,12 @@ INFORMATION: StructureDefinition.where(url = 'http://recuperocaba.gob.ar/Structu
 == fsh-generated/resources/StructureDefinition-PatientCabaRecupero.json ==
 INFORMATION: StructureDefinition/PatientCabaRecupero: StructureDefinition.snapshot.element[48].type[0].extension[1]: The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex
 INFORMATION: StructureDefinition.where(url = 'http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-PractitionerCabaFirmanteRecupero.json ==
+INFORMATION: StructureDefinition.where(url = 'http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/StructureDefinition-PractitionerCabaRecupero.json ==
 INFORMATION: StructureDefinition.where(url = 'http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated/resources/StructureDefinition-PractitionerCabaSolicitanteRecupero.json ==
+INFORMATION: StructureDefinition.where(url = 'http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero'): The Implementation Guide contains no explicitly linked examples for this profile
 == fsh-generated/resources/StructureDefinition-RecuperoLaboratorioPrestacion.json ==
 == fsh-generated/resources/StructureDefinition-RecuperoLaboratorioSolicitud.json ==
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.snapshot.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
@@ -220,5 +227,6 @@ INFORMATION: StructureDefinition.where(url = 'http://recuperocaba.gob.ar/Structu
 == fsh-generated/resources/ValueSet-recuperodiagnosticos-valueset.json ==
 == fsh-generated/resources/ValueSet-recuperoprocedimientos-valueset.json ==
 == fsh-generated/resources/ValueSet-recuperoprofesiones-valueset.json ==
+== fsh-generated/resources/ValueSet-recuperoprofesionesefectores-valueset.json ==
 == fsh-generated/resources/ValueSet-recuperotiposdocumento-valueset.json ==
 == fsh-generated/resources/ValueSet-recuperotiposmatricula-valueset.json ==

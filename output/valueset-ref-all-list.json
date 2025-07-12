@@ -12,8 +12,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
       "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA"
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/body-site",
@@ -603,11 +605,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
       "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA",
       "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
       "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
-      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
-      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
@@ -621,11 +625,13 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
       "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA",
       "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
       "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
-      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
-      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -639,13 +645,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
       "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
-      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA",
       "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA",
-      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -748,8 +756,10 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
       "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA"
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/participant-role",
@@ -1106,7 +1116,21 @@
       ],
       "uses" : {
       },
-      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA"
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesionesefectores-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoProfesionesEfectoresVS",
+      "title" : "Recupero Profesiones Efectores ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero profesiones efectores",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA"
     },
     {
       "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset",
@@ -1143,6 +1167,18 @@
       "uses" : {
       },
       "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-2.7-0360",
+      "version" : "0360",
+      "status" : "active",
+      "name" : "v2.0360.2.7",
+      "title" : "v2 table 0360, Version 2.7",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0360 ver 2.9 ( Degree/License/Certificate)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0360|2.7"],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA"
     },
     {
       "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",

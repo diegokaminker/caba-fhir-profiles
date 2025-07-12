@@ -32,6 +32,7 @@ Description:    "Perfil de Claim para CABA Recupero"
 
 * status = #active
 * use = #claim
+* priority = http://terminology.hl7.org/CodeSystem/processpriority#normal
 
 * patient only Reference(PatientCabaRecupero) 
 * referral only Reference(ServiceRequestCabaRecupero)

@@ -94,7 +94,12 @@ Reference is intended to point to a structure that can potentially be expressed 
 ","Text alternative for the resource","Plain text narrative that identifies the resource in addition to the resource reference.","This is generally not the same as the Resource.text of the referenced resource.  The purpose is to identify what's being referenced, not to fully describe it.","","","","","","","","",,,,,"",,,,"Reference.display",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","N/A"
 "Claim.priority","Claim.priority","","","",1,1,"","","Y","CodeableConcept {[]} {[]}
-","Desired processing ugency","The provider-required urgency of processing the request. Typical values include: stat, routine deferred.","If a claim processor is unable to complete the processing as per the priority then they should generate and error and not process the request.","The provider may need to indicate their processing requirements so that the processor can indicate if they are unable to comply.","","","","","","","",,"example","The timeliness with which processing is required: stat, normal, deferred.","http://hl7.org/fhir/ValueSet/process-priority","",,,,"Claim.priority",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Desired processing ugency","The provider-required urgency of processing the request. Typical values include: stat, routine deferred.","If a claim processor is unable to complete the processing as per the priority then they should generate and error and not process the request.","The provider may need to indicate their processing requirements so that the processor can indicate if they are unable to comply.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://terminology.hl7.org/CodeSystem/processpriority""/>
+    <code value=""normal""/>
+  </coding>
+</valueCodeableConcept>","","","",,"example","The timeliness with which processing is required: stat, normal, deferred.","http://hl7.org/fhir/ValueSet/process-priority","",,,,"Claim.priority",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Request.priority"
 "Claim.fundsReserve","Claim.fundsReserve","","Fund pre-allocation
 ","",0,1,"","","","CodeableConcept {[]} {[]}

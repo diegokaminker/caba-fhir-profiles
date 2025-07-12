@@ -24,16 +24,16 @@ Description:    "Perfil de Bundle para CABA Recupero"
     DatosPaciente 1..1 MS and
     DatosServicio 1..1 MS and
     DatosEncuentro 1..1 MS and
-    DatosSolicitante 1..1 MS and
-    DatosFirmante 1..1 MS and
+    DatosProfesionalFirmante 1..1 MS and
+    DatosProfesionalSolicitante 1..1 MS and
     DatosAdjunto 1..1 MS 
     
 * entry[DatosClaim].resource only ClaimCabaRecupero
 * entry[DatosPaciente].resource only PatientCabaRecupero
 * entry[DatosServicio].resource only ServiceRequestCabaRecupero
 * entry[DatosEncuentro].resource only EncounterCabaRecupero
-* entry[DatosSolicitante].resource only PractitionerCabaRecupero
-* entry[DatosFirmante].resource only PractitionerCabaRecupero
+* entry[DatosProfesionalSolicitante].resource only PractitionerCabaSolicitanteRecupero
+* entry[DatosProfesionalFirmante].resource only PractitionerCabaFirmanteRecupero
 * entry[DatosAdjunto].resource only DocumentReferenceCabaRecupero
 
 

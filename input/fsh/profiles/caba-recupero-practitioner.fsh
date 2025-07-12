@@ -13,10 +13,25 @@ Description:    "Perfil de Practitioner Para RECUPERO CABA"
 * name.text 1..1
 * qualification.code 1..1
 
-* qualification.code from RecuperoProfesionesVS (required)
 
 * identifier.system ^short = "ProfesionalEfector.codTipoMatriculaFirmante / Solicitante"
 * identifier.value ^short = "ProfesionalEfector.idMatriculaFirmante / Solicitante"
 * name.text ^short = "profesionalFirmante / Solicitante"
-* qualification.code ^short = "ProfesionalEfector.codProfesionFirmante / Solicitante"
 
+
+
+Profile:        PractitionerCabaSolicitanteRecupero
+Parent:         PractitionerCabaRecupero
+Id:             PractitionerCabaSolicitanteRecupero
+Title:          "Practitioner Solicitante para Recupero CABA"
+Description:    "Perfil de Practitioner Solicitante Para RECUPERO CABA"
+* qualification.code from RecuperoProfesionesVS (required)
+* qualification.code ^short = "ProfesionalSolicitante.codProfesionSolicitante"
+
+Profile:        PractitionerCabaFirmanteRecupero
+Parent:         PractitionerCabaRecupero
+Id:             PractitionerCabaFirmanteRecupero
+Title:          "Practitioner Firmante para Recupero CABA"
+Description:    "Perfil de Practitioner Firmante Para RECUPERO CABA"
+* qualification.code from RecuperoProfesionesEfectoresVS (required)
+* qualification.code ^short = "ProfesionalEfector.codProfesionFirmante"
