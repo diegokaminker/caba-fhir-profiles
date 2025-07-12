@@ -1,0 +1,388 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "RecuperoCoberturasCS",
+  "id": "coberturas-codesystem",
+  "title": "Coberturas para Recupero",
+  "description": "Listado de Coberturas",
+  "url": "http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem",
+  "concept": [
+    {
+      "code": "MP009",
+      "display": "Accord Salud (ligada a Unión Personal)"
+    },
+    {
+      "code": "MP038",
+      "display": "Alta Salud"
+    },
+    {
+      "code": "MP039",
+      "display": "Amffa Salud"
+    },
+    {
+      "code": "MP040",
+      "display": "Amur"
+    },
+    {
+      "code": "OS030",
+      "display": "Andar (Viajantes Vendedores)"
+    },
+    {
+      "code": "MP041",
+      "display": "Apres Global"
+    },
+    {
+      "code": "MP021",
+      "display": "Asistencia Sanitaria Integral (ASI)"
+    },
+    {
+      "code": "MP036",
+      "display": "Asociación Civil de Estudios Superiores"
+    },
+    {
+      "code": "MP032",
+      "display": "Asociación Mutual del Personal Jerárquico de Bancos Oficiales Nacionales"
+    },
+    {
+      "code": "MP010",
+      "display": "Avalian (ex ACA Salud)"
+    },
+    {
+      "code": "OS031",
+      "display": "Bancarios (Obra Social del Personal Bancario)"
+    },
+    {
+      "code": "MP042",
+      "display": "Bramed"
+    },
+    {
+      "code": "MP022",
+      "display": "Bristol Medicine"
+    },
+    {
+      "code": "MP043",
+      "display": "Casa Salud"
+    },
+    {
+      "code": "MP014",
+      "display": "CEMIC (Centro de Educación Médica e Investigaciones Clínicas - Plan propio)"
+    },
+    {
+      "code": "MP026",
+      "display": "Centro Médico Pueyrredón"
+    },
+    {
+      "code": "MP035",
+      "display": "Círculo Médico de Lomas de Zamora"
+    },
+    {
+      "code": "MP024",
+      "display": "COBENSIL"
+    },
+    {
+      "code": "MP044",
+      "display": "Cober"
+    },
+    {
+      "code": "MP037",
+      "display": "Consejo Profesional de Ciencias Económicas de la CABA"
+    },
+    {
+      "code": "OS032",
+      "display": "Construir Salud (Obra Social de la Construcción)"
+    },
+    {
+      "code": "OS033",
+      "display": "Cover Salud (Red asistencial nacional)"
+    },
+    {
+      "code": "OS026",
+      "display": "DASUTeN (Obra Social Universidad Tecnológica Nacional)"
+    },
+    {
+      "code": "MP045",
+      "display": "DoctoRed"
+    },
+    {
+      "code": "OS027",
+      "display": "DOSUBA (Obra Social Universidad de Buenos Aires)"
+    },
+    {
+      "code": "OS034",
+      "display": "Elevar (Pasteleros, Panaderos y afines)"
+    },
+    {
+      "code": "MP019",
+      "display": "Ensalud"
+    },
+    {
+      "code": "MP046",
+      "display": "Femédica"
+    },
+    {
+      "code": "OS028",
+      "display": "FEMERA (Federación Médica Gremial de la Capital Federal)"
+    },
+    {
+      "code": "MP031",
+      "display": "Fundación Médica de Mar del Plata"
+    },
+    {
+      "code": "MP003",
+      "display": "Galeno"
+    },
+    {
+      "code": "MP047",
+      "display": "GEA"
+    },
+    {
+      "code": "MP023",
+      "display": "Grupo DDM"
+    },
+    {
+      "code": "MP015",
+      "display": "Hominis (La prepaga del Sanatorio Güemes)"
+    },
+    {
+      "code": "MP011",
+      "display": "Hospital Alemán (Plan propio)"
+    },
+    {
+      "code": "MP012",
+      "display": "Hospital Británico (Plan propio)"
+    },
+    {
+      "code": "MP013",
+      "display": "Hospital Italiano (Plan propio)"
+    },
+    {
+      "code": "MP029",
+      "display": "International Health Services Argentina (IHSA)"
+    },
+    {
+      "code": "OS029",
+      "display": "IOMA (Instituto de Obra Médico Asistencial - para empleados públicos de la Provincia de Buenos Aires)"
+    },
+    {
+      "code": "OS010",
+      "display": "IOSFA (Obra Social de las Fuerzas Armadas y de Seguridad)"
+    },
+    {
+      "code": "OS035",
+      "display": "Jerárquicos (Obra Social del Personal Jerárquico)"
+    },
+    {
+      "code": "MP016",
+      "display": "Luis Pasteur (También funciona como obra social, pero tiene planes de prepaga)"
+    },
+    {
+      "code": "MP049",
+      "display": "Medical's"
+    },
+    {
+      "code": "MP004",
+      "display": "Medicus"
+    },
+    {
+      "code": "MP006",
+      "display": "Medifé"
+    },
+    {
+      "code": "MP025",
+      "display": "Medin S.A.S.M.A."
+    },
+    {
+      "code": "MP034",
+      "display": "MET Córdoba"
+    },
+    {
+      "code": "MP028",
+      "display": "Mutual Federada 25 de Junio"
+    },
+    {
+      "code": "MP050",
+      "display": "Nobis"
+    },
+    {
+      "code": "OS007",
+      "display": "Obra Social Luis Pasteur (para el personal de dirección)"
+    },
+    {
+      "code": "OS011",
+      "display": "OBSBA (Obra Social de la Ciudad de Buenos Aires - para empleados del GCBA)"
+    },
+    {
+      "code": "MP005",
+      "display": "Omint"
+    },
+    {
+      "code": "MP030",
+      "display": "OPDEA"
+    },
+    {
+      "code": "OS012",
+      "display": "Oschoca (Obra Social de Choferes de Camiones)"
+    },
+    {
+      "code": "MP001",
+      "display": "OSDE"
+    },
+    {
+      "code": "OS008",
+      "display": "OSDEPYM (Obra Social de Empresarios, Profesionales y Monotributistas)"
+    },
+    {
+      "code": "OS025",
+      "display": "OSDIC (Obra Social de Directivos de Empresas Constructoras)"
+    },
+    {
+      "code": "MP027",
+      "display": "OSDIPP"
+    },
+    {
+      "code": "OS001",
+      "display": "OSECAC (Obra Social de los Empleados de Comercio y Actividades Civiles)"
+    },
+    {
+      "code": "OS013",
+      "display": "OSFE (Obra Social de Ferroviarios)"
+    },
+    {
+      "code": "OS038",
+      "display": "OSME (Obra Social de Metalúrgicos)"
+    },
+    {
+      "code": "OS036",
+      "display": "Osmédica (Obra Social de los Médicos)"
+    },
+    {
+      "code": "OS020",
+      "display": "Ospaca (Obra Social Automóvil Club Argentino)"
+    },
+    {
+      "code": "OS018",
+      "display": "Ospat (Obra Social del Personal del Turf y Afines)"
+    },
+    {
+      "code": "OS005",
+      "display": "OSPE (Obra Social del Personal de Entidades Deportivas y Civiles)"
+    },
+    {
+      "code": "OS024",
+      "display": "OSPELSYN (Obra Social del Personal de Luz y Fuerza)"
+    },
+    {
+      "code": "OS022",
+      "display": "OSPIA (Obra Social del Personal de la Industria Aceitera)"
+    },
+    {
+      "code": "OS041",
+      "display": "OSPIA (Obra Social del Personal de la Industria Aceitera)"
+    },
+    {
+      "code": "OS017",
+      "display": "Ospic (Obra Social del Personal de la Industria Cinematográfica)"
+    },
+    {
+      "code": "OS037",
+      "display": "OSPICHA (Obra Social de la Industria del Cuero y Afines)"
+    },
+    {
+      "code": "OS021",
+      "display": "Ospim (Obra Social de la Industria Maderera)"
+    },
+    {
+      "code": "OS014",
+      "display": "OSPIP (Obra Social del Personal de la Industria del Plástico)"
+    },
+    {
+      "code": "OS009",
+      "display": "OSPJN (Obra Social del Poder Judicial de la Nación)"
+    },
+    {
+      "code": "OS019",
+      "display": "OSPLAD (Obra Social para Docentes)"
+    },
+    {
+      "code": "OS039",
+      "display": "OSPLAD (Obra Social para Docentes)"
+    },
+    {
+      "code": "OS016",
+      "display": "OSPM (Obra Social del Personal Marítimo)"
+    },
+    {
+      "code": "OS003",
+      "display": "OSPRERA (Obra Social del Personal Rural y Estibadores de la República Argentina)"
+    },
+    {
+      "code": "OS015",
+      "display": "OSSEG (Obra Social del Personal de Seguros, Reaseguros, Capitalización y Ahorro y Préstamo)"
+    },
+    {
+      "code": "OS040",
+      "display": "OSSPRING (Obra Social del Personal de Seguridad)"
+    },
+    {
+      "code": "OS023",
+      "display": "OSTEP (Obra Social de Trabajadores de Estaciones de Servicio, Garajes y Playas de Estacionamiento)"
+    },
+    {
+      "code": "OS004",
+      "display": "OSUTHGRA (Obra Social de la Unión de Trabajadores del Turismo, Hoteleros y Gastronómicos de la República Argentina)"
+    },
+    {
+      "code": "MP051",
+      "display": "Parque Salud"
+    },
+    {
+      "code": "MP017",
+      "display": "Premedic"
+    },
+    {
+      "code": "MP008",
+      "display": "Prevención Salud"
+    },
+    {
+      "code": "MP052",
+      "display": "Sami Salud"
+    },
+    {
+      "code": "MP007",
+      "display": "Sancor Salud"
+    },
+    {
+      "code": "MP033",
+      "display": "Sistema Integrado de Prestadores de Salud (SIPS)"
+    },
+    {
+      "code": "MP018",
+      "display": "Staff Médico"
+    },
+    {
+      "code": "MP002",
+      "display": "Swiss Medical"
+    },
+    {
+      "code": "MP020",
+      "display": "UAI Salud"
+    },
+    {
+      "code": "OS002",
+      "display": "Unión Personal / Accord Salud (Obra Social de la Unión Personal Civil de la Nación - UPCN)"
+    },
+    {
+      "code": "OS006",
+      "display": "UOCRA (Obra Social de la Unión Obrera de la Construcción de la República Argentina)"
+    },
+    {
+      "code": "MP048",
+      "display": "William Hope"
+    }
+  ],
+  "version": "1.0.0",
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 93
+}

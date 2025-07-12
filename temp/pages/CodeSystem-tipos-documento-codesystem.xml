@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="tipos-documento-codesystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem tipos-documento-codesystem</b></p><a name="tipos-documento-codesystem"> </a><a name="hctipos-documento-codesystem"> </a><p>This  code system <code>http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">DNI<a name="tipos-documento-codesystem-DNI"> </a></td><td>DOCUMENTO NACIONAL DE IDENTIDAD ARGENTINO</td></tr><tr><td style="white-space:nowrap">PAS-CL<a name="tipos-documento-codesystem-PAS-CL"> </a></td><td>PASAPORTE CHILENO</td></tr><tr><td style="white-space:nowrap">PAS-UR<a name="tipos-documento-codesystem-PAS-UR"> </a></td><td>PASAPORTE URUGUAYO</td></tr><tr><td style="white-space:nowrap">PAS-CO<a name="tipos-documento-codesystem-PAS-CO"> </a></td><td>PASAPORTE COLOMBIANO</td></tr><tr><td style="white-space:nowrap">PAS-BR<a name="tipos-documento-codesystem-PAS-BR"> </a></td><td>PASAPORTE BRASILEÑO</td></tr><tr><td style="white-space:nowrap">PAS-BO<a name="tipos-documento-codesystem-PAS-BO"> </a></td><td>PASAPORTE BOLIVIANO</td></tr><tr><td style="white-space:nowrap">PAS-EC<a name="tipos-documento-codesystem-PAS-EC"> </a></td><td>PASAPORTE ECUATORIANO</td></tr><tr><td style="white-space:nowrap">PAS-VE<a name="tipos-documento-codesystem-PAS-VE"> </a></td><td>PASAPORTE VENEZOLANO</td></tr><tr><td style="white-space:nowrap">PAS-US<a name="tipos-documento-codesystem-PAS-US"> </a></td><td>PASAPORTE NORTEAMERICANO</td></tr></table></div>
+  </text>
+  <url value="http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem"/>
+  <version value="0.1.0"/>
+  <name value="RecuperoTiposDocumentoCS"/>
+  <title value="Tipos de Documento"/>
+  <status value="draft"/>
+  <date value="2025-07-12T16:20:05-03:00"/>
+  <publisher value="HL7 Argentina"/>
+  <contact>
+    <name value="HL7 Argentina"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org.ar"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.org.ar"/>
+    </telecom>
+  </contact>
+  <description value="Listado de Tipos de Documento para Personas"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="DNI"/>
+    <display value="DOCUMENTO NACIONAL DE IDENTIDAD ARGENTINO"/>
+  </concept>
+  <concept>
+    <code value="PAS-CL"/>
+    <display value="PASAPORTE CHILENO"/>
+  </concept>
+  <concept>
+    <code value="PAS-UR"/>
+    <display value="PASAPORTE URUGUAYO"/>
+  </concept>
+  <concept>
+    <code value="PAS-CO"/>
+    <display value="PASAPORTE COLOMBIANO"/>
+  </concept>
+  <concept>
+    <code value="PAS-BR"/>
+    <display value="PASAPORTE BRASILEÑO"/>
+  </concept>
+  <concept>
+    <code value="PAS-BO"/>
+    <display value="PASAPORTE BOLIVIANO"/>
+  </concept>
+  <concept>
+    <code value="PAS-EC"/>
+    <display value="PASAPORTE ECUATORIANO"/>
+  </concept>
+  <concept>
+    <code value="PAS-VE"/>
+    <display value="PASAPORTE VENEZOLANO"/>
+  </concept>
+  <concept>
+    <code value="PAS-US"/>
+    <display value="PASAPORTE NORTEAMERICANO"/>
+  </concept>
+</CodeSystem>

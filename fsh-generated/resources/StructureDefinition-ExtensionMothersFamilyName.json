@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ExtensionMothersFamilyName",
+  "url": "http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName",
+  "name": "ExtensionMothersFamilyName",
+  "title": "Extension: MothersFamilyName",
+  "status": "draft",
+  "description": "Extension used in the HumanName.family element to record the person's first (or paternal) family name.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "HumanName.family"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "DatosPaciente.otroApellidoPaciente",
+        "definition": "Extension used in the HumanName.family element to record the person's first (or paternal) family name.",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="recuperotiposdocumento-valueset"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet recuperotiposdocumento-valueset</b></p><a name="recuperotiposdocumento-valueset"> </a><a name="hcrecuperotiposdocumento-valueset"> </a><ul><li>Include all codes defined in <a href="CodeSystem-tipos-documento-codesystem.html"><code>http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem</code></a></li></ul></div>
+  </text>
+  <url value="http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset"/>
+  <version value="0.1.0"/>
+  <name value="RecuperoTiposDocumentoVS"/>
+  <title value="Recupero TiposDocumento ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-12T16:20:05-03:00"/>
+  <publisher value="HL7 Argentina"/>
+  <contact>
+    <name value="HL7 Argentina"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org.ar"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.org.ar"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet que incluye todos los códigos del sistema recupero tiposdocumento"/>
+  <compose>
+    <include>
+      <system value="http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem"/>
+    </include>
+  </compose>
+</ValueSet>

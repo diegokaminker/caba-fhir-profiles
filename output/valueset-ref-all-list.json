@@ -1,0 +1,1216 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "AdministrativeGender",
+      "title" : "AdministrativeGender",
+      "description" : "The gender of a person used for administrative purposes.",
+      "systems" : ["http://hl7.org/fhir/administrative-gender"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1"],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/bundle-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "BundleType",
+      "title" : "BundleType",
+      "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+      "systems" : ["http://hl7.org/fhir/bundle-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.620"],
+      "sources" : ["2.16.840.1.113883.4.642.3.620"],
+      "uses" : {
+      },
+      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-doc-typecodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentTypeValueSet",
+      "title" : "Document Type Value Set",
+      "description" : "This is the code specifying the precise type of document (e.g. Pulmonary History and  Physical, Discharge Summary, Ultrasound Report, etc.). The Document Type value set includes all LOINC  values listed in HITSP C80 Table 2-144 Document Class Value Set Definition above used for Document Class,  and all LOINC values whose SCALE is DOC in the LOINC database.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.47"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.47"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-facilitycodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "FacilityTypeCodeValueSet",
+      "title" : "Facility Type Code Value Set",
+      "description" : "This is the code representing the type of organizational setting where the clinical encounter, service, interaction, or treatment occurred. The value set used for Healthcare Facility Type has been defined by HITSP to be the value set reproduced from HITSP C80 Table 2-147.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.67"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PracticeSettingCodeValueSet",
+      "title" : "Practice Setting Code Value Set",
+      "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-careteamrole",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ClaimCareTeamRoleCodes",
+      "title" : "Claim Care Team Role Codes",
+      "description" : "This value set includes sample Claim Care Team Role codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/claimcareteamrole"],
+      "oids" : ["2.16.840.1.113883.4.642.3.586"],
+      "sources" : ["2.16.840.1.113883.4.642.3.586"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-exception",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExceptionCodes",
+      "title" : "Exception Codes",
+      "description" : "This value set includes sample Exception codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/claim-exception"],
+      "oids" : ["2.16.840.1.113883.4.642.3.580"],
+      "sources" : ["2.16.840.1.113883.4.642.3.580"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-informationcategory",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ClaimInformationCategoryCodes",
+      "title" : "Claim Information Category Codes",
+      "description" : "This value set includes sample Information Category codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/claiminformationcategory"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.582"],
+      "sources" : ["2.16.840.1.113883.4.642.3.582"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-modifiers",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ModifierTypeCodes",
+      "title" : "Modifier type Codes",
+      "description" : "This value set includes sample Modifier type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/modifiers"],
+      "oids" : ["2.16.840.1.113883.4.642.3.536"],
+      "sources" : ["2.16.840.1.113883.4.642.3.536"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-subtype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleClaimSubTypeCodes",
+      "title" : "Example Claim SubType Codes",
+      "description" : "This value set includes sample Claim SubType codes which are used to distinguish the claim types for example within type institutional there may be subtypes for emergency services, bed stay and transportation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-claimsubtype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.566"],
+      "sources" : ["2.16.840.1.113883.4.642.3.566"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ClaimTypeCodes",
+      "title" : "Claim Type Codes",
+      "description" : "This value set includes Claim Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/claim-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.558"],
+      "sources" : ["2.16.840.1.113883.4.642.3.558"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/claim-use",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Use",
+      "title" : "Use",
+      "description" : "The purpose of the Claim: predetermination, preauthorization, claim.",
+      "systems" : ["http://hl7.org/fhir/claim-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.544"],
+      "sources" : ["2.16.840.1.113883.4.642.3.544"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/composition-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CompositionStatus",
+      "title" : "CompositionStatus",
+      "description" : "The workflow/clinical status of the composition.",
+      "systems" : ["http://hl7.org/fhir/composition-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.241"],
+      "sources" : ["2.16.840.1.113883.4.642.3.241"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/diagnosis-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosisRole",
+      "title" : "DiagnosisRole",
+      "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diagnosis-role"],
+      "oids" : ["2.16.840.1.113883.4.642.3.49"],
+      "sources" : ["2.16.840.1.113883.4.642.3.49"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-classcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentClassValueSet",
+      "title" : "Document Class Value Set",
+      "description" : "This is the code specifying the high-level kind of document (e.g. Prescription, Discharge Summary, Report, etc.). Note: Class code for documents comes from LOINC, and is based upon one of the following:The type of service described by the document. It is described at a very high level in Section 7.3 of the LOINC Manual. The type study performed. It was determined by identifying modalities for study reports. The section of the chart where the document is placed. It was determined from the SETs created for Claims Attachment requests.",
+      "systems" : ["http://loinc.org"],
+      "oids" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "sources" : ["2.16.840.1.113883.3.88.12.80.46"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-reference-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentReferenceStatus",
+      "title" : "DocumentReferenceStatus",
+      "description" : "The status of the document reference.",
+      "systems" : ["http://hl7.org/fhir/document-reference-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.7"],
+      "sources" : ["2.16.840.1.113883.4.642.3.7"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/document-relationship-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DocumentRelationshipType",
+      "title" : "DocumentRelationshipType",
+      "description" : "The type of relationship between documents.",
+      "systems" : ["http://hl7.org/fhir/document-relationship-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.244"],
+      "sources" : ["2.16.840.1.113883.4.642.3.244"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-admit-source",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "AdmitSource",
+      "title" : "Admit source",
+      "description" : "This value set defines a set of codes that can be used to indicate from where the patient came in.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/admit-source"],
+      "oids" : ["2.16.840.1.113883.4.642.3.257"],
+      "sources" : ["2.16.840.1.113883.4.642.3.257"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-diet",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Diet",
+      "title" : "Diet",
+      "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/diet"],
+      "oids" : ["2.16.840.1.113883.4.642.3.255"],
+      "sources" : ["2.16.840.1.113883.4.642.3.255"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-discharge-disposition",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DischargeDisposition",
+      "title" : "Discharge disposition",
+      "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/discharge-disposition"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.259"],
+      "sources" : ["2.16.840.1.113883.4.642.3.259"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-location-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterLocationStatus",
+      "title" : "EncounterLocationStatus",
+      "description" : "The status of the location.",
+      "systems" : ["http://hl7.org/fhir/encounter-location-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.262"],
+      "sources" : ["2.16.840.1.113883.4.642.3.262"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantType",
+      "title" : "Participant type",
+      "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/participant-type",
+        "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.250"],
+      "sources" : ["2.16.840.1.113883.4.642.3.250"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterReasonCodes",
+      "title" : "Encounter Reason Codes",
+      "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.261"],
+      "sources" : ["2.16.840.1.113883.4.642.3.261"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-arrangements",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialArrangements",
+      "title" : "Special arrangements",
+      "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.253"],
+      "sources" : ["2.16.840.1.113883.4.642.3.253"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-special-courtesy",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecialCourtesy",
+      "title" : "Special courtesy",
+      "description" : "This value set defines a set of codes that can be used to indicate special courtesies provided to the patient.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.252"],
+      "sources" : ["2.16.840.1.113883.4.642.3.252"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterStatus",
+      "title" : "EncounterStatus",
+      "description" : "Current state of the encounter.",
+      "systems" : ["http://hl7.org/fhir/encounter-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.246"],
+      "sources" : ["2.16.840.1.113883.4.642.3.246"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/encounter-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EncounterType",
+      "title" : "Encounter type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/encounter-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.248"],
+      "sources" : ["2.16.840.1.113883.4.642.3.248"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ex-benefitcategory",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BenefitCategoryCodes",
+      "title" : "Benefit Category Codes",
+      "description" : "This value set includes examples of Benefit Category codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-benefitcategory"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1174"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1174"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ex-diagnosis-on-admission",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleDiagnosisOnAdmissionCodes",
+      "title" : "Example Diagnosis on Admission Codes",
+      "description" : "This value set includes example Diagnosis on Admission codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/ex-diagnosis-on-admission"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.1169"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1169"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ex-diagnosisrelatedgroup",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleDiagnosisRelatedGroupCodes",
+      "title" : "Example Diagnosis Related Group Codes",
+      "description" : "This value set includes example Diagnosis Related Group codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/ex-diagnosisrelatedgroup"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.588"],
+      "sources" : ["2.16.840.1.113883.4.642.3.588"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ex-diagnosistype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleDiagnosisTypeCodes",
+      "title" : "Example Diagnosis Type Codes",
+      "description" : "This value set includes example Diagnosis Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-diagnosistype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.590"],
+      "sources" : ["2.16.840.1.113883.4.642.3.590"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ex-procedure-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleProcedureTypeCodes",
+      "title" : "Example Procedure Type Codes",
+      "description" : "This value set includes example Procedure Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-procedure-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1387"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1387"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ex-program-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleProgramReasonCodes",
+      "title" : "Example Program Reason Codes",
+      "description" : "This value set includes sample Program Reason Span codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-programcode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.576"],
+      "sources" : ["2.16.840.1.113883.4.642.3.576"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ex-revenue-center",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleRevenueCenterCodes",
+      "title" : "Example Revenue Center Codes",
+      "description" : "This value set includes sample Revenue Center codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-revenue-center"],
+      "oids" : ["2.16.840.1.113883.4.642.3.594"],
+      "sources" : ["2.16.840.1.113883.4.642.3.594"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/fm-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "FinancialResourceStatusCodes",
+      "title" : "Financial Resource Status Codes",
+      "description" : "This value set includes Status codes.",
+      "systems" : ["http://hl7.org/fhir/fm-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.592"],
+      "sources" : ["2.16.840.1.113883.4.642.3.592"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/formatcodes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DocumentReferenceFormatCodeSet",
+      "title" : "DocumentReference Format Code Set",
+      "description" : "The value set is defined to be the set of format codes defined by the IHE Technical Framework, and also including additional format codes defined by the    HL7. The value set is listed in HITSP C80 Table 2-153 Format Code Value Set Definition,    with additions published later by IHE as published    at http://wiki.ihe.net/index.php?title=IHE_Format_Codes   and with additions published later by HL7 as published at https://confluence.hl7.org/display/SD/Format+Codes+for+IHE+XDS.   This is the code specifying the technical format of the document. Along with the typeCode,    it should provide sufficient information to allow any potential document consumer to know    if it will be able to process the document. The code shall be sufficiently specific to    ensure processing/display by identifying a document encoding, structure and template. The actual list of codes here is incomplete",
+      "systems" : ["http://ihe.net/fhir/ValueSet/IHE.FormatCode.codesystem"],
+      "oids" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "sources" : ["1.3.6.1.4.1.19376.1.2.7.1"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/fundsreserve",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Funds Reservation Codes",
+      "title" : "FundsReserve",
+      "description" : "This value set includes sample funds reservation type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/fundsreserve"],
+      "oids" : ["2.16.840.1.113883.4.642.3.33"],
+      "sources" : ["2.16.840.1.113883.4.642.3.33"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/http-verb",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "HTTPVerb",
+      "title" : "HTTPVerb",
+      "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+      "systems" : ["http://hl7.org/fhir/http-verb"],
+      "oids" : ["2.16.840.1.113883.4.642.3.624"],
+      "sources" : ["2.16.840.1.113883.4.642.3.624"],
+      "uses" : {
+      },
+      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/icd-10",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ICD-10Codes",
+      "title" : "ICD-10 Codes",
+      "description" : "This value set includes sample ICD-10 codes.",
+      "systems" : ["http://hl7.org/fhir/sid/icd-10"],
+      "oids" : ["2.16.840.1.113883.4.642.3.531"],
+      "sources" : ["2.16.840.1.113883.4.642.3.531"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/icd-10-procedures",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ICD-10ProcedureCodes",
+      "title" : "ICD-10 Procedure Codes",
+      "description" : "This value set includes sample ICD-10 Procedure codes.",
+      "systems" : ["http://hl7.org/fhir/sid/ex-icd-10-procedures"],
+      "oids" : ["2.16.840.1.113883.4.642.3.574"],
+      "sources" : ["2.16.840.1.113883.4.642.3.574"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Identifier Type Codes",
+      "title" : "IdentifierType",
+      "description" : "A coded type for an identifier that can be used to determine which identifier to use for a specific purpose.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.4.642.3.45"],
+      "sources" : ["2.16.840.1.113883.4.642.3.45"],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "systems" : ["http://hl7.org/fhir/identifier-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.57"],
+      "sources" : ["2.16.840.1.113883.4.642.3.57"],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/languages",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonLanguages",
+      "title" : "Common Languages",
+      "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+      "systems" : ["urn:ietf:bcp:47"],
+      "oids" : ["2.16.840.1.113883.4.642.3.20"],
+      "sources" : ["2.16.840.1.113883.4.642.3.20"],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA",
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/link-type",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "LinkType",
+      "title" : "LinkType",
+      "description" : "The type of link between this patient resource and another patient resource.",
+      "systems" : ["http://hl7.org/fhir/link-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.423"],
+      "sources" : ["2.16.840.1.113883.4.642.3.423"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "LocationType",
+      "title" : "Location type",
+      "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/location-physical-type"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.328"],
+      "sources" : ["2.16.840.1.113883.4.642.3.328"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Marital Status Codes",
+      "title" : "MaritalStatus",
+      "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+        "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.29"],
+      "sources" : ["2.16.840.1.113883.4.642.3.29"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Mime Types",
+      "title" : "MimeType",
+      "description" : "This value set includes all possible codes from BCP-13 (http://tools.ietf.org/html/bcp13)",
+      "systems" : ["urn:ietf:bcp:13"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1024"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1024"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/missing-tooth-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MissingToothReasonCodes",
+      "title" : "Missing Tooth Reason Codes",
+      "description" : "This value set includes sample Missing Tooth Reason codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/missingtoothreason"],
+      "oids" : ["2.16.840.1.113883.4.642.3.534"],
+      "sources" : ["2.16.840.1.113883.4.642.3.534"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/name-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "NameUse",
+      "title" : "NameUse",
+      "description" : "The use of a human name.",
+      "systems" : ["http://hl7.org/fhir/name-use"],
+      "oids" : ["2.16.840.1.113883.4.642.3.65"],
+      "sources" : ["2.16.840.1.113883.4.642.3.65"],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/participant-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ParticipantRoles",
+      "title" : "Participant Roles",
+      "description" : "Roles of participants that may be included in a care team.  Defined as: Is a Person, Healthcare professional (occupation) or Healthcare related organization (qualifier value).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.152"],
+      "sources" : ["2.16.840.1.113883.4.642.3.152"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "PatientContactRelationship",
+      "title" : "Patient Contact Relationship ",
+      "description" : "The nature of the relationship between the patient and the contact person.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+      "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+      "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+      "uses" : {
+      },
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/payeetype",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Claim Payee Type Codes",
+      "title" : "PayeeType",
+      "description" : "This value set includes sample Payee Type codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/payeetype"],
+      "oids" : ["2.16.840.1.113883.4.642.3.31"],
+      "sources" : ["2.16.840.1.113883.4.642.3.31"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureCodes(SNOMEDCT)",
+      "title" : "Procedure Codes (SNOMED CT)",
+      "description" : "Procedure Code: All SNOMED CT procedure codes.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.427"],
+      "sources" : ["2.16.840.1.113883.4.642.3.427"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/procedure-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcedureReasonCodes",
+      "title" : "Procedure Reason Codes",
+      "description" : "This example value set defines the set of codes that can be used to indicate a reason for a procedure.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.432"],
+      "sources" : ["2.16.840.1.113883.4.642.3.432"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/process-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ProcessPriorityCodes",
+      "title" : "Process Priority Codes",
+      "description" : "This value set includes the financial processing priority codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/processpriority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.552"],
+      "sources" : ["2.16.840.1.113883.4.642.3.552"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/provider-qualification",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleProviderQualificationCodes",
+      "title" : "Example Provider Qualification Codes",
+      "description" : "This value set includes sample Provider Qualification codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/ex-providerqualification"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.570"],
+      "sources" : ["2.16.840.1.113883.4.642.3.570"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/related-claim-relationship",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleRelatedClaimRelationshipCodes",
+      "title" : "Example Related Claim Relationship Codes",
+      "description" : "This value set includes sample Related Claim Relationship codes.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/ex-relatedclaimrelationship"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.568"],
+      "sources" : ["2.16.840.1.113883.4.642.3.568"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-intent",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestIntent",
+      "title" : "RequestIntent",
+      "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+      "systems" : ["http://hl7.org/fhir/request-intent"],
+      "oids" : ["2.16.840.1.113883.4.642.3.113"],
+      "sources" : ["2.16.840.1.113883.4.642.3.113"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-priority",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestPriority",
+      "title" : "Request priority",
+      "description" : "The clinical priority of a diagnostic order.",
+      "systems" : ["http://hl7.org/fhir/request-priority"],
+      "oids" : ["2.16.840.1.113883.4.642.3.115"],
+      "sources" : ["2.16.840.1.113883.4.642.3.115"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/request-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "RequestStatus",
+      "title" : "RequestStatus",
+      "description" : "Codes identifying the lifecycle stage of a request.",
+      "systems" : ["http://hl7.org/fhir/request-status"],
+      "oids" : ["2.16.840.1.113883.4.642.3.111"],
+      "sources" : ["2.16.840.1.113883.4.642.3.111"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/resource-types",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ResourceType",
+      "title" : "ResourceType",
+      "description" : "One of the resource types defined as part of this version of FHIR.",
+      "systems" : ["http://hl7.org/fhir/resource-types"],
+      "oids" : ["2.16.840.1.113883.4.642.3.27"],
+      "sources" : ["2.16.840.1.113883.4.642.3.27"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/search-entry-mode",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "SearchEntryMode",
+      "title" : "SearchEntryMode",
+      "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+      "systems" : ["http://hl7.org/fhir/search-entry-mode"],
+      "oids" : ["2.16.840.1.113883.4.642.3.622"],
+      "sources" : ["2.16.840.1.113883.4.642.3.622"],
+      "uses" : {
+      },
+      "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/security-labels",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "All Security Labels",
+      "title" : "SecurityLabels",
+      "description" : "A single value set for all security labels defined by FHIR.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+        "http://terminology.hl7.org/CodeSystem/v3-ActUSPrivacyLaw",
+        "http://terminology.hl7.org/CodeSystem/v3-ObservationValue",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "http://terminology.hl7.org/CodeSystem/v3-Confidentiality"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.47"],
+      "sources" : ["2.16.840.1.113883.4.642.3.47"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-place",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ExampleServicePlaceCodes",
+      "title" : "Example Service Place Codes",
+      "description" : "This value set includes a smattering of Service Place codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-serviceplace"],
+      "oids" : ["2.16.840.1.113883.4.642.3.564"],
+      "sources" : ["2.16.840.1.113883.4.642.3.564"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceType",
+      "title" : "Service type",
+      "description" : "This value set defines an example set of codes of service-types.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.518"],
+      "sources" : ["2.16.840.1.113883.4.642.3.518"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/service-uscls",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "USCLSCodes",
+      "title" : "USCLS Codes",
+      "description" : "This value set includes a smattering of USCLS codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-USCLS"],
+      "oids" : ["2.16.840.1.113883.4.642.3.542"],
+      "sources" : ["2.16.840.1.113883.4.642.3.542"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestCategoryCodes",
+      "title" : "Service Request Category Codes",
+      "description" : "An example value set of SNOMED CT concepts that can classify a requested service",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.434"],
+      "sources" : ["2.16.840.1.113883.4.642.3.434"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/servicerequest-orderdetail",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ServiceRequestOrderDetailsCodes",
+      "title" : "Service Request Order Details Codes",
+      "description" : "An example value set of Codified order entry details concepts.  These concepts only make sense in the context of what is being ordered.  This example is for a patient ventilation order",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.435"],
+      "sources" : ["2.16.840.1.113883.4.642.3.435"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/surface",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SurfaceCodes",
+      "title" : "Surface Codes",
+      "description" : "This value set includes a smattering of FDI tooth surface codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/FDI-surface"],
+      "oids" : ["2.16.840.1.113883.4.642.3.546"],
+      "sources" : ["2.16.840.1.113883.4.642.3.546"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/tooth",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "OralSiteCodes",
+      "title" : "Oral Site Codes",
+      "description" : "This value set includes a smattering of FDI oral site codes.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/ex-tooth"],
+      "oids" : ["2.16.840.1.113883.4.642.3.540"],
+      "sources" : ["2.16.840.1.113883.4.642.3.540"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperocoberturas-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoCoberturasVS",
+      "title" : "Recupero Coberturas ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero coberturas",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem"
+      ]
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperodiagnosticos-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoDiagnosticosVS",
+      "title" : "Recupero Diagnosticos ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero diagnosticos",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoProcedimientosVS",
+      "title" : "Recupero Procedimientos ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero procedimientos",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesiones-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoProfesionesVS",
+      "title" : "Recupero Profesiones ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero profesiones",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA"
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoTiposDocumentoVS",
+      "title" : "Recupero TiposDocumento ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero tiposdocumento",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem"
+      ]
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposmatricula-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoTiposMatriculaVS",
+      "title" : "Recupero TiposMatricula ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero tiposmatricula",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem"
+      ]
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0092",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSReAdmissionIndicator",
+      "title" : "hl7VS-re-admissionIndicator",
+      "description" : "Value Set of codes which are used to specify that a patient is being re-admitted to a healthcare facility from which they were discharged, and indicates the circumstances around such re-admission.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0092"],
+      "oids" : ["2.16.840.1.113883.21.40"],
+      "sources" : ["2.16.840.1.113883.21.40"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActCode",
+      "title" : "v3 Code System ActCode",
+      "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.  Constraints:\r\nThe kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems.  The coding system will depend on the class of Act, such as LOINC for observations, etc. Conceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure. Act.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "uses" : {
+      },
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActEncounterCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActEncounterCode",
+      "title" : "ActEncounterCode",
+      "description" : "Domain provides codes that qualify the ActEncounterClass (ENC)",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.13955"],
+      "sources" : ["2.16.840.1.113883.1.11.13955"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActIncidentCode",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActIncidentCode",
+      "title" : "ActIncidentCode",
+      "description" : "Set of codes indicating the type of incident or accident.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActCode"],
+      "oids" : ["2.16.840.1.113883.1.11.16508"],
+      "sources" : ["2.16.840.1.113883.1.11.16508"],
+      "uses" : {
+      },
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ActPriority",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ActPriority",
+      "title" : "ActPriority",
+      "description" : "A code or set of codes (e.g., for routine, emergency,) specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.\r\n\r\n*Discussion:* This attribute is used in orders to indicate the ordered priority, and in event documentation it indicates the actual priority used to perform the act. In definition mood it indicates the available priorities.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ActPriority"],
+      "oids" : ["2.16.840.1.113883.1.11.16866"],
+      "sources" : ["2.16.840.1.113883.1.11.16866"],
+      "uses" : {
+      },
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "ServiceDeliveryLocationRoleType",
+      "title" : "ServiceDeliveryLocationRoleType",
+      "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "oids" : ["2.16.840.1.113883.1.11.17660"],
+      "sources" : ["2.16.840.1.113883.1.11.17660"],
+      "uses" : {
+      },
+      "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA"
+    }
+  ]
+}

@@ -1,0 +1,389 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://recuperocaba.gob.ar/Bundle/RecuperoCABABundleEjemplo> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecuperoCABABundleEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:identifier [
+     fhir:system [ fhir:v "http://hospital1.gob.ar/recuperos"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1234567890" ]
+  ] ; # 
+  fhir:type [ fhir:v "collection"] ; # 
+  fhir:timestamp [ fhir:v "2025-03-13T07:19:12-03:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "urn:uuid:23596630-d122-4dd4-bf1e-61a9d287ac05"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:23596630-d122-4dd4-bf1e-61a9d287ac05> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:108abd93-5b06-415b-9c66-0fe8b2c29ccf"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:108abd93-5b06-415b-9c66-0fe8b2c29ccf> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:511b97a7-5ac5-4c5f-9e4f-94e17db97958"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:511b97a7-5ac5-4c5f-9e4f-94e17db97958> )
+  ] [
+     fhir:fullUrl [ fhir:v "urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0"^^xsd:anyURI ] ;
+     fhir:resource ( <urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0> )
+  ] ) . # 
+
+<urn:uuid:23596630-d122-4dd4-bf1e-61a9d287ac05> a fhir:Claim ;
+  fhir:id [ fhir:v "RecuperoCABAClaimEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Claim_RecuperoCABAClaimEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Claim RecuperoCABAClaimEjemplo</b></p><a name=\"RecuperoCABAClaimEjemplo\"> </a><a name=\"hcRecuperoCABAClaimEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ClaimCabaRecupero.html\">Claim Recupero Para CABA</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-de45db8b-8e3f-404e-a7af-910a289eeb8c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>created</b>: 2025-03-13 07:19:12-0300</p><p><b>provider</b>: Hospital 1 - Laboratorio de Análisis Clínicos</p><p><b>priority</b>: <span title=\"Codes:\">routine</span></p><p><b>referral</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-e4caeb31-9418-494e-a945-8799a90fb08c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>facility</b>: Hospital 1 - Clínica Médica</p><h3>SupportingInfos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claiminformationcategory attachment}\">Attachment</span></td><td><a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-59a1159e-3016-4c84-a936-0725edc823a0\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem A010}\">Fiebre tifoidea</span></td></tr></table><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 1</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 475}\">HEMOGRAMA</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 2</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 171}\">COAGULOGRAMA</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 3</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 481}\">HEPATOGRAMA</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 4</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 902}\">UREA, SERICA</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 5</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 192}\">CREATININA, EN SANGRE</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>true</td><td>Medicus (Identifier: <code>http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem</code>/MP004)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "institutional" ] ;
+       fhir:display [ fhir:v "Institutional" ]
+     ] )
+  ] ; # 
+  fhir:use [ fhir:v "claim"] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c" ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-03-13T07:19:12-03:00"^^xsd:dateTime] ; # 
+  fhir:provider [
+     fhir:display [ fhir:v "Hospital 1 - Laboratorio de Análisis Clínicos" ]
+  ] ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:code [ fhir:v "routine" ]
+     ] )
+  ] ; # 
+  fhir:referral [
+     fhir:reference [ fhir:v "urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c" ]
+  ] ; # 
+  fhir:facility [
+     fhir:display [ fhir:v "Hospital 1 - Clínica Médica" ]
+  ] ; # 
+  fhir:supportingInfo ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:category [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claiminformationcategory"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "attachment" ] ;
+         fhir:display [ fhir:v "Attachment" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:reference [ fhir:v "urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0" ]
+     ]
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:diagnosis [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A010" ] ;
+         fhir:display [ fhir:v "Fiebre tifoidea" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:procedure ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "475" ] ;
+         fhir:display [ fhir:v "HEMOGRAMA" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "171" ] ;
+         fhir:display [ fhir:v "COAGULOGRAMA" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "3"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "481" ] ;
+         fhir:display [ fhir:v "HEPATOGRAMA" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "4"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "902" ] ;
+         fhir:display [ fhir:v "UREA, SERICA" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "5"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "192" ] ;
+         fhir:display [ fhir:v "CREATININA, EN SANGRE" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:insurance ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:focal [ fhir:v true ] ;
+     fhir:coverage [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MP004" ]
+       ] ;
+       fhir:display [ fhir:v "Medicus" ]
+     ]
+  ] ) . # 
+
+<urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c> a fhir:Patient ;
+  fhir:id [ fhir:v "RecuperoCABAPacienteEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_RecuperoCABAPacienteEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient RecuperoCABAPacienteEjemplo</b></p><a name=\"RecuperoCABAPacienteEjemplo\"> </a><a name=\"hcRecuperoCABAPacienteEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PatientCabaRecupero.html\">Paciente para Recupero CABA</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">BELU  Female, DoB: 1990-01-01 ( http://hospital1.gob.ar/pacientes#7699001 (use: usual, ))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>http://renaper.gob.ar/dni</code>/99990001 (use: official, )</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">FLORENCIA BELEN PRUEBAPA PRUEBAMA (Official)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:system [ fhir:v "http://hospital1.gob.ar/pacientes"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "7699001" ]
+  ] [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://renaper.gob.ar/dni"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "99990001" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [
+       fhir:v "PRUEBAPA PRUEBAMA" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://recuperocaba.gob.ar/StructureDefinition/ExtensionFathersFamilyName"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PRUEBAPA"
+         ]
+       ] [
+         fhir:url [ fhir:v "http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "PRUEBAMA"
+         ]
+       ] )
+     ] ;
+     fhir:given ( [ fhir:v "FLORENCIA" ] [ fhir:v "BELEN" ] )
+  ] [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:given ( [ fhir:v "BELU" ] )
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1990-01-01"^^xsd:date] . # 
+
+<urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c> a fhir:ServiceRequest ;
+  fhir:id [ fhir:v "RecuperoCABAServiceRequestEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"ServiceRequest_RecuperoCABAServiceRequestEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: ServiceRequest RecuperoCABAServiceRequestEjemplo</b></p><a name=\"RecuperoCABAServiceRequestEjemplo\"> </a><a name=\"hcRecuperoCABAServiceRequestEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ServiceRequestCabaRecupero.html\">ServiceRequest para Recupero CABA</a></p></div><p><b>identifier</b>: <code>http://hospital1.gob.ar/pedidos</code>/12345</p><p><b>status</b>: Completed</p><p><b>intent</b>: Order</p><p><b>category</b>: <span title=\"Codes:{http://snomed.info/sct 108252007}\">Laboratory Procedure</span></p><p><b>subject</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-de45db8b-8e3f-404e-a7af-910a289eeb8c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>encounter</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-108abd93-5b06-415b-9c66-0fe8b2c29ccf\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>occurrence</b>: 2025-03-15 07:19:12-0300</p><p><b>authoredOn</b>: 2025-03-13 07:19:12-0300</p><p><b>requester</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-511b97a7-5ac5-4c5f-9e4f-94e17db97958\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>performer</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-576e3804-7d1a-4530-9c3d-a8e16779f2a8\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>locationCode</b>: <span title=\"Codes:\">Laboratorio de Análisis Clínicos</span></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital1.gob.ar/pedidos"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       a sct:108252007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "108252007" ] ;
+       fhir:display [ fhir:v "Laboratory Procedure" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:reference [ fhir:v "urn:uuid:108abd93-5b06-415b-9c66-0fe8b2c29ccf" ]
+  ] ; # 
+  fhir:occurrence [
+     a fhir:dateTime ;
+     fhir:v "2025-03-15T07:19:12-03:00"^^xsd:dateTime
+  ] ; # 
+  fhir:authoredOn [ fhir:v "2025-03-13T07:19:12-03:00"^^xsd:dateTime] ; # 
+  fhir:requester [
+     fhir:reference [ fhir:v "urn:uuid:511b97a7-5ac5-4c5f-9e4f-94e17db97958" ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:reference [ fhir:v "urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8" ]
+  ] ) ; # 
+  fhir:locationCode ( [
+     fhir:text [ fhir:v "Laboratorio de Análisis Clínicos" ]
+  ] ) . # 
+
+<urn:uuid:108abd93-5b06-415b-9c66-0fe8b2c29ccf> a fhir:Encounter ;
+  fhir:id [ fhir:v "RecuperoCABAEncounterEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_RecuperoCABAEncounterEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter RecuperoCABAEncounterEjemplo</b></p><a name=\"RecuperoCABAEncounterEjemplo\"> </a><a name=\"hcRecuperoCABAEncounterEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterCabaRecupero.html\">Encuentro para Recupero CABA</a></p></div><p><b>identifier</b>: <code>http://hospital1.gob.ar/episodios</code>/130145562</p><p><b>status</b>: Unknown</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>type</b>: <span title=\"Codes:\">Immunología</span></p><p><b>subject</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-de45db8b-8e3f-404e-a7af-910a289eeb8c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital1.gob.ar/episodios"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "130145562" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:text [ fhir:v "Immunología" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c" ]
+  ] . # 
+
+<urn:uuid:576e3804-7d1a-4530-9c3d-a8e16779f2a8> a fhir:Practitioner ;
+  fhir:id [ fhir:v "RecuperoCABAProfesionalFirmanteEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_RecuperoCABAProfesionalFirmanteEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner RecuperoCABAProfesionalFirmanteEjemplo</b></p><a name=\"RecuperoCABAProfesionalFirmanteEjemplo\"> </a><a name=\"hcRecuperoCABAProfesionalFirmanteEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerCabaRecupero.html\">Practitioner para Recupero CABA</a></p></div><p><b>identifier</b>: <code>http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000</code>/116772b</p><p><b>name</b>: DELIA JUAN</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem 27}\">Bioquímico</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "116772b" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "DELIA JUAN" ]
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "27" ] ;
+         fhir:display [ fhir:v "Bioquímico" ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:511b97a7-5ac5-4c5f-9e4f-94e17db97958> a fhir:Practitioner ;
+  fhir:id [ fhir:v "RecuperoCABAProfesionalSolicitanteEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_RecuperoCABAProfesionalSolicitanteEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner RecuperoCABAProfesionalSolicitanteEjemplo</b></p><a name=\"RecuperoCABAProfesionalSolicitanteEjemplo\"> </a><a name=\"hcRecuperoCABAProfesionalSolicitanteEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-PractitionerCabaRecupero.html\">Practitioner para Recupero CABA</a></p></div><p><b>identifier</b>: <code>http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10006441714000</code>/16772</p><p><b>name</b>: CARRERA VALERIA</p><h3>Qualifications</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem 1}\">Médico</span></td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10006441714000"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "16772" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:text [ fhir:v "CARRERA VALERIA" ]
+  ] ) ; # 
+  fhir:qualification ( [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1" ] ;
+         fhir:display [ fhir:v "Médico" ]
+       ] )
+     ]
+  ] ) . # 
+
+<urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0> a fhir:DocumentReference ;
+  fhir:id [ fhir:v "RecuperoCABADocumentacionAdicionalEjemplo"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"DocumentReference_RecuperoCABADocumentacionAdicionalEjemplo\"> </a><p class=\"res-header-id\"><b>Generated Narrative: DocumentReference RecuperoCABADocumentacionAdicionalEjemplo</b></p><a name=\"RecuperoCABADocumentacionAdicionalEjemplo\"> </a><a name=\"hcRecuperoCABADocumentacionAdicionalEjemplo\"> </a><p><b>status</b>: Current</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 11502-2}\">Laboratory Report</span></p><p><b>subject</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-de45db8b-8e3f-404e-a7af-910a289eeb8c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>date</b>: 2025-03-13 07:19:12-0300</p><blockquote><p><b>content</b></p><h3>Attachments</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>ContentType</b></td><td><b>Data</b></td></tr><tr><td style=\"display: none\">*</td><td>application/pdf</td><td><code>JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoK MiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagoz IDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQy XQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9u dCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5 cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1Jv bWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAov RjEgMjAgVGYKMjIwIDQwMCBUZAooRHVtbXkgUERGKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCnhy ZWYKMCA2CjAwMDAwMDAwMDAgNjU1MzUgZgowMDAwMDAwMDA5IDAwMDAwIG4KMDAwMDAwMDA2MyAw MDAwMCBuCjAwMDAwMDAxMjQgMDAwMDAgbgowMDAwMDAwMjc3IDAwMDAwIG4KMDAwMDAwMDM5MiAw MDAwMCBuCnRyYWlsZXIKPDwvU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgo0OTUKJSVFT0YK</code></td></tr></table></blockquote></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "current"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       a loinc:11502-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11502-2" ] ;
+       fhir:display [ fhir:v "Laboratory Report" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c" ]
+  ] ; # 
+  fhir:date [ fhir:v "2025-03-13T07:19:12-03:00"^^xsd:dateTime] ; # 
+  fhir:content ( [
+     fhir:attachment [
+       fhir:contentType [ fhir:v "application/pdf" ] ;
+       fhir:data [ fhir:v "JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoK MiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagoz IDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQy XQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9u dCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5 cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1Jv bWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAov RjEgMjAgVGYKMjIwIDQwMCBUZAooRHVtbXkgUERGKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCnhy ZWYKMCA2CjAwMDAwMDAwMDAgNjU1MzUgZgowMDAwMDAwMDA5IDAwMDAwIG4KMDAwMDAwMDA2MyAw MDAwMCBuCjAwMDAwMDAxMjQgMDAwMDAgbgowMDAwMDAwMjc3IDAwMDAwIG4KMDAwMDAwMDM5MiAw MDAwMCBuCnRyYWlsZXIKPDwvU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgo0OTUKJSVFT0YK"^^xsd:base64Binary ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

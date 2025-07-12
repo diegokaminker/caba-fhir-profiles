@@ -1,0 +1,16 @@
+{
+  "http://renaper.gob.ar/dni" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/recupero-diagnosticos|null" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/recupero-diagnosticos" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/codificacion-laboratorio|null" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/recupero-profesiones" : null,
+  "http://hospital1.gob.ar/pedidos" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/recupero-profesiones|null" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/codificacion-laboratorio" : null,
+  "http://hospital1.gob.ar/recuperos" : null,
+  "urn:ietf:bcp:13|null" : null,
+  "http://hospital1.gob.ar/episodios" : null,
+  "http://hospital1.gob.ar/pacientes" : null,
+  "http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10006441714000" : null
+}

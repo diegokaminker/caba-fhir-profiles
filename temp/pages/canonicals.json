@@ -1,0 +1,170 @@
+[
+  {
+    "id" : "coberturas-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem",
+    "version" : "0.1.0",
+    "name" : "RecuperoCoberturasCS"
+  },
+  {
+    "id" : "diagnosticos-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem",
+    "version" : "0.1.0",
+    "name" : "RecuperoDiagnosticosCS"
+  },
+  {
+    "id" : "procedimientos-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem",
+    "version" : "0.1.0",
+    "name" : "RecuperoProcedimientosCS"
+  },
+  {
+    "id" : "profesiones-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem",
+    "version" : "0.1.0",
+    "name" : "RecuperoProfesionesCS"
+  },
+  {
+    "id" : "tipos-documento-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem",
+    "version" : "0.1.0",
+    "name" : "RecuperoTiposDocumentoCS"
+  },
+  {
+    "id" : "tipos-matricula-codesystem",
+    "type" : "CodeSystem",
+    "url" : "http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem",
+    "version" : "0.1.0",
+    "name" : "RecuperoTiposMatricula"
+  },
+  {
+    "id" : "recupero-caba",
+    "type" : "ImplementationGuide",
+    "url" : "http://recuperocaba.gob.ar/ImplementationGuide/recupero-caba",
+    "version" : "0.1.0",
+    "name" : "RecuperoCABA"
+  },
+  {
+    "id" : "BundleCabaRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero",
+    "version" : "0.1.0",
+    "name" : "BundleCabaRecupero"
+  },
+  {
+    "id" : "ClaimCabaRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero",
+    "version" : "0.1.0",
+    "name" : "ClaimCabaRecupero"
+  },
+  {
+    "id" : "DocumentReferenceCabaRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero",
+    "version" : "0.1.0",
+    "name" : "DocumentReferenceCabaRecupero"
+  },
+  {
+    "id" : "EncounterCabaRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero",
+    "version" : "0.1.0",
+    "name" : "EncounterCabaRecupero"
+  },
+  {
+    "id" : "ExtensionFathersFamilyName",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/ExtensionFathersFamilyName",
+    "version" : "0.1.0",
+    "name" : "ExtensionFathersFamilyName"
+  },
+  {
+    "id" : "ExtensionMothersFamilyName",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName",
+    "version" : "0.1.0",
+    "name" : "ExtensionMothersFamilyName"
+  },
+  {
+    "id" : "PatientCabaRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero",
+    "version" : "0.1.0",
+    "name" : "PatientCabaRecupero"
+  },
+  {
+    "id" : "PractitionerCabaRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero",
+    "version" : "0.1.0",
+    "name" : "PractitionerCabaRecupero"
+  },
+  {
+    "id" : "RecuperoLaboratorioPrestacion",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioPrestacion",
+    "version" : "0.1.0",
+    "name" : "RecuperoLaboratorioPrestacion"
+  },
+  {
+    "id" : "RecuperoLaboratorioSolicitud",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioSolicitud",
+    "version" : "0.1.0",
+    "name" : "RecuperoLaboratorioSolicitud"
+  },
+  {
+    "id" : "ServiceRequestCabaRecupero",
+    "type" : "StructureDefinition",
+    "url" : "http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero",
+    "version" : "0.1.0",
+    "name" : "ServiceRequestCabaRecupero"
+  },
+  {
+    "id" : "recuperocoberturas-valueset",
+    "type" : "ValueSet",
+    "url" : "http://recuperocaba.gob.ar/ValueSet/recuperocoberturas-valueset",
+    "version" : "0.1.0",
+    "name" : "RecuperoCoberturasVS"
+  },
+  {
+    "id" : "recuperodiagnosticos-valueset",
+    "type" : "ValueSet",
+    "url" : "http://recuperocaba.gob.ar/ValueSet/recuperodiagnosticos-valueset",
+    "version" : "0.1.0",
+    "name" : "RecuperoDiagnosticosVS"
+  },
+  {
+    "id" : "recuperoprocedimientos-valueset",
+    "type" : "ValueSet",
+    "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset",
+    "version" : "0.1.0",
+    "name" : "RecuperoProcedimientosVS"
+  },
+  {
+    "id" : "recuperoprofesiones-valueset",
+    "type" : "ValueSet",
+    "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesiones-valueset",
+    "version" : "0.1.0",
+    "name" : "RecuperoProfesionesVS"
+  },
+  {
+    "id" : "recuperotiposdocumento-valueset",
+    "type" : "ValueSet",
+    "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset",
+    "version" : "0.1.0",
+    "name" : "RecuperoTiposDocumentoVS"
+  },
+  {
+    "id" : "recuperotiposmatricula-valueset",
+    "type" : "ValueSet",
+    "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposmatricula-valueset",
+    "version" : "0.1.0",
+    "name" : "RecuperoTiposMatriculaVS"
+  }
+]

@@ -1,0 +1,1198 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RecuperoProfesionesCS",
+  "id": "profesiones-codesystem",
+  "title": "Profesiones para Recupero",
+  "description": "Listado de profesiones",
+  "url": "http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Médico",
+      "definition": "Médico"
+    },
+    {
+      "code": "2",
+      "display": "Odontólogo",
+      "definition": "Odontólogo"
+    },
+    {
+      "code": "3",
+      "display": "Licenciado enfermería",
+      "definition": "Licenciado enfermería"
+    },
+    {
+      "code": "4",
+      "display": "Farmacéutico",
+      "definition": "Farmacéutico"
+    },
+    {
+      "code": "5",
+      "display": "Psicólogo",
+      "definition": "Psicólogo"
+    },
+    {
+      "code": "6",
+      "display": "Licenciado en psicología",
+      "definition": "Licenciado en psicología"
+    },
+    {
+      "code": "7",
+      "display": "Psicopedagogo",
+      "definition": "Psicopedagogo"
+    },
+    {
+      "code": "8",
+      "display": "Licenciado en psicopedagogía",
+      "definition": "Licenciado en psicopedagogía"
+    },
+    {
+      "code": "9",
+      "display": "Kinesiólogo",
+      "definition": "Kinesiólogo"
+    },
+    {
+      "code": "10",
+      "display": "Licenciado en kinesiología",
+      "definition": "Licenciado en kinesiología"
+    },
+    {
+      "code": "11",
+      "display": "Licenciado terapia física",
+      "definition": "Licenciado terapia física"
+    },
+    {
+      "code": "12",
+      "display": "Licenciado en prótesis y ortesis",
+      "definition": "Licenciado en prótesis y ortesis"
+    },
+    {
+      "code": "13",
+      "display": "Terapista ocupacional",
+      "definition": "Terapista ocupacional"
+    },
+    {
+      "code": "14",
+      "display": "Licenciado en terapia ocupacional",
+      "definition": "Licenciado en terapia ocupacional"
+    },
+    {
+      "code": "15",
+      "display": "Musicoterapeuta",
+      "definition": "Musicoterapeuta"
+    },
+    {
+      "code": "16",
+      "display": "Licenciado en musicoterápia",
+      "definition": "Licenciado en musicoterápia"
+    },
+    {
+      "code": "17",
+      "display": "Licenciado en psicomotrocidad",
+      "definition": "Licenciado en psicomotrocidad"
+    },
+    {
+      "code": "18",
+      "display": "Fonoaudiólogo",
+      "definition": "Fonoaudiólogo"
+    },
+    {
+      "code": "19",
+      "display": "Licenciado en fonoaudiología",
+      "definition": "Licenciado en fonoaudiología"
+    },
+    {
+      "code": "20",
+      "display": "Nutricionista",
+      "definition": "Nutricionista"
+    },
+    {
+      "code": "21",
+      "display": "Licenciado en nutrición",
+      "definition": "Licenciado en nutrición"
+    },
+    {
+      "code": "22",
+      "display": "Nutricionista dietista",
+      "definition": "Nutricionista dietista"
+    },
+    {
+      "code": "23",
+      "display": "Obstétrico",
+      "definition": "Obstétrico"
+    },
+    {
+      "code": "24",
+      "display": "Licenciado en obstetricia",
+      "definition": "Licenciado en obstetricia"
+    },
+    {
+      "code": "25",
+      "display": "Licenciado en radiología",
+      "definition": "Licenciado en radiología"
+    },
+    {
+      "code": "26",
+      "display": "Licenciado en producción bioimágenes",
+      "definition": "Licenciado en producción bioimágenes"
+    },
+    {
+      "code": "27",
+      "display": "Bioquímico",
+      "definition": "Bioquímico"
+    },
+    {
+      "code": "28",
+      "display": "Licenciado en bioquímica",
+      "definition": "Licenciado en bioquímica"
+    },
+    {
+      "code": "29",
+      "display": "Profesiones de análisis clínicos",
+      "definition": "Profesiones de análisis clínicos"
+    },
+    {
+      "code": "30",
+      "display": "Licenciado en química",
+      "definition": "Licenciado en química"
+    },
+    {
+      "code": "31",
+      "display": "Químico",
+      "definition": "Químico"
+    },
+    {
+      "code": "32",
+      "display": "Licenciado en física-química",
+      "definition": "Licenciado en física-química"
+    },
+    {
+      "code": "33",
+      "display": "Licenciado en química industrial",
+      "definition": "Licenciado en química industrial"
+    },
+    {
+      "code": "34",
+      "display": "Licenciado en análisis clínicos",
+      "definition": "Licenciado en análisis clínicos"
+    },
+    {
+      "code": "35",
+      "display": "Ingeniero químico",
+      "definition": "Ingeniero químico"
+    },
+    {
+      "code": "36",
+      "display": "Licenciado en trabajo social",
+      "definition": "Licenciado en trabajo social"
+    },
+    {
+      "code": "37",
+      "display": "Trabajador social",
+      "definition": "Trabajador social"
+    },
+    {
+      "code": "38",
+      "display": "Licenciado servicio social",
+      "definition": "Licenciado servicio social"
+    },
+    {
+      "code": "39",
+      "display": "Asistente social",
+      "definition": "Asistente social"
+    },
+    {
+      "code": "40",
+      "display": "Licenciado asistencia social",
+      "definition": "Licenciado asistencia social"
+    },
+    {
+      "code": "41",
+      "display": "Licenciado biología",
+      "definition": "Licenciado biología"
+    },
+    {
+      "code": "42",
+      "display": "Biólogo",
+      "definition": "Biólogo"
+    },
+    {
+      "code": "43",
+      "display": "Licenciado biología molecular",
+      "definition": "Licenciado biología molecular"
+    },
+    {
+      "code": "44",
+      "display": "Licenciado microbiología",
+      "definition": "Licenciado microbiología"
+    },
+    {
+      "code": "45",
+      "display": "Microbiólogo",
+      "definition": "Microbiólogo"
+    },
+    {
+      "code": "46",
+      "display": "Bacteriólogo",
+      "definition": "Bacteriólogo"
+    },
+    {
+      "code": "47",
+      "display": "Bacteriólogo clínico industrial",
+      "definition": "Bacteriólogo clínico industrial"
+    },
+    {
+      "code": "48",
+      "display": "Licenciado en genética",
+      "definition": "Licenciado en genética"
+    },
+    {
+      "code": "49",
+      "display": "Bromatólogo",
+      "definition": "Bromatólogo"
+    },
+    {
+      "code": "50",
+      "display": "Licenciado en bromatología",
+      "definition": "Licenciado en bromatología"
+    },
+    {
+      "code": "51",
+      "display": "Licenciado en tecnología y alimentos",
+      "definition": "Licenciado en tecnología y alimentos"
+    },
+    {
+      "code": "52",
+      "display": "Ingeniero industria alimentación",
+      "definition": "Ingeniero industria alimentación"
+    },
+    {
+      "code": "53",
+      "display": "Fruticultor - enólogo",
+      "definition": "Fruticultor - enólogo"
+    },
+    {
+      "code": "54",
+      "display": "Licenciado en estadística para la salud",
+      "definition": "Licenciado en estadística para la salud"
+    },
+    {
+      "code": "55",
+      "display": "Licenciado en educación para la salud",
+      "definition": "Licenciado en educación para la salud"
+    },
+    {
+      "code": "56",
+      "display": "Licenciado en comunicación social",
+      "definition": "Licenciado en comunicación social"
+    },
+    {
+      "code": "57",
+      "display": "Licenciado en saneamiento y protección ambiental",
+      "definition": "Licenciado en saneamiento y protección ambiental"
+    },
+    {
+      "code": "58",
+      "display": "Ambientólogo",
+      "definition": "Ambientólogo"
+    },
+    {
+      "code": "59",
+      "display": "Ingeniero sanitario",
+      "definition": "Ingeniero sanitario"
+    },
+    {
+      "code": "60",
+      "display": "Bioingeniería",
+      "definition": "Bioingeniería"
+    },
+    {
+      "code": "61",
+      "display": "Médico veterinario",
+      "definition": "Médico veterinario"
+    },
+    {
+      "code": "62",
+      "display": "Enfermero",
+      "definition": "Enfermero"
+    },
+    {
+      "code": "63",
+      "display": "Enfermero superior no universitario",
+      "definition": "Enfermero superior no universitario"
+    },
+    {
+      "code": "64",
+      "display": "Enfermero universitario",
+      "definition": "Enfermero universitario"
+    },
+    {
+      "code": "65",
+      "display": "Enfermero profesional",
+      "definition": "Enfermero profesional"
+    },
+    {
+      "code": "66",
+      "display": "Técnico superior esterilización",
+      "definition": "Técnico superior esterilización"
+    },
+    {
+      "code": "67",
+      "display": "Técnico esterilización",
+      "definition": "Técnico esterilización"
+    },
+    {
+      "code": "68",
+      "display": "Instrumentador quirúrgico",
+      "definition": "Instrumentador quirúrgico"
+    },
+    {
+      "code": "69",
+      "display": "Instrumentista universitario",
+      "definition": "Instrumentista universitario"
+    },
+    {
+      "code": "70",
+      "display": "Instrumentista no universitario",
+      "definition": "Instrumentista no universitario"
+    },
+    {
+      "code": "71",
+      "display": "Técnico superior instrumentación quirúrgica",
+      "definition": "Técnico superior instrumentación quirúrgica"
+    },
+    {
+      "code": "72",
+      "display": "Técnico en quirófano",
+      "definition": "Técnico en quirófano"
+    },
+    {
+      "code": "73",
+      "display": "Técnico universitario en quirófano",
+      "definition": "Técnico universitario en quirófano"
+    },
+    {
+      "code": "74",
+      "display": "Técnico hemoterapia",
+      "definition": "Técnico hemoterapia"
+    },
+    {
+      "code": "75",
+      "display": "Técnico en hemoterapia e inmunohematología",
+      "definition": "Técnico en hemoterapia e inmunohematología"
+    },
+    {
+      "code": "76",
+      "display": "Técnico hematólogo",
+      "definition": "Técnico hematólogo"
+    },
+    {
+      "code": "77",
+      "display": "Técnico de transfusión",
+      "definition": "Técnico de transfusión"
+    },
+    {
+      "code": "78",
+      "display": "Técnico en inmunohematología",
+      "definition": "Técnico en inmunohematología"
+    },
+    {
+      "code": "79",
+      "display": "Técnico prácticas cardiológicas",
+      "definition": "Técnico prácticas cardiológicas"
+    },
+    {
+      "code": "80",
+      "display": "Técnico cardiólogo",
+      "definition": "Técnico cardiólogo"
+    },
+    {
+      "code": "81",
+      "display": "Técnico electrocardiografía",
+      "definition": "Técnico electrocardiografía"
+    },
+    {
+      "code": "82",
+      "display": "Técnico electroencefalografía",
+      "definition": "Técnico electroencefalografía"
+    },
+    {
+      "code": "83",
+      "display": "Técnico neurofisiología",
+      "definition": "Técnico neurofisiología"
+    },
+    {
+      "code": "84",
+      "display": "Técnico laboratorio análisis clínicos",
+      "definition": "Técnico laboratorio análisis clínicos"
+    },
+    {
+      "code": "85",
+      "display": "Técnico laboratorio",
+      "definition": "Técnico laboratorio"
+    },
+    {
+      "code": "86",
+      "display": "Técnico superior laboratorio",
+      "definition": "Técnico superior laboratorio"
+    },
+    {
+      "code": "87",
+      "display": "Técnico análisis clínicos",
+      "definition": "Técnico análisis clínicos"
+    },
+    {
+      "code": "88",
+      "display": "Técnico químico",
+      "definition": "Técnico químico"
+    },
+    {
+      "code": "89",
+      "display": "Técnico químico orientación laboratorista",
+      "definition": "Técnico químico orientación laboratorista"
+    },
+    {
+      "code": "90",
+      "display": "Analista químico biológico",
+      "definition": "Analista químico biológico"
+    },
+    {
+      "code": "91",
+      "display": "Perito químico",
+      "definition": "Perito químico"
+    },
+    {
+      "code": "92",
+      "display": "Técnico bacteriólogo",
+      "definition": "Técnico bacteriólogo"
+    },
+    {
+      "code": "93",
+      "display": "Técnico químico industrial",
+      "definition": "Técnico químico industrial"
+    },
+    {
+      "code": "94",
+      "display": "Asistente químico industrial",
+      "definition": "Asistente químico industrial"
+    },
+    {
+      "code": "95",
+      "display": "Técnico radiólogo",
+      "definition": "Técnico radiólogo"
+    },
+    {
+      "code": "96",
+      "display": "Técnico superior radiología",
+      "definition": "Técnico superior radiología"
+    },
+    {
+      "code": "97",
+      "display": "Técnico diagnóstico por imágenes",
+      "definition": "Técnico diagnóstico por imágenes"
+    },
+    {
+      "code": "98",
+      "display": "Técnico en radiodiagnóstico",
+      "definition": "Técnico en radiodiagnóstico"
+    },
+    {
+      "code": "99",
+      "display": "Técnico bioimágenes",
+      "definition": "Técnico bioimágenes"
+    },
+    {
+      "code": "100",
+      "display": "Técnico en radiología y terapia radiante",
+      "definition": "Técnico en radiología y terapia radiante"
+    },
+    {
+      "code": "101",
+      "display": "Técnico tomografía axial computada",
+      "definition": "Técnico tomografía axial computada"
+    },
+    {
+      "code": "102",
+      "display": "Técnico radiante",
+      "definition": "Técnico radiante"
+    },
+    {
+      "code": "103",
+      "display": "Técnico en medicina nuclear",
+      "definition": "Técnico en medicina nuclear"
+    },
+    {
+      "code": "104",
+      "display": "Técnico en diálisis",
+      "definition": "Técnico en diálisis"
+    },
+    {
+      "code": "105",
+      "display": "Técnico hemodiálisis",
+      "definition": "Técnico hemodiálisis"
+    },
+    {
+      "code": "106",
+      "display": "Técnico anestesia",
+      "definition": "Técnico anestesia"
+    },
+    {
+      "code": "107",
+      "display": "Técnico en histología",
+      "definition": "Técnico en histología"
+    },
+    {
+      "code": "108",
+      "display": "Técnico laboratorio clínico e histopatol",
+      "definition": "Técnico laboratorio clínico e histopatol"
+    },
+    {
+      "code": "109",
+      "display": "Citotécnico",
+      "definition": "Citotécnico"
+    },
+    {
+      "code": "110",
+      "display": "Técnico en citología",
+      "definition": "Técnico en citología"
+    },
+    {
+      "code": "111",
+      "display": "Técnico preparadores histología",
+      "definition": "Técnico preparadores histología"
+    },
+    {
+      "code": "112",
+      "display": "Técnico anatomía patológica",
+      "definition": "Técnico anatomía patológica"
+    },
+    {
+      "code": "113",
+      "display": "Técnico prótesis dental",
+      "definition": "Técnico prótesis dental"
+    },
+    {
+      "code": "114",
+      "display": "Técnico protesista dental",
+      "definition": "Técnico protesista dental"
+    },
+    {
+      "code": "115",
+      "display": "Protésico dental universitario",
+      "definition": "Protésico dental universitario"
+    },
+    {
+      "code": "116",
+      "display": "Mecánico dental",
+      "definition": "Mecánico dental"
+    },
+    {
+      "code": "117",
+      "display": "Técnico en odontología",
+      "definition": "Técnico en odontología"
+    },
+    {
+      "code": "118",
+      "display": "Mecánico para odontólogos",
+      "definition": "Mecánico para odontólogos"
+    },
+    {
+      "code": "119",
+      "display": "Técnico prótesis y órtesis",
+      "definition": "Técnico prótesis y órtesis"
+    },
+    {
+      "code": "120",
+      "display": "Técnico ortopédico ortóptico",
+      "definition": "Técnico ortopédico ortóptico"
+    },
+    {
+      "code": "121",
+      "display": "Técnico ortesista protesista",
+      "definition": "Técnico ortesista protesista"
+    },
+    {
+      "code": "122",
+      "display": "Técnico óptico",
+      "definition": "Técnico óptico"
+    },
+    {
+      "code": "123",
+      "display": "Técnico en optica (optico técnico)",
+      "definition": "Técnico en optica (optico técnico)"
+    },
+    {
+      "code": "124",
+      "display": "Óptico técnico/contactólogo",
+      "definition": "Óptico técnico/contactólogo"
+    },
+    {
+      "code": "125",
+      "display": "Técnico óptica (contac. e instrumental)",
+      "definition": "Técnico óptica (contac. e instrumental)"
+    },
+    {
+      "code": "126",
+      "display": "Técnico oftalmología",
+      "definition": "Técnico oftalmología"
+    },
+    {
+      "code": "127",
+      "display": "Podólogo universitario",
+      "definition": "Podólogo universitario"
+    },
+    {
+      "code": "128",
+      "display": "Podólogo",
+      "definition": "Podólogo"
+    },
+    {
+      "code": "129",
+      "display": "Pedicuro",
+      "definition": "Pedicuro"
+    },
+    {
+      "code": "130",
+      "display": "Técnico estadística",
+      "definition": "Técnico estadística"
+    },
+    {
+      "code": "131",
+      "display": "Técnico bioestadística",
+      "definition": "Técnico bioestadística"
+    },
+    {
+      "code": "132",
+      "display": "Técnico estadística en salud",
+      "definition": "Técnico estadística en salud"
+    },
+    {
+      "code": "133",
+      "display": "Técnico alimentación",
+      "definition": "Técnico alimentación"
+    },
+    {
+      "code": "134",
+      "display": "Técnico industria alimentos",
+      "definition": "Técnico industria alimentos"
+    },
+    {
+      "code": "135",
+      "display": "Técnico superior industria alimentaria",
+      "definition": "Técnico superior industria alimentaria"
+    },
+    {
+      "code": "136",
+      "display": "Técnico bromatología",
+      "definition": "Técnico bromatología"
+    },
+    {
+      "code": "137",
+      "display": "Técnico superior en alimentos con orientación en bromatología",
+      "definition": "Técnico superior en alimentos con orientación en bromatología"
+    },
+    {
+      "code": "138",
+      "display": "Técnico en lechería y tecnología alimentos",
+      "definition": "Técnico en lechería y tecnología alimentos"
+    },
+    {
+      "code": "139",
+      "display": "Técnico farmacia",
+      "definition": "Técnico farmacia"
+    },
+    {
+      "code": "140",
+      "display": "Técnico farmacia hospitalaria",
+      "definition": "Técnico farmacia hospitalaria"
+    },
+    {
+      "code": "141",
+      "display": "Nutricionista",
+      "definition": "Nutricionista"
+    },
+    {
+      "code": "142",
+      "display": "Terapista ocupacional",
+      "definition": "Terapista ocupacional"
+    },
+    {
+      "code": "143",
+      "display": "Técnico estimulación temprana",
+      "definition": "Técnico estimulación temprana"
+    },
+    {
+      "code": "144",
+      "display": "Técnico disc. intelectual y estimulación temprana",
+      "definition": "Técnico disc. intelectual y estimulación temprana"
+    },
+    {
+      "code": "145",
+      "display": "Psicomotricista",
+      "definition": "Psicomotricista"
+    },
+    {
+      "code": "146",
+      "display": "Técnico en psicomotricidad",
+      "definition": "Técnico en psicomotricidad"
+    },
+    {
+      "code": "147",
+      "display": "Musicoterapeuta",
+      "definition": "Musicoterapeuta"
+    },
+    {
+      "code": "148",
+      "display": "Técnico psicogerontología",
+      "definition": "Técnico psicogerontología"
+    },
+    {
+      "code": "149",
+      "display": "Profesor en psicomotricidad",
+      "definition": "Profesor en psicomotricidad"
+    },
+    {
+      "code": "150",
+      "display": "Prof. educación especial",
+      "definition": "Prof. educación especial"
+    },
+    {
+      "code": "151",
+      "display": "Prof. deficientes mentales",
+      "definition": "Prof. deficientes mentales"
+    },
+    {
+      "code": "152",
+      "display": "Prof. educador sordos",
+      "definition": "Prof. educador sordos"
+    },
+    {
+      "code": "153",
+      "display": "Prof. deficientes del oído voz palabra",
+      "definition": "Prof. deficientes del oído voz palabra"
+    },
+    {
+      "code": "154",
+      "display": "Prof. sordos y terapeuta lenguaje",
+      "definition": "Prof. sordos y terapeuta lenguaje"
+    },
+    {
+      "code": "155",
+      "display": "Técnico kinesiólogo",
+      "definition": "Técnico kinesiólogo"
+    },
+    {
+      "code": "156",
+      "display": "Psicopedagogo",
+      "definition": "Psicopedagogo"
+    },
+    {
+      "code": "159",
+      "display": "Técnico obstetricia",
+      "definition": "Técnico obstetricia"
+    },
+    {
+      "code": "160",
+      "display": "Obstétrico",
+      "definition": "Obstétrico"
+    },
+    {
+      "code": "161",
+      "display": "Obstetra",
+      "definition": "Obstetra"
+    },
+    {
+      "code": "162",
+      "display": "Trabajador social",
+      "definition": "Trabajador social"
+    },
+    {
+      "code": "163",
+      "display": "Asistente social",
+      "definition": "Asistente social"
+    },
+    {
+      "code": "164",
+      "display": "Educador sanitario",
+      "definition": "Educador sanitario"
+    },
+    {
+      "code": "165",
+      "display": "Tecnico en salud rural",
+      "definition": "Tecnico en salud rural"
+    },
+    {
+      "code": "167",
+      "display": "Agente sanitario",
+      "definition": "Agente sanitario"
+    },
+    {
+      "code": "170",
+      "display": "Técnico administración social y de salud",
+      "definition": "Técnico administración social y de salud"
+    },
+    {
+      "code": "171",
+      "display": "Técnico en administración y gestión",
+      "definition": "Técnico en administración y gestión"
+    },
+    {
+      "code": "173",
+      "display": "Técnico univ. en administración",
+      "definition": "Técnico univ. en administración"
+    },
+    {
+      "code": "174",
+      "display": "Técnico identificacion recien nacido",
+      "definition": "Técnico identificacion recien nacido"
+    },
+    {
+      "code": "175",
+      "display": "Técnico emergencia médica",
+      "definition": "Técnico emergencia médica"
+    },
+    {
+      "code": "176",
+      "display": "Técnico en saneamiento",
+      "definition": "Técnico en saneamiento"
+    },
+    {
+      "code": "177",
+      "display": "Técnico saneamiento ambiental",
+      "definition": "Técnico saneamiento ambiental"
+    },
+    {
+      "code": "179",
+      "display": "Agente propaganda médica",
+      "definition": "Agente propaganda médica"
+    },
+    {
+      "code": "180",
+      "display": "Periodista",
+      "definition": "Periodista"
+    },
+    {
+      "code": "181",
+      "display": "Tecnico veterinaria",
+      "definition": "Tecnico veterinaria"
+    },
+    {
+      "code": "182",
+      "display": "Acompañante terapéutico",
+      "definition": "Acompañante terapéutico"
+    },
+    {
+      "code": "183",
+      "display": "Auxiliar de enfermería",
+      "definition": "Auxiliar de enfermería"
+    },
+    {
+      "code": "184",
+      "display": "Asistente de enfermería",
+      "definition": "Asistente de enfermería"
+    },
+    {
+      "code": "185",
+      "display": "Auxiliar en geriatría",
+      "definition": "Auxiliar en geriatría"
+    },
+    {
+      "code": "188",
+      "display": "Auxiliar de Familia Especializado en Cuidado de Personas con Discapacidad",
+      "definition": "Auxiliar de Familia Especializado en Cuidado de Personas con Discapacidad"
+    },
+    {
+      "code": "189",
+      "display": "Auxiliar de laboratorio",
+      "definition": "Auxiliar de laboratorio"
+    },
+    {
+      "code": "190",
+      "display": "Auxiliar de bioquímica",
+      "definition": "Auxiliar de bioquímica"
+    },
+    {
+      "code": "191",
+      "display": "Auxiliar en patología",
+      "definition": "Auxiliar en patología"
+    },
+    {
+      "code": "193",
+      "display": "Auxiliar de odontología",
+      "definition": "Auxiliar de odontología"
+    },
+    {
+      "code": "194",
+      "display": "Asistente odontología",
+      "definition": "Asistente odontología"
+    },
+    {
+      "code": "195",
+      "display": "Asistente dental",
+      "definition": "Asistente dental"
+    },
+    {
+      "code": "196",
+      "display": "Auxiliar de anestesia",
+      "definition": "Auxiliar de anestesia"
+    },
+    {
+      "code": "197",
+      "display": "Auxiliar técnico de anestesia",
+      "definition": "Auxiliar técnico de anestesia"
+    },
+    {
+      "code": "198",
+      "display": "Auxiliar instrum. quirúrgica",
+      "definition": "Auxiliar instrum. quirúrgica"
+    },
+    {
+      "code": "199",
+      "display": "Auxiliar de esterilización",
+      "definition": "Auxiliar de esterilización"
+    },
+    {
+      "code": "200",
+      "display": "Auxiliar de hemoterapia",
+      "definition": "Auxiliar de hemoterapia"
+    },
+    {
+      "code": "202",
+      "display": "Auxiliar de radiología",
+      "definition": "Auxiliar de radiología"
+    },
+    {
+      "code": "203",
+      "display": "Auxiliar de farmacia",
+      "definition": "Auxiliar de farmacia"
+    },
+    {
+      "code": "204",
+      "display": "Idóneos de farmacia",
+      "definition": "Idóneos de farmacia"
+    },
+    {
+      "code": "206",
+      "display": "Agente sanitario",
+      "definition": "Agente sanitario"
+    },
+    {
+      "code": "207",
+      "display": "Auxiliar de estadística de salud",
+      "definition": "Auxiliar de estadística de salud"
+    },
+    {
+      "code": "208",
+      "display": "Auxiliar de estadística",
+      "definition": "Auxiliar de estadística"
+    },
+    {
+      "code": "210",
+      "display": "Auxiliar de bromatología",
+      "definition": "Auxiliar de bromatología"
+    },
+    {
+      "code": "211",
+      "display": "Inspector de bromatología",
+      "definition": "Inspector de bromatología"
+    },
+    {
+      "code": "212",
+      "display": "Auxiliar dietista",
+      "definition": "Auxiliar dietista"
+    },
+    {
+      "code": "213",
+      "display": "Cosmetólogo",
+      "definition": "Cosmetólogo"
+    },
+    {
+      "code": "215",
+      "display": "Auxiliar en electroencefalografía",
+      "definition": "Auxiliar en electroencefalografía"
+    },
+    {
+      "code": "218",
+      "display": "Auxiliar de educación sanitaria",
+      "definition": "Auxiliar de educación sanitaria"
+    },
+    {
+      "code": "219",
+      "display": "Auxiliar de veterinaria",
+      "definition": "Auxiliar de veterinaria"
+    },
+    {
+      "code": "220",
+      "display": "Agente de propaganda médica",
+      "definition": "Agente de propaganda médica"
+    },
+    {
+      "code": "221",
+      "display": "Visitador médico",
+      "definition": "Visitador médico"
+    },
+    {
+      "code": "259",
+      "display": "Sociólogo",
+      "definition": "Sociólogo"
+    },
+    {
+      "code": "261",
+      "display": "Licenciado En Diagnóstico Por Imágenes",
+      "definition": "Licenciado En Diagnóstico Por Imágenes"
+    },
+    {
+      "code": "262",
+      "display": "Lic. en gestión de agro alimentos",
+      "definition": "Lic. en gestión de agro alimentos"
+    },
+    {
+      "code": "263",
+      "display": "Lic. en biotecnología",
+      "definition": "Lic. en biotecnología"
+    },
+    {
+      "code": "264",
+      "display": "Ing. agrónomo",
+      "definition": "Ing. agrónomo"
+    },
+    {
+      "code": "265",
+      "display": "Lic. en Ciencias químicas",
+      "definition": "Lic. en Ciencias químicas"
+    },
+    {
+      "code": "266",
+      "display": "Ingeniero en alimentos",
+      "definition": "Ingeniero en alimentos"
+    },
+    {
+      "code": "267",
+      "display": "Ingeniero biomédico",
+      "definition": "Ingeniero biomédico"
+    },
+    {
+      "code": "268",
+      "display": "Auxiliar en Electrocardiografía",
+      "definition": "Auxiliar en Electrocardiografía"
+    },
+    {
+      "code": "269",
+      "display": "Auxiliar de Familia Especializado en Cuidado de Personas",
+      "definition": "Auxiliar de Familia Especializado en Cuidado de Personas"
+    },
+    {
+      "code": "270",
+      "display": "Operador Socio-Comunitario Especializado en Atención de las Adicciones",
+      "definition": "Operador Socio-Comunitario Especializado en Atención de las Adicciones"
+    },
+    {
+      "code": "271",
+      "display": "Técnico en Prevención de la Drogadependencia",
+      "definition": "Técnico en Prevención de la Drogadependencia"
+    },
+    {
+      "code": "272",
+      "display": "TECNICO SUPERIOR EN AGENTE SANITARIO",
+      "definition": "TECNICO SUPERIOR EN AGENTE SANITARIO"
+    },
+    {
+      "code": "275",
+      "display": "Antropólogo",
+      "definition": "Antropólogo"
+    },
+    {
+      "code": "276",
+      "display": "Licenciado en instrumentación quirúrgica",
+      "definition": "Licenciado en instrumentación quirúrgica"
+    },
+    {
+      "code": "277",
+      "display": "Auxiliar de fonoaudiología",
+      "definition": "Auxiliar de fonoaudiología"
+    },
+    {
+      "code": "278",
+      "display": "Técnico en fonoaudiología",
+      "definition": "Técnico en fonoaudiología"
+    },
+    {
+      "code": "279",
+      "display": "Auxiliar Acompañante Terapéutico",
+      "definition": "Auxiliar Acompañante Terapéutico"
+    },
+    {
+      "code": "280",
+      "display": "Licenciado en Administración",
+      "definition": "Licenciado en Administración"
+    },
+    {
+      "code": "281",
+      "display": "Contador",
+      "definition": "Contador"
+    },
+    {
+      "code": "282",
+      "display": "Licenciado en Economía",
+      "definition": "Licenciado en Economía"
+    },
+    {
+      "code": "283",
+      "display": "BROMATOLOGO",
+      "definition": "BROMATOLOGO"
+    },
+    {
+      "code": "285",
+      "display": "AUXILIAR DE DIALISIS",
+      "definition": "AUXILIAR DE DIALISIS"
+    },
+    {
+      "code": "286",
+      "display": "TENICO DE LABORATORIO PARA ODONTOLOGOS",
+      "definition": "TENICO DE LABORATORIO PARA ODONTOLOGOS"
+    },
+    {
+      "code": "287",
+      "display": "Tecnico Universitario en Emergencias Sanitarias y Desastres",
+      "definition": "Tecnico Universitario en Emergencias Sanitarias y Desastres"
+    },
+    {
+      "code": "288",
+      "display": "LICENCIADO EN HEMOTERAPIA E INMUNOHEMATOLOGIA",
+      "definition": "LICENCIADO EN HEMOTERAPIA E INMUNOHEMATOLOGIA"
+    },
+    {
+      "code": "289",
+      "display": "TÉCNICA EN OBSTETRICIA",
+      "definition": "TÉCNICA EN OBSTETRICIA"
+    },
+    {
+      "code": "290",
+      "display": "Abogado",
+      "definition": "Abogado"
+    },
+    {
+      "code": "291",
+      "display": "Arquitecto",
+      "definition": "Arquitecto"
+    },
+    {
+      "code": "292",
+      "display": "Ingeniero",
+      "definition": "Ingeniero"
+    },
+    {
+      "code": "293",
+      "display": "Licenciado en Ciencias de la Educación",
+      "definition": "Licenciado en Ciencias de la Educación"
+    },
+    {
+      "code": "294",
+      "display": "Técnico en hemoterapia",
+      "definition": "Técnico en hemoterapia"
+    }
+  ],
+  "count": 237
+}

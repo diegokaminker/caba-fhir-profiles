@@ -1,0 +1,210 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ClaimCabaRecupero",
+  "url": "http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero",
+  "name": "ClaimCabaRecupero",
+  "title": "Claim Recupero Para CABA",
+  "status": "draft",
+  "description": "Perfil de Claim para CABA Recupero",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Claim",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Claim",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Claim.status",
+        "path": "Claim.status",
+        "patternCode": "active"
+      },
+      {
+        "id": "Claim.use",
+        "path": "Claim.use",
+        "patternCode": "claim"
+      },
+      {
+        "id": "Claim.patient",
+        "path": "Claim.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Claim.provider.display",
+        "path": "Claim.provider.display",
+        "min": 1
+      },
+      {
+        "id": "Claim.referral",
+        "path": "Claim.referral",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Claim.facility",
+        "path": "Claim.facility",
+        "short": "DatosContexto.desServicioDetalle",
+        "min": 1
+      },
+      {
+        "id": "Claim.facility.display",
+        "path": "Claim.facility.display",
+        "min": 1
+      },
+      {
+        "id": "Claim.supportingInfo.sequence",
+        "path": "Claim.supportingInfo.sequence",
+        "patternPositiveInt": 1
+      },
+      {
+        "id": "Claim.supportingInfo.category",
+        "path": "Claim.supportingInfo.category",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "attachment",
+              "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+              "display": "Attachment"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Claim.supportingInfo.value[x]",
+        "path": "Claim.supportingInfo.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Claim.supportingInfo.value[x]:valueReference",
+        "path": "Claim.supportingInfo.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Claim.diagnosis",
+        "path": "Claim.diagnosis",
+        "short": "DiagnosticoPresuntivo",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Claim.diagnosis.diagnosis[x]",
+        "path": "Claim.diagnosis.diagnosis[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Claim.diagnosis.diagnosis[x]:diagnosisCodeableConcept",
+        "path": "Claim.diagnosis.diagnosis[x]",
+        "sliceName": "diagnosisCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://recuperocaba.gob.ar/ValueSet/recuperodiagnosticos-valueset"
+        }
+      },
+      {
+        "id": "Claim.procedure",
+        "path": "Claim.procedure",
+        "short": "Prestaciones",
+        "min": 1
+      },
+      {
+        "id": "Claim.procedure.date",
+        "path": "Claim.procedure.date",
+        "min": 1
+      },
+      {
+        "id": "Claim.procedure.procedure[x]",
+        "path": "Claim.procedure.procedure[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Claim.procedure.procedure[x]:procedureCodeableConcept",
+        "path": "Claim.procedure.procedure[x]",
+        "sliceName": "procedureCodeableConcept",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset"
+        }
+      },
+      {
+        "id": "Claim.insurance",
+        "path": "Claim.insurance",
+        "max": "1"
+      },
+      {
+        "id": "Claim.insurance.coverage.identifier.value",
+        "path": "Claim.insurance.coverage.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Claim.insurance.coverage.display",
+        "path": "Claim.insurance.coverage.display",
+        "min": 1
+      }
+    ]
+  }
+}

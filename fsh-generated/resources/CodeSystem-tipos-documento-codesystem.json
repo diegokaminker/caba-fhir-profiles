@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RecuperoTiposDocumentoCS",
+  "id": "tipos-documento-codesystem",
+  "title": "Tipos de Documento",
+  "description": "Listado de Tipos de Documento para Personas",
+  "url": "http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem",
+  "concept": [
+    {
+      "code": "DNI",
+      "display": "DOCUMENTO NACIONAL DE IDENTIDAD ARGENTINO"
+    },
+    {
+      "code": "PAS-CL",
+      "display": "PASAPORTE CHILENO"
+    },
+    {
+      "code": "PAS-UR",
+      "display": "PASAPORTE URUGUAYO"
+    },
+    {
+      "code": "PAS-CO",
+      "display": "PASAPORTE COLOMBIANO"
+    },
+    {
+      "code": "PAS-BR",
+      "display": "PASAPORTE BRASILEÑO"
+    },
+    {
+      "code": "PAS-BO",
+      "display": "PASAPORTE BOLIVIANO"
+    },
+    {
+      "code": "PAS-EC",
+      "display": "PASAPORTE ECUATORIANO"
+    },
+    {
+      "code": "PAS-VE",
+      "display": "PASAPORTE VENEZOLANO"
+    },
+    {
+      "code": "PAS-US",
+      "display": "PASAPORTE NORTEAMERICANO"
+    }
+  ],
+  "count": 9
+}

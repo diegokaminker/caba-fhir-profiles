@@ -1,4 +1,0 @@
-faker>=37.4.0
-tzdata>=2025.2
-# Additional dependencies for procedure randomization
-# (all other dependencies are standard library) 

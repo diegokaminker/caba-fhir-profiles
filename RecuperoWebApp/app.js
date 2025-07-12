@@ -528,12 +528,40 @@ class RecuperoWebApp {
     };
 
     generatePDFData(patientName) {
-        // Simple PDF data in base64 (minimal PDF with patient name)
-        const pdfContent = `JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQyXQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9udCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAovRjEgMjAgVGYKMjIwIDQwMCBUZAooQVRUQUNITUVOVCBGT1Ig${btoa(patientName)})IFRqCkVUCmVuZHN0cmVhbQplbmRvYmoKeHJlZgowIDYKMDAwMDAwMDAwMCA2NTUzNSBmCjAwMDAwMDAwMDkgMDAwMDAgbgowMDAwMDAwMDYzIDAwMDAwIG4KMDAwMDAwMDEyNCAwMDAwMCBuCjAwMDAwMDAyNzcgMDAwMDAgbgowMDAwMDAwMzkyIDAwMDAwIG4KdHJhaWxlcgo8PC9TaXplIDYKL1Jvb3QgMSAwIFIKPj4Kc3RhcnR4cmVmCjQ5NQolJUVPRgo=`;
-        return pdfContent;
+        try {
+            // Generate a proper PDF using jsPDF
+            const { jsPDF } = window.jspdf;
+            const doc = new jsPDF();
+            
+            // Add content to the PDF
+            doc.setFontSize(16);
+            doc.text('ATTACHMENT FOR ' + patientName, 20, 30);
+            
+            doc.setFontSize(12);
+            doc.text('Generated on: ' + new Date().toLocaleDateString(), 20, 50);
+            doc.text('Patient: ' + patientName, 20, 60);
+            doc.text('Document Type: Laboratory Report', 20, 70);
+            
+            // Convert PDF to base64
+            const pdfBlob = doc.output('blob');
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    // Get base64 string without data URL prefix
+                    const base64 = reader.result.split(',')[1];
+                    resolve(base64);
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(pdfBlob);
+            });
+        } catch (error) {
+            console.error('Error generating PDF:', error);
+            // Fallback to a simple base64 PDF
+            return Promise.resolve('JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQyXQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9udCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAovRjEgMjAgVGYKMjIwIDQwMCBUZAooQVRUQUNITUVOVCBGT1IgUEFUSUVOVCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYKMDAwMDAwMDAwOSAwMDAwMCBuCjAwMDAwMDAwNjMgMDAwMDAgbgowMDAwMDAwMTI0IDAwMDAwIG4KMDAwMDAwMDI3NyAwMDAwMCBuCjAwMDAwMDAzOTIgMDAwMDAgbgp0cmFpbGVyCjw8L1NpemUgNgovUm9vdCAxIDAgUgo+PgpzdGFydHhyZWYKNDk1CiUlRU9G');
+        }
     }
 
-    generateBundle() {
+    async generateBundle() {
         if (!this.currentSelection.patient) {
             throw new Error('Debe seleccionar un paciente');
         }
@@ -814,6 +842,7 @@ class RecuperoWebApp {
         });
 
         // DocumentReference (PDF attachment)
+        const pdfData = await this.generatePDFData(this.currentSelection.patient.name);
         const documentReference = {
             resourceType: 'DocumentReference',
             status: 'current',
@@ -831,7 +860,7 @@ class RecuperoWebApp {
             content: [{
                 attachment: {
                     contentType: 'application/pdf',
-                    data: this.generatePDFData(this.currentSelection.patient.name)
+                    data: pdfData
                 }
             }]
         };
@@ -844,7 +873,7 @@ class RecuperoWebApp {
         return bundle;
     }
 
-    generateBundlePreview() {
+    async generateBundlePreview() {
         const bundlePreview = document.getElementById('bundlePreview');
         const validationStatus = document.getElementById('validationStatus');
         
@@ -859,7 +888,7 @@ class RecuperoWebApp {
             }
 
             // Generate bundle
-            const bundle = this.generateBundle();
+            const bundle = await this.generateBundle();
             
             // Display formatted JSON
             bundlePreview.value = JSON.stringify(bundle, null, 2);
@@ -935,7 +964,7 @@ class RecuperoWebApp {
             generationStatus.innerHTML = '<div class="loading-spinner"></div> Generando bundle...';
             
             // Generate bundle
-            const bundle = this.generateBundle();
+            const bundle = await this.generateBundle();
             
             generationStatus.innerHTML = '<div class="loading-spinner"></div> Enviando al servidor FHIR...';
             

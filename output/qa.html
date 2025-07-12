@@ -1,0 +1,1185 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 20, warn = 129, info = 16-->
+<head>
+  <title>RecuperoCABA : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    button { padding: 0px 8px; font-size: 12px; cursor: pointer; border-radius: 2px; border: 1px solid #ccc; background-color: #f0f0f0 }
+    button:hover { background-color: #e0e0e0; }
+    .code-value { display: inline; }
+    .code-hidden { display: none; }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+    function toggleCodes() {
+      const codes = document.getElementsByClassName('code-value');
+      for (let code of codes) {
+        code.classList.toggle('code-hidden');
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for RecuperoCABA</h1>
+ <p>Generated Sat Jul 12 16:22:21 ART 2025, FHIR version 4.0.1 for recupero-caba#0.1.0 (canonical = <a href="http://recuperocaba.gob.ar">http://recuperocaba.gob.ar</a> (<a href="http://recuperocaba.gob.ar/history.html">history</a>)). See <a href="qa.min.html">Errors Only</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v2.0.8, which is out of date. The current version is v2.0.9 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = recupero-caba, Canonical = http://recuperocaba.gob.ar</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Language Info:</td><td>This IG has no language information</td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>Error fetching package-list from http://recuperocaba.gob.ar: recuperocaba.gob.ar <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" fhir="generated-heirarchy" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;" id="dep" data-fhir="generated-heirarchy"><tr fhir="generated-heirarchy" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top" data-fhir="generated-heirarchy"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="a" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/cursoprofiling/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> recupero-caba</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://recuperocaba.gob.ar</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="aa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/cursoprofiling/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img onClick="tableRowAction(this)" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxMAAAsTAQCanBgAAACwSURBVDhP7ZLBDsIwCIaLZz34xG3f2cQYo5UfYalJoY07ePFL4GcbpZSVWmvJgwifG+njkLDACgfVIehAQ5ffdMDvxSS2Dmqty62UUmS1rIWD8UuWd9xxVt1AnoaSGx6Buap+0G80K3BTtbtwhLPZQL0CSIA9OwUXON7dZkBeASTAThb3bffMjnCHGy00ZgUeqi5f3YOcsw01vsqYMrMljwgLrBDOwP53xL+D3R2k9ALHsmr3Yu73+gAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.5.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.5.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white" id="aaa" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/cursoprofiling/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzMPbYccAgAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAMElEQVQ4y+3OQREAIBDDwAv+PQcFFN5MIyCzqHMKUGVCpMFLK97heq+gggoq+EiwAVjvMhFGmlEUAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr fhir="generated-heirarchy" style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7" id="ab" data-fhir="generated-heirarchy"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/Users/diego/Dropbox/cursoprofiling/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r4</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.2.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.2.0</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"> (as above)</td></tr>
+</table><para>Templates: fhir.base.template#current. Tools: 0.5.0</para></div></td></tr>
+ <tr><td>Related IGs:</td><td>n/a</td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r4.core#4.0.1:     <a href="http://hl7.org/fhir/R4/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R4/valueset-languages.html">CommonLanguages</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R4/organization.html">Organization</a>
+ (21 uses),     <a href="http://hl7.org/fhir/R4/claim.html">Claim</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-fm-status.html">FinancialResourceStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-claim-type.html">ClaimTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-claim-subtype.html">ExampleClaimSubTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-claim-use.html">Use</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R4/practitionerrole.html">PractitionerRole</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R4/valueset-process-priority.html">ProcessPriorityCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-fundsreserve.html">Funds Reservation Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-related-claim-relationship.html">ExampleRelatedClaimRelationshipCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/devicerequest.html">DeviceRequest</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/medicationrequest.html">MedicationRequest</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/visionprescription.html">VisionPrescription</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-payeetype.html">Claim Payee Type Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/relatedperson.html">RelatedPerson</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/location.html">Location</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R4/valueset-claim-careteamrole.html">ClaimCareTeamRoleCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-provider-qualification.html">ExampleProviderQualificationCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-claim-informationcategory.html">ClaimInformationCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-claim-exception.html">ExceptionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-missing-tooth-reason.html">MissingToothReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-icd-10.html">ICD-10Codes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-ex-diagnosistype.html">ExampleDiagnosisTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-ex-diagnosis-on-admission.html">ExampleDiagnosisOnAdmissionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-ex-diagnosisrelatedgroup.html">ExampleDiagnosisRelatedGroupCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-ex-procedure-type.html">ExampleProcedureTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-icd-10-procedures.html">ICD-10ProcedureCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/device.html">Device</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/coverage.html">Coverage</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/claimresponse.html">ClaimResponse</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-ex-revenue-center.html">ExampleRevenueCenterCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-ex-benefitcategory.html">BenefitCategoryCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-uscls.html">USCLSCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-claim-modifiers.html">ModifierTypeCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-ex-program-code.html">ExampleProgramReasonCodes</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-place.html">ExampleServicePlaceCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-tooth.html">OralSiteCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-surface.html">SurfaceCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-reference-status.html">DocumentReferenceStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-composition-status.html">CompositionStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-document-relationship-type.html">DocumentRelationshipType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/episodeofcare.html">EpisodeOfCare</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-status.html">EncounterStatus</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-type.html">EncounterType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-service-type.html">ServiceType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-participant-type.html">ParticipantType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/appointment.html">Appointment</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/condition.html">Condition</a>
+ (3 uses),     <a href="http://hl7.org/fhir/R4/procedure.html">Procedure</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R4/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-diagnosis-role.html">DiagnosisRole</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/account.html">Account</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-admit-source.html">AdmitSource</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-diet.html">Diet</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-encounter-location-status.html">EncounterLocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-location-physical-type.html">LocationType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/activitydefinition.html">ActivityDefinition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/plandefinition.html">PlanDefinition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/careplan.html">CarePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-status.html">RequestStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-intent.html">RequestIntent</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-category.html">ServiceRequestCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-request-priority.html">RequestPriority</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-code.html">ProcedureCodes(SNOMEDCT)</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html">ServiceRequestOrderDetailsCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html">SNOMEDCTMedicationAsNeededReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-participant-role.html">ParticipantRoles</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-procedure-reason.html">ProcedureReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/diagnosticreport.html">DiagnosticReport</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/specimen.html">Specimen</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>
+ (1 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://recuperocaba.gob.ar (Problem #1 with package-list.json at http://recuperocaba.gob.ar: recuperocaba.gob.ar)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Validation Flags:</td><td> On: autoLoad; Off: hintAboutNonMustSupport, anyExtensionsAllowed, checkAggregation, showReferenceMessages, noExperimentalContent, displayWarnings</td></tr>
+ <tr><td>Summary:</td><td> errors = 20, warn = 129, info = 16, broken links = 0, pinned = n/a.  <button onclick="toggleCodes()">Show Message Ids</button></td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_Bundle-RecuperoCABABundleEjemplo"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo</b></a></td><td><b>20</b></td><td><b>10</b></td><td><b>5</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-coberturas-codesystem"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-coberturas-codesystem</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-diagnosticos-codesystem"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-diagnosticos-codesystem</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-procedimientos-codesystem"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-procedimientos-codesystem</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-profesiones-codesystem"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-profesiones-codesystem</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-tipos-documento-codesystem"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-tipos-documento-codesystem</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-tipos-matricula-codesystem"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/CodeSystem-tipos-matricula-codesystem</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ImplementationGuide-recupero-caba"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ImplementationGuide-recupero-caba</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-BundleCabaRecupero"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-BundleCabaRecupero</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ClaimCabaRecupero"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ClaimCabaRecupero</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-DocumentReferenceCabaRecupero"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-DocumentReferenceCabaRecupero</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-EncounterCabaRecupero"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-EncounterCabaRecupero</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ExtensionFathersFamilyName"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ExtensionFathersFamilyName</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ExtensionMothersFamilyName"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ExtensionMothersFamilyName</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-PatientCabaRecupero"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PatientCabaRecupero</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-PractitionerCabaRecupero"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PractitionerCabaRecupero</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-RecuperoLaboratorioPrestacion"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-RecuperoLaboratorioPrestacion</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-RecuperoLaboratorioSolicitud"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-RecuperoLaboratorioSolicitud</b></a></td><td><b>0</b></td><td><b>105</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ServiceRequestCabaRecupero"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ServiceRequestCabaRecupero</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperocoberturas-valueset"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperocoberturas-valueset</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperodiagnosticos-valueset"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperodiagnosticos-valueset</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperoprocedimientos-valueset"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperoprocedimientos-valueset</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperoprofesiones-valueset"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperoprofesiones-valueset</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperotiposdocumento-valueset"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperotiposdocumento-valueset</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperotiposmatricula-valueset"><b>/Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperotiposmatricula-valueset</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b></b></td><td><b>warning</b></td><td><b>Unable to find ImplementationGuide.definition.resource.description for the resource Bundle/RecuperoCABABundleEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>1</b></td><td><b>warning</b></td><td><b>The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>2</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>3</b></td><td><b>warning</b></td><td><b>An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>4</b></td><td><b>warning</b></td><td><b>The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_Bundle-RecuperoCABABundleEjemplo"> </a>
+<h2><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(21)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-BundleCabaRecupero.html">Bundle Recupero Para CABA</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-ClaimCabaRecupero.html">Claim Recupero Para CABA</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/claim.html">Claim</a> and <i>this.</i><a href="StructureDefinition-ClaimCabaRecupero.html">Claim Recupero Para CABA</a> (per meta)</li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-PatientCabaRecupero.html">Paciente para Recupero CABA</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a> and <i>this.</i><a href="StructureDefinition-PatientCabaRecupero.html">Paciente para Recupero CABA</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-ServiceRequestCabaRecupero.html">ServiceRequest para Recupero CABA</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/servicerequest.html">ServiceRequest</a> and <i>this.</i><a href="StructureDefinition-ServiceRequestCabaRecupero.html">ServiceRequest para Recupero CABA</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-EncounterCabaRecupero.html">Encuentro para Recupero CABA</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/encounter.html">Encounter</a> and <i>this.</i><a href="StructureDefinition-EncounterCabaRecupero.html">Encuentro para Recupero CABA</a> (per meta)</li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-PractitionerCabaRecupero.html">Practitioner para Recupero CABA</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-PractitionerCabaRecupero.html">Practitioner para Recupero CABA</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-PractitionerCabaRecupero.html">Practitioner para Recupero CABA</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/practitioner.html">Practitioner</a> and <i>this.</i><a href="StructureDefinition-PractitionerCabaRecupero.html">Practitioner para Recupero CABA</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-DocumentReferenceCabaRecupero.html">DocumentReference Recupero Para CABA</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/documentreference.html">DocumentReference</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[4] (l306/c6)</b></td><td><b>error</b></td><td><b>Profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0, Element matches more than one slice - DatosSolicitante, DatosFirmante</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_MatchMultiple</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle.entry[5] (l342/c6)</b></td><td><b>error</b></td><td><b>Profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0, Element matches more than one slice - DatosSolicitante, DatosFirmante</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_MatchMultiple</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[0] (l14/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl7" class="flip" onclick="flip('l7')">Show Reasoning</span><div id="l7" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero')</li>, <li>Bundle.entry[0]: Profile http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource.supportingInfo[0].value.ofType(Reference): Unable to find a profile match for urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0 among choices: http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero</li>, <li>Bundle.entry[0].resource.supportingInfo[0].value.ofType(Reference): <ul><li>Bundle.entry[6].resource/*DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo*/.content[0].attachment: The base64 content in the data element is not valid base64: Illegal base64 character 20</li></ul></li>, <li>Bundle.entry[0].resource.procedure[0].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'HEMOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475. Valid display is 'HEMOGRAMA COMPLETO' (for the language(s) 'en-US')</li>, <li>Bundle.entry[0].resource.procedure[0].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475)</li>, <li>Bundle.entry[0].resource.procedure[2].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'HEPATOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481. Valid display is 'HEPATOGRAMA COMPLETO' (for the language(s) 'en-US')</li>, <li>Bundle.entry[0].resource.procedure[2].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481)</li>, <li>Bundle.entry[0].resource.procedure[3].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'UREA, SERICA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902. Valid display is 'UREMIA' (for the language(s) 'en-US')</li>, <li>Bundle.entry[0].resource.procedure[3].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902)</li>, <li>Bundle.entry[0].resource.procedure[4].procedure.ofType(CodeableConcept).coding[0].display: Wrong Display Name 'CREATININA, EN SANGRE' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192. Valid display is 'CREATININA' (for the language(s) 'en-US')</li>, <li>Bundle.entry[0].resource.procedure[4].procedure.ofType(CodeableConcept): None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192)</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero')</li>, <li>Bundle.entry[0]: Profile http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Patient' in profile 'http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero|0.1.0', but found type 'Claim'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero')</li>, <li>Bundle.entry[0]: Profile http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'ServiceRequest' in profile 'http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero|0.1.0', but found type 'Claim'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero')</li>, <li>Bundle.entry[0]: Profile http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Encounter' in profile 'http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero|0.1.0', but found type 'Claim'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero')</li>, <li>Bundle.entry[0]: Profile http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Practitioner' in profile 'http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero|0.1.0', but found type 'Claim'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero')</li>, <li>Bundle.entry[0]: Profile http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'Practitioner' in profile 'http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero|0.1.0', but found type 'Claim'</li></ul></li>, <li>Bundle.entry[0]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero')</li>, <li>Bundle.entry[0]: Profile http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[0].resource: Specified profile type was 'DocumentReference' in profile 'http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero|0.1.0', but found type 'Claim'</li></ul></li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle.entry[6] (l378/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sl8" class="flip" onclick="flip('l8')">Show Reasoning</span><div id="l8" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero')</li>, <li>Bundle.entry[6]: Profile http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource: Specified profile type was 'Claim' in profile 'http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero|0.1.0', but found type 'DocumentReference'</li></ul></li>, <li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero')</li>, <li>Bundle.entry[6]: Profile http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource: Specified profile type was 'Patient' in profile 'http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero|0.1.0', but found type 'DocumentReference'</li></ul></li>, <li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero')</li>, <li>Bundle.entry[6]: Profile http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource: Specified profile type was 'ServiceRequest' in profile 'http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero|0.1.0', but found type 'DocumentReference'</li></ul></li>, <li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero')</li>, <li>Bundle.entry[6]: Profile http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource: Specified profile type was 'Encounter' in profile 'http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero|0.1.0', but found type 'DocumentReference'</li></ul></li>, <li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero')</li>, <li>Bundle.entry[6]: Profile http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource: Specified profile type was 'Practitioner' in profile 'http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero|0.1.0', but found type 'DocumentReference'</li></ul></li>, <li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero')</li>, <li>Bundle.entry[6]: Profile http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource: Specified profile type was 'Practitioner' in profile 'http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero|0.1.0', but found type 'DocumentReference'</li></ul></li>, <li>Bundle.entry[6]: discriminator = true and resource.conformsTo('http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero')</li>, <li>Bundle.entry[6]: Profile http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero does not match for Bundle because of the following profile issues: <ul><li>Bundle.entry[6].resource/*DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo*/.content[0].attachment: The base64 content in the data element is not valid base64: Illegal base64 character 20</li></ul></li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td><b>Slice 'Bundle.entry:DatosClaim': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_Minimum_SLICE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td><b>Bundle.entry:DatosSolicitante: max allowed = 1, but found 2 (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_Maximum</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td><b>Slice 'Bundle.entry:DatosFirmante': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_Minimum_SLICE</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle (l1/c2)</b></td><td><b>error</b></td><td><b>Slice 'Bundle.entry:DatosAdjunto': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Validation_VAL_Profile_Minimum_SLICE</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle.identifier.system (l10/c50)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/recuperos'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Claim&#8203;/RecuperoCABAClaimEjemplo*&#8203;/&#8203;.priority&#8203;.coding[0] (l143&#8203;/c10)</b></td><td><b>warning</b></td><td><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Claim&#8203;/RecuperoCABAClaimEjemplo*&#8203;/&#8203;.procedure[0]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l61&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HEMOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475. Valid display is 'HEMOGRAMA COMPLETO' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Claim&#8203;/RecuperoCABAClaimEjemplo*&#8203;/&#8203;.procedure[2]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l87&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HEPATOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481. Valid display is 'HEPATOGRAMA COMPLETO' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Claim&#8203;/RecuperoCABAClaimEjemplo*&#8203;/&#8203;.procedure[3]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l100&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'UREA, SERICA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902. Valid display is 'UREMIA' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;/*Claim&#8203;/RecuperoCABAClaimEjemplo*&#8203;/&#8203;.procedure[4]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l113&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'CREATININA, EN SANGRE' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192. Valid display is 'CREATININA' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.priority&#8203;.coding[0] (l143&#8203;/c10)</b></td><td><b>warning</b></td><td><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.supportingInfo[0]&#8203;.value&#8203;.ofType(Reference) (l136&#8203;/c14)</b></td><td><b>error</b></td><td><b>Unable to find a profile match for urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0 among choices: http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Reference_REF_CantMatchChoice</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[0]&#8203;.resource&#8203;.supportingInfo[0]&#8203;.value&#8203;.ofType(Reference) (l136&#8203;/c14)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0 matching against profile http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero|0.1.0</b> <span id="sl21" class="flip" onclick="flip('l21')">Show Reasoning</span><div id="l21" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[6].resource/*DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo*/.content[0].attachment: The base64 content in the data element is not valid base64: Illegal base64 character 20</li></ul></div> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Details_for__matching_against_Profile_</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[0]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l61&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HEMOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475. Valid display is 'HEMOGRAMA COMPLETO' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[0]&#8203;.procedure&#8203;.ofType(CodeableConcept) (l61&#8203;/c14)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[2]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l87&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'HEPATOGRAMA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481. Valid display is 'HEPATOGRAMA COMPLETO' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[2]&#8203;.procedure&#8203;.ofType(CodeableConcept) (l87&#8203;/c14)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[3]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l100&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'UREA, SERICA' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902. Valid display is 'UREMIA' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[3]&#8203;.procedure&#8203;.ofType(CodeableConcept) (l100&#8203;/c14)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[4]&#8203;.procedure&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.display (l113&#8203;/c14)</b></td><td><b>error</b></td><td><b>Wrong Display Name 'CREATININA, EN SANGRE' for http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192. Valid display is 'CREATININA' (for the language(s) 'en-US')</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[0]&#8203;.resource&#8203;.procedure[4]&#8203;.procedure&#8203;.ofType(CodeableConcept) (l113&#8203;/c14)</b></td><td><b>error</b></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192)</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Terminology_TX_NoValid_1_CC</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Patient&#8203;/RecuperoCABAPacienteEjemplo*&#8203;/&#8203;.identifier[0]&#8203;.system (l182&#8203;/c58)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/pacientes'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[1]&#8203;.resource&#8203;/*Patient&#8203;/RecuperoCABAPacienteEjemplo*&#8203;/&#8203;.identifier[1]&#8203;.system (l186&#8203;/c50)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://renaper.gob.ar/dni'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*ServiceRequest&#8203;/RecuperoCABAServiceRequestEjemplo*&#8203;/&#8203;.identifier[0]&#8203;.system (l239&#8203;/c56)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/pedidos'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*Encounter&#8203;/RecuperoCABAEncounterEjemplo*&#8203;/&#8203;.identifier[0]&#8203;.system (l291&#8203;/c58)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/episodios'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Practitioner&#8203;/RecuperoCABAProfesionalFirmanteEjemplo*&#8203;/&#8203;.identifier[0]&#8203;.system (l318&#8203;/c102)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Practitioner&#8203;/RecuperoCABAProfesionalFirmanteEjemplo*&#8203;/&#8203;.qualification[0]&#8203;.code (l329&#8203;/c14)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem|0.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Practitioner&#8203;/RecuperoCABAProfesionalSolicitanteEjemplo*&#8203;/&#8203;.identifier[0]&#8203;.system (l354&#8203;/c102)</b></td><td><b>warning</b></td><td><b>No definition could be found for URL value 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10006441714000'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Practitioner&#8203;/RecuperoCABAProfesionalSolicitanteEjemplo*&#8203;/&#8203;.qualification[0]&#8203;.code (l365&#8203;/c14)</b></td><td><b>information</b></td><td><b>Reference to draft CodeSystem http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem|0.1.0</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DRAFT</span></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*DocumentReference&#8203;/RecuperoCABADocumentacionAdicionalEjemplo*&#8203;/&#8203;.content[0]&#8203;.attachment (l385&#8203;/c14)</b></td><td><b>error</b></td><td><b><img style="vertical-align: text-bottom" src="new.png" height="16px" width="36px" alt="New Rule as of 2025-06-176: "> The base64 content in the data element is not valid base64: Illegal base64 character 20</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_ATT_B64_DECODE_FAIL</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[6]&#8203;.resource&#8203;/*DocumentReference&#8203;/RecuperoCABADocumentacionAdicionalEjemplo*&#8203;/&#8203;.content[0]&#8203;.attachment&#8203;.data (l387&#8203;/c875)</b></td><td><b>warning</b></td><td><b>Base64 encoded values SHOULD not contain any whitespace (per RFC 4648). Note that non-validating readers are encouraged to accept whitespace anyway</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">TYPE_SPECIFIC_CHECKS_DT_BASE64_NO_WS_WARNING</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-coberturas-codesystem"> </a>
+<h2><a href="CodeSystem-coberturas-codesystem.html">fsh-generated/resources/CodeSystem-coberturas-codesystem.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-diagnosticos-codesystem"> </a>
+<h2><a href="CodeSystem-diagnosticos-codesystem.html">fsh-generated/resources/CodeSystem-diagnosticos-codesystem.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-procedimientos-codesystem"> </a>
+<h2><a href="CodeSystem-procedimientos-codesystem.html">fsh-generated/resources/CodeSystem-procedimientos-codesystem.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-profesiones-codesystem"> </a>
+<h2><a href="CodeSystem-profesiones-codesystem.html">fsh-generated/resources/CodeSystem-profesiones-codesystem.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c60925)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c60925)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-tipos-documento-codesystem"> </a>
+<h2><a href="CodeSystem-tipos-documento-codesystem.html">fsh-generated/resources/CodeSystem-tipos-documento-codesystem.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2743)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c2743)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_CodeSystem-tipos-matricula-codesystem"> </a>
+<h2><a href="CodeSystem-tipos-matricula-codesystem.html">fsh-generated/resources/CodeSystem-tipos-matricula-codesystem.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>CodeSystem: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/codesystem.html">CodeSystem</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem&#8203;.concept[86]&#8203;.display (l1&#8203;/c56396)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace 'Colegio de PSICOLOGOS DISTRITO V, de ZÁRATE '</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem&#8203;.concept[120]&#8203;.display (l1&#8203;/c59722)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace 'Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE '</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem&#8203;.concept[187]&#8203;.display (l1&#8203;/c65031)</b></td><td><b>warning</b></td><td><b>value should not start or finish with whitespace ' COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>CodeSystem</b></td><td><b>information</b></td><td><b>CodeSystems SHOULD have a stated value for the caseSensitive element so that users know the status and meaning of the code system clearly</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c72486)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>CodeSystem (l1/c72486)</b></td><td><b>warning</b></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CODESYSTEM_SHAREABLE_MISSING</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ImplementationGuide-recupero-caba"> </a>
+<h2><a href="index.html">fsh-generated/resources/ImplementationGuide-recupero-caba.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ImplementationGuide/recupero-caba: ImplementationGuide: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-BundleCabaRecupero"> </a>
+<h2><a href="StructureDefinition-BundleCabaRecupero.html">fsh-generated/resources/StructureDefinition-BundleCabaRecupero.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4]&#8203;.binding&#8203;.extension[0] (l1&#8203;/c58964)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ClaimCabaRecupero"> </a>
+<h2><a href="StructureDefinition-ClaimCabaRecupero.html">fsh-generated/resources/StructureDefinition-ClaimCabaRecupero.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/recuperocaba&#8203;.gob&#8203;.ar&#8203;/StructureDefinition&#8203;/ClaimCabaRecupero')</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-DocumentReferenceCabaRecupero"> </a>
+<h2><a href="StructureDefinition-DocumentReferenceCabaRecupero.html">fsh-generated/resources/StructureDefinition-DocumentReferenceCabaRecupero.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/recuperocaba&#8203;.gob&#8203;.ar&#8203;/StructureDefinition&#8203;/DocumentReferenceCabaRecupero')</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-EncounterCabaRecupero"> </a>
+<h2><a href="StructureDefinition-EncounterCabaRecupero.html">fsh-generated/resources/StructureDefinition-EncounterCabaRecupero.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/recuperocaba&#8203;.gob&#8203;.ar&#8203;/StructureDefinition&#8203;/EncounterCabaRecupero')</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ExtensionFathersFamilyName"> </a>
+<h2><a href="StructureDefinition-ExtensionFathersFamilyName.html">fsh-generated/resources/StructureDefinition-ExtensionFathersFamilyName.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ExtensionMothersFamilyName"> </a>
+<h2><a href="StructureDefinition-ExtensionMothersFamilyName.html">fsh-generated/resources/StructureDefinition-ExtensionMothersFamilyName.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-PatientCabaRecupero"> </a>
+<h2><a href="StructureDefinition-PatientCabaRecupero.html">fsh-generated/resources/StructureDefinition-PatientCabaRecupero.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[48]&#8203;.type[0]&#8203;.extension[1] (l1&#8203;/c116143)</b></td><td><b>information</b></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">MSG_DEPENDS_ON_DEPRECATED_NOTE</span></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/recuperocaba&#8203;.gob&#8203;.ar&#8203;/StructureDefinition&#8203;/PatientCabaRecupero')</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-PractitionerCabaRecupero"> </a>
+<h2><a href="StructureDefinition-PractitionerCabaRecupero.html">fsh-generated/resources/StructureDefinition-PractitionerCabaRecupero.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/recuperocaba&#8203;.gob&#8203;.ar&#8203;/StructureDefinition&#8203;/PractitionerCabaRecupero')</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-RecuperoLaboratorioPrestacion"> </a>
+<h2><a href="StructureDefinition-RecuperoLaboratorioPrestacion.html">fsh-generated/resources/StructureDefinition-RecuperoLaboratorioPrestacion.json</a> <span id="svi17" class="toggle" onclick="toggle('vi17')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi17')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi17"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-RecuperoLaboratorioSolicitud"> </a>
+<h2><a href="StructureDefinition-RecuperoLaboratorioSolicitud.html">fsh-generated/resources/StructureDefinition-RecuperoLaboratorioSolicitud.json</a> <span id="svi18" class="toggle" onclick="toggle('vi18')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi18')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi18"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[1] (l1&#8203;/c89423)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[2] (l1&#8203;/c90074)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[3] (l1&#8203;/c91869)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[4] (l1&#8203;/c94581)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5] (l1&#8203;/c94950)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[6] (l1&#8203;/c95304)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[7] (l1&#8203;/c95686)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8] (l1&#8203;/c96030)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[9] (l1&#8203;/c96402)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[10] (l1&#8203;/c96831)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[11] (l1&#8203;/c97292)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[12] (l1&#8203;/c97701)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[13] (l1&#8203;/c98104)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14] (l1&#8203;/c98493)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[15] (l1&#8203;/c99077)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16] (l1&#8203;/c99728)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[17] (l1&#8203;/c101523)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[18] (l1&#8203;/c104235)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19] (l1&#8203;/c104650)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[20] (l1&#8203;/c105028)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[21] (l1&#8203;/c105465)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[22] (l1&#8203;/c105867)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[23] (l1&#8203;/c106291)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[24] (l1&#8203;/c106689)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[25] (l1&#8203;/c107059)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[26] (l1&#8203;/c107659)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27] (l1&#8203;/c108326)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[28] (l1&#8203;/c110137)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[29] (l1&#8203;/c112865)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[30] (l1&#8203;/c113285)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[31] (l1&#8203;/c113681)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[32] (l1&#8203;/c114109)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33] (l1&#8203;/c114533)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[34] (l1&#8203;/c115164)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[35] (l1&#8203;/c115833)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[36] (l1&#8203;/c117646)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[37] (l1&#8203;/c120376)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[38] (l1&#8203;/c120844)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[39] (l1&#8203;/c121272)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[40] (l1&#8203;/c121752)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[41] (l1&#8203;/c122197)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[42] (l1&#8203;/c122830)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[43] (l1&#8203;/c123491)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[44] (l1&#8203;/c125296)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[45] (l1&#8203;/c128018)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46] (l1&#8203;/c128479)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[47] (l1&#8203;/c128900)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[48] (l1&#8203;/c129288)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[49] (l1&#8203;/c129761)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[50] (l1&#8203;/c130199)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[51] (l1&#8203;/c130782)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[52] (l1&#8203;/c131435)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[53] (l1&#8203;/c133232)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[54] (l1&#8203;/c135946)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[55] (l1&#8203;/c136303)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[56] (l1&#8203;/c136674)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[57] (l1&#8203;/c137243)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[58] (l1&#8203;/c137896)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[59] (l1&#8203;/c139693)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[60] (l1&#8203;/c142407)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[61] (l1&#8203;/c142742)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[62] (l1&#8203;/c143133)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[63] (l1&#8203;/c143485)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1] (l1&#8203;/c144748)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2] (l1&#8203;/c145027)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[3] (l1&#8203;/c145285)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c145567)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[5] (l1&#8203;/c145817)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[6] (l1&#8203;/c146091)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[7] (l1&#8203;/c146413)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[8] (l1&#8203;/c146773)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[9] (l1&#8203;/c147085)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[10] (l1&#8203;/c147393)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11] (l1&#8203;/c147679)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12] (l1&#8203;/c147926)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13] (l1&#8203;/c148252)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[14] (l1&#8203;/c148540)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[15] (l1&#8203;/c148874)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[16] (l1&#8203;/c149180)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[17] (l1&#8203;/c149506)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[18] (l1&#8203;/c149798)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[19] (l1&#8203;/c150080)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[20] (l1&#8203;/c150335)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[21] (l1&#8203;/c150651)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[22] (l1&#8203;/c150943)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[23] (l1&#8203;/c151263)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[24] (l1&#8203;/c151579)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[25] (l1&#8203;/c151864)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[26] (l1&#8203;/c152220)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[27] (l1&#8203;/c152536)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[28] (l1&#8203;/c152900)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[29] (l1&#8203;/c153234)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[30] (l1&#8203;/c153525)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[31] (l1&#8203;/c153881)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[32] (l1&#8203;/c154197)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[33] (l1&#8203;/c154489)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[34] (l1&#8203;/c154853)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[35] (l1&#8203;/c155187)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[36] (l1&#8203;/c155432)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[37] (l1&#8203;/c155696)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[38] (l1&#8203;/c155972)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[39] (l1&#8203;/c156203)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[40] (l1&#8203;/c156445)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[41] (l1&#8203;/c156743)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[42] (l1&#8203;/c157003)</b></td><td><b>warning</b></td><td><b>Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">http://hl7.org/fhir/StructureDefinition/ElementDefinition#eld-20</span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_StructureDefinition-ServiceRequestCabaRecupero"> </a>
+<h2><a href="StructureDefinition-ServiceRequestCabaRecupero.html">fsh-generated/resources/StructureDefinition-ServiceRequestCabaRecupero.json</a> <span id="svi19" class="toggle" onclick="toggle('vi19')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi19')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi19"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/recuperocaba&#8203;.gob&#8203;.ar&#8203;/StructureDefinition&#8203;/ServiceRequestCabaRecupero')</b></td><td><b>information</b></td><td><b>The Implementation Guide contains no explicitly linked examples for this profile</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy"></span></td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperocoberturas-valueset"> </a>
+<h2><a href="ValueSet-recuperocoberturas-valueset.html">fsh-generated/resources/ValueSet-recuperocoberturas-valueset.json</a> <span id="svi20" class="toggle" onclick="toggle('vi20')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi20')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi20"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperodiagnosticos-valueset"> </a>
+<h2><a href="ValueSet-recuperodiagnosticos-valueset.html">fsh-generated/resources/ValueSet-recuperodiagnosticos-valueset.json</a> <span id="svi21" class="toggle" onclick="toggle('vi21')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi21')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi21"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperoprocedimientos-valueset"> </a>
+<h2><a href="ValueSet-recuperoprocedimientos-valueset.html">fsh-generated/resources/ValueSet-recuperoprocedimientos-valueset.json</a> <span id="svi22" class="toggle" onclick="toggle('vi22')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi22')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi22"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperoprofesiones-valueset"> </a>
+<h2><a href="ValueSet-recuperoprofesiones-valueset.html">fsh-generated/resources/ValueSet-recuperoprofesiones-valueset.json</a> <span id="svi23" class="toggle" onclick="toggle('vi23')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi23')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi23"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperotiposdocumento-valueset"> </a>
+<h2><a href="ValueSet-recuperotiposdocumento-valueset.html">fsh-generated/resources/ValueSet-recuperotiposdocumento-valueset.json</a> <span id="svi24" class="toggle" onclick="toggle('vi24')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi24')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi24"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<hr/>
+<a name="_Users_diego_Dropbox_cursoprofiling_fsh-generated_resources_ValueSet-recuperotiposmatricula-valueset"> </a>
+<h2><a href="ValueSet-recuperotiposmatricula-valueset.html">fsh-generated/resources/ValueSet-recuperotiposmatricula-valueset.json</a> <span id="svi25" class="toggle" onclick="toggle('vi25')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi25')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi25"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td>&check;</td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p>No suppressed messsages</p><a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CODESYSTEM_SHAREABLE_MISSING"> </a>
+<h2>CODESYSTEM_SHAREABLE_MISSING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-profesiones-codesystem.html">fsh-generated/resources/CodeSystem-profesiones-codesystem.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-profesiones-codesystem.html">fsh-generated/resources/CodeSystem-profesiones-codesystem.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-tipos-documento-codesystem.html">fsh-generated/resources/CodeSystem-tipos-documento-codesystem.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-tipos-documento-codesystem.html">fsh-generated/resources/CodeSystem-tipos-documento-codesystem.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-tipos-matricula-codesystem.html">fsh-generated/resources/CodeSystem-tipos-matricula-codesystem.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.experimental is mandatory, but it is not present</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-tipos-matricula-codesystem.html">fsh-generated/resources/CodeSystem-tipos-matricula-codesystem.json</a></td><td><b>Published code systems SHOULD conform to the ShareableCodeSystem profile, which says that the element CodeSystem.caseSensitive is mandatory, but it is not present</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Details_for__matching_against_Profile_"> </a>
+<h2>Details_for__matching_against_Profile_</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>This element does not match any known slice defined in the profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Details for urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0 matching against profile http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero|0.1.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-BundleCabaRecupero.html">fsh-generated/resources/StructureDefinition-BundleCabaRecupero.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet|5.2.0 is deprecated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPENDS_ON_DEPRECATED_NOTE"> </a>
+<h2>MSG_DEPENDS_ON_DEPRECATED_NOTE</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-PatientCabaRecupero.html">fsh-generated/resources/StructureDefinition-PatientCabaRecupero.json</a></td><td><b>The extension http://hl7.org/fhir/StructureDefinition/regex|5.2.0 is deprecated with the note This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DRAFT"> </a>
+<h2>MSG_DRAFT</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Reference to draft CodeSystem http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem|0.1.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Reference to draft CodeSystem http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem|0.1.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_CantMatchChoice"> </a>
+<h2>Reference_REF_CantMatchChoice</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Unable to find a profile match for urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0 among choices: http://recuperocaba.gob.ar/StructureDefinition/DocumentReferenceCabaRecupero</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_ATT_B64_DECODE_FAIL"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_ATT_B64_DECODE_FAIL</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>The base64 content in the data element is not valid base64: Illegal base64 character 20</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="TYPE_SPECIFIC_CHECKS_DT_BASE64_NO_WS_WARNING"> </a>
+<h2>TYPE_SPECIFIC_CHECKS_DT_BASE64_NO_WS_WARNING</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Base64 encoded values SHOULD not contain any whitespace (per RFC 4648). Note that non-validating readers are encouraged to accept whitespace anyway</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_1_CC"> </a>
+<h2>Terminology_TX_NoValid_1_CC</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#475)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#481)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#902)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>None of the codings provided are in the value set 'Recupero Procedimientos ValueSet' (http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset|0.1.0), and a coding from this value set is required) (codes = http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem#192)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_String_WS"> </a>
+<h2>Type_Specific_Checks_DT_String_WS</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-tipos-matricula-codesystem.html">fsh-generated/resources/CodeSystem-tipos-matricula-codesystem.json</a></td><td><b>value should not start or finish with whitespace 'Colegio de PSICOLOGOS DISTRITO V, de ZÁRATE '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-tipos-matricula-codesystem.html">fsh-generated/resources/CodeSystem-tipos-matricula-codesystem.json</a></td><td><b>value should not start or finish with whitespace 'Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE '</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="CodeSystem-tipos-matricula-codesystem.html">fsh-generated/resources/CodeSystem-tipos-matricula-codesystem.json</a></td><td><b>value should not start or finish with whitespace ' COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
+<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/recuperos'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/pacientes'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://renaper.gob.ar/dni'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/pedidos'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://hospital1.gob.ar/episodios'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000'</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>No definition could be found for URL value 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10006441714000'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_MatchMultiple"> </a>
+<h2>Validation_VAL_Profile_MatchMultiple</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0, Element matches more than one slice - DatosSolicitante, DatosFirmante</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Profile http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0, Element matches more than one slice - DatosSolicitante, DatosFirmante</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Maximum"> </a>
+<h2>Validation_VAL_Profile_Maximum</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Bundle.entry:DatosSolicitante: max allowed = 1, but found 2 (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Validation_VAL_Profile_Minimum_SLICE"> </a>
+<h2>Validation_VAL_Profile_Minimum_SLICE</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Slice 'Bundle.entry:DatosClaim': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Slice 'Bundle.entry:DatosFirmante': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Bundle-RecuperoCABABundleEjemplo.html">fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json</a></td><td><b>Slice 'Bundle.entry:DatosAdjunto': a matching slice is required, but not found (from http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero|0.1.0). Note that other slices are allowed in addition to this required slice</b></td>
+   </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,214 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PatientCabaRecupero",
+  "url": "http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero",
+  "name": "PatientCabaRecupero",
+  "title": "Paciente para Recupero CABA",
+  "status": "draft",
+  "description": "Perfil de Paciente Para RECUPERO CABA",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Patient",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Patient",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Patient.identifier",
+        "path": "Patient.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "2"
+      },
+      {
+        "id": "Patient.identifier.system",
+        "path": "Patient.identifier.system",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier.value",
+        "path": "Patient.identifier.value",
+        "min": 1
+      },
+      {
+        "id": "Patient.identifier:DocumentoUnico",
+        "path": "Patient.identifier",
+        "sliceName": "DocumentoUnico",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:DocumentoUnico.use",
+        "path": "Patient.identifier.use",
+        "short": "DatosPaciente.Documento de Identidad",
+        "min": 1,
+        "patternCode": "official"
+      },
+      {
+        "id": "Patient.identifier:DocumentoUnico.system",
+        "path": "Patient.identifier.system",
+        "short": "DatosPaciente.tipoDocumentoPaciente"
+      },
+      {
+        "id": "Patient.identifier:DocumentoUnico.value",
+        "path": "Patient.identifier.value",
+        "short": "DatosPaciente.idDocumentoPaciente"
+      },
+      {
+        "id": "Patient.identifier:IdentificadorInterno",
+        "path": "Patient.identifier",
+        "sliceName": "IdentificadorInterno",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.identifier:IdentificadorInterno.use",
+        "path": "Patient.identifier.use",
+        "min": 1,
+        "patternCode": "usual"
+      },
+      {
+        "id": "Patient.identifier:IdentificadorInterno.value",
+        "path": "Patient.identifier.value",
+        "short": "DatosPaciente.idPaciente"
+      },
+      {
+        "id": "Patient.name",
+        "path": "Patient.name",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "use"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "2"
+      },
+      {
+        "id": "Patient.name:NombreOficial",
+        "path": "Patient.name",
+        "sliceName": "NombreOficial",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:NombreOficial.use",
+        "path": "Patient.name.use",
+        "min": 1,
+        "patternCode": "official"
+      },
+      {
+        "id": "Patient.name:NombreOficial.family",
+        "path": "Patient.name.family",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:NombreOficial.family.extension",
+        "path": "Patient.name.family.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Patient.name:NombreOficial.family.extension:FathersFamilyName",
+        "path": "Patient.name.family.extension",
+        "sliceName": "FathersFamilyName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://recuperocaba.gob.ar/StructureDefinition/ExtensionFathersFamilyName"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.name:NombreOficial.family.extension:MothersFamilyName",
+        "path": "Patient.name.family.extension",
+        "sliceName": "MothersFamilyName",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.name:NombreOficial.given",
+        "path": "Patient.name.given",
+        "short": "DatosPaciente.nombrePaciente / DatosPaciente.otroNombrePaciente",
+        "min": 1,
+        "max": "2",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:NombreElegido",
+        "path": "Patient.name",
+        "sliceName": "NombreElegido",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.name:NombreElegido.use",
+        "path": "Patient.name.use",
+        "min": 1,
+        "patternCode": "usual"
+      },
+      {
+        "id": "Patient.name:NombreElegido.given",
+        "path": "Patient.name.given",
+        "short": "DatosPaciente.nombreAutopercibidoPaciente",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.gender",
+        "path": "Patient.gender",
+        "short": "DatosPaciente.codSexoPaciente",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/administrative-gender"
+        }
+      },
+      {
+        "id": "Patient.birthDate",
+        "path": "Patient.birthDate",
+        "short": "DatosPaciente.fechaNacimientoPaciente",
+        "min": 1
+      }
+    ]
+  }
+}

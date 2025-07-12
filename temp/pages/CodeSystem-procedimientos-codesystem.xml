@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="procedimientos-codesystem"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem procedimientos-codesystem</b></p><a name="procedimientos-codesystem"> </a><a name="hcprocedimientos-codesystem"> </a><p>This case-sensitive code system <code>http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">133<a name="procedimientos-codesystem-133"> </a></td><td>CALCEMIA TOTAL (CA)</td></tr><tr><td style="white-space:nowrap">136<a name="procedimientos-codesystem-136"> </a></td><td>CALCIO - URINARIO</td></tr><tr><td style="white-space:nowrap">144<a name="procedimientos-codesystem-144"> </a></td><td>CEA - ANTIGENO CARCINOEMBRIOGENICO</td></tr><tr><td style="white-space:nowrap">171<a name="procedimientos-codesystem-171"> </a></td><td>COAGULOGRAMA</td></tr><tr><td style="white-space:nowrap">174<a name="procedimientos-codesystem-174"> </a></td><td>COLESTEROL TOTAL</td></tr><tr><td style="white-space:nowrap">189<a name="procedimientos-codesystem-189"> </a></td><td>CORTISOL</td></tr><tr><td style="white-space:nowrap">190<a name="procedimientos-codesystem-190"> </a></td><td>CPK</td></tr><tr><td style="white-space:nowrap">192<a name="procedimientos-codesystem-192"> </a></td><td>CREATININA</td></tr><tr><td style="white-space:nowrap">193<a name="procedimientos-codesystem-193"> </a></td><td>CREATININA, CLEARENCE DE DEPURACION</td></tr><tr><td style="white-space:nowrap">2004<a name="procedimientos-codesystem-2004"> </a></td><td>APOLIPOPROTEINA A (APO A)</td></tr><tr><td style="white-space:nowrap">2005<a name="procedimientos-codesystem-2005"> </a></td><td>APOLIPOPROTEINA B (APO B)</td></tr><tr><td style="white-space:nowrap">2006<a name="procedimientos-codesystem-2006"> </a></td><td>FOLICO, ACIDO</td></tr><tr><td style="white-space:nowrap">2007<a name="procedimientos-codesystem-2007"> </a></td><td>ASCORBICO, ACIDO</td></tr><tr><td style="white-space:nowrap">2014<a name="procedimientos-codesystem-2014"> </a></td><td>COLESTEROL HDL. (HDL-C)</td></tr><tr><td style="white-space:nowrap">2015<a name="procedimientos-codesystem-2015"> </a></td><td>LDL COLESTEROL</td></tr><tr><td style="white-space:nowrap">2020<a name="procedimientos-codesystem-2020"> </a></td><td>VITAMINA D 25 (OH)</td></tr><tr><td style="white-space:nowrap">2024<a name="procedimientos-codesystem-2024"> </a></td><td>DEHIDROEPIANDROSTERONA, SULFATO - DHEA-S</td></tr><tr><td style="white-space:nowrap">2026<a name="procedimientos-codesystem-2026"> </a></td><td>ANDROSTENEDIONA, DELTA 4 - (DELTA4)</td></tr><tr><td style="white-space:nowrap">2040<a name="procedimientos-codesystem-2040"> </a></td><td>FERRITINA</td></tr><tr><td style="white-space:nowrap">2043<a name="procedimientos-codesystem-2043"> </a></td><td>SUBUNIDAD BETA DE GONADOTROFINA CORIÓNICA (CUANTIT</td></tr><tr><td style="white-space:nowrap">2045C<a name="procedimientos-codesystem-2045C"> </a></td><td>HEMOGLOBINA GLICOSILADA (HB A1C)</td></tr><tr><td style="white-space:nowrap">2052<a name="procedimientos-codesystem-2052"> </a></td><td>MARCADOR TUMORAL DE COLON (CA. 19. 9)</td></tr><tr><td style="white-space:nowrap">2053<a name="procedimientos-codesystem-2053"> </a></td><td>MARCADOR TUMORAL DE OVARIO (CA 125)</td></tr><tr><td style="white-space:nowrap">2063<a name="procedimientos-codesystem-2063"> </a></td><td>OSTEOCALCINA</td></tr><tr><td style="white-space:nowrap">2064<a name="procedimientos-codesystem-2064"> </a></td><td>PEPTIDO C</td></tr><tr><td style="white-space:nowrap">2078<a name="procedimientos-codesystem-2078"> </a></td><td>TESTOSTERONA LIBRE, TO-L</td></tr><tr><td style="white-space:nowrap">2084<a name="procedimientos-codesystem-2084"> </a></td><td>VITAMINA B12</td></tr><tr><td style="white-space:nowrap">2095<a name="procedimientos-codesystem-2095"> </a></td><td>TESTOSTERONA BIODISPONIBLE</td></tr><tr><td style="white-space:nowrap">2096<a name="procedimientos-codesystem-2096"> </a></td><td>ZINC (ZN) - SERICO</td></tr><tr><td style="white-space:nowrap">2111<a name="procedimientos-codesystem-2111"> </a></td><td>GLOBULINA LIGADORA DE ANDROGENOS Y ESTROGENOS (GLA</td></tr><tr><td style="white-space:nowrap">2146<a name="procedimientos-codesystem-2146"> </a></td><td>ANTICOAGULANTE LUPICO, SIN INHIBICIÒN</td></tr><tr><td style="white-space:nowrap">21471<a name="procedimientos-codesystem-21471"> </a></td><td>CARDIOLIPINAS, AC. IGG ANTI-</td></tr><tr><td style="white-space:nowrap">21472<a name="procedimientos-codesystem-21472"> </a></td><td>CARDIOLIPINAS, AC. IGM ANTI-</td></tr><tr><td style="white-space:nowrap">2155<a name="procedimientos-codesystem-2155"> </a></td><td>VITAMINA B6 (PIRIDOXINA)</td></tr><tr><td style="white-space:nowrap">2181<a name="procedimientos-codesystem-2181"> </a></td><td>PEROXIDASA TIROIDEO, AC. ANTI- (ATPO / TPO)</td></tr><tr><td style="white-space:nowrap">2182<a name="procedimientos-codesystem-2182"> </a></td><td>TIROGLOBULINA, AC. ULTRASENSIBLE</td></tr><tr><td style="white-space:nowrap">2227<a name="procedimientos-codesystem-2227"> </a></td><td>PROGESTERONA (Monitoreo de ovulación)</td></tr><tr><td style="white-space:nowrap">2250<a name="procedimientos-codesystem-2250"> </a></td><td>SELENIO</td></tr><tr><td style="white-space:nowrap">2263<a name="procedimientos-codesystem-2263"> </a></td><td>LIPOPROTEINA A - LP(A)</td></tr><tr><td style="white-space:nowrap">2302U<a name="procedimientos-codesystem-2302U"> </a></td><td>PROTEINA C REACTIVA - ULTRASENSIBLE (PCRUS)</td></tr><tr><td style="white-space:nowrap">2373<a name="procedimientos-codesystem-2373"> </a></td><td>PROTEINA C FUNCIONAL - CROMOGENICO</td></tr><tr><td style="white-space:nowrap">2374<a name="procedimientos-codesystem-2374"> </a></td><td>PROTEINA S LIBRE = INMUNOTURBIDIMETRIO</td></tr><tr><td style="white-space:nowrap">241<a name="procedimientos-codesystem-241"> </a></td><td>CHAGAS (AD)</td></tr><tr><td style="white-space:nowrap">2494<a name="procedimientos-codesystem-2494"> </a></td><td>HOMOCISTEINA</td></tr><tr><td style="white-space:nowrap">2529<a name="procedimientos-codesystem-2529"> </a></td><td>FOSFOLIPIDOS, AC TOTALES ANTI- (IGA, IGG, IGM)</td></tr><tr><td style="white-space:nowrap">2562<a name="procedimientos-codesystem-2562"> </a></td><td>BETA CROSS LAPS - CTX - C- TELOPEPTIDO DE COLAGENO</td></tr><tr><td style="white-space:nowrap">2676<a name="procedimientos-codesystem-2676"> </a></td><td>ANTIGENO PROSTATICO ESPECIFICO LIBRE + TOTAL (PSA-</td></tr><tr><td style="white-space:nowrap">2798<a name="procedimientos-codesystem-2798"> </a></td><td>MICROALBUMINURIA / ALBUMINA URINARIA</td></tr><tr><td style="white-space:nowrap">2872<a name="procedimientos-codesystem-2872"> </a></td><td>TRIIODOTIRONINA LIBRE (T3L)</td></tr><tr><td style="white-space:nowrap">297<a name="procedimientos-codesystem-297"> </a></td><td>ERITROSEDIMENTACION DE 1? HO</td></tr><tr><td style="white-space:nowrap">300<a name="procedimientos-codesystem-300"> </a></td><td>ESTRADIOL</td></tr><tr><td style="white-space:nowrap">3006<a name="procedimientos-codesystem-3006"> </a></td><td>CITOMEGALOVIRUS, AC. IGG ANTI- (CMV-IGG)</td></tr><tr><td style="white-space:nowrap">3014<a name="procedimientos-codesystem-3014"> </a></td><td>HEPATITIS A AC. ANTI- IGG (HVA IGG) Ò AC. TOTALES</td></tr><tr><td style="white-space:nowrap">3016<a name="procedimientos-codesystem-3016"> </a></td><td>HEPATITIS B AC. DE SUPERFICIE ANTI- (HBSAC)</td></tr><tr><td style="white-space:nowrap">3018<a name="procedimientos-codesystem-3018"> </a></td><td>HEPATITIS B ANTÍGENO DE SUPERFICIE (AG. HBS)</td></tr><tr><td style="white-space:nowrap">3019<a name="procedimientos-codesystem-3019"> </a></td><td>Anticuerpos totales anti-CORE de HEPATITIS B HBCG</td></tr><tr><td style="white-space:nowrap">3023<a name="procedimientos-codesystem-3023"> </a></td><td>HEPATITIS C AC. IGG ANTI- (HCV AC. IGG)</td></tr><tr><td style="white-space:nowrap">3037<a name="procedimientos-codesystem-3037"> </a></td><td>RUBEOLA, AC. IGG ANTI-</td></tr><tr><td style="white-space:nowrap">3038<a name="procedimientos-codesystem-3038"> </a></td><td>RUBEOLA, AC. IGM ANTI-</td></tr><tr><td style="white-space:nowrap">3042<a name="procedimientos-codesystem-3042"> </a></td><td>TOXOPLASMOSIS, AC. IGM ANTI (ELISA)</td></tr><tr><td style="white-space:nowrap">3052<a name="procedimientos-codesystem-3052"> </a></td><td>SARAMPION, AC. IGM ANTI-</td></tr><tr><td style="white-space:nowrap">3053<a name="procedimientos-codesystem-3053"> </a></td><td>SARAMPION, AC. IGG ANTI-</td></tr><tr><td style="white-space:nowrap">3091<a name="procedimientos-codesystem-3091"> </a></td><td>TOXOPLASMOSIS, AC. IGG ANTI- (ELISA)</td></tr><tr><td style="white-space:nowrap">3108<a name="procedimientos-codesystem-3108"> </a></td><td>VARICELA ZOSTER AC. IGM ANTI-</td></tr><tr><td style="white-space:nowrap">3117<a name="procedimientos-codesystem-3117"> </a></td><td>CHAGAS, AC. IGM ANTI- (IFI)</td></tr><tr><td style="white-space:nowrap">3130<a name="procedimientos-codesystem-3130"> </a></td><td>VARICELA-ZOSTER, AC. IGG ANTI-</td></tr><tr><td style="white-space:nowrap">3144<a name="procedimientos-codesystem-3144"> </a></td><td>CITOMEGALOVIRUS. AC. IGM ANTI- (CMV-IGM)</td></tr><tr><td style="white-space:nowrap">343<a name="procedimientos-codesystem-343"> </a></td><td>FERREMIA</td></tr><tr><td style="white-space:nowrap">357<a name="procedimientos-codesystem-357"> </a></td><td>FOSFATASA ALCALINA (FAL)</td></tr><tr><td style="white-space:nowrap">35F<a name="procedimientos-codesystem-35F"> </a></td><td>ANTIBIOGRAMA FLUJO (solo facturacion)</td></tr><tr><td style="white-space:nowrap">35M<a name="procedimientos-codesystem-35M"> </a></td><td>ANTIBIOGRAMA DE MOCO (solo facturacion)</td></tr><tr><td style="white-space:nowrap">361<a name="procedimientos-codesystem-361"> </a></td><td>FOSFATASA ALCALINA - ISOENZIMAS</td></tr><tr><td style="white-space:nowrap">362<a name="procedimientos-codesystem-362"> </a></td><td>FOSFATEMIA (P)</td></tr><tr><td style="white-space:nowrap">363<a name="procedimientos-codesystem-363"> </a></td><td>FOSFATURIA (P)</td></tr><tr><td style="white-space:nowrap">370<a name="procedimientos-codesystem-370"> </a></td><td>FSH - HORMONA FOLICULO ESTIMULANTE</td></tr><tr><td style="white-space:nowrap">412<a name="procedimientos-codesystem-412"> </a></td><td>GLUCEMIA</td></tr><tr><td style="white-space:nowrap">4120<a name="procedimientos-codesystem-4120"> </a></td><td>INDICE DE INSULINO RESISTENCIA</td></tr><tr><td style="white-space:nowrap">420<a name="procedimientos-codesystem-420"> </a></td><td>GLUTAMIL TRANSPEPTIDASA</td></tr><tr><td style="white-space:nowrap">430<a name="procedimientos-codesystem-430"> </a></td><td>GRAHAM, TEST DE</td></tr><tr><td style="white-space:nowrap">433<a name="procedimientos-codesystem-433"> </a></td><td>GRUPO SANGUINEO Y FACTOR RH</td></tr><tr><td style="white-space:nowrap">46<a name="procedimientos-codesystem-46"> </a></td><td>ANTICUERPOS ANTITIROGLOBULINA (ATG)</td></tr><tr><td style="white-space:nowrap">475<a name="procedimientos-codesystem-475"> </a></td><td>HEMOGRAMA COMPLETO</td></tr><tr><td style="white-space:nowrap">481<a name="procedimientos-codesystem-481"> </a></td><td>HEPATOGRAMA COMPLETO</td></tr><tr><td style="white-space:nowrap">5074<a name="procedimientos-codesystem-5074"> </a></td><td>PSA - ANTIGENO PROSTATICO ES</td></tr><tr><td style="white-space:nowrap">5131<a name="procedimientos-codesystem-5131"> </a></td><td>HDL COLESTEROL</td></tr><tr><td style="white-space:nowrap">5174<a name="procedimientos-codesystem-5174"> </a></td><td>FERRITINA</td></tr><tr><td style="white-space:nowrap">5180<a name="procedimientos-codesystem-5180"> </a></td><td>HEMOGLOBINA GLICOSILADA</td></tr><tr><td style="white-space:nowrap">543<a name="procedimientos-codesystem-543"> </a></td><td>INSULINA</td></tr><tr><td style="white-space:nowrap">546<a name="procedimientos-codesystem-546"> </a></td><td>IONOGRAMA PLASMATICO</td></tr><tr><td style="white-space:nowrap">58<a name="procedimientos-codesystem-58"> </a></td><td>ANTITROMBINA III - CON CALIBRACION DE TRES (3) PUN</td></tr><tr><td style="white-space:nowrap">6118<a name="procedimientos-codesystem-6118"> </a></td><td>BETA 2 GLICOPROTEINA, AC. IGG ANTI-</td></tr><tr><td style="white-space:nowrap">6119<a name="procedimientos-codesystem-6119"> </a></td><td>BETA 2 GLICOPROTEINA, AC. IGM ANTI-</td></tr><tr><td style="white-space:nowrap">612<a name="procedimientos-codesystem-612"> </a></td><td>LH - HORMONA LUTEINIZANTE</td></tr><tr><td style="white-space:nowrap">6132<a name="procedimientos-codesystem-6132"> </a></td><td>CHLAMYDIA TRACHOMATIS, AG PCR</td></tr><tr><td style="white-space:nowrap">614<a name="procedimientos-codesystem-614"> </a></td><td>LIPIDOS TOTALES</td></tr><tr><td style="white-space:nowrap">63<a name="procedimientos-codesystem-63"> </a></td><td>ANTICUERPOS ANTI HIV - (ELISA)</td></tr><tr><td style="white-space:nowrap">653<a name="procedimientos-codesystem-653"> </a></td><td>MAGNESIO</td></tr><tr><td style="white-space:nowrap">677<a name="procedimientos-codesystem-677"> </a></td><td>MATERIAL DESCARTABLE</td></tr><tr><td style="white-space:nowrap">680<a name="procedimientos-codesystem-680"> </a></td><td>ACTO PROFESIONAL BIOQUIMICO</td></tr><tr><td style="white-space:nowrap">7057<a name="procedimientos-codesystem-7057"> </a></td><td>MYCOPLASMA Y UREAPLASMA CULTIVO</td></tr><tr><td style="white-space:nowrap">7100<a name="procedimientos-codesystem-7100"> </a></td><td>MYCOPLASMA HOMINIS, CULTIVO - AISLAMIENTO</td></tr><tr><td style="white-space:nowrap">711<a name="procedimientos-codesystem-711"> </a></td><td>EXAMEN DE ORINA</td></tr><tr><td style="white-space:nowrap">736<a name="procedimientos-codesystem-736"> </a></td><td>PARASITOLOGICO SERIADO</td></tr><tr><td style="white-space:nowrap">739<a name="procedimientos-codesystem-739"> </a></td><td>PARATHORMONA - PTH</td></tr><tr><td style="white-space:nowrap">746<a name="procedimientos-codesystem-746"> </a></td><td>PLAQUETAS, RECUENTO DE</td></tr><tr><td style="white-space:nowrap">759<a name="procedimientos-codesystem-759"> </a></td><td>PROLACTINA (PRL)</td></tr><tr><td style="white-space:nowrap">761<a name="procedimientos-codesystem-761"> </a></td><td>PCR CUANTITATIVA</td></tr><tr><td style="white-space:nowrap">762<a name="procedimientos-codesystem-762"> </a></td><td>ALBUMINA (SERICA O URINARIA - C/U)</td></tr><tr><td style="white-space:nowrap">763<a name="procedimientos-codesystem-763"> </a></td><td>PROTEINA TOTALES</td></tr><tr><td style="white-space:nowrap">813<a name="procedimientos-codesystem-813"> </a></td><td>FACTOR RH</td></tr><tr><td style="white-space:nowrap">8526<a name="procedimientos-codesystem-8526"> </a></td><td>CREATININA, SERICA O URINARIA ESPONTÁNEA</td></tr><tr><td style="white-space:nowrap">863<a name="procedimientos-codesystem-863"> </a></td><td>TESTOSTERONA - TO</td></tr><tr><td style="white-space:nowrap">865<a name="procedimientos-codesystem-865"> </a></td><td>TSH - TIROTROFINA sSica</td></tr><tr><td style="white-space:nowrap">866<a name="procedimientos-codesystem-866"> </a></td><td>TIROXINA TOTAL - T4</td></tr><tr><td style="white-space:nowrap">867<a name="procedimientos-codesystem-867"> </a></td><td>T4L-TIROXINA LIBRE</td></tr><tr><td style="white-space:nowrap">873<a name="procedimientos-codesystem-873"> </a></td><td>TRANSAMINASA, GLUTAMICO OXALACETICA. (GOT/AST)</td></tr><tr><td style="white-space:nowrap">874<a name="procedimientos-codesystem-874"> </a></td><td>TRANSAMINASA, GLUTAMICO PIRUVICA (GPT / AGT)</td></tr><tr><td style="white-space:nowrap">875<a name="procedimientos-codesystem-875"> </a></td><td>TRANSFERRINA (IDR / TURBIDIMETRIA)</td></tr><tr><td style="white-space:nowrap">876<a name="procedimientos-codesystem-876"> </a></td><td>TRIGLICERIDEMIA</td></tr><tr><td style="white-space:nowrap">877<a name="procedimientos-codesystem-877"> </a></td><td>TRIIODOTIRONINA TOTAL - T3</td></tr><tr><td style="white-space:nowrap">902<a name="procedimientos-codesystem-902"> </a></td><td>UREMIA</td></tr><tr><td style="white-space:nowrap">904<a name="procedimientos-codesystem-904"> </a></td><td>URICEMIA</td></tr><tr><td style="white-space:nowrap">931<a name="procedimientos-codesystem-931"> </a></td><td>VAGINAL EXUDADO O FLUJO (DIRECTO Y CULTIVO)</td></tr><tr><td style="white-space:nowrap">931M<a name="procedimientos-codesystem-931M"> </a></td><td>CULTIVO DE MOCO CERVICAL (Endocervix)</td></tr><tr><td style="white-space:nowrap">933<a name="procedimientos-codesystem-933"> </a></td><td>VDRL / USR - CUALITATIVA</td></tr><tr><td style="white-space:nowrap">998<a name="procedimientos-codesystem-998"> </a></td><td>TOMA DE MUESTRA</td></tr><tr><td style="white-space:nowrap">GL0<a name="procedimientos-codesystem-GL0"> </a></td><td>GLUCEMIA O GLUCOSURIA (C/U)</td></tr><tr><td style="white-space:nowrap">GL120<a name="procedimientos-codesystem-GL120"> </a></td><td>GLUCEMIA O GLUCOSURIA (C/U)</td></tr></table></div>
+  </text>
+  <url value="http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"/>
+  <version value="0.1.0"/>
+  <name value="RecuperoProcedimientosCS"/>
+  <title value="Procedimientos para Recupero"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-12T16:20:05-03:00"/>
+  <publisher value="HL7 Argentina"/>
+  <contact>
+    <name value="HL7 Argentina"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.org.ar"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.org.ar"/>
+    </telecom>
+  </contact>
+  <description value="Listado de Procedimientos"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="128"/>
+  <concept>
+    <code value="133"/>
+    <display value="CALCEMIA TOTAL (CA)"/>
+  </concept>
+  <concept>
+    <code value="136"/>
+    <display value="CALCIO - URINARIO"/>
+  </concept>
+  <concept>
+    <code value="144"/>
+    <display value="CEA - ANTIGENO CARCINOEMBRIOGENICO"/>
+  </concept>
+  <concept>
+    <code value="171"/>
+    <display value="COAGULOGRAMA"/>
+  </concept>
+  <concept>
+    <code value="174"/>
+    <display value="COLESTEROL TOTAL"/>
+  </concept>
+  <concept>
+    <code value="189"/>
+    <display value="CORTISOL"/>
+  </concept>
+  <concept>
+    <code value="190"/>
+    <display value="CPK"/>
+  </concept>
+  <concept>
+    <code value="192"/>
+    <display value="CREATININA"/>
+  </concept>
+  <concept>
+    <code value="193"/>
+    <display value="CREATININA, CLEARENCE DE DEPURACION"/>
+  </concept>
+  <concept>
+    <code value="2004"/>
+    <display value="APOLIPOPROTEINA A (APO A)"/>
+  </concept>
+  <concept>
+    <code value="2005"/>
+    <display value="APOLIPOPROTEINA B (APO B)"/>
+  </concept>
+  <concept>
+    <code value="2006"/>
+    <display value="FOLICO, ACIDO"/>
+  </concept>
+  <concept>
+    <code value="2007"/>
+    <display value="ASCORBICO, ACIDO"/>
+  </concept>
+  <concept>
+    <code value="2014"/>
+    <display value="COLESTEROL HDL. (HDL-C)"/>
+  </concept>
+  <concept>
+    <code value="2015"/>
+    <display value="LDL COLESTEROL"/>
+  </concept>
+  <concept>
+    <code value="2020"/>
+    <display value="VITAMINA D 25 (OH)"/>
+  </concept>
+  <concept>
+    <code value="2024"/>
+    <display value="DEHIDROEPIANDROSTERONA, SULFATO - DHEA-S"/>
+  </concept>
+  <concept>
+    <code value="2026"/>
+    <display value="ANDROSTENEDIONA, DELTA 4 - (DELTA4)"/>
+  </concept>
+  <concept>
+    <code value="2040"/>
+    <display value="FERRITINA"/>
+  </concept>
+  <concept>
+    <code value="2043"/>
+    <display value="SUBUNIDAD BETA DE GONADOTROFINA CORIÓNICA (CUANTIT"/>
+  </concept>
+  <concept>
+    <code value="2045C"/>
+    <display value="HEMOGLOBINA GLICOSILADA (HB A1C)"/>
+  </concept>
+  <concept>
+    <code value="2052"/>
+    <display value="MARCADOR TUMORAL DE COLON (CA. 19. 9)"/>
+  </concept>
+  <concept>
+    <code value="2053"/>
+    <display value="MARCADOR TUMORAL DE OVARIO (CA 125)"/>
+  </concept>
+  <concept>
+    <code value="2063"/>
+    <display value="OSTEOCALCINA"/>
+  </concept>
+  <concept>
+    <code value="2064"/>
+    <display value="PEPTIDO C"/>
+  </concept>
+  <concept>
+    <code value="2078"/>
+    <display value="TESTOSTERONA LIBRE, TO-L"/>
+  </concept>
+  <concept>
+    <code value="2084"/>
+    <display value="VITAMINA B12"/>
+  </concept>
+  <concept>
+    <code value="2095"/>
+    <display value="TESTOSTERONA BIODISPONIBLE"/>
+  </concept>
+  <concept>
+    <code value="2096"/>
+    <display value="ZINC (ZN) - SERICO"/>
+  </concept>
+  <concept>
+    <code value="2111"/>
+    <display value="GLOBULINA LIGADORA DE ANDROGENOS Y ESTROGENOS (GLA"/>
+  </concept>
+  <concept>
+    <code value="2146"/>
+    <display value="ANTICOAGULANTE LUPICO, SIN INHIBICIÒN"/>
+  </concept>
+  <concept>
+    <code value="21471"/>
+    <display value="CARDIOLIPINAS, AC. IGG ANTI-"/>
+  </concept>
+  <concept>
+    <code value="21472"/>
+    <display value="CARDIOLIPINAS, AC. IGM ANTI-"/>
+  </concept>
+  <concept>
+    <code value="2155"/>
+    <display value="VITAMINA B6 (PIRIDOXINA)"/>
+  </concept>
+  <concept>
+    <code value="2181"/>
+    <display value="PEROXIDASA TIROIDEO, AC. ANTI- (ATPO / TPO)"/>
+  </concept>
+  <concept>
+    <code value="2182"/>
+    <display value="TIROGLOBULINA, AC. ULTRASENSIBLE"/>
+  </concept>
+  <concept>
+    <code value="2227"/>
+    <display value="PROGESTERONA (Monitoreo de ovulación)"/>
+  </concept>
+  <concept>
+    <code value="2250"/>
+    <display value="SELENIO"/>
+  </concept>
+  <concept>
+    <code value="2263"/>
+    <display value="LIPOPROTEINA A - LP(A)"/>
+  </concept>
+  <concept>
+    <code value="2302U"/>
+    <display value="PROTEINA C REACTIVA - ULTRASENSIBLE (PCRUS)"/>
+  </concept>
+  <concept>
+    <code value="2373"/>
+    <display value="PROTEINA C FUNCIONAL - CROMOGENICO"/>
+  </concept>
+  <concept>
+    <code value="2374"/>
+    <display value="PROTEINA S LIBRE = INMUNOTURBIDIMETRIO"/>
+  </concept>
+  <concept>
+    <code value="241"/>
+    <display value="CHAGAS (AD)"/>
+  </concept>
+  <concept>
+    <code value="2494"/>
+    <display value="HOMOCISTEINA"/>
+  </concept>
+  <concept>
+    <code value="2529"/>
+    <display value="FOSFOLIPIDOS, AC TOTALES ANTI- (IGA, IGG, IGM)"/>
+  </concept>
+  <concept>
+    <code value="2562"/>
+    <display value="BETA CROSS LAPS - CTX - C- TELOPEPTIDO DE COLAGENO"/>
+  </concept>
+  <concept>
+    <code value="2676"/>
+    <display value="ANTIGENO PROSTATICO ESPECIFICO LIBRE + TOTAL (PSA-"/>
+  </concept>
+  <concept>
+    <code value="2798"/>
+    <display value="MICROALBUMINURIA / ALBUMINA URINARIA"/>
+  </concept>
+  <concept>
+    <code value="2872"/>
+    <display value="TRIIODOTIRONINA LIBRE (T3L)"/>
+  </concept>
+  <concept>
+    <code value="297"/>
+    <display value="ERITROSEDIMENTACION DE 1? HO"/>
+  </concept>
+  <concept>
+    <code value="300"/>
+    <display value="ESTRADIOL"/>
+  </concept>
+  <concept>
+    <code value="3006"/>
+    <display value="CITOMEGALOVIRUS, AC. IGG ANTI- (CMV-IGG)"/>
+  </concept>
+  <concept>
+    <code value="3014"/>
+    <display value="HEPATITIS A AC. ANTI- IGG (HVA IGG) Ò AC. TOTALES"/>
+  </concept>
+  <concept>
+    <code value="3016"/>
+    <display value="HEPATITIS B AC. DE SUPERFICIE ANTI- (HBSAC)"/>
+  </concept>
+  <concept>
+    <code value="3018"/>
+    <display value="HEPATITIS B ANTÍGENO DE SUPERFICIE (AG. HBS)"/>
+  </concept>
+  <concept>
+    <code value="3019"/>
+    <display value="Anticuerpos totales anti-CORE de HEPATITIS B HBCG"/>
+  </concept>
+  <concept>
+    <code value="3023"/>
+    <display value="HEPATITIS C AC. IGG ANTI- (HCV AC. IGG)"/>
+  </concept>
+  <concept>
+    <code value="3037"/>
+    <display value="RUBEOLA, AC. IGG ANTI-"/>
+  </concept>
+  <concept>
+    <code value="3038"/>
+    <display value="RUBEOLA, AC. IGM ANTI-"/>
+  </concept>
+  <concept>
+    <code value="3042"/>
+    <display value="TOXOPLASMOSIS, AC. IGM ANTI (ELISA)"/>
+  </concept>
+  <concept>
+    <code value="3052"/>
+    <display value="SARAMPION, AC. IGM ANTI-"/>
+  </concept>
+  <concept>
+    <code value="3053"/>
+    <display value="SARAMPION, AC. IGG ANTI-"/>
+  </concept>
+  <concept>
+    <code value="3091"/>
+    <display value="TOXOPLASMOSIS, AC. IGG ANTI- (ELISA)"/>
+  </concept>
+  <concept>
+    <code value="3108"/>
+    <display value="VARICELA ZOSTER AC. IGM ANTI-"/>
+  </concept>
+  <concept>
+    <code value="3117"/>
+    <display value="CHAGAS, AC. IGM ANTI- (IFI)"/>
+  </concept>
+  <concept>
+    <code value="3130"/>
+    <display value="VARICELA-ZOSTER, AC. IGG ANTI-"/>
+  </concept>
+  <concept>
+    <code value="3144"/>
+    <display value="CITOMEGALOVIRUS. AC. IGM ANTI- (CMV-IGM)"/>
+  </concept>
+  <concept>
+    <code value="343"/>
+    <display value="FERREMIA"/>
+  </concept>
+  <concept>
+    <code value="357"/>
+    <display value="FOSFATASA ALCALINA (FAL)"/>
+  </concept>
+  <concept>
+    <code value="35F"/>
+    <display value="ANTIBIOGRAMA FLUJO (solo facturacion)"/>
+  </concept>
+  <concept>
+    <code value="35M"/>
+    <display value="ANTIBIOGRAMA DE MOCO (solo facturacion)"/>
+  </concept>
+  <concept>
+    <code value="361"/>
+    <display value="FOSFATASA ALCALINA - ISOENZIMAS"/>
+  </concept>
+  <concept>
+    <code value="362"/>
+    <display value="FOSFATEMIA (P)"/>
+  </concept>
+  <concept>
+    <code value="363"/>
+    <display value="FOSFATURIA (P)"/>
+  </concept>
+  <concept>
+    <code value="370"/>
+    <display value="FSH - HORMONA FOLICULO ESTIMULANTE"/>
+  </concept>
+  <concept>
+    <code value="412"/>
+    <display value="GLUCEMIA"/>
+  </concept>
+  <concept>
+    <code value="4120"/>
+    <display value="INDICE DE INSULINO RESISTENCIA"/>
+  </concept>
+  <concept>
+    <code value="420"/>
+    <display value="GLUTAMIL TRANSPEPTIDASA"/>
+  </concept>
+  <concept>
+    <code value="430"/>
+    <display value="GRAHAM, TEST DE"/>
+  </concept>
+  <concept>
+    <code value="433"/>
+    <display value="GRUPO SANGUINEO Y FACTOR RH"/>
+  </concept>
+  <concept>
+    <code value="46"/>
+    <display value="ANTICUERPOS ANTITIROGLOBULINA (ATG)"/>
+  </concept>
+  <concept>
+    <code value="475"/>
+    <display value="HEMOGRAMA COMPLETO"/>
+  </concept>
+  <concept>
+    <code value="481"/>
+    <display value="HEPATOGRAMA COMPLETO"/>
+  </concept>
+  <concept>
+    <code value="5074"/>
+    <display value="PSA - ANTIGENO PROSTATICO ES"/>
+  </concept>
+  <concept>
+    <code value="5131"/>
+    <display value="HDL COLESTEROL"/>
+  </concept>
+  <concept>
+    <code value="5174"/>
+    <display value="FERRITINA"/>
+  </concept>
+  <concept>
+    <code value="5180"/>
+    <display value="HEMOGLOBINA GLICOSILADA"/>
+  </concept>
+  <concept>
+    <code value="543"/>
+    <display value="INSULINA"/>
+  </concept>
+  <concept>
+    <code value="546"/>
+    <display value="IONOGRAMA PLASMATICO"/>
+  </concept>
+  <concept>
+    <code value="58"/>
+    <display value="ANTITROMBINA III - CON CALIBRACION DE TRES (3) PUN"/>
+  </concept>
+  <concept>
+    <code value="6118"/>
+    <display value="BETA 2 GLICOPROTEINA, AC. IGG ANTI-"/>
+  </concept>
+  <concept>
+    <code value="6119"/>
+    <display value="BETA 2 GLICOPROTEINA, AC. IGM ANTI-"/>
+  </concept>
+  <concept>
+    <code value="612"/>
+    <display value="LH - HORMONA LUTEINIZANTE"/>
+  </concept>
+  <concept>
+    <code value="6132"/>
+    <display value="CHLAMYDIA TRACHOMATIS, AG PCR"/>
+  </concept>
+  <concept>
+    <code value="614"/>
+    <display value="LIPIDOS TOTALES"/>
+  </concept>
+  <concept>
+    <code value="63"/>
+    <display value="ANTICUERPOS ANTI HIV - (ELISA)"/>
+  </concept>
+  <concept>
+    <code value="653"/>
+    <display value="MAGNESIO"/>
+  </concept>
+  <concept>
+    <code value="677"/>
+    <display value="MATERIAL DESCARTABLE"/>
+  </concept>
+  <concept>
+    <code value="680"/>
+    <display value="ACTO PROFESIONAL BIOQUIMICO"/>
+  </concept>
+  <concept>
+    <code value="7057"/>
+    <display value="MYCOPLASMA Y UREAPLASMA CULTIVO"/>
+  </concept>
+  <concept>
+    <code value="7100"/>
+    <display value="MYCOPLASMA HOMINIS, CULTIVO - AISLAMIENTO"/>
+  </concept>
+  <concept>
+    <code value="711"/>
+    <display value="EXAMEN DE ORINA"/>
+  </concept>
+  <concept>
+    <code value="736"/>
+    <display value="PARASITOLOGICO SERIADO"/>
+  </concept>
+  <concept>
+    <code value="739"/>
+    <display value="PARATHORMONA - PTH"/>
+  </concept>
+  <concept>
+    <code value="746"/>
+    <display value="PLAQUETAS, RECUENTO DE"/>
+  </concept>
+  <concept>
+    <code value="759"/>
+    <display value="PROLACTINA (PRL)"/>
+  </concept>
+  <concept>
+    <code value="761"/>
+    <display value="PCR CUANTITATIVA"/>
+  </concept>
+  <concept>
+    <code value="762"/>
+    <display value="ALBUMINA (SERICA O URINARIA - C/U)"/>
+  </concept>
+  <concept>
+    <code value="763"/>
+    <display value="PROTEINA TOTALES"/>
+  </concept>
+  <concept>
+    <code value="813"/>
+    <display value="FACTOR RH"/>
+  </concept>
+  <concept>
+    <code value="8526"/>
+    <display value="CREATININA, SERICA O URINARIA ESPONTÁNEA"/>
+  </concept>
+  <concept>
+    <code value="863"/>
+    <display value="TESTOSTERONA - TO"/>
+  </concept>
+  <concept>
+    <code value="865"/>
+    <display value="TSH - TIROTROFINA sSica"/>
+  </concept>
+  <concept>
+    <code value="866"/>
+    <display value="TIROXINA TOTAL - T4"/>
+  </concept>
+  <concept>
+    <code value="867"/>
+    <display value="T4L-TIROXINA LIBRE"/>
+  </concept>
+  <concept>
+    <code value="873"/>
+    <display value="TRANSAMINASA, GLUTAMICO OXALACETICA. (GOT/AST)"/>
+  </concept>
+  <concept>
+    <code value="874"/>
+    <display value="TRANSAMINASA, GLUTAMICO PIRUVICA (GPT / AGT)"/>
+  </concept>
+  <concept>
+    <code value="875"/>
+    <display value="TRANSFERRINA (IDR / TURBIDIMETRIA)"/>
+  </concept>
+  <concept>
+    <code value="876"/>
+    <display value="TRIGLICERIDEMIA"/>
+  </concept>
+  <concept>
+    <code value="877"/>
+    <display value="TRIIODOTIRONINA TOTAL - T3"/>
+  </concept>
+  <concept>
+    <code value="902"/>
+    <display value="UREMIA"/>
+  </concept>
+  <concept>
+    <code value="904"/>
+    <display value="URICEMIA"/>
+  </concept>
+  <concept>
+    <code value="931"/>
+    <display value="VAGINAL EXUDADO O FLUJO (DIRECTO Y CULTIVO)"/>
+  </concept>
+  <concept>
+    <code value="931M"/>
+    <display value="CULTIVO DE MOCO CERVICAL (Endocervix)"/>
+  </concept>
+  <concept>
+    <code value="933"/>
+    <display value="VDRL / USR - CUALITATIVA"/>
+  </concept>
+  <concept>
+    <code value="998"/>
+    <display value="TOMA DE MUESTRA"/>
+  </concept>
+  <concept>
+    <code value="GL0"/>
+    <display value="GLUCEMIA O GLUCOSURIA (C/U)"/>
+  </concept>
+  <concept>
+    <code value="GL120"/>
+    <display value="GLUCEMIA O GLUCOSURIA (C/U)"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,64 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PractitionerCabaRecupero",
+  "url": "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero",
+  "name": "PractitionerCabaRecupero",
+  "title": "Practitioner para Recupero CABA",
+  "status": "draft",
+  "description": "Perfil de Practitioner Para RECUPERO CABA",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.identifier",
+        "path": "Practitioner.identifier",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.identifier.system",
+        "path": "Practitioner.identifier.system",
+        "short": "ProfesionalEfector.codTipoMatriculaFirmante / Solicitante",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.identifier.value",
+        "path": "Practitioner.identifier.value",
+        "short": "ProfesionalEfector.idMatriculaFirmante / Solicitante",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.name.text",
+        "path": "Practitioner.name.text",
+        "short": "profesionalFirmante / Solicitante",
+        "min": 1
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "short": "ProfesionalEfector.codProfesionFirmante / Solicitante",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://recuperocaba.gob.ar/ValueSet/recuperoprofesiones-valueset"
+        }
+      }
+    ]
+  }
+}

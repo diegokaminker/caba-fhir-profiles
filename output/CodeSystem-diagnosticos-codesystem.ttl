@@ -1,0 +1,1226 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "diagnosticos-codesystem"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem diagnosticos-codesystem</b></p><a name=\"diagnosticos-codesystem\"> </a><a name=\"hcdiagnosticos-codesystem\"> </a><p>This case-sensitive code system <code>http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">A000<a name=\"diagnosticos-codesystem-A000\"> </a></td><td>Colera debido a Vibrio cholerae 01, biotipo cholerae</td></tr><tr><td style=\"white-space:nowrap\">A001<a name=\"diagnosticos-codesystem-A001\"> </a></td><td>Colera debido a Vibrio cholerae 01, biotipo el Tor</td></tr><tr><td style=\"white-space:nowrap\">A009<a name=\"diagnosticos-codesystem-A009\"> </a></td><td>Colera, no especificado</td></tr><tr><td style=\"white-space:nowrap\">A010<a name=\"diagnosticos-codesystem-A010\"> </a></td><td>Fiebre tifoidea</td></tr><tr><td style=\"white-space:nowrap\">A011<a name=\"diagnosticos-codesystem-A011\"> </a></td><td>Fiebre paratifoidea A</td></tr><tr><td style=\"white-space:nowrap\">A012<a name=\"diagnosticos-codesystem-A012\"> </a></td><td>Fiebre paratifoidea B</td></tr><tr><td style=\"white-space:nowrap\">A013<a name=\"diagnosticos-codesystem-A013\"> </a></td><td>Fiebre paratifoidea C</td></tr><tr><td style=\"white-space:nowrap\">A014<a name=\"diagnosticos-codesystem-A014\"> </a></td><td>Fiebre paratifoidea, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A020<a name=\"diagnosticos-codesystem-A020\"> </a></td><td>Enteritis debida a Salmonella</td></tr><tr><td style=\"white-space:nowrap\">A021<a name=\"diagnosticos-codesystem-A021\"> </a></td><td>Sepsis debida a Salmonella</td></tr><tr><td style=\"white-space:nowrap\">A022<a name=\"diagnosticos-codesystem-A022\"> </a></td><td>Infecciones localizadas debidas a Salmonella</td></tr><tr><td style=\"white-space:nowrap\">A028<a name=\"diagnosticos-codesystem-A028\"> </a></td><td>Otras infecciones especificadas como debidas a Salmonella</td></tr><tr><td style=\"white-space:nowrap\">A029<a name=\"diagnosticos-codesystem-A029\"> </a></td><td>Infeccion debida a Salmonella, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A030<a name=\"diagnosticos-codesystem-A030\"> </a></td><td>Shigelosis debida a Shigella dysenteriae</td></tr><tr><td style=\"white-space:nowrap\">A031<a name=\"diagnosticos-codesystem-A031\"> </a></td><td>Shigelosis debida a Shigella flexneri</td></tr><tr><td style=\"white-space:nowrap\">A032<a name=\"diagnosticos-codesystem-A032\"> </a></td><td>Shigelosis debida a Shigella boydii</td></tr><tr><td style=\"white-space:nowrap\">A033<a name=\"diagnosticos-codesystem-A033\"> </a></td><td>Shigelosis debida a Shigella sonnei</td></tr><tr><td style=\"white-space:nowrap\">A038<a name=\"diagnosticos-codesystem-A038\"> </a></td><td>Otras shigelosis</td></tr><tr><td style=\"white-space:nowrap\">A039<a name=\"diagnosticos-codesystem-A039\"> </a></td><td>Shigelosis de tipo no especificado</td></tr><tr><td style=\"white-space:nowrap\">A040<a name=\"diagnosticos-codesystem-A040\"> </a></td><td>Infeccion debida a Escherichia coli enteropatogena</td></tr><tr><td style=\"white-space:nowrap\">A041<a name=\"diagnosticos-codesystem-A041\"> </a></td><td>Infeccion debida a Escherichia coli enterotoxigena</td></tr><tr><td style=\"white-space:nowrap\">A042<a name=\"diagnosticos-codesystem-A042\"> </a></td><td>Infeccion debida a Escherichia coli enteroinvasiva</td></tr><tr><td style=\"white-space:nowrap\">A043<a name=\"diagnosticos-codesystem-A043\"> </a></td><td>Infeccion debida a Escherichia coli enterohemorragica</td></tr><tr><td style=\"white-space:nowrap\">A044<a name=\"diagnosticos-codesystem-A044\"> </a></td><td>Otras infecciones intestinales debidas a Escherichia coli</td></tr><tr><td style=\"white-space:nowrap\">A045<a name=\"diagnosticos-codesystem-A045\"> </a></td><td>Enteritis debida a Campylobacter</td></tr><tr><td style=\"white-space:nowrap\">A046<a name=\"diagnosticos-codesystem-A046\"> </a></td><td>Enteritis debida a Yersinia enterocolitica</td></tr><tr><td style=\"white-space:nowrap\">A047<a name=\"diagnosticos-codesystem-A047\"> </a></td><td>Enterocolitis debida a Clostridium difficile</td></tr><tr><td style=\"white-space:nowrap\">A048<a name=\"diagnosticos-codesystem-A048\"> </a></td><td>Otras infecciones intestinales bacterianas especificadas</td></tr><tr><td style=\"white-space:nowrap\">A049<a name=\"diagnosticos-codesystem-A049\"> </a></td><td>Infeccion intestinal bacteriana, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A050<a name=\"diagnosticos-codesystem-A050\"> </a></td><td>Intoxicacion alimentaria estafilococica</td></tr><tr><td style=\"white-space:nowrap\">A051<a name=\"diagnosticos-codesystem-A051\"> </a></td><td>Botulismo</td></tr><tr><td style=\"white-space:nowrap\">A052<a name=\"diagnosticos-codesystem-A052\"> </a></td><td>Intoxicacion alimentaria debida a Clostridium perfringens [Clostridium welchii]</td></tr><tr><td style=\"white-space:nowrap\">A053<a name=\"diagnosticos-codesystem-A053\"> </a></td><td>Intoxicacion alimentaria debida a Vibrio parahaemolyticus</td></tr><tr><td style=\"white-space:nowrap\">A054<a name=\"diagnosticos-codesystem-A054\"> </a></td><td>Intoxicacion alimentaria debida a Bacillus cereus</td></tr><tr><td style=\"white-space:nowrap\">A058<a name=\"diagnosticos-codesystem-A058\"> </a></td><td>Otras intoxicaciones alimentarias debidas a bacterias especificadas</td></tr><tr><td style=\"white-space:nowrap\">A059<a name=\"diagnosticos-codesystem-A059\"> </a></td><td>Intoxicacion alimentaria bacteriana, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A060<a name=\"diagnosticos-codesystem-A060\"> </a></td><td>Disenteria amebiana aguda</td></tr><tr><td style=\"white-space:nowrap\">A061<a name=\"diagnosticos-codesystem-A061\"> </a></td><td>Amebiasis intestinal cronica</td></tr><tr><td style=\"white-space:nowrap\">A062<a name=\"diagnosticos-codesystem-A062\"> </a></td><td>Colitis amebiana no disenterica</td></tr><tr><td style=\"white-space:nowrap\">A063<a name=\"diagnosticos-codesystem-A063\"> </a></td><td>Ameboma intestinal</td></tr><tr><td style=\"white-space:nowrap\">A064<a name=\"diagnosticos-codesystem-A064\"> </a></td><td>Absceso amebiano del higado</td></tr><tr><td style=\"white-space:nowrap\">A065<a name=\"diagnosticos-codesystem-A065\"> </a></td><td>Absceso amebiano del pulmon</td></tr><tr><td style=\"white-space:nowrap\">A066<a name=\"diagnosticos-codesystem-A066\"> </a></td><td>Absceso amebiano del cerebro</td></tr><tr><td style=\"white-space:nowrap\">A067<a name=\"diagnosticos-codesystem-A067\"> </a></td><td>Amebiasis cutanea</td></tr><tr><td style=\"white-space:nowrap\">A068<a name=\"diagnosticos-codesystem-A068\"> </a></td><td>Infeccion amebiana de otras localizaciones</td></tr><tr><td style=\"white-space:nowrap\">A069<a name=\"diagnosticos-codesystem-A069\"> </a></td><td>Amebiasis, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A070<a name=\"diagnosticos-codesystem-A070\"> </a></td><td>Balantidiasis</td></tr><tr><td style=\"white-space:nowrap\">A071<a name=\"diagnosticos-codesystem-A071\"> </a></td><td>Giardiasis [lambliasis]</td></tr><tr><td style=\"white-space:nowrap\">A072<a name=\"diagnosticos-codesystem-A072\"> </a></td><td>Criptosporidiosis</td></tr><tr><td style=\"white-space:nowrap\">A073<a name=\"diagnosticos-codesystem-A073\"> </a></td><td>Isosporiasis</td></tr><tr><td style=\"white-space:nowrap\">A078<a name=\"diagnosticos-codesystem-A078\"> </a></td><td>Otras enfermedades intestinales especificadas debidas a protozoarios</td></tr><tr><td style=\"white-space:nowrap\">A079<a name=\"diagnosticos-codesystem-A079\"> </a></td><td>Enfermedad intestinal debida a protozoarios, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A080<a name=\"diagnosticos-codesystem-A080\"> </a></td><td>Enteritis debida a rotavirus</td></tr><tr><td style=\"white-space:nowrap\">A081<a name=\"diagnosticos-codesystem-A081\"> </a></td><td>Gastroenteropatia aguda debida al agente de Norwalk</td></tr><tr><td style=\"white-space:nowrap\">A082<a name=\"diagnosticos-codesystem-A082\"> </a></td><td>Enteritis debida a adenovirus</td></tr><tr><td style=\"white-space:nowrap\">A083<a name=\"diagnosticos-codesystem-A083\"> </a></td><td>Otras enteritis virales</td></tr><tr><td style=\"white-space:nowrap\">A084<a name=\"diagnosticos-codesystem-A084\"> </a></td><td>Infeccion intestinal viral, sin otra especificacion</td></tr><tr><td style=\"white-space:nowrap\">A085<a name=\"diagnosticos-codesystem-A085\"> </a></td><td>Otras infecciones intestinales especificadas</td></tr><tr><td style=\"white-space:nowrap\">A090<a name=\"diagnosticos-codesystem-A090\"> </a></td><td>Otras gastroenteritis y colitis de origen infeccioso</td></tr><tr><td style=\"white-space:nowrap\">A099<a name=\"diagnosticos-codesystem-A099\"> </a></td><td>Gastroenteritis y colitis de origen no especificado</td></tr><tr><td style=\"white-space:nowrap\">A09X<a name=\"diagnosticos-codesystem-A09X\"> </a></td><td>Diarrea y gastroenteritis de presunto origen infeccioso</td></tr><tr><td style=\"white-space:nowrap\">A150<a name=\"diagnosticos-codesystem-A150\"> </a></td><td>Tuberculosis del pulmon, confirmada por hallazgo microscopico del bacilo tuberculoso en esputo, con o sin cultivo</td></tr><tr><td style=\"white-space:nowrap\">A151<a name=\"diagnosticos-codesystem-A151\"> </a></td><td>Tuberculosis del pulmon, confirmada unicamente por cultivo</td></tr><tr><td style=\"white-space:nowrap\">A152<a name=\"diagnosticos-codesystem-A152\"> </a></td><td>Tuberculosis del pulmon, confirmada histologicamente</td></tr><tr><td style=\"white-space:nowrap\">A153<a name=\"diagnosticos-codesystem-A153\"> </a></td><td>Tuberculosis del pulmon, confirmada por medios no especificados</td></tr><tr><td style=\"white-space:nowrap\">A154<a name=\"diagnosticos-codesystem-A154\"> </a></td><td>Tuberculosis de ganglios linfaticos intratoracicos, confirmada bacteriologica e histologicamente</td></tr><tr><td style=\"white-space:nowrap\">A155<a name=\"diagnosticos-codesystem-A155\"> </a></td><td>Tuberculosis de laringe, traquea y bronquios, confirmada bacteriologica e histologicamente</td></tr><tr><td style=\"white-space:nowrap\">A156<a name=\"diagnosticos-codesystem-A156\"> </a></td><td>Pleuresia tuberculosa, confirmada bacteriologica e histologicamente</td></tr><tr><td style=\"white-space:nowrap\">A157<a name=\"diagnosticos-codesystem-A157\"> </a></td><td>Tuberculosis respiratoria primaria, confirmada bacteriologica e histologicamente</td></tr><tr><td style=\"white-space:nowrap\">A158<a name=\"diagnosticos-codesystem-A158\"> </a></td><td>Otras tuberculosis respiratorias, confirmadas bacteriologica e histologicamente</td></tr><tr><td style=\"white-space:nowrap\">A159<a name=\"diagnosticos-codesystem-A159\"> </a></td><td>Tuberculosis respiratoria no especificada, confirmada bacteriologica e histologicamente</td></tr><tr><td style=\"white-space:nowrap\">A160<a name=\"diagnosticos-codesystem-A160\"> </a></td><td>Tuberculosis del pulmon, con examen bacteriologico e histologico negativos</td></tr><tr><td style=\"white-space:nowrap\">A161<a name=\"diagnosticos-codesystem-A161\"> </a></td><td>Tuberculosis de pulmon, sin examen bacteriologico e histologico</td></tr><tr><td style=\"white-space:nowrap\">A162<a name=\"diagnosticos-codesystem-A162\"> </a></td><td>Tuberculosis de pulmon, sin mencion de confirmacion bacteriologica o histologica</td></tr><tr><td style=\"white-space:nowrap\">A163<a name=\"diagnosticos-codesystem-A163\"> </a></td><td>Tuberculosis de ganglios linfaticos intratoracicos, sin mencion de confirmacion bacteriologica o histologica</td></tr><tr><td style=\"white-space:nowrap\">A164<a name=\"diagnosticos-codesystem-A164\"> </a></td><td>Tuberculosis de laringe, traquea y bronquios, sin mencion de confirmacion bacteriologica o histologica</td></tr><tr><td style=\"white-space:nowrap\">A165<a name=\"diagnosticos-codesystem-A165\"> </a></td><td>Pleuresia tuberculosa, sin mencion de confirmacion bacteriologica o histologica</td></tr><tr><td style=\"white-space:nowrap\">A167<a name=\"diagnosticos-codesystem-A167\"> </a></td><td>Tuberculosis respiratoria primaria, sin mencion de confirmacion bacteriologica o histologica</td></tr><tr><td style=\"white-space:nowrap\">A168<a name=\"diagnosticos-codesystem-A168\"> </a></td><td>Otras tuberculosis respiratorias, sin mencion de confirmacion</td></tr><tr><td style=\"white-space:nowrap\">A169<a name=\"diagnosticos-codesystem-A169\"> </a></td><td>Tuberculosis respiratoria no especificada, sin mencion de confirmacion bacteriologica o histologica</td></tr><tr><td style=\"white-space:nowrap\">A170<a name=\"diagnosticos-codesystem-A170\"> </a></td><td>Meningitis tuberculosa</td></tr><tr><td style=\"white-space:nowrap\">A171<a name=\"diagnosticos-codesystem-A171\"> </a></td><td>Tuberculoma meningeo</td></tr><tr><td style=\"white-space:nowrap\">A178<a name=\"diagnosticos-codesystem-A178\"> </a></td><td>Otras tuberculosis del sistema nervioso</td></tr><tr><td style=\"white-space:nowrap\">A179<a name=\"diagnosticos-codesystem-A179\"> </a></td><td>Tuberculosis del sistema nervioso, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A180<a name=\"diagnosticos-codesystem-A180\"> </a></td><td>Tuberculosis de huesos y articulaciones</td></tr><tr><td style=\"white-space:nowrap\">A181<a name=\"diagnosticos-codesystem-A181\"> </a></td><td>Tuberculosis del aparato genitourinario</td></tr><tr><td style=\"white-space:nowrap\">A182<a name=\"diagnosticos-codesystem-A182\"> </a></td><td>Linfadenopatia periferica tuberculosa</td></tr><tr><td style=\"white-space:nowrap\">A183<a name=\"diagnosticos-codesystem-A183\"> </a></td><td>Tuberculosis de los intestinos, el peritoneo y los ganglios mesentericos</td></tr><tr><td style=\"white-space:nowrap\">A184<a name=\"diagnosticos-codesystem-A184\"> </a></td><td>Tuberculosis de la piel y el tejido subcutaneo</td></tr><tr><td style=\"white-space:nowrap\">A185<a name=\"diagnosticos-codesystem-A185\"> </a></td><td>Tuberculosis del ojo</td></tr><tr><td style=\"white-space:nowrap\">A186<a name=\"diagnosticos-codesystem-A186\"> </a></td><td>Tuberculosis del oido</td></tr><tr><td style=\"white-space:nowrap\">A187<a name=\"diagnosticos-codesystem-A187\"> </a></td><td>Tuberculosis de glandulas suprarrenales</td></tr><tr><td style=\"white-space:nowrap\">A188<a name=\"diagnosticos-codesystem-A188\"> </a></td><td>Tuberculosis de otros organos especificados</td></tr><tr><td style=\"white-space:nowrap\">A190<a name=\"diagnosticos-codesystem-A190\"> </a></td><td>Tuberculosis miliar aguda de un solo sitio especificado</td></tr><tr><td style=\"white-space:nowrap\">A191<a name=\"diagnosticos-codesystem-A191\"> </a></td><td>Tuberculosis miliar aguda de sitios multiples</td></tr><tr><td style=\"white-space:nowrap\">A192<a name=\"diagnosticos-codesystem-A192\"> </a></td><td>Tuberculosis miliar aguda, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A198<a name=\"diagnosticos-codesystem-A198\"> </a></td><td>Otras tuberculosis miliares</td></tr><tr><td style=\"white-space:nowrap\">A199<a name=\"diagnosticos-codesystem-A199\"> </a></td><td>Tuberculosis miliar, sin otra especificacion</td></tr><tr><td style=\"white-space:nowrap\">A200<a name=\"diagnosticos-codesystem-A200\"> </a></td><td>Peste bubonica</td></tr><tr><td style=\"white-space:nowrap\">A201<a name=\"diagnosticos-codesystem-A201\"> </a></td><td>Peste celulocutanea</td></tr><tr><td style=\"white-space:nowrap\">A202<a name=\"diagnosticos-codesystem-A202\"> </a></td><td>Peste neumonica</td></tr><tr><td style=\"white-space:nowrap\">A203<a name=\"diagnosticos-codesystem-A203\"> </a></td><td>Meningitis por peste</td></tr><tr><td style=\"white-space:nowrap\">A207<a name=\"diagnosticos-codesystem-A207\"> </a></td><td>Peste septicemica</td></tr><tr><td style=\"white-space:nowrap\">A208<a name=\"diagnosticos-codesystem-A208\"> </a></td><td>Otras formas de peste</td></tr><tr><td style=\"white-space:nowrap\">A209<a name=\"diagnosticos-codesystem-A209\"> </a></td><td>Peste, no especificada</td></tr><tr><td style=\"white-space:nowrap\">A210<a name=\"diagnosticos-codesystem-A210\"> </a></td><td>Tularemia ulceroglandular</td></tr><tr><td style=\"white-space:nowrap\">A211<a name=\"diagnosticos-codesystem-A211\"> </a></td><td>Tularemia oculoglandular</td></tr><tr><td style=\"white-space:nowrap\">A212<a name=\"diagnosticos-codesystem-A212\"> </a></td><td>Tularemia pulmonar</td></tr><tr><td style=\"white-space:nowrap\">A213<a name=\"diagnosticos-codesystem-A213\"> </a></td><td>Tularemia gastrointestinal</td></tr><tr><td style=\"white-space:nowrap\">B000<a name=\"diagnosticos-codesystem-B000\"> </a></td><td>Eczema herpetico</td></tr><tr><td style=\"white-space:nowrap\">B001<a name=\"diagnosticos-codesystem-B001\"> </a></td><td>Dermatitis vesicular herpetica</td></tr><tr><td style=\"white-space:nowrap\">B002<a name=\"diagnosticos-codesystem-B002\"> </a></td><td>Gingivoestomatitis y faringoamigdalitis herpetica</td></tr><tr><td style=\"white-space:nowrap\">B003<a name=\"diagnosticos-codesystem-B003\"> </a></td><td>Meningitis herpetica</td></tr><tr><td style=\"white-space:nowrap\">B004<a name=\"diagnosticos-codesystem-B004\"> </a></td><td>Encefalitis herpetica</td></tr><tr><td style=\"white-space:nowrap\">B005<a name=\"diagnosticos-codesystem-B005\"> </a></td><td>Oculopatia herpetica</td></tr><tr><td style=\"white-space:nowrap\">B007<a name=\"diagnosticos-codesystem-B007\"> </a></td><td>Enfermedad herpetica diseminada</td></tr><tr><td style=\"white-space:nowrap\">B008<a name=\"diagnosticos-codesystem-B008\"> </a></td><td>Otras formas de infecciones herpeticas</td></tr><tr><td style=\"white-space:nowrap\">B009<a name=\"diagnosticos-codesystem-B009\"> </a></td><td>Infeccion debida al virus del herpes, no especificada</td></tr><tr><td style=\"white-space:nowrap\">B010<a name=\"diagnosticos-codesystem-B010\"> </a></td><td>Meningitis debida a varicela</td></tr><tr><td style=\"white-space:nowrap\">B011<a name=\"diagnosticos-codesystem-B011\"> </a></td><td>Encefalitis debida a varicela</td></tr><tr><td style=\"white-space:nowrap\">B012<a name=\"diagnosticos-codesystem-B012\"> </a></td><td>Neumonia debida a varicela</td></tr><tr><td style=\"white-space:nowrap\">B018<a name=\"diagnosticos-codesystem-B018\"> </a></td><td>Varicela con otras complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B019<a name=\"diagnosticos-codesystem-B019\"> </a></td><td>Varicela sin complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B020<a name=\"diagnosticos-codesystem-B020\"> </a></td><td>Encefalitis debida a herpes zoster</td></tr><tr><td style=\"white-space:nowrap\">B021<a name=\"diagnosticos-codesystem-B021\"> </a></td><td>Meningitis debida a herpes zoster</td></tr><tr><td style=\"white-space:nowrap\">B022<a name=\"diagnosticos-codesystem-B022\"> </a></td><td>Herpes zoster con otros compromisos del sistema nervioso</td></tr><tr><td style=\"white-space:nowrap\">B023<a name=\"diagnosticos-codesystem-B023\"> </a></td><td>Herpes zoster ocular</td></tr><tr><td style=\"white-space:nowrap\">B027<a name=\"diagnosticos-codesystem-B027\"> </a></td><td>Herpes zoster diseminado</td></tr><tr><td style=\"white-space:nowrap\">B028<a name=\"diagnosticos-codesystem-B028\"> </a></td><td>Herpes zoster con otras complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B029<a name=\"diagnosticos-codesystem-B029\"> </a></td><td>Herpes zoster sin complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B03X<a name=\"diagnosticos-codesystem-B03X\"> </a></td><td>Viruela</td></tr><tr><td style=\"white-space:nowrap\">B04X<a name=\"diagnosticos-codesystem-B04X\"> </a></td><td>Viruela de los monos</td></tr><tr><td style=\"white-space:nowrap\">B050<a name=\"diagnosticos-codesystem-B050\"> </a></td><td>Sarampion complicado con encefalitis</td></tr><tr><td style=\"white-space:nowrap\">B051<a name=\"diagnosticos-codesystem-B051\"> </a></td><td>Sarampion complicado con meningitis</td></tr><tr><td style=\"white-space:nowrap\">B052<a name=\"diagnosticos-codesystem-B052\"> </a></td><td>Sarampion complicado con neumonia</td></tr><tr><td style=\"white-space:nowrap\">B053<a name=\"diagnosticos-codesystem-B053\"> </a></td><td>Sarampion complicado con otitis media</td></tr><tr><td style=\"white-space:nowrap\">B054<a name=\"diagnosticos-codesystem-B054\"> </a></td><td>Sarampion con complicaciones intestinales</td></tr><tr><td style=\"white-space:nowrap\">B058<a name=\"diagnosticos-codesystem-B058\"> </a></td><td>Sarampion con otras complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B059<a name=\"diagnosticos-codesystem-B059\"> </a></td><td>Sarampion sin complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B060<a name=\"diagnosticos-codesystem-B060\"> </a></td><td>Rubeola con complicaciones neurologicas</td></tr><tr><td style=\"white-space:nowrap\">B068<a name=\"diagnosticos-codesystem-B068\"> </a></td><td>Rubeola con otras complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B069<a name=\"diagnosticos-codesystem-B069\"> </a></td><td>Rubeola sin complicaciones</td></tr><tr><td style=\"white-space:nowrap\">B07X<a name=\"diagnosticos-codesystem-B07X\"> </a></td><td>Verrugas viricas</td></tr><tr><td style=\"white-space:nowrap\">B080<a name=\"diagnosticos-codesystem-B080\"> </a></td><td>Otras infecciones debidas a ortopoxvirus</td></tr><tr><td style=\"white-space:nowrap\">B081<a name=\"diagnosticos-codesystem-B081\"> </a></td><td>Molusco contagioso</td></tr><tr><td style=\"white-space:nowrap\">B082<a name=\"diagnosticos-codesystem-B082\"> </a></td><td>Exantema subito [sexta enfermedad]</td></tr><tr><td style=\"white-space:nowrap\">B083<a name=\"diagnosticos-codesystem-B083\"> </a></td><td>Eritema infeccioso [quinta enfermedad]</td></tr><tr><td style=\"white-space:nowrap\">B084<a name=\"diagnosticos-codesystem-B084\"> </a></td><td>Estomatitis vesicular enteroviral con exantema</td></tr><tr><td style=\"white-space:nowrap\">B085<a name=\"diagnosticos-codesystem-B085\"> </a></td><td>Faringitis vesicular enterovirica</td></tr><tr><td style=\"white-space:nowrap\">B088<a name=\"diagnosticos-codesystem-B088\"> </a></td><td>Otras infecciones virales especificadas, caracterizadas por lesiones de la piel y de las membranas mucosas</td></tr><tr><td style=\"white-space:nowrap\">B09X<a name=\"diagnosticos-codesystem-B09X\"> </a></td><td>Infeccion viral no especificada, caracterizada por lesiones de la piel y de las membranas mucosas</td></tr><tr><td style=\"white-space:nowrap\">B150<a name=\"diagnosticos-codesystem-B150\"> </a></td><td>Hepatitis aguda tipo A, con coma hepatico</td></tr><tr><td style=\"white-space:nowrap\">B159<a name=\"diagnosticos-codesystem-B159\"> </a></td><td>Hepatitis aguda tipo A, sin coma hepatico</td></tr><tr><td style=\"white-space:nowrap\">B160<a name=\"diagnosticos-codesystem-B160\"> </a></td><td>Hepatitis aguda tipo B, con agente delta (coinfeccion), con coma hepatico</td></tr><tr><td style=\"white-space:nowrap\">B161<a name=\"diagnosticos-codesystem-B161\"> </a></td><td>Hepatitis aguda tipo B, con agente delta (coinfeccion), sin coma hepatico</td></tr><tr><td style=\"white-space:nowrap\">B162<a name=\"diagnosticos-codesystem-B162\"> </a></td><td>Hepatitis aguda tipo B, sin agente delta, con coma hepatico</td></tr><tr><td style=\"white-space:nowrap\">B99X<a name=\"diagnosticos-codesystem-B99X\"> </a></td><td>Otras enfermedades infecciosas y las no especificadas</td></tr><tr><td style=\"white-space:nowrap\">C000<a name=\"diagnosticos-codesystem-C000\"> </a></td><td>Tumor maligno del labio superior, cara externa</td></tr><tr><td style=\"white-space:nowrap\">C001<a name=\"diagnosticos-codesystem-C001\"> </a></td><td>Tumor maligno del labio inferior, cara externa</td></tr><tr><td style=\"white-space:nowrap\">C002<a name=\"diagnosticos-codesystem-C002\"> </a></td><td>Tumor maligno del labio, cara externa, sin otra especificacion</td></tr><tr><td style=\"white-space:nowrap\">C003<a name=\"diagnosticos-codesystem-C003\"> </a></td><td>Tumor maligno del labio superior, cara interna</td></tr><tr><td style=\"white-space:nowrap\">C004<a name=\"diagnosticos-codesystem-C004\"> </a></td><td>Tumor maligno del labio inferior, cara interna</td></tr><tr><td style=\"white-space:nowrap\">C005<a name=\"diagnosticos-codesystem-C005\"> </a></td><td>Tumor maligno del labio, cara interna, sin otra especificacion</td></tr><tr><td style=\"white-space:nowrap\">C006<a name=\"diagnosticos-codesystem-C006\"> </a></td><td>Tumor maligno de la comisura labial</td></tr><tr><td style=\"white-space:nowrap\">C008<a name=\"diagnosticos-codesystem-C008\"> </a></td><td>Lesion de sitios contiguos del labio</td></tr><tr><td style=\"white-space:nowrap\">C009<a name=\"diagnosticos-codesystem-C009\"> </a></td><td>Tumor maligno del labio, parte no especificada</td></tr><tr><td style=\"white-space:nowrap\">C01X<a name=\"diagnosticos-codesystem-C01X\"> </a></td><td>Tumor maligno de la base de la lengua</td></tr><tr><td style=\"white-space:nowrap\">C020<a name=\"diagnosticos-codesystem-C020\"> </a></td><td>Tumor maligno de la cara dorsal de la lengua</td></tr><tr><td style=\"white-space:nowrap\">C021<a name=\"diagnosticos-codesystem-C021\"> </a></td><td>Tumor maligno del borde de la lengua</td></tr><tr><td style=\"white-space:nowrap\">C022<a name=\"diagnosticos-codesystem-C022\"> </a></td><td>Tumor maligno de la cara ventral de la lengua</td></tr><tr><td style=\"white-space:nowrap\">C023<a name=\"diagnosticos-codesystem-C023\"> </a></td><td>Tumor maligno de los dos tercios anteriores de la lengua, parte no especificada</td></tr><tr><td style=\"white-space:nowrap\">C024<a name=\"diagnosticos-codesystem-C024\"> </a></td><td>Tumor maligno de la amigdala lingual</td></tr><tr><td style=\"white-space:nowrap\">C028<a name=\"diagnosticos-codesystem-C028\"> </a></td><td>Lesion de sitios contiguos de la lengua</td></tr><tr><td style=\"white-space:nowrap\">C029<a name=\"diagnosticos-codesystem-C029\"> </a></td><td>Tumor maligno de la lengua, parte no especificada</td></tr><tr><td style=\"white-space:nowrap\">C030<a name=\"diagnosticos-codesystem-C030\"> </a></td><td>Tumor maligno de la encia superior</td></tr><tr><td style=\"white-space:nowrap\">C031<a name=\"diagnosticos-codesystem-C031\"> </a></td><td>Tumor maligno de la encia inferior</td></tr><tr><td style=\"white-space:nowrap\">C039<a name=\"diagnosticos-codesystem-C039\"> </a></td><td>Tumor maligno de la encia, parte no especificada</td></tr><tr><td style=\"white-space:nowrap\">C040<a name=\"diagnosticos-codesystem-C040\"> </a></td><td>Tumor maligno de la parte anterior del piso de la boca</td></tr><tr><td style=\"white-space:nowrap\">C041<a name=\"diagnosticos-codesystem-C041\"> </a></td><td>Tumor maligno de la parte lateral del piso de la boca</td></tr><tr><td style=\"white-space:nowrap\">C048<a name=\"diagnosticos-codesystem-C048\"> </a></td><td>Lesion de sitios contiguos del piso de la boca</td></tr><tr><td style=\"white-space:nowrap\">C049<a name=\"diagnosticos-codesystem-C049\"> </a></td><td>Tumor maligno del piso de la boca, parte no especificada</td></tr><tr><td style=\"white-space:nowrap\">C050<a name=\"diagnosticos-codesystem-C050\"> </a></td><td>Tumor maligno del paladar duro</td></tr><tr><td style=\"white-space:nowrap\">C97X<a name=\"diagnosticos-codesystem-C97X\"> </a></td><td>Tumores malignos (primarios) de sitios multiples independientes</td></tr><tr><td style=\"white-space:nowrap\">D000<a name=\"diagnosticos-codesystem-D000\"> </a></td><td>Carcinoma in situ del labio, de la cavidad bucal y de la faringe</td></tr><tr><td style=\"white-space:nowrap\">D001<a name=\"diagnosticos-codesystem-D001\"> </a></td><td>Carcinoma in situ del esofago</td></tr><tr><td style=\"white-space:nowrap\">D002<a name=\"diagnosticos-codesystem-D002\"> </a></td><td>Carcinoma in situ del estomago</td></tr><tr><td style=\"white-space:nowrap\">D010<a name=\"diagnosticos-codesystem-D010\"> </a></td><td>Carcinoma in situ del colon</td></tr><tr><td style=\"white-space:nowrap\">D011<a name=\"diagnosticos-codesystem-D011\"> </a></td><td>Carcinoma in situ de la union rectosigmoidea</td></tr><tr><td style=\"white-space:nowrap\">D012<a name=\"diagnosticos-codesystem-D012\"> </a></td><td>Carcinoma in situ del recto</td></tr><tr><td style=\"white-space:nowrap\">D013<a name=\"diagnosticos-codesystem-D013\"> </a></td><td>Carcinoma in situ del ano y del conducto anal</td></tr><tr><td style=\"white-space:nowrap\">D014<a name=\"diagnosticos-codesystem-D014\"> </a></td><td>Carcinoma in situ de otras partes y de las no especificadas del intestino</td></tr><tr><td style=\"white-space:nowrap\">D015<a name=\"diagnosticos-codesystem-D015\"> </a></td><td>Carcinoma in situ del higado, de la vesicula biliar y del conducto biliar</td></tr><tr><td style=\"white-space:nowrap\">D017<a name=\"diagnosticos-codesystem-D017\"> </a></td><td>Carcinoma in situ de otras partes especificadas de organos digestivos</td></tr><tr><td style=\"white-space:nowrap\">D019<a name=\"diagnosticos-codesystem-D019\"> </a></td><td>Carcinoma in situ de organos digestivos no especificados</td></tr><tr><td style=\"white-space:nowrap\">D020<a name=\"diagnosticos-codesystem-D020\"> </a></td><td>Carcinoma in situ de la laringe</td></tr><tr><td style=\"white-space:nowrap\">D021<a name=\"diagnosticos-codesystem-D021\"> </a></td><td>Carcinoma in situ de la traquea</td></tr><tr><td style=\"white-space:nowrap\">D022<a name=\"diagnosticos-codesystem-D022\"> </a></td><td>Carcinoma in situ del bronquio y del pulmon</td></tr><tr><td style=\"white-space:nowrap\">D023<a name=\"diagnosticos-codesystem-D023\"> </a></td><td>Carcinoma in situ de otras partes del sistema respiratorio</td></tr><tr><td style=\"white-space:nowrap\">D024<a name=\"diagnosticos-codesystem-D024\"> </a></td><td>Carcinoma in situ de organos respiratorios no especificados</td></tr><tr><td style=\"white-space:nowrap\">D030<a name=\"diagnosticos-codesystem-D030\"> </a></td><td>Melanoma in situ del labio</td></tr><tr><td style=\"white-space:nowrap\">D031<a name=\"diagnosticos-codesystem-D031\"> </a></td><td>Melanoma in situ del parpado y de la comisura palpebral</td></tr><tr><td style=\"white-space:nowrap\">D032<a name=\"diagnosticos-codesystem-D032\"> </a></td><td>Melanoma in situ de la oreja y del conducto auditivo externo</td></tr><tr><td style=\"white-space:nowrap\">D033<a name=\"diagnosticos-codesystem-D033\"> </a></td><td>Melanoma in situ de otras partes y de las no especificadas de la cara</td></tr><tr><td style=\"white-space:nowrap\">D034<a name=\"diagnosticos-codesystem-D034\"> </a></td><td>Melanoma in situ del cuero cabelludo y del cuello</td></tr><tr><td style=\"white-space:nowrap\">D035<a name=\"diagnosticos-codesystem-D035\"> </a></td><td>Melanoma in situ del tronco</td></tr><tr><td style=\"white-space:nowrap\">D036<a name=\"diagnosticos-codesystem-D036\"> </a></td><td>Melanoma in situ del miembro superior, incluido el hombro</td></tr><tr><td style=\"white-space:nowrap\">D037<a name=\"diagnosticos-codesystem-D037\"> </a></td><td>Melanoma in situ del miembro inferior, incluida la cadera</td></tr><tr><td style=\"white-space:nowrap\">D038<a name=\"diagnosticos-codesystem-D038\"> </a></td><td>Melanoma in situ de otros sitios</td></tr><tr><td style=\"white-space:nowrap\">D039<a name=\"diagnosticos-codesystem-D039\"> </a></td><td>Melanoma in situ, sitio no especificado</td></tr><tr><td style=\"white-space:nowrap\">D040<a name=\"diagnosticos-codesystem-D040\"> </a></td><td>Carcinoma in situ de la piel del labio</td></tr><tr><td style=\"white-space:nowrap\">D041<a name=\"diagnosticos-codesystem-D041\"> </a></td><td>Carcinoma in situ de la piel del parpado y de la comisura palpebral</td></tr><tr><td style=\"white-space:nowrap\">D042<a name=\"diagnosticos-codesystem-D042\"> </a></td><td>Carcinoma in situ de la piel de la oreja y del conducto auditivo externo</td></tr><tr><td style=\"white-space:nowrap\">D043<a name=\"diagnosticos-codesystem-D043\"> </a></td><td>Carcinoma in situ de la piel de otras partes y de las no especificadas de la cara</td></tr><tr><td style=\"white-space:nowrap\">D044<a name=\"diagnosticos-codesystem-D044\"> </a></td><td>Carcinoma in situ de la piel del cuero cabelludo y cuello</td></tr><tr><td style=\"white-space:nowrap\">D045<a name=\"diagnosticos-codesystem-D045\"> </a></td><td>Carcinoma in situ de la piel del tronco</td></tr><tr><td style=\"white-space:nowrap\">D046<a name=\"diagnosticos-codesystem-D046\"> </a></td><td>Carcinoma in situ de la piel del miembro superior, incluido el hombro</td></tr><tr><td style=\"white-space:nowrap\">D047<a name=\"diagnosticos-codesystem-D047\"> </a></td><td>Carcinoma in situ de la piel del miembro inferior, incluida la cadera</td></tr><tr><td style=\"white-space:nowrap\">D048<a name=\"diagnosticos-codesystem-D048\"> </a></td><td>Carcinoma in situ de la piel de otros sitios especificados</td></tr><tr><td style=\"white-space:nowrap\">D049<a name=\"diagnosticos-codesystem-D049\"> </a></td><td>Carcinoma in situ de la piel, sitio no especificado</td></tr><tr><td style=\"white-space:nowrap\">D898<a name=\"diagnosticos-codesystem-D898\"> </a></td><td>Otros trastornos especificados que afectan el mecanismo de la inmunidad, no clasificados en otra parte</td></tr><tr><td style=\"white-space:nowrap\">D899<a name=\"diagnosticos-codesystem-D899\"> </a></td><td>Trastorno que afecta al mecanismo de la inmunidad, no especificado</td></tr><tr><td style=\"white-space:nowrap\">E000<a name=\"diagnosticos-codesystem-E000\"> </a></td><td>Sindrome congenito de deficiencia de yodo, tipo neurologico</td></tr><tr><td style=\"white-space:nowrap\">E001<a name=\"diagnosticos-codesystem-E001\"> </a></td><td>Sindrome de deficiencia congenita de yodo, tipo mixedematoso</td></tr><tr><td style=\"white-space:nowrap\">E002<a name=\"diagnosticos-codesystem-E002\"> </a></td><td>Sindrome congenito de deficiencia de yodo, tipo mixto</td></tr><tr><td style=\"white-space:nowrap\">E009<a name=\"diagnosticos-codesystem-E009\"> </a></td><td>Sindrome congenito de deficiencia de yodo, no especificado</td></tr><tr><td style=\"white-space:nowrap\">E010<a name=\"diagnosticos-codesystem-E010\"> </a></td><td>Bocio difuso (endemico) relacionado con deficiencia de yodo</td></tr><tr><td style=\"white-space:nowrap\">E011<a name=\"diagnosticos-codesystem-E011\"> </a></td><td>Bocio multinodular (endemico) relacionado con deficiencia de yodo</td></tr><tr><td style=\"white-space:nowrap\">E012<a name=\"diagnosticos-codesystem-E012\"> </a></td><td>Bocio (endemico) relacionado con deficiencia de yodo, no especificado</td></tr><tr><td style=\"white-space:nowrap\">E018<a name=\"diagnosticos-codesystem-E018\"> </a></td><td>Otros trastornos de la tiroides relacionados con deficiencia de yodo y afecciones similares</td></tr><tr><td style=\"white-space:nowrap\">E02X<a name=\"diagnosticos-codesystem-E02X\"> </a></td><td>Hipotiroidismo subclinico por deficiencia de yodo</td></tr><tr><td style=\"white-space:nowrap\">E030<a name=\"diagnosticos-codesystem-E030\"> </a></td><td>Hipotiroidismo congenito con bocio difuso</td></tr><tr><td style=\"white-space:nowrap\">E031<a name=\"diagnosticos-codesystem-E031\"> </a></td><td>Hipotiroidismo congenito sin bocio</td></tr><tr><td style=\"white-space:nowrap\">E032<a name=\"diagnosticos-codesystem-E032\"> </a></td><td>Hipotiroidismo debido a medicamentos y a otras sustancias exogenas</td></tr><tr><td style=\"white-space:nowrap\">E033<a name=\"diagnosticos-codesystem-E033\"> </a></td><td>Hipotiroidismo postinfeccioso</td></tr><tr><td style=\"white-space:nowrap\">E034<a name=\"diagnosticos-codesystem-E034\"> </a></td><td>Atrofia de tiroides (adquirida)</td></tr><tr><td style=\"white-space:nowrap\">E035<a name=\"diagnosticos-codesystem-E035\"> </a></td><td>Coma mixedematoso</td></tr><tr><td style=\"white-space:nowrap\">E038<a name=\"diagnosticos-codesystem-E038\"> </a></td><td>Otros hipotiroidismos especificados</td></tr><tr><td style=\"white-space:nowrap\">E039<a name=\"diagnosticos-codesystem-E039\"> </a></td><td>Hipotiroidismo, no especificado</td></tr><tr><td style=\"white-space:nowrap\">E040<a name=\"diagnosticos-codesystem-E040\"> </a></td><td>Bocio difuso no toxico</td></tr><tr><td style=\"white-space:nowrap\">E041<a name=\"diagnosticos-codesystem-E041\"> </a></td><td>Nodulo tiroideo solitario no toxico</td></tr><tr><td style=\"white-space:nowrap\">E042<a name=\"diagnosticos-codesystem-E042\"> </a></td><td>Bocio multinodular no toxico</td></tr><tr><td style=\"white-space:nowrap\">E048<a name=\"diagnosticos-codesystem-E048\"> </a></td><td>Otros bocios no toxicos especificados</td></tr><tr><td style=\"white-space:nowrap\">E049<a name=\"diagnosticos-codesystem-E049\"> </a></td><td>Bocio no toxico, no especificado</td></tr><tr><td style=\"white-space:nowrap\">E90X<a name=\"diagnosticos-codesystem-E90X\"> </a></td><td>Trastornos nutricionales y metabolicos en enfermedades clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">F000<a name=\"diagnosticos-codesystem-F000\"> </a></td><td>Demencia  en la enfermedad de Alzheimer, de comienzo temprano</td></tr><tr><td style=\"white-space:nowrap\">F001<a name=\"diagnosticos-codesystem-F001\"> </a></td><td>Demencia  en la enfermedad de Alzheimer, de comienzo tardio</td></tr><tr><td style=\"white-space:nowrap\">F002<a name=\"diagnosticos-codesystem-F002\"> </a></td><td>Demencia  en la enfermedad de Alzheimer, atipica o de tipo mixto</td></tr><tr><td style=\"white-space:nowrap\">F009<a name=\"diagnosticos-codesystem-F009\"> </a></td><td>Demencia  en la enfermedad de Alzheimer, no especificada</td></tr><tr><td style=\"white-space:nowrap\">F010<a name=\"diagnosticos-codesystem-F010\"> </a></td><td>Demencia  vascular de comienzo agudo</td></tr><tr><td style=\"white-space:nowrap\">F011<a name=\"diagnosticos-codesystem-F011\"> </a></td><td>Demencia  vascular por infartos multiples</td></tr><tr><td style=\"white-space:nowrap\">F012<a name=\"diagnosticos-codesystem-F012\"> </a></td><td>Demencia  vascular subcortical</td></tr><tr><td style=\"white-space:nowrap\">F013<a name=\"diagnosticos-codesystem-F013\"> </a></td><td>Demencia  vascular mixta, cortical y subcortical</td></tr><tr><td style=\"white-space:nowrap\">F018<a name=\"diagnosticos-codesystem-F018\"> </a></td><td>Otras demencia vasculares</td></tr><tr><td style=\"white-space:nowrap\">F019<a name=\"diagnosticos-codesystem-F019\"> </a></td><td>Demencia  vascular, no especificada</td></tr><tr><td style=\"white-space:nowrap\">F020<a name=\"diagnosticos-codesystem-F020\"> </a></td><td>Demencia  en la enfermedad de Pick</td></tr><tr><td style=\"white-space:nowrap\">F021<a name=\"diagnosticos-codesystem-F021\"> </a></td><td>Demencia  en la enfermedad de Creutzfeldt-Jakob</td></tr><tr><td style=\"white-space:nowrap\">F022<a name=\"diagnosticos-codesystem-F022\"> </a></td><td>Demencia  en la enfermedad de Huntington</td></tr><tr><td style=\"white-space:nowrap\">F023<a name=\"diagnosticos-codesystem-F023\"> </a></td><td>Demencia  en la enfermedad de Parkinson</td></tr><tr><td style=\"white-space:nowrap\">F024<a name=\"diagnosticos-codesystem-F024\"> </a></td><td>Demencia  en la enfermedad por virus de la inmunodeficiencia humana [VIH]</td></tr><tr><td style=\"white-space:nowrap\">F028<a name=\"diagnosticos-codesystem-F028\"> </a></td><td>Demencia  en otras enfermedades especificadas clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">F03X<a name=\"diagnosticos-codesystem-F03X\"> </a></td><td>Demencia , no especificada</td></tr><tr><td style=\"white-space:nowrap\">F04X<a name=\"diagnosticos-codesystem-F04X\"> </a></td><td>Sindrome amnesico organico, no inducido por alcohol o por otras sustancias psicoactivas</td></tr><tr><td style=\"white-space:nowrap\">F99X<a name=\"diagnosticos-codesystem-F99X\"> </a></td><td>Trastorno mental, no especificado</td></tr><tr><td style=\"white-space:nowrap\">G000<a name=\"diagnosticos-codesystem-G000\"> </a></td><td>Meningitis por hemofilos</td></tr><tr><td style=\"white-space:nowrap\">G001<a name=\"diagnosticos-codesystem-G001\"> </a></td><td>Meningitis  neumococica</td></tr><tr><td style=\"white-space:nowrap\">G002<a name=\"diagnosticos-codesystem-G002\"> </a></td><td>Meningitis estreptococica</td></tr><tr><td style=\"white-space:nowrap\">G003<a name=\"diagnosticos-codesystem-G003\"> </a></td><td>Meningitis estafilococica</td></tr><tr><td style=\"white-space:nowrap\">G008<a name=\"diagnosticos-codesystem-G008\"> </a></td><td>Otras meningitis bacterianas</td></tr><tr><td style=\"white-space:nowrap\">G009<a name=\"diagnosticos-codesystem-G009\"> </a></td><td>Meningitis bacteriana, no especificada</td></tr><tr><td style=\"white-space:nowrap\">G01X<a name=\"diagnosticos-codesystem-G01X\"> </a></td><td>Meningitis en enfermedades bacterianas clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">G020<a name=\"diagnosticos-codesystem-G020\"> </a></td><td>Meningitis en enfermedades virales clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">G021<a name=\"diagnosticos-codesystem-G021\"> </a></td><td>Meningitis en micosis</td></tr><tr><td style=\"white-space:nowrap\">G028<a name=\"diagnosticos-codesystem-G028\"> </a></td><td>Meningitis en otras enfermedades infecciosas y parasitarias especificadas clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">G030<a name=\"diagnosticos-codesystem-G030\"> </a></td><td>Meningitis apiogena</td></tr><tr><td style=\"white-space:nowrap\">G031<a name=\"diagnosticos-codesystem-G031\"> </a></td><td>Meningitis cronica</td></tr><tr><td style=\"white-space:nowrap\">G032<a name=\"diagnosticos-codesystem-G032\"> </a></td><td>Meningitis recurrente benigna [Mollaret]</td></tr><tr><td style=\"white-space:nowrap\">G038<a name=\"diagnosticos-codesystem-G038\"> </a></td><td>Meningitis debidas a otras causas especificadas</td></tr><tr><td style=\"white-space:nowrap\">G039<a name=\"diagnosticos-codesystem-G039\"> </a></td><td>Meningitis, no especificada</td></tr><tr><td style=\"white-space:nowrap\">G040<a name=\"diagnosticos-codesystem-G040\"> </a></td><td>Encefalitis aguda diseminada</td></tr><tr><td style=\"white-space:nowrap\">G041<a name=\"diagnosticos-codesystem-G041\"> </a></td><td>Mielopatia asociada al virus linfotropico de celulas T humanas</td></tr><tr><td style=\"white-space:nowrap\">G042<a name=\"diagnosticos-codesystem-G042\"> </a></td><td>Meningoencefalitis y meningomielitis bacterianas, no clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">G048<a name=\"diagnosticos-codesystem-G048\"> </a></td><td>Otras encefalitis, mielitis y encefalomielitis</td></tr><tr><td style=\"white-space:nowrap\">G049<a name=\"diagnosticos-codesystem-G049\"> </a></td><td>Encefalitis, mielitis y encefalomielitis, no especificadas</td></tr><tr><td style=\"white-space:nowrap\">G998<a name=\"diagnosticos-codesystem-G998\"> </a></td><td>Otros trastornos especificados del sistema nervioso en enfermedades clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">H000<a name=\"diagnosticos-codesystem-H000\"> </a></td><td>Orzuelo y otras inflamaciones profundas del parpado</td></tr><tr><td style=\"white-space:nowrap\">H001<a name=\"diagnosticos-codesystem-H001\"> </a></td><td>Calacio [chalazion]</td></tr><tr><td style=\"white-space:nowrap\">H010<a name=\"diagnosticos-codesystem-H010\"> </a></td><td>Blefaritis</td></tr><tr><td style=\"white-space:nowrap\">H011<a name=\"diagnosticos-codesystem-H011\"> </a></td><td>Dermatosis no infecciosa del parpado</td></tr><tr><td style=\"white-space:nowrap\">H018<a name=\"diagnosticos-codesystem-H018\"> </a></td><td>Otras inflamaciones especificadas del parpado</td></tr><tr><td style=\"white-space:nowrap\">H019<a name=\"diagnosticos-codesystem-H019\"> </a></td><td>Inflamacion del parpado, no especificada</td></tr><tr><td style=\"white-space:nowrap\">H020<a name=\"diagnosticos-codesystem-H020\"> </a></td><td>Entropion y triquiasis palpebral</td></tr><tr><td style=\"white-space:nowrap\">H021<a name=\"diagnosticos-codesystem-H021\"> </a></td><td>Ectropion del parpado</td></tr><tr><td style=\"white-space:nowrap\">H022<a name=\"diagnosticos-codesystem-H022\"> </a></td><td>Lagoftalmos</td></tr><tr><td style=\"white-space:nowrap\">H023<a name=\"diagnosticos-codesystem-H023\"> </a></td><td>Blefarocalasia</td></tr><tr><td style=\"white-space:nowrap\">H024<a name=\"diagnosticos-codesystem-H024\"> </a></td><td>Blefaroptosis</td></tr><tr><td style=\"white-space:nowrap\">H025<a name=\"diagnosticos-codesystem-H025\"> </a></td><td>Otros trastornos funcionales del parpado</td></tr><tr><td style=\"white-space:nowrap\">H026<a name=\"diagnosticos-codesystem-H026\"> </a></td><td>Xantelasma del parpado</td></tr><tr><td style=\"white-space:nowrap\">H027<a name=\"diagnosticos-codesystem-H027\"> </a></td><td>Otros trastornos degenerativos del parpado y del area periocular</td></tr><tr><td style=\"white-space:nowrap\">H028<a name=\"diagnosticos-codesystem-H028\"> </a></td><td>Otros trastornos especificados del parpado</td></tr><tr><td style=\"white-space:nowrap\">H029<a name=\"diagnosticos-codesystem-H029\"> </a></td><td>Trastorno del parpado, no especificado</td></tr><tr><td style=\"white-space:nowrap\">H030<a name=\"diagnosticos-codesystem-H030\"> </a></td><td>Infeccion o infestacion parasitaria del parpado en enfermedades clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">H031<a name=\"diagnosticos-codesystem-H031\"> </a></td><td>Compromiso del parpado en enfermedades infecciosas clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">H038<a name=\"diagnosticos-codesystem-H038\"> </a></td><td>Compromiso del parpado en enfermedades clasificadas en otra parte</td></tr><tr><td style=\"white-space:nowrap\">H040<a name=\"diagnosticos-codesystem-H040\"> </a></td><td>Dacrioadenitis</td></tr><tr><td style=\"white-space:nowrap\">H041<a name=\"diagnosticos-codesystem-H041\"> </a></td><td>Otros trastornos de la glandula lagrimal</td></tr><tr><td style=\"white-space:nowrap\">H042<a name=\"diagnosticos-codesystem-H042\"> </a></td><td>Epifora</td></tr><tr><td style=\"white-space:nowrap\">H043<a name=\"diagnosticos-codesystem-H043\"> </a></td><td>Inflamacion aguda y la no especificada de las vias lagrimales</td></tr><tr><td style=\"white-space:nowrap\">H044<a name=\"diagnosticos-codesystem-H044\"> </a></td><td>Inflamacion cronica de las vias lagrimales</td></tr><tr><td style=\"white-space:nowrap\">H045<a name=\"diagnosticos-codesystem-H045\"> </a></td><td>Estenosis e insuficiencia de las vias lagrimales</td></tr><tr><td style=\"white-space:nowrap\">H046<a name=\"diagnosticos-codesystem-H046\"> </a></td><td>Otros cambios de las vias lagrimales</td></tr><tr><td style=\"white-space:nowrap\">H048<a name=\"diagnosticos-codesystem-H048\"> </a></td><td>Otros trastornos especificados del aparato lagrimal</td></tr><tr><td style=\"white-space:nowrap\">H049<a name=\"diagnosticos-codesystem-H049\"> </a></td><td>Trastorno del aparato lagrimal, no especificado</td></tr><tr><td style=\"white-space:nowrap\">H050<a name=\"diagnosticos-codesystem-H050\"> </a></td><td>Inflamacion aguda de la orbita</td></tr><tr><td style=\"white-space:nowrap\">H959<a name=\"diagnosticos-codesystem-H959\"> </a></td><td>Trastornos no especificados del oido y de la apofisis mastoides, consecutivos a procedimientos</td></tr><tr><td style=\"white-space:nowrap\">I00X<a name=\"diagnosticos-codesystem-I00X\"> </a></td><td>Fiebre reumatica sin mencion de complicacion cardiaca</td></tr><tr><td style=\"white-space:nowrap\">I010<a name=\"diagnosticos-codesystem-I010\"> </a></td><td>Pericarditis reumatica aguda</td></tr><tr><td style=\"white-space:nowrap\">I011<a name=\"diagnosticos-codesystem-I011\"> </a></td><td>Endocarditis reumatica aguda</td></tr><tr><td style=\"white-space:nowrap\">I012<a name=\"diagnosticos-codesystem-I012\"> </a></td><td>Miocarditis reumatica aguda</td></tr><tr><td style=\"white-space:nowrap\">I018<a name=\"diagnosticos-codesystem-I018\"> </a></td><td>Otras enfermedades reumaticas agudas del corazon</td></tr><tr><td style=\"white-space:nowrap\">I019<a name=\"diagnosticos-codesystem-I019\"> </a></td><td>Enfermedad reumatica aguda del corazon, no especificada</td></tr><tr><td style=\"white-space:nowrap\">I020<a name=\"diagnosticos-codesystem-I020\"> </a></td><td>Corea reumatica con complicacion cardiaca</td></tr><tr><td style=\"white-space:nowrap\">I029<a name=\"diagnosticos-codesystem-I029\"> </a></td><td>Corea reumatica sin mencion de complicacion cardiaca</td></tr><tr><td style=\"white-space:nowrap\">I99X<a name=\"diagnosticos-codesystem-I99X\"> </a></td><td>Otros trastornos y los no especificados del sistema circulatorio</td></tr><tr><td style=\"white-space:nowrap\">J00X<a name=\"diagnosticos-codesystem-J00X\"> </a></td><td>Rinofaringitis aguda [resfriado comun]</td></tr><tr><td style=\"white-space:nowrap\">J010<a name=\"diagnosticos-codesystem-J010\"> </a></td><td>Sinusitis maxilar aguda</td></tr><tr><td style=\"white-space:nowrap\">J011<a name=\"diagnosticos-codesystem-J011\"> </a></td><td>Sinusitis frontal aguda</td></tr><tr><td style=\"white-space:nowrap\">J012<a name=\"diagnosticos-codesystem-J012\"> </a></td><td>Sinusitis etmoidal aguda</td></tr><tr><td style=\"white-space:nowrap\">J013<a name=\"diagnosticos-codesystem-J013\"> </a></td><td>Sinusitis esfenoidal aguda</td></tr><tr><td style=\"white-space:nowrap\">J014<a name=\"diagnosticos-codesystem-J014\"> </a></td><td>Pansinusitis aguda</td></tr><tr><td style=\"white-space:nowrap\">J018<a name=\"diagnosticos-codesystem-J018\"> </a></td><td>Otras sinusitis agudas</td></tr><tr><td style=\"white-space:nowrap\">J019<a name=\"diagnosticos-codesystem-J019\"> </a></td><td>Sinusitis aguda, no especificada</td></tr><tr><td style=\"white-space:nowrap\">J020<a name=\"diagnosticos-codesystem-J020\"> </a></td><td>Faringitis estreptococica</td></tr><tr><td style=\"white-space:nowrap\">J028<a name=\"diagnosticos-codesystem-J028\"> </a></td><td>Faringitis aguda debida a otros microorganismos especificados</td></tr><tr><td style=\"white-space:nowrap\">J029<a name=\"diagnosticos-codesystem-J029\"> </a></td><td>Faringitis aguda, no especificada</td></tr><tr><td style=\"white-space:nowrap\">J030<a name=\"diagnosticos-codesystem-J030\"> </a></td><td>Amigdalitis estreptococica</td></tr><tr><td style=\"white-space:nowrap\">J038<a name=\"diagnosticos-codesystem-J038\"> </a></td><td>Amigdalitis aguda debida a otros microorganismos especificados</td></tr><tr><td style=\"white-space:nowrap\">J039<a name=\"diagnosticos-codesystem-J039\"> </a></td><td>Amigdalitis aguda, no especificada</td></tr><tr><td style=\"white-space:nowrap\">J040<a name=\"diagnosticos-codesystem-J040\"> </a></td><td>Laringitis aguda</td></tr><tr><td style=\"white-space:nowrap\">J041<a name=\"diagnosticos-codesystem-J041\"> </a></td><td>Traqueitis aguda</td></tr><tr><td style=\"white-space:nowrap\">J042<a name=\"diagnosticos-codesystem-J042\"> </a></td><td>Laringotraqueitis aguda</td></tr><tr><td style=\"white-space:nowrap\">J050<a name=\"diagnosticos-codesystem-J050\"> </a></td><td>Laringitis obstructiva, aguda [crup]</td></tr><tr><td style=\"white-space:nowrap\">Y98X<a name=\"diagnosticos-codesystem-Y98X\"> </a></td><td>Afeccion relacionada con el estilo de vida</td></tr><tr><td style=\"white-space:nowrap\">Z000<a name=\"diagnosticos-codesystem-Z000\"> </a></td><td>Examen medico general</td></tr><tr><td style=\"white-space:nowrap\">Z001<a name=\"diagnosticos-codesystem-Z001\"> </a></td><td>Control de salud de rutina del nino</td></tr><tr><td style=\"white-space:nowrap\">Z002<a name=\"diagnosticos-codesystem-Z002\"> </a></td><td>Examen durante el periodo de crecimiento rapido en la infancia</td></tr><tr><td style=\"white-space:nowrap\">Z003<a name=\"diagnosticos-codesystem-Z003\"> </a></td><td>Examen del estado de desarrollo del adolescente</td></tr><tr><td style=\"white-space:nowrap\">Z004<a name=\"diagnosticos-codesystem-Z004\"> </a></td><td>Examen psiquiatrico general, no clasificado en otra parte</td></tr><tr><td style=\"white-space:nowrap\">Z005<a name=\"diagnosticos-codesystem-Z005\"> </a></td><td>Examen de donante potencial de organo o tejido</td></tr><tr><td style=\"white-space:nowrap\">Z006<a name=\"diagnosticos-codesystem-Z006\"> </a></td><td>Examen para comparacion y control normales en programa de investigacion clinica</td></tr><tr><td style=\"white-space:nowrap\">Z008<a name=\"diagnosticos-codesystem-Z008\"> </a></td><td>Otros examenes generales</td></tr><tr><td style=\"white-space:nowrap\">Z010<a name=\"diagnosticos-codesystem-Z010\"> </a></td><td>Examen de ojos y de la vision</td></tr><tr><td style=\"white-space:nowrap\">Z011<a name=\"diagnosticos-codesystem-Z011\"> </a></td><td>Examen de oidos y de la audicion</td></tr><tr><td style=\"white-space:nowrap\">Z012<a name=\"diagnosticos-codesystem-Z012\"> </a></td><td>Examen odontologico</td></tr><tr><td style=\"white-space:nowrap\">Z013<a name=\"diagnosticos-codesystem-Z013\"> </a></td><td>Examen de la presion sanguinea</td></tr><tr><td style=\"white-space:nowrap\">Z014<a name=\"diagnosticos-codesystem-Z014\"> </a></td><td>Examen ginecologico (general) (de rutina)</td></tr><tr><td style=\"white-space:nowrap\">Z015<a name=\"diagnosticos-codesystem-Z015\"> </a></td><td>Pruebas de sensibilizacion y diagnostico cutaneo</td></tr><tr><td style=\"white-space:nowrap\">Z016<a name=\"diagnosticos-codesystem-Z016\"> </a></td><td>Examen radiologico, no clasificado en otra parte</td></tr><tr><td style=\"white-space:nowrap\">Z017<a name=\"diagnosticos-codesystem-Z017\"> </a></td><td>Examen de laboratorio</td></tr><tr><td style=\"white-space:nowrap\">Z018<a name=\"diagnosticos-codesystem-Z018\"> </a></td><td>Otros examenes especiales especificados</td></tr><tr><td style=\"white-space:nowrap\">Z019<a name=\"diagnosticos-codesystem-Z019\"> </a></td><td>Examen especial no especificado</td></tr><tr><td style=\"white-space:nowrap\">Z020<a name=\"diagnosticos-codesystem-Z020\"> </a></td><td>Examen para admision a instituciones educativas</td></tr><tr><td style=\"white-space:nowrap\">Z021<a name=\"diagnosticos-codesystem-Z021\"> </a></td><td>Examen preempleo</td></tr><tr><td style=\"white-space:nowrap\">Z022<a name=\"diagnosticos-codesystem-Z022\"> </a></td><td>Examen para admision a instituciones residenciales</td></tr><tr><td style=\"white-space:nowrap\">Z023<a name=\"diagnosticos-codesystem-Z023\"> </a></td><td>Examen para reclutamiento en las fuerzas armadas</td></tr><tr><td style=\"white-space:nowrap\">Z024<a name=\"diagnosticos-codesystem-Z024\"> </a></td><td>Examen para obtencion de licencia de conducir</td></tr><tr><td style=\"white-space:nowrap\">Z025<a name=\"diagnosticos-codesystem-Z025\"> </a></td><td>Examen para participacion en competencias deportivas</td></tr><tr><td style=\"white-space:nowrap\">Z026<a name=\"diagnosticos-codesystem-Z026\"> </a></td><td>Examen para fines de seguros</td></tr><tr><td style=\"white-space:nowrap\">Z027<a name=\"diagnosticos-codesystem-Z027\"> </a></td><td>Extension de certificado medico</td></tr><tr><td style=\"white-space:nowrap\">Z028<a name=\"diagnosticos-codesystem-Z028\"> </a></td><td>Otros examenes para fines administrativos</td></tr><tr><td style=\"white-space:nowrap\">Z029<a name=\"diagnosticos-codesystem-Z029\"> </a></td><td>Examen para fines administrativos, no especificado</td></tr><tr><td style=\"white-space:nowrap\">Z030<a name=\"diagnosticos-codesystem-Z030\"> </a></td><td>Observacion por sospecha de tuberculosis</td></tr><tr><td style=\"white-space:nowrap\">Z031<a name=\"diagnosticos-codesystem-Z031\"> </a></td><td>Observacion por sospecha de tumor maligno</td></tr><tr><td style=\"white-space:nowrap\">Z032<a name=\"diagnosticos-codesystem-Z032\"> </a></td><td>Observacion por sospecha de trastorno mental y del comportamiento</td></tr><tr><td style=\"white-space:nowrap\">Z033<a name=\"diagnosticos-codesystem-Z033\"> </a></td><td>Observacion por sospecha de trastorno del sistema nervioso</td></tr><tr><td style=\"white-space:nowrap\">Z034<a name=\"diagnosticos-codesystem-Z034\"> </a></td><td>Observacion por sospecha de infarto de miocardio</td></tr><tr><td style=\"white-space:nowrap\">Z035<a name=\"diagnosticos-codesystem-Z035\"> </a></td><td>Observacion por sospecha de otras enfermedades cardiovasculares</td></tr><tr><td style=\"white-space:nowrap\">Z036<a name=\"diagnosticos-codesystem-Z036\"> </a></td><td>Observacion por sospecha de efectos toxicos de sustancias ingeridas</td></tr><tr><td style=\"white-space:nowrap\">Z038<a name=\"diagnosticos-codesystem-Z038\"> </a></td><td>Observacion por sospecha de otras enfermedades y afecciones</td></tr><tr><td style=\"white-space:nowrap\">Z039<a name=\"diagnosticos-codesystem-Z039\"> </a></td><td>Observacion por sospecha de enfermedad o afeccion no especificada</td></tr><tr><td style=\"white-space:nowrap\">Z040<a name=\"diagnosticos-codesystem-Z040\"> </a></td><td>Prueba de alcohol o drogas en la sangre</td></tr><tr><td style=\"white-space:nowrap\">Z041<a name=\"diagnosticos-codesystem-Z041\"> </a></td><td>Examen y observacion consecutivos a accidente de transporte</td></tr><tr><td style=\"white-space:nowrap\">Z042<a name=\"diagnosticos-codesystem-Z042\"> </a></td><td>Examen y observacion consecutivos a accidente de trabajo</td></tr><tr><td style=\"white-space:nowrap\">Z043<a name=\"diagnosticos-codesystem-Z043\"> </a></td><td>Examen y observacion consecutivos a otro accidente</td></tr><tr><td style=\"white-space:nowrap\">Z044<a name=\"diagnosticos-codesystem-Z044\"> </a></td><td>Examen y observacion consecutivos a denuncia de violacion y seduccion</td></tr><tr><td style=\"white-space:nowrap\">Z045<a name=\"diagnosticos-codesystem-Z045\"> </a></td><td>Examen y observacion consecutivos a otra lesion infligida</td></tr><tr><td style=\"white-space:nowrap\">Z046<a name=\"diagnosticos-codesystem-Z046\"> </a></td><td>Examen psiquiatrico general, solicitado por una autoridad</td></tr><tr><td style=\"white-space:nowrap\">Z048<a name=\"diagnosticos-codesystem-Z048\"> </a></td><td>Examen y observacion por otras razones especificadas</td></tr><tr><td style=\"white-space:nowrap\">Z049<a name=\"diagnosticos-codesystem-Z049\"> </a></td><td>Examen y observacion por razones no especificadas</td></tr><tr><td style=\"white-space:nowrap\">Z990<a name=\"diagnosticos-codesystem-Z990\"> </a></td><td>Dependencia de aspirador</td></tr><tr><td style=\"white-space:nowrap\">Z991<a name=\"diagnosticos-codesystem-Z991\"> </a></td><td>Dependencia de respirador</td></tr><tr><td style=\"white-space:nowrap\">Z992<a name=\"diagnosticos-codesystem-Z992\"> </a></td><td>Dependencia de dialisis renal</td></tr><tr><td style=\"white-space:nowrap\">Z993<a name=\"diagnosticos-codesystem-Z993\"> </a></td><td>Dependencia de silla de ruedas</td></tr><tr><td style=\"white-space:nowrap\">Z994<a name=\"diagnosticos-codesystem-Z994\"> </a></td><td>Dependencia de corazón artificial</td></tr><tr><td style=\"white-space:nowrap\">Z998<a name=\"diagnosticos-codesystem-Z998\"> </a></td><td>Dependencia de otras maquinas y dispositivos capacitantes</td></tr><tr><td style=\"white-space:nowrap\">Z999<a name=\"diagnosticos-codesystem-Z999\"> </a></td><td>Dependencia de maquina y dispositivo capacitante, no especificada</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:url [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "RecuperoDiagnosticosCS"] ; # 
+  fhir:title [ fhir:v "Diagnósticos para Recupero"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2025-07-12T16:20:05-03:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "HL7 Argentina"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "HL7 Argentina" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://hl7.org.ar" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@hl7.org.ar" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Listado de Diagnósticos"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "395"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "A000" ] ;
+     fhir:display [ fhir:v "Colera debido a Vibrio cholerae 01, biotipo cholerae" ]
+  ] [
+     fhir:code [ fhir:v "A001" ] ;
+     fhir:display [ fhir:v "Colera debido a Vibrio cholerae 01, biotipo el Tor" ]
+  ] [
+     fhir:code [ fhir:v "A009" ] ;
+     fhir:display [ fhir:v "Colera, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "A010" ] ;
+     fhir:display [ fhir:v "Fiebre tifoidea" ]
+  ] [
+     fhir:code [ fhir:v "A011" ] ;
+     fhir:display [ fhir:v "Fiebre paratifoidea A" ]
+  ] [
+     fhir:code [ fhir:v "A012" ] ;
+     fhir:display [ fhir:v "Fiebre paratifoidea B" ]
+  ] [
+     fhir:code [ fhir:v "A013" ] ;
+     fhir:display [ fhir:v "Fiebre paratifoidea C" ]
+  ] [
+     fhir:code [ fhir:v "A014" ] ;
+     fhir:display [ fhir:v "Fiebre paratifoidea, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A020" ] ;
+     fhir:display [ fhir:v "Enteritis debida a Salmonella" ]
+  ] [
+     fhir:code [ fhir:v "A021" ] ;
+     fhir:display [ fhir:v "Sepsis debida a Salmonella" ]
+  ] [
+     fhir:code [ fhir:v "A022" ] ;
+     fhir:display [ fhir:v "Infecciones localizadas debidas a Salmonella" ]
+  ] [
+     fhir:code [ fhir:v "A028" ] ;
+     fhir:display [ fhir:v "Otras infecciones especificadas como debidas a Salmonella" ]
+  ] [
+     fhir:code [ fhir:v "A029" ] ;
+     fhir:display [ fhir:v "Infeccion debida a Salmonella, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A030" ] ;
+     fhir:display [ fhir:v "Shigelosis debida a Shigella dysenteriae" ]
+  ] [
+     fhir:code [ fhir:v "A031" ] ;
+     fhir:display [ fhir:v "Shigelosis debida a Shigella flexneri" ]
+  ] [
+     fhir:code [ fhir:v "A032" ] ;
+     fhir:display [ fhir:v "Shigelosis debida a Shigella boydii" ]
+  ] [
+     fhir:code [ fhir:v "A033" ] ;
+     fhir:display [ fhir:v "Shigelosis debida a Shigella sonnei" ]
+  ] [
+     fhir:code [ fhir:v "A038" ] ;
+     fhir:display [ fhir:v "Otras shigelosis" ]
+  ] [
+     fhir:code [ fhir:v "A039" ] ;
+     fhir:display [ fhir:v "Shigelosis de tipo no especificado" ]
+  ] [
+     fhir:code [ fhir:v "A040" ] ;
+     fhir:display [ fhir:v "Infeccion debida a Escherichia coli enteropatogena" ]
+  ] [
+     fhir:code [ fhir:v "A041" ] ;
+     fhir:display [ fhir:v "Infeccion debida a Escherichia coli enterotoxigena" ]
+  ] [
+     fhir:code [ fhir:v "A042" ] ;
+     fhir:display [ fhir:v "Infeccion debida a Escherichia coli enteroinvasiva" ]
+  ] [
+     fhir:code [ fhir:v "A043" ] ;
+     fhir:display [ fhir:v "Infeccion debida a Escherichia coli enterohemorragica" ]
+  ] [
+     fhir:code [ fhir:v "A044" ] ;
+     fhir:display [ fhir:v "Otras infecciones intestinales debidas a Escherichia coli" ]
+  ] [
+     fhir:code [ fhir:v "A045" ] ;
+     fhir:display [ fhir:v "Enteritis debida a Campylobacter" ]
+  ] [
+     fhir:code [ fhir:v "A046" ] ;
+     fhir:display [ fhir:v "Enteritis debida a Yersinia enterocolitica" ]
+  ] [
+     fhir:code [ fhir:v "A047" ] ;
+     fhir:display [ fhir:v "Enterocolitis debida a Clostridium difficile" ]
+  ] [
+     fhir:code [ fhir:v "A048" ] ;
+     fhir:display [ fhir:v "Otras infecciones intestinales bacterianas especificadas" ]
+  ] [
+     fhir:code [ fhir:v "A049" ] ;
+     fhir:display [ fhir:v "Infeccion intestinal bacteriana, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A050" ] ;
+     fhir:display [ fhir:v "Intoxicacion alimentaria estafilococica" ]
+  ] [
+     fhir:code [ fhir:v "A051" ] ;
+     fhir:display [ fhir:v "Botulismo" ]
+  ] [
+     fhir:code [ fhir:v "A052" ] ;
+     fhir:display [ fhir:v "Intoxicacion alimentaria debida a Clostridium perfringens [Clostridium welchii]" ]
+  ] [
+     fhir:code [ fhir:v "A053" ] ;
+     fhir:display [ fhir:v "Intoxicacion alimentaria debida a Vibrio parahaemolyticus" ]
+  ] [
+     fhir:code [ fhir:v "A054" ] ;
+     fhir:display [ fhir:v "Intoxicacion alimentaria debida a Bacillus cereus" ]
+  ] [
+     fhir:code [ fhir:v "A058" ] ;
+     fhir:display [ fhir:v "Otras intoxicaciones alimentarias debidas a bacterias especificadas" ]
+  ] [
+     fhir:code [ fhir:v "A059" ] ;
+     fhir:display [ fhir:v "Intoxicacion alimentaria bacteriana, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A060" ] ;
+     fhir:display [ fhir:v "Disenteria amebiana aguda" ]
+  ] [
+     fhir:code [ fhir:v "A061" ] ;
+     fhir:display [ fhir:v "Amebiasis intestinal cronica" ]
+  ] [
+     fhir:code [ fhir:v "A062" ] ;
+     fhir:display [ fhir:v "Colitis amebiana no disenterica" ]
+  ] [
+     fhir:code [ fhir:v "A063" ] ;
+     fhir:display [ fhir:v "Ameboma intestinal" ]
+  ] [
+     fhir:code [ fhir:v "A064" ] ;
+     fhir:display [ fhir:v "Absceso amebiano del higado" ]
+  ] [
+     fhir:code [ fhir:v "A065" ] ;
+     fhir:display [ fhir:v "Absceso amebiano del pulmon" ]
+  ] [
+     fhir:code [ fhir:v "A066" ] ;
+     fhir:display [ fhir:v "Absceso amebiano del cerebro" ]
+  ] [
+     fhir:code [ fhir:v "A067" ] ;
+     fhir:display [ fhir:v "Amebiasis cutanea" ]
+  ] [
+     fhir:code [ fhir:v "A068" ] ;
+     fhir:display [ fhir:v "Infeccion amebiana de otras localizaciones" ]
+  ] [
+     fhir:code [ fhir:v "A069" ] ;
+     fhir:display [ fhir:v "Amebiasis, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A070" ] ;
+     fhir:display [ fhir:v "Balantidiasis" ]
+  ] [
+     fhir:code [ fhir:v "A071" ] ;
+     fhir:display [ fhir:v "Giardiasis [lambliasis]" ]
+  ] [
+     fhir:code [ fhir:v "A072" ] ;
+     fhir:display [ fhir:v "Criptosporidiosis" ]
+  ] [
+     fhir:code [ fhir:v "A073" ] ;
+     fhir:display [ fhir:v "Isosporiasis" ]
+  ] [
+     fhir:code [ fhir:v "A078" ] ;
+     fhir:display [ fhir:v "Otras enfermedades intestinales especificadas debidas a protozoarios" ]
+  ] [
+     fhir:code [ fhir:v "A079" ] ;
+     fhir:display [ fhir:v "Enfermedad intestinal debida a protozoarios, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A080" ] ;
+     fhir:display [ fhir:v "Enteritis debida a rotavirus" ]
+  ] [
+     fhir:code [ fhir:v "A081" ] ;
+     fhir:display [ fhir:v "Gastroenteropatia aguda debida al agente de Norwalk" ]
+  ] [
+     fhir:code [ fhir:v "A082" ] ;
+     fhir:display [ fhir:v "Enteritis debida a adenovirus" ]
+  ] [
+     fhir:code [ fhir:v "A083" ] ;
+     fhir:display [ fhir:v "Otras enteritis virales" ]
+  ] [
+     fhir:code [ fhir:v "A084" ] ;
+     fhir:display [ fhir:v "Infeccion intestinal viral, sin otra especificacion" ]
+  ] [
+     fhir:code [ fhir:v "A085" ] ;
+     fhir:display [ fhir:v "Otras infecciones intestinales especificadas" ]
+  ] [
+     fhir:code [ fhir:v "A090" ] ;
+     fhir:display [ fhir:v "Otras gastroenteritis y colitis de origen infeccioso" ]
+  ] [
+     fhir:code [ fhir:v "A099" ] ;
+     fhir:display [ fhir:v "Gastroenteritis y colitis de origen no especificado" ]
+  ] [
+     fhir:code [ fhir:v "A09X" ] ;
+     fhir:display [ fhir:v "Diarrea y gastroenteritis de presunto origen infeccioso" ]
+  ] [
+     fhir:code [ fhir:v "A150" ] ;
+     fhir:display [ fhir:v "Tuberculosis del pulmon, confirmada por hallazgo microscopico del bacilo tuberculoso en esputo, con o sin cultivo" ]
+  ] [
+     fhir:code [ fhir:v "A151" ] ;
+     fhir:display [ fhir:v "Tuberculosis del pulmon, confirmada unicamente por cultivo" ]
+  ] [
+     fhir:code [ fhir:v "A152" ] ;
+     fhir:display [ fhir:v "Tuberculosis del pulmon, confirmada histologicamente" ]
+  ] [
+     fhir:code [ fhir:v "A153" ] ;
+     fhir:display [ fhir:v "Tuberculosis del pulmon, confirmada por medios no especificados" ]
+  ] [
+     fhir:code [ fhir:v "A154" ] ;
+     fhir:display [ fhir:v "Tuberculosis de ganglios linfaticos intratoracicos, confirmada bacteriologica e histologicamente" ]
+  ] [
+     fhir:code [ fhir:v "A155" ] ;
+     fhir:display [ fhir:v "Tuberculosis de laringe, traquea y bronquios, confirmada bacteriologica e histologicamente" ]
+  ] [
+     fhir:code [ fhir:v "A156" ] ;
+     fhir:display [ fhir:v "Pleuresia tuberculosa, confirmada bacteriologica e histologicamente" ]
+  ] [
+     fhir:code [ fhir:v "A157" ] ;
+     fhir:display [ fhir:v "Tuberculosis respiratoria primaria, confirmada bacteriologica e histologicamente" ]
+  ] [
+     fhir:code [ fhir:v "A158" ] ;
+     fhir:display [ fhir:v "Otras tuberculosis respiratorias, confirmadas bacteriologica e histologicamente" ]
+  ] [
+     fhir:code [ fhir:v "A159" ] ;
+     fhir:display [ fhir:v "Tuberculosis respiratoria no especificada, confirmada bacteriologica e histologicamente" ]
+  ] [
+     fhir:code [ fhir:v "A160" ] ;
+     fhir:display [ fhir:v "Tuberculosis del pulmon, con examen bacteriologico e histologico negativos" ]
+  ] [
+     fhir:code [ fhir:v "A161" ] ;
+     fhir:display [ fhir:v "Tuberculosis de pulmon, sin examen bacteriologico e histologico" ]
+  ] [
+     fhir:code [ fhir:v "A162" ] ;
+     fhir:display [ fhir:v "Tuberculosis de pulmon, sin mencion de confirmacion bacteriologica o histologica" ]
+  ] [
+     fhir:code [ fhir:v "A163" ] ;
+     fhir:display [ fhir:v "Tuberculosis de ganglios linfaticos intratoracicos, sin mencion de confirmacion bacteriologica o histologica" ]
+  ] [
+     fhir:code [ fhir:v "A164" ] ;
+     fhir:display [ fhir:v "Tuberculosis de laringe, traquea y bronquios, sin mencion de confirmacion bacteriologica o histologica" ]
+  ] [
+     fhir:code [ fhir:v "A165" ] ;
+     fhir:display [ fhir:v "Pleuresia tuberculosa, sin mencion de confirmacion bacteriologica o histologica" ]
+  ] [
+     fhir:code [ fhir:v "A167" ] ;
+     fhir:display [ fhir:v "Tuberculosis respiratoria primaria, sin mencion de confirmacion bacteriologica o histologica" ]
+  ] [
+     fhir:code [ fhir:v "A168" ] ;
+     fhir:display [ fhir:v "Otras tuberculosis respiratorias, sin mencion de confirmacion" ]
+  ] [
+     fhir:code [ fhir:v "A169" ] ;
+     fhir:display [ fhir:v "Tuberculosis respiratoria no especificada, sin mencion de confirmacion bacteriologica o histologica" ]
+  ] [
+     fhir:code [ fhir:v "A170" ] ;
+     fhir:display [ fhir:v "Meningitis tuberculosa" ]
+  ] [
+     fhir:code [ fhir:v "A171" ] ;
+     fhir:display [ fhir:v "Tuberculoma meningeo" ]
+  ] [
+     fhir:code [ fhir:v "A178" ] ;
+     fhir:display [ fhir:v "Otras tuberculosis del sistema nervioso" ]
+  ] [
+     fhir:code [ fhir:v "A179" ] ;
+     fhir:display [ fhir:v "Tuberculosis del sistema nervioso, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A180" ] ;
+     fhir:display [ fhir:v "Tuberculosis de huesos y articulaciones" ]
+  ] [
+     fhir:code [ fhir:v "A181" ] ;
+     fhir:display [ fhir:v "Tuberculosis del aparato genitourinario" ]
+  ] [
+     fhir:code [ fhir:v "A182" ] ;
+     fhir:display [ fhir:v "Linfadenopatia periferica tuberculosa" ]
+  ] [
+     fhir:code [ fhir:v "A183" ] ;
+     fhir:display [ fhir:v "Tuberculosis de los intestinos, el peritoneo y los ganglios mesentericos" ]
+  ] [
+     fhir:code [ fhir:v "A184" ] ;
+     fhir:display [ fhir:v "Tuberculosis de la piel y el tejido subcutaneo" ]
+  ] [
+     fhir:code [ fhir:v "A185" ] ;
+     fhir:display [ fhir:v "Tuberculosis del ojo" ]
+  ] [
+     fhir:code [ fhir:v "A186" ] ;
+     fhir:display [ fhir:v "Tuberculosis del oido" ]
+  ] [
+     fhir:code [ fhir:v "A187" ] ;
+     fhir:display [ fhir:v "Tuberculosis de glandulas suprarrenales" ]
+  ] [
+     fhir:code [ fhir:v "A188" ] ;
+     fhir:display [ fhir:v "Tuberculosis de otros organos especificados" ]
+  ] [
+     fhir:code [ fhir:v "A190" ] ;
+     fhir:display [ fhir:v "Tuberculosis miliar aguda de un solo sitio especificado" ]
+  ] [
+     fhir:code [ fhir:v "A191" ] ;
+     fhir:display [ fhir:v "Tuberculosis miliar aguda de sitios multiples" ]
+  ] [
+     fhir:code [ fhir:v "A192" ] ;
+     fhir:display [ fhir:v "Tuberculosis miliar aguda, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A198" ] ;
+     fhir:display [ fhir:v "Otras tuberculosis miliares" ]
+  ] [
+     fhir:code [ fhir:v "A199" ] ;
+     fhir:display [ fhir:v "Tuberculosis miliar, sin otra especificacion" ]
+  ] [
+     fhir:code [ fhir:v "A200" ] ;
+     fhir:display [ fhir:v "Peste bubonica" ]
+  ] [
+     fhir:code [ fhir:v "A201" ] ;
+     fhir:display [ fhir:v "Peste celulocutanea" ]
+  ] [
+     fhir:code [ fhir:v "A202" ] ;
+     fhir:display [ fhir:v "Peste neumonica" ]
+  ] [
+     fhir:code [ fhir:v "A203" ] ;
+     fhir:display [ fhir:v "Meningitis por peste" ]
+  ] [
+     fhir:code [ fhir:v "A207" ] ;
+     fhir:display [ fhir:v "Peste septicemica" ]
+  ] [
+     fhir:code [ fhir:v "A208" ] ;
+     fhir:display [ fhir:v "Otras formas de peste" ]
+  ] [
+     fhir:code [ fhir:v "A209" ] ;
+     fhir:display [ fhir:v "Peste, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "A210" ] ;
+     fhir:display [ fhir:v "Tularemia ulceroglandular" ]
+  ] [
+     fhir:code [ fhir:v "A211" ] ;
+     fhir:display [ fhir:v "Tularemia oculoglandular" ]
+  ] [
+     fhir:code [ fhir:v "A212" ] ;
+     fhir:display [ fhir:v "Tularemia pulmonar" ]
+  ] [
+     fhir:code [ fhir:v "A213" ] ;
+     fhir:display [ fhir:v "Tularemia gastrointestinal" ]
+  ] [
+     fhir:code [ fhir:v "B000" ] ;
+     fhir:display [ fhir:v "Eczema herpetico" ]
+  ] [
+     fhir:code [ fhir:v "B001" ] ;
+     fhir:display [ fhir:v "Dermatitis vesicular herpetica" ]
+  ] [
+     fhir:code [ fhir:v "B002" ] ;
+     fhir:display [ fhir:v "Gingivoestomatitis y faringoamigdalitis herpetica" ]
+  ] [
+     fhir:code [ fhir:v "B003" ] ;
+     fhir:display [ fhir:v "Meningitis herpetica" ]
+  ] [
+     fhir:code [ fhir:v "B004" ] ;
+     fhir:display [ fhir:v "Encefalitis herpetica" ]
+  ] [
+     fhir:code [ fhir:v "B005" ] ;
+     fhir:display [ fhir:v "Oculopatia herpetica" ]
+  ] [
+     fhir:code [ fhir:v "B007" ] ;
+     fhir:display [ fhir:v "Enfermedad herpetica diseminada" ]
+  ] [
+     fhir:code [ fhir:v "B008" ] ;
+     fhir:display [ fhir:v "Otras formas de infecciones herpeticas" ]
+  ] [
+     fhir:code [ fhir:v "B009" ] ;
+     fhir:display [ fhir:v "Infeccion debida al virus del herpes, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "B010" ] ;
+     fhir:display [ fhir:v "Meningitis debida a varicela" ]
+  ] [
+     fhir:code [ fhir:v "B011" ] ;
+     fhir:display [ fhir:v "Encefalitis debida a varicela" ]
+  ] [
+     fhir:code [ fhir:v "B012" ] ;
+     fhir:display [ fhir:v "Neumonia debida a varicela" ]
+  ] [
+     fhir:code [ fhir:v "B018" ] ;
+     fhir:display [ fhir:v "Varicela con otras complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B019" ] ;
+     fhir:display [ fhir:v "Varicela sin complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B020" ] ;
+     fhir:display [ fhir:v "Encefalitis debida a herpes zoster" ]
+  ] [
+     fhir:code [ fhir:v "B021" ] ;
+     fhir:display [ fhir:v "Meningitis debida a herpes zoster" ]
+  ] [
+     fhir:code [ fhir:v "B022" ] ;
+     fhir:display [ fhir:v "Herpes zoster con otros compromisos del sistema nervioso" ]
+  ] [
+     fhir:code [ fhir:v "B023" ] ;
+     fhir:display [ fhir:v "Herpes zoster ocular" ]
+  ] [
+     fhir:code [ fhir:v "B027" ] ;
+     fhir:display [ fhir:v "Herpes zoster diseminado" ]
+  ] [
+     fhir:code [ fhir:v "B028" ] ;
+     fhir:display [ fhir:v "Herpes zoster con otras complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B029" ] ;
+     fhir:display [ fhir:v "Herpes zoster sin complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B03X" ] ;
+     fhir:display [ fhir:v "Viruela" ]
+  ] [
+     fhir:code [ fhir:v "B04X" ] ;
+     fhir:display [ fhir:v "Viruela de los monos" ]
+  ] [
+     fhir:code [ fhir:v "B050" ] ;
+     fhir:display [ fhir:v "Sarampion complicado con encefalitis" ]
+  ] [
+     fhir:code [ fhir:v "B051" ] ;
+     fhir:display [ fhir:v "Sarampion complicado con meningitis" ]
+  ] [
+     fhir:code [ fhir:v "B052" ] ;
+     fhir:display [ fhir:v "Sarampion complicado con neumonia" ]
+  ] [
+     fhir:code [ fhir:v "B053" ] ;
+     fhir:display [ fhir:v "Sarampion complicado con otitis media" ]
+  ] [
+     fhir:code [ fhir:v "B054" ] ;
+     fhir:display [ fhir:v "Sarampion con complicaciones intestinales" ]
+  ] [
+     fhir:code [ fhir:v "B058" ] ;
+     fhir:display [ fhir:v "Sarampion con otras complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B059" ] ;
+     fhir:display [ fhir:v "Sarampion sin complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B060" ] ;
+     fhir:display [ fhir:v "Rubeola con complicaciones neurologicas" ]
+  ] [
+     fhir:code [ fhir:v "B068" ] ;
+     fhir:display [ fhir:v "Rubeola con otras complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B069" ] ;
+     fhir:display [ fhir:v "Rubeola sin complicaciones" ]
+  ] [
+     fhir:code [ fhir:v "B07X" ] ;
+     fhir:display [ fhir:v "Verrugas viricas" ]
+  ] [
+     fhir:code [ fhir:v "B080" ] ;
+     fhir:display [ fhir:v "Otras infecciones debidas a ortopoxvirus" ]
+  ] [
+     fhir:code [ fhir:v "B081" ] ;
+     fhir:display [ fhir:v "Molusco contagioso" ]
+  ] [
+     fhir:code [ fhir:v "B082" ] ;
+     fhir:display [ fhir:v "Exantema subito [sexta enfermedad]" ]
+  ] [
+     fhir:code [ fhir:v "B083" ] ;
+     fhir:display [ fhir:v "Eritema infeccioso [quinta enfermedad]" ]
+  ] [
+     fhir:code [ fhir:v "B084" ] ;
+     fhir:display [ fhir:v "Estomatitis vesicular enteroviral con exantema" ]
+  ] [
+     fhir:code [ fhir:v "B085" ] ;
+     fhir:display [ fhir:v "Faringitis vesicular enterovirica" ]
+  ] [
+     fhir:code [ fhir:v "B088" ] ;
+     fhir:display [ fhir:v "Otras infecciones virales especificadas, caracterizadas por lesiones de la piel y de las membranas mucosas" ]
+  ] [
+     fhir:code [ fhir:v "B09X" ] ;
+     fhir:display [ fhir:v "Infeccion viral no especificada, caracterizada por lesiones de la piel y de las membranas mucosas" ]
+  ] [
+     fhir:code [ fhir:v "B150" ] ;
+     fhir:display [ fhir:v "Hepatitis aguda tipo A, con coma hepatico" ]
+  ] [
+     fhir:code [ fhir:v "B159" ] ;
+     fhir:display [ fhir:v "Hepatitis aguda tipo A, sin coma hepatico" ]
+  ] [
+     fhir:code [ fhir:v "B160" ] ;
+     fhir:display [ fhir:v "Hepatitis aguda tipo B, con agente delta (coinfeccion), con coma hepatico" ]
+  ] [
+     fhir:code [ fhir:v "B161" ] ;
+     fhir:display [ fhir:v "Hepatitis aguda tipo B, con agente delta (coinfeccion), sin coma hepatico" ]
+  ] [
+     fhir:code [ fhir:v "B162" ] ;
+     fhir:display [ fhir:v "Hepatitis aguda tipo B, sin agente delta, con coma hepatico" ]
+  ] [
+     fhir:code [ fhir:v "B99X" ] ;
+     fhir:display [ fhir:v "Otras enfermedades infecciosas y las no especificadas" ]
+  ] [
+     fhir:code [ fhir:v "C000" ] ;
+     fhir:display [ fhir:v "Tumor maligno del labio superior, cara externa" ]
+  ] [
+     fhir:code [ fhir:v "C001" ] ;
+     fhir:display [ fhir:v "Tumor maligno del labio inferior, cara externa" ]
+  ] [
+     fhir:code [ fhir:v "C002" ] ;
+     fhir:display [ fhir:v "Tumor maligno del labio, cara externa, sin otra especificacion" ]
+  ] [
+     fhir:code [ fhir:v "C003" ] ;
+     fhir:display [ fhir:v "Tumor maligno del labio superior, cara interna" ]
+  ] [
+     fhir:code [ fhir:v "C004" ] ;
+     fhir:display [ fhir:v "Tumor maligno del labio inferior, cara interna" ]
+  ] [
+     fhir:code [ fhir:v "C005" ] ;
+     fhir:display [ fhir:v "Tumor maligno del labio, cara interna, sin otra especificacion" ]
+  ] [
+     fhir:code [ fhir:v "C006" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la comisura labial" ]
+  ] [
+     fhir:code [ fhir:v "C008" ] ;
+     fhir:display [ fhir:v "Lesion de sitios contiguos del labio" ]
+  ] [
+     fhir:code [ fhir:v "C009" ] ;
+     fhir:display [ fhir:v "Tumor maligno del labio, parte no especificada" ]
+  ] [
+     fhir:code [ fhir:v "C01X" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la base de la lengua" ]
+  ] [
+     fhir:code [ fhir:v "C020" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la cara dorsal de la lengua" ]
+  ] [
+     fhir:code [ fhir:v "C021" ] ;
+     fhir:display [ fhir:v "Tumor maligno del borde de la lengua" ]
+  ] [
+     fhir:code [ fhir:v "C022" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la cara ventral de la lengua" ]
+  ] [
+     fhir:code [ fhir:v "C023" ] ;
+     fhir:display [ fhir:v "Tumor maligno de los dos tercios anteriores de la lengua, parte no especificada" ]
+  ] [
+     fhir:code [ fhir:v "C024" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la amigdala lingual" ]
+  ] [
+     fhir:code [ fhir:v "C028" ] ;
+     fhir:display [ fhir:v "Lesion de sitios contiguos de la lengua" ]
+  ] [
+     fhir:code [ fhir:v "C029" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la lengua, parte no especificada" ]
+  ] [
+     fhir:code [ fhir:v "C030" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la encia superior" ]
+  ] [
+     fhir:code [ fhir:v "C031" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la encia inferior" ]
+  ] [
+     fhir:code [ fhir:v "C039" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la encia, parte no especificada" ]
+  ] [
+     fhir:code [ fhir:v "C040" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la parte anterior del piso de la boca" ]
+  ] [
+     fhir:code [ fhir:v "C041" ] ;
+     fhir:display [ fhir:v "Tumor maligno de la parte lateral del piso de la boca" ]
+  ] [
+     fhir:code [ fhir:v "C048" ] ;
+     fhir:display [ fhir:v "Lesion de sitios contiguos del piso de la boca" ]
+  ] [
+     fhir:code [ fhir:v "C049" ] ;
+     fhir:display [ fhir:v "Tumor maligno del piso de la boca, parte no especificada" ]
+  ] [
+     fhir:code [ fhir:v "C050" ] ;
+     fhir:display [ fhir:v "Tumor maligno del paladar duro" ]
+  ] [
+     fhir:code [ fhir:v "C97X" ] ;
+     fhir:display [ fhir:v "Tumores malignos (primarios) de sitios multiples independientes" ]
+  ] [
+     fhir:code [ fhir:v "D000" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del labio, de la cavidad bucal y de la faringe" ]
+  ] [
+     fhir:code [ fhir:v "D001" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del esofago" ]
+  ] [
+     fhir:code [ fhir:v "D002" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del estomago" ]
+  ] [
+     fhir:code [ fhir:v "D010" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del colon" ]
+  ] [
+     fhir:code [ fhir:v "D011" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la union rectosigmoidea" ]
+  ] [
+     fhir:code [ fhir:v "D012" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del recto" ]
+  ] [
+     fhir:code [ fhir:v "D013" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del ano y del conducto anal" ]
+  ] [
+     fhir:code [ fhir:v "D014" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de otras partes y de las no especificadas del intestino" ]
+  ] [
+     fhir:code [ fhir:v "D015" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del higado, de la vesicula biliar y del conducto biliar" ]
+  ] [
+     fhir:code [ fhir:v "D017" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de otras partes especificadas de organos digestivos" ]
+  ] [
+     fhir:code [ fhir:v "D019" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de organos digestivos no especificados" ]
+  ] [
+     fhir:code [ fhir:v "D020" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la laringe" ]
+  ] [
+     fhir:code [ fhir:v "D021" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la traquea" ]
+  ] [
+     fhir:code [ fhir:v "D022" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ del bronquio y del pulmon" ]
+  ] [
+     fhir:code [ fhir:v "D023" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de otras partes del sistema respiratorio" ]
+  ] [
+     fhir:code [ fhir:v "D024" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de organos respiratorios no especificados" ]
+  ] [
+     fhir:code [ fhir:v "D030" ] ;
+     fhir:display [ fhir:v "Melanoma in situ del labio" ]
+  ] [
+     fhir:code [ fhir:v "D031" ] ;
+     fhir:display [ fhir:v "Melanoma in situ del parpado y de la comisura palpebral" ]
+  ] [
+     fhir:code [ fhir:v "D032" ] ;
+     fhir:display [ fhir:v "Melanoma in situ de la oreja y del conducto auditivo externo" ]
+  ] [
+     fhir:code [ fhir:v "D033" ] ;
+     fhir:display [ fhir:v "Melanoma in situ de otras partes y de las no especificadas de la cara" ]
+  ] [
+     fhir:code [ fhir:v "D034" ] ;
+     fhir:display [ fhir:v "Melanoma in situ del cuero cabelludo y del cuello" ]
+  ] [
+     fhir:code [ fhir:v "D035" ] ;
+     fhir:display [ fhir:v "Melanoma in situ del tronco" ]
+  ] [
+     fhir:code [ fhir:v "D036" ] ;
+     fhir:display [ fhir:v "Melanoma in situ del miembro superior, incluido el hombro" ]
+  ] [
+     fhir:code [ fhir:v "D037" ] ;
+     fhir:display [ fhir:v "Melanoma in situ del miembro inferior, incluida la cadera" ]
+  ] [
+     fhir:code [ fhir:v "D038" ] ;
+     fhir:display [ fhir:v "Melanoma in situ de otros sitios" ]
+  ] [
+     fhir:code [ fhir:v "D039" ] ;
+     fhir:display [ fhir:v "Melanoma in situ, sitio no especificado" ]
+  ] [
+     fhir:code [ fhir:v "D040" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel del labio" ]
+  ] [
+     fhir:code [ fhir:v "D041" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel del parpado y de la comisura palpebral" ]
+  ] [
+     fhir:code [ fhir:v "D042" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel de la oreja y del conducto auditivo externo" ]
+  ] [
+     fhir:code [ fhir:v "D043" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel de otras partes y de las no especificadas de la cara" ]
+  ] [
+     fhir:code [ fhir:v "D044" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel del cuero cabelludo y cuello" ]
+  ] [
+     fhir:code [ fhir:v "D045" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel del tronco" ]
+  ] [
+     fhir:code [ fhir:v "D046" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel del miembro superior, incluido el hombro" ]
+  ] [
+     fhir:code [ fhir:v "D047" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel del miembro inferior, incluida la cadera" ]
+  ] [
+     fhir:code [ fhir:v "D048" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel de otros sitios especificados" ]
+  ] [
+     fhir:code [ fhir:v "D049" ] ;
+     fhir:display [ fhir:v "Carcinoma in situ de la piel, sitio no especificado" ]
+  ] [
+     fhir:code [ fhir:v "D898" ] ;
+     fhir:display [ fhir:v "Otros trastornos especificados que afectan el mecanismo de la inmunidad, no clasificados en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "D899" ] ;
+     fhir:display [ fhir:v "Trastorno que afecta al mecanismo de la inmunidad, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "E000" ] ;
+     fhir:display [ fhir:v "Sindrome congenito de deficiencia de yodo, tipo neurologico" ]
+  ] [
+     fhir:code [ fhir:v "E001" ] ;
+     fhir:display [ fhir:v "Sindrome de deficiencia congenita de yodo, tipo mixedematoso" ]
+  ] [
+     fhir:code [ fhir:v "E002" ] ;
+     fhir:display [ fhir:v "Sindrome congenito de deficiencia de yodo, tipo mixto" ]
+  ] [
+     fhir:code [ fhir:v "E009" ] ;
+     fhir:display [ fhir:v "Sindrome congenito de deficiencia de yodo, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "E010" ] ;
+     fhir:display [ fhir:v "Bocio difuso (endemico) relacionado con deficiencia de yodo" ]
+  ] [
+     fhir:code [ fhir:v "E011" ] ;
+     fhir:display [ fhir:v "Bocio multinodular (endemico) relacionado con deficiencia de yodo" ]
+  ] [
+     fhir:code [ fhir:v "E012" ] ;
+     fhir:display [ fhir:v "Bocio (endemico) relacionado con deficiencia de yodo, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "E018" ] ;
+     fhir:display [ fhir:v "Otros trastornos de la tiroides relacionados con deficiencia de yodo y afecciones similares" ]
+  ] [
+     fhir:code [ fhir:v "E02X" ] ;
+     fhir:display [ fhir:v "Hipotiroidismo subclinico por deficiencia de yodo" ]
+  ] [
+     fhir:code [ fhir:v "E030" ] ;
+     fhir:display [ fhir:v "Hipotiroidismo congenito con bocio difuso" ]
+  ] [
+     fhir:code [ fhir:v "E031" ] ;
+     fhir:display [ fhir:v "Hipotiroidismo congenito sin bocio" ]
+  ] [
+     fhir:code [ fhir:v "E032" ] ;
+     fhir:display [ fhir:v "Hipotiroidismo debido a medicamentos y a otras sustancias exogenas" ]
+  ] [
+     fhir:code [ fhir:v "E033" ] ;
+     fhir:display [ fhir:v "Hipotiroidismo postinfeccioso" ]
+  ] [
+     fhir:code [ fhir:v "E034" ] ;
+     fhir:display [ fhir:v "Atrofia de tiroides (adquirida)" ]
+  ] [
+     fhir:code [ fhir:v "E035" ] ;
+     fhir:display [ fhir:v "Coma mixedematoso" ]
+  ] [
+     fhir:code [ fhir:v "E038" ] ;
+     fhir:display [ fhir:v "Otros hipotiroidismos especificados" ]
+  ] [
+     fhir:code [ fhir:v "E039" ] ;
+     fhir:display [ fhir:v "Hipotiroidismo, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "E040" ] ;
+     fhir:display [ fhir:v "Bocio difuso no toxico" ]
+  ] [
+     fhir:code [ fhir:v "E041" ] ;
+     fhir:display [ fhir:v "Nodulo tiroideo solitario no toxico" ]
+  ] [
+     fhir:code [ fhir:v "E042" ] ;
+     fhir:display [ fhir:v "Bocio multinodular no toxico" ]
+  ] [
+     fhir:code [ fhir:v "E048" ] ;
+     fhir:display [ fhir:v "Otros bocios no toxicos especificados" ]
+  ] [
+     fhir:code [ fhir:v "E049" ] ;
+     fhir:display [ fhir:v "Bocio no toxico, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "E90X" ] ;
+     fhir:display [ fhir:v "Trastornos nutricionales y metabolicos en enfermedades clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "F000" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Alzheimer, de comienzo temprano" ]
+  ] [
+     fhir:code [ fhir:v "F001" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Alzheimer, de comienzo tardio" ]
+  ] [
+     fhir:code [ fhir:v "F002" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Alzheimer, atipica o de tipo mixto" ]
+  ] [
+     fhir:code [ fhir:v "F009" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Alzheimer, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "F010" ] ;
+     fhir:display [ fhir:v "Demencia  vascular de comienzo agudo" ]
+  ] [
+     fhir:code [ fhir:v "F011" ] ;
+     fhir:display [ fhir:v "Demencia  vascular por infartos multiples" ]
+  ] [
+     fhir:code [ fhir:v "F012" ] ;
+     fhir:display [ fhir:v "Demencia  vascular subcortical" ]
+  ] [
+     fhir:code [ fhir:v "F013" ] ;
+     fhir:display [ fhir:v "Demencia  vascular mixta, cortical y subcortical" ]
+  ] [
+     fhir:code [ fhir:v "F018" ] ;
+     fhir:display [ fhir:v "Otras demencia vasculares" ]
+  ] [
+     fhir:code [ fhir:v "F019" ] ;
+     fhir:display [ fhir:v "Demencia  vascular, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "F020" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Pick" ]
+  ] [
+     fhir:code [ fhir:v "F021" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Creutzfeldt-Jakob" ]
+  ] [
+     fhir:code [ fhir:v "F022" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Huntington" ]
+  ] [
+     fhir:code [ fhir:v "F023" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad de Parkinson" ]
+  ] [
+     fhir:code [ fhir:v "F024" ] ;
+     fhir:display [ fhir:v "Demencia  en la enfermedad por virus de la inmunodeficiencia humana [VIH]" ]
+  ] [
+     fhir:code [ fhir:v "F028" ] ;
+     fhir:display [ fhir:v "Demencia  en otras enfermedades especificadas clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "F03X" ] ;
+     fhir:display [ fhir:v "Demencia , no especificada" ]
+  ] [
+     fhir:code [ fhir:v "F04X" ] ;
+     fhir:display [ fhir:v "Sindrome amnesico organico, no inducido por alcohol o por otras sustancias psicoactivas" ]
+  ] [
+     fhir:code [ fhir:v "F99X" ] ;
+     fhir:display [ fhir:v "Trastorno mental, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "G000" ] ;
+     fhir:display [ fhir:v "Meningitis por hemofilos" ]
+  ] [
+     fhir:code [ fhir:v "G001" ] ;
+     fhir:display [ fhir:v "Meningitis  neumococica" ]
+  ] [
+     fhir:code [ fhir:v "G002" ] ;
+     fhir:display [ fhir:v "Meningitis estreptococica" ]
+  ] [
+     fhir:code [ fhir:v "G003" ] ;
+     fhir:display [ fhir:v "Meningitis estafilococica" ]
+  ] [
+     fhir:code [ fhir:v "G008" ] ;
+     fhir:display [ fhir:v "Otras meningitis bacterianas" ]
+  ] [
+     fhir:code [ fhir:v "G009" ] ;
+     fhir:display [ fhir:v "Meningitis bacteriana, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "G01X" ] ;
+     fhir:display [ fhir:v "Meningitis en enfermedades bacterianas clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "G020" ] ;
+     fhir:display [ fhir:v "Meningitis en enfermedades virales clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "G021" ] ;
+     fhir:display [ fhir:v "Meningitis en micosis" ]
+  ] [
+     fhir:code [ fhir:v "G028" ] ;
+     fhir:display [ fhir:v "Meningitis en otras enfermedades infecciosas y parasitarias especificadas clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "G030" ] ;
+     fhir:display [ fhir:v "Meningitis apiogena" ]
+  ] [
+     fhir:code [ fhir:v "G031" ] ;
+     fhir:display [ fhir:v "Meningitis cronica" ]
+  ] [
+     fhir:code [ fhir:v "G032" ] ;
+     fhir:display [ fhir:v "Meningitis recurrente benigna [Mollaret]" ]
+  ] [
+     fhir:code [ fhir:v "G038" ] ;
+     fhir:display [ fhir:v "Meningitis debidas a otras causas especificadas" ]
+  ] [
+     fhir:code [ fhir:v "G039" ] ;
+     fhir:display [ fhir:v "Meningitis, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "G040" ] ;
+     fhir:display [ fhir:v "Encefalitis aguda diseminada" ]
+  ] [
+     fhir:code [ fhir:v "G041" ] ;
+     fhir:display [ fhir:v "Mielopatia asociada al virus linfotropico de celulas T humanas" ]
+  ] [
+     fhir:code [ fhir:v "G042" ] ;
+     fhir:display [ fhir:v "Meningoencefalitis y meningomielitis bacterianas, no clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "G048" ] ;
+     fhir:display [ fhir:v "Otras encefalitis, mielitis y encefalomielitis" ]
+  ] [
+     fhir:code [ fhir:v "G049" ] ;
+     fhir:display [ fhir:v "Encefalitis, mielitis y encefalomielitis, no especificadas" ]
+  ] [
+     fhir:code [ fhir:v "G998" ] ;
+     fhir:display [ fhir:v "Otros trastornos especificados del sistema nervioso en enfermedades clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "H000" ] ;
+     fhir:display [ fhir:v "Orzuelo y otras inflamaciones profundas del parpado" ]
+  ] [
+     fhir:code [ fhir:v "H001" ] ;
+     fhir:display [ fhir:v "Calacio [chalazion]" ]
+  ] [
+     fhir:code [ fhir:v "H010" ] ;
+     fhir:display [ fhir:v "Blefaritis" ]
+  ] [
+     fhir:code [ fhir:v "H011" ] ;
+     fhir:display [ fhir:v "Dermatosis no infecciosa del parpado" ]
+  ] [
+     fhir:code [ fhir:v "H018" ] ;
+     fhir:display [ fhir:v "Otras inflamaciones especificadas del parpado" ]
+  ] [
+     fhir:code [ fhir:v "H019" ] ;
+     fhir:display [ fhir:v "Inflamacion del parpado, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "H020" ] ;
+     fhir:display [ fhir:v "Entropion y triquiasis palpebral" ]
+  ] [
+     fhir:code [ fhir:v "H021" ] ;
+     fhir:display [ fhir:v "Ectropion del parpado" ]
+  ] [
+     fhir:code [ fhir:v "H022" ] ;
+     fhir:display [ fhir:v "Lagoftalmos" ]
+  ] [
+     fhir:code [ fhir:v "H023" ] ;
+     fhir:display [ fhir:v "Blefarocalasia" ]
+  ] [
+     fhir:code [ fhir:v "H024" ] ;
+     fhir:display [ fhir:v "Blefaroptosis" ]
+  ] [
+     fhir:code [ fhir:v "H025" ] ;
+     fhir:display [ fhir:v "Otros trastornos funcionales del parpado" ]
+  ] [
+     fhir:code [ fhir:v "H026" ] ;
+     fhir:display [ fhir:v "Xantelasma del parpado" ]
+  ] [
+     fhir:code [ fhir:v "H027" ] ;
+     fhir:display [ fhir:v "Otros trastornos degenerativos del parpado y del area periocular" ]
+  ] [
+     fhir:code [ fhir:v "H028" ] ;
+     fhir:display [ fhir:v "Otros trastornos especificados del parpado" ]
+  ] [
+     fhir:code [ fhir:v "H029" ] ;
+     fhir:display [ fhir:v "Trastorno del parpado, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "H030" ] ;
+     fhir:display [ fhir:v "Infeccion o infestacion parasitaria del parpado en enfermedades clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "H031" ] ;
+     fhir:display [ fhir:v "Compromiso del parpado en enfermedades infecciosas clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "H038" ] ;
+     fhir:display [ fhir:v "Compromiso del parpado en enfermedades clasificadas en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "H040" ] ;
+     fhir:display [ fhir:v "Dacrioadenitis" ]
+  ] [
+     fhir:code [ fhir:v "H041" ] ;
+     fhir:display [ fhir:v "Otros trastornos de la glandula lagrimal" ]
+  ] [
+     fhir:code [ fhir:v "H042" ] ;
+     fhir:display [ fhir:v "Epifora" ]
+  ] [
+     fhir:code [ fhir:v "H043" ] ;
+     fhir:display [ fhir:v "Inflamacion aguda y la no especificada de las vias lagrimales" ]
+  ] [
+     fhir:code [ fhir:v "H044" ] ;
+     fhir:display [ fhir:v "Inflamacion cronica de las vias lagrimales" ]
+  ] [
+     fhir:code [ fhir:v "H045" ] ;
+     fhir:display [ fhir:v "Estenosis e insuficiencia de las vias lagrimales" ]
+  ] [
+     fhir:code [ fhir:v "H046" ] ;
+     fhir:display [ fhir:v "Otros cambios de las vias lagrimales" ]
+  ] [
+     fhir:code [ fhir:v "H048" ] ;
+     fhir:display [ fhir:v "Otros trastornos especificados del aparato lagrimal" ]
+  ] [
+     fhir:code [ fhir:v "H049" ] ;
+     fhir:display [ fhir:v "Trastorno del aparato lagrimal, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "H050" ] ;
+     fhir:display [ fhir:v "Inflamacion aguda de la orbita" ]
+  ] [
+     fhir:code [ fhir:v "H959" ] ;
+     fhir:display [ fhir:v "Trastornos no especificados del oido y de la apofisis mastoides, consecutivos a procedimientos" ]
+  ] [
+     fhir:code [ fhir:v "I00X" ] ;
+     fhir:display [ fhir:v "Fiebre reumatica sin mencion de complicacion cardiaca" ]
+  ] [
+     fhir:code [ fhir:v "I010" ] ;
+     fhir:display [ fhir:v "Pericarditis reumatica aguda" ]
+  ] [
+     fhir:code [ fhir:v "I011" ] ;
+     fhir:display [ fhir:v "Endocarditis reumatica aguda" ]
+  ] [
+     fhir:code [ fhir:v "I012" ] ;
+     fhir:display [ fhir:v "Miocarditis reumatica aguda" ]
+  ] [
+     fhir:code [ fhir:v "I018" ] ;
+     fhir:display [ fhir:v "Otras enfermedades reumaticas agudas del corazon" ]
+  ] [
+     fhir:code [ fhir:v "I019" ] ;
+     fhir:display [ fhir:v "Enfermedad reumatica aguda del corazon, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "I020" ] ;
+     fhir:display [ fhir:v "Corea reumatica con complicacion cardiaca" ]
+  ] [
+     fhir:code [ fhir:v "I029" ] ;
+     fhir:display [ fhir:v "Corea reumatica sin mencion de complicacion cardiaca" ]
+  ] [
+     fhir:code [ fhir:v "I99X" ] ;
+     fhir:display [ fhir:v "Otros trastornos y los no especificados del sistema circulatorio" ]
+  ] [
+     fhir:code [ fhir:v "J00X" ] ;
+     fhir:display [ fhir:v "Rinofaringitis aguda [resfriado comun]" ]
+  ] [
+     fhir:code [ fhir:v "J010" ] ;
+     fhir:display [ fhir:v "Sinusitis maxilar aguda" ]
+  ] [
+     fhir:code [ fhir:v "J011" ] ;
+     fhir:display [ fhir:v "Sinusitis frontal aguda" ]
+  ] [
+     fhir:code [ fhir:v "J012" ] ;
+     fhir:display [ fhir:v "Sinusitis etmoidal aguda" ]
+  ] [
+     fhir:code [ fhir:v "J013" ] ;
+     fhir:display [ fhir:v "Sinusitis esfenoidal aguda" ]
+  ] [
+     fhir:code [ fhir:v "J014" ] ;
+     fhir:display [ fhir:v "Pansinusitis aguda" ]
+  ] [
+     fhir:code [ fhir:v "J018" ] ;
+     fhir:display [ fhir:v "Otras sinusitis agudas" ]
+  ] [
+     fhir:code [ fhir:v "J019" ] ;
+     fhir:display [ fhir:v "Sinusitis aguda, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "J020" ] ;
+     fhir:display [ fhir:v "Faringitis estreptococica" ]
+  ] [
+     fhir:code [ fhir:v "J028" ] ;
+     fhir:display [ fhir:v "Faringitis aguda debida a otros microorganismos especificados" ]
+  ] [
+     fhir:code [ fhir:v "J029" ] ;
+     fhir:display [ fhir:v "Faringitis aguda, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "J030" ] ;
+     fhir:display [ fhir:v "Amigdalitis estreptococica" ]
+  ] [
+     fhir:code [ fhir:v "J038" ] ;
+     fhir:display [ fhir:v "Amigdalitis aguda debida a otros microorganismos especificados" ]
+  ] [
+     fhir:code [ fhir:v "J039" ] ;
+     fhir:display [ fhir:v "Amigdalitis aguda, no especificada" ]
+  ] [
+     fhir:code [ fhir:v "J040" ] ;
+     fhir:display [ fhir:v "Laringitis aguda" ]
+  ] [
+     fhir:code [ fhir:v "J041" ] ;
+     fhir:display [ fhir:v "Traqueitis aguda" ]
+  ] [
+     fhir:code [ fhir:v "J042" ] ;
+     fhir:display [ fhir:v "Laringotraqueitis aguda" ]
+  ] [
+     fhir:code [ fhir:v "J050" ] ;
+     fhir:display [ fhir:v "Laringitis obstructiva, aguda [crup]" ]
+  ] [
+     fhir:code [ fhir:v "Y98X" ] ;
+     fhir:display [ fhir:v "Afeccion relacionada con el estilo de vida" ]
+  ] [
+     fhir:code [ fhir:v "Z000" ] ;
+     fhir:display [ fhir:v "Examen medico general" ]
+  ] [
+     fhir:code [ fhir:v "Z001" ] ;
+     fhir:display [ fhir:v "Control de salud de rutina del nino" ]
+  ] [
+     fhir:code [ fhir:v "Z002" ] ;
+     fhir:display [ fhir:v "Examen durante el periodo de crecimiento rapido en la infancia" ]
+  ] [
+     fhir:code [ fhir:v "Z003" ] ;
+     fhir:display [ fhir:v "Examen del estado de desarrollo del adolescente" ]
+  ] [
+     fhir:code [ fhir:v "Z004" ] ;
+     fhir:display [ fhir:v "Examen psiquiatrico general, no clasificado en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "Z005" ] ;
+     fhir:display [ fhir:v "Examen de donante potencial de organo o tejido" ]
+  ] [
+     fhir:code [ fhir:v "Z006" ] ;
+     fhir:display [ fhir:v "Examen para comparacion y control normales en programa de investigacion clinica" ]
+  ] [
+     fhir:code [ fhir:v "Z008" ] ;
+     fhir:display [ fhir:v "Otros examenes generales" ]
+  ] [
+     fhir:code [ fhir:v "Z010" ] ;
+     fhir:display [ fhir:v "Examen de ojos y de la vision" ]
+  ] [
+     fhir:code [ fhir:v "Z011" ] ;
+     fhir:display [ fhir:v "Examen de oidos y de la audicion" ]
+  ] [
+     fhir:code [ fhir:v "Z012" ] ;
+     fhir:display [ fhir:v "Examen odontologico" ]
+  ] [
+     fhir:code [ fhir:v "Z013" ] ;
+     fhir:display [ fhir:v "Examen de la presion sanguinea" ]
+  ] [
+     fhir:code [ fhir:v "Z014" ] ;
+     fhir:display [ fhir:v "Examen ginecologico (general) (de rutina)" ]
+  ] [
+     fhir:code [ fhir:v "Z015" ] ;
+     fhir:display [ fhir:v "Pruebas de sensibilizacion y diagnostico cutaneo" ]
+  ] [
+     fhir:code [ fhir:v "Z016" ] ;
+     fhir:display [ fhir:v "Examen radiologico, no clasificado en otra parte" ]
+  ] [
+     fhir:code [ fhir:v "Z017" ] ;
+     fhir:display [ fhir:v "Examen de laboratorio" ]
+  ] [
+     fhir:code [ fhir:v "Z018" ] ;
+     fhir:display [ fhir:v "Otros examenes especiales especificados" ]
+  ] [
+     fhir:code [ fhir:v "Z019" ] ;
+     fhir:display [ fhir:v "Examen especial no especificado" ]
+  ] [
+     fhir:code [ fhir:v "Z020" ] ;
+     fhir:display [ fhir:v "Examen para admision a instituciones educativas" ]
+  ] [
+     fhir:code [ fhir:v "Z021" ] ;
+     fhir:display [ fhir:v "Examen preempleo" ]
+  ] [
+     fhir:code [ fhir:v "Z022" ] ;
+     fhir:display [ fhir:v "Examen para admision a instituciones residenciales" ]
+  ] [
+     fhir:code [ fhir:v "Z023" ] ;
+     fhir:display [ fhir:v "Examen para reclutamiento en las fuerzas armadas" ]
+  ] [
+     fhir:code [ fhir:v "Z024" ] ;
+     fhir:display [ fhir:v "Examen para obtencion de licencia de conducir" ]
+  ] [
+     fhir:code [ fhir:v "Z025" ] ;
+     fhir:display [ fhir:v "Examen para participacion en competencias deportivas" ]
+  ] [
+     fhir:code [ fhir:v "Z026" ] ;
+     fhir:display [ fhir:v "Examen para fines de seguros" ]
+  ] [
+     fhir:code [ fhir:v "Z027" ] ;
+     fhir:display [ fhir:v "Extension de certificado medico" ]
+  ] [
+     fhir:code [ fhir:v "Z028" ] ;
+     fhir:display [ fhir:v "Otros examenes para fines administrativos" ]
+  ] [
+     fhir:code [ fhir:v "Z029" ] ;
+     fhir:display [ fhir:v "Examen para fines administrativos, no especificado" ]
+  ] [
+     fhir:code [ fhir:v "Z030" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de tuberculosis" ]
+  ] [
+     fhir:code [ fhir:v "Z031" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de tumor maligno" ]
+  ] [
+     fhir:code [ fhir:v "Z032" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de trastorno mental y del comportamiento" ]
+  ] [
+     fhir:code [ fhir:v "Z033" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de trastorno del sistema nervioso" ]
+  ] [
+     fhir:code [ fhir:v "Z034" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de infarto de miocardio" ]
+  ] [
+     fhir:code [ fhir:v "Z035" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de otras enfermedades cardiovasculares" ]
+  ] [
+     fhir:code [ fhir:v "Z036" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de efectos toxicos de sustancias ingeridas" ]
+  ] [
+     fhir:code [ fhir:v "Z038" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de otras enfermedades y afecciones" ]
+  ] [
+     fhir:code [ fhir:v "Z039" ] ;
+     fhir:display [ fhir:v "Observacion por sospecha de enfermedad o afeccion no especificada" ]
+  ] [
+     fhir:code [ fhir:v "Z040" ] ;
+     fhir:display [ fhir:v "Prueba de alcohol o drogas en la sangre" ]
+  ] [
+     fhir:code [ fhir:v "Z041" ] ;
+     fhir:display [ fhir:v "Examen y observacion consecutivos a accidente de transporte" ]
+  ] [
+     fhir:code [ fhir:v "Z042" ] ;
+     fhir:display [ fhir:v "Examen y observacion consecutivos a accidente de trabajo" ]
+  ] [
+     fhir:code [ fhir:v "Z043" ] ;
+     fhir:display [ fhir:v "Examen y observacion consecutivos a otro accidente" ]
+  ] [
+     fhir:code [ fhir:v "Z044" ] ;
+     fhir:display [ fhir:v "Examen y observacion consecutivos a denuncia de violacion y seduccion" ]
+  ] [
+     fhir:code [ fhir:v "Z045" ] ;
+     fhir:display [ fhir:v "Examen y observacion consecutivos a otra lesion infligida" ]
+  ] [
+     fhir:code [ fhir:v "Z046" ] ;
+     fhir:display [ fhir:v "Examen psiquiatrico general, solicitado por una autoridad" ]
+  ] [
+     fhir:code [ fhir:v "Z048" ] ;
+     fhir:display [ fhir:v "Examen y observacion por otras razones especificadas" ]
+  ] [
+     fhir:code [ fhir:v "Z049" ] ;
+     fhir:display [ fhir:v "Examen y observacion por razones no especificadas" ]
+  ] [
+     fhir:code [ fhir:v "Z990" ] ;
+     fhir:display [ fhir:v "Dependencia de aspirador" ]
+  ] [
+     fhir:code [ fhir:v "Z991" ] ;
+     fhir:display [ fhir:v "Dependencia de respirador" ]
+  ] [
+     fhir:code [ fhir:v "Z992" ] ;
+     fhir:display [ fhir:v "Dependencia de dialisis renal" ]
+  ] [
+     fhir:code [ fhir:v "Z993" ] ;
+     fhir:display [ fhir:v "Dependencia de silla de ruedas" ]
+  ] [
+     fhir:code [ fhir:v "Z994" ] ;
+     fhir:display [ fhir:v "Dependencia de corazón artificial" ]
+  ] [
+     fhir:code [ fhir:v "Z998" ] ;
+     fhir:display [ fhir:v "Dependencia de otras maquinas y dispositivos capacitantes" ]
+  ] [
+     fhir:code [ fhir:v "Z999" ] ;
+     fhir:display [ fhir:v "Dependencia de maquina y dispositivo capacitante, no especificada" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

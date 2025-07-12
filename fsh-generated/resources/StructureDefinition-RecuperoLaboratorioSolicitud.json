@@ -1,0 +1,596 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "RecuperoLaboratorioSolicitud",
+  "url": "http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioSolicitud",
+  "name": "RecuperoLaboratorioSolicitud",
+  "status": "draft",
+  "description": "Representa una solicitud de recupero de gastos de laboratorio, incluyendo la información relevante",
+  "fhirVersion": "4.0.1",
+  "kind": "logical",
+  "abstract": false,
+  "type": "http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioSolicitud",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Base",
+  "derivation": "specialization",
+  "differential": {
+    "element": [
+      {
+        "id": "RecuperoLaboratorioSolicitud",
+        "path": "RecuperoLaboratorioSolicitud",
+        "short": "RecuperoLaboratorioSolicitud",
+        "definition": "Representa una solicitud de recupero de gastos de laboratorio, incluyendo la información relevante"
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente",
+        "short": "Información del Paciente",
+        "definition": "Información del Paciente",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.idPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.idPaciente",
+        "short": "Identificador único para el paciente",
+        "definition": "Identificador único para el paciente",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.apellidoPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.apellidoPaciente",
+        "short": "Apellido(s) del paciente",
+        "definition": "Apellido(s) del paciente",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.otroApellidoPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.otroApellidoPaciente",
+        "short": "Otro(s) apellido(s) del paciente",
+        "definition": "Otro(s) apellido(s) del paciente",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.nombrePaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.nombrePaciente",
+        "short": "Nombre(s) del paciente",
+        "definition": "Nombre(s) del paciente",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.otroNombrePaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.otroNombrePaciente",
+        "short": "Otro(s) nombre(s) del paciente",
+        "definition": "Otro(s) nombre(s) del paciente",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.nombreAutopercibidoPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.nombreAutopercibidoPaciente",
+        "short": "Nombre autopercibido o preferido del paciente",
+        "definition": "Nombre autopercibido o preferido del paciente",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.tipoDocumentoPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.tipoDocumentoPaciente",
+        "short": "Tipo de documento de identificación del paciente (ej., DNI, Pasaporte)",
+        "definition": "Tipo de documento de identificación del paciente (ej., DNI, Pasaporte)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.documentoPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.documentoPaciente",
+        "short": "Número de documento de identificación del paciente",
+        "definition": "Número de documento de identificación del paciente",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.codSexoPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.codSexoPaciente",
+        "short": "Sexo del paciente (ej., Masculino, Femenino, Otro)",
+        "definition": "Sexo del paciente (ej., Masculino, Femenino, Otro)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosPaciente.fechaNacimientoPaciente",
+        "path": "RecuperoLaboratorioSolicitud.DatosPaciente.fechaNacimientoPaciente",
+        "short": "Fecha de nacimiento del paciente",
+        "definition": "Fecha de nacimiento del paciente",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto",
+        "short": "Contexto del Servicio Realizado",
+        "definition": "Contexto del Servicio Realizado",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto.codAmbito",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto.codAmbito",
+        "short": "Contexto de la solicitud (ej., Guardia, Internación, Ambulatorio)",
+        "definition": "Contexto de la solicitud (ej., Guardia, Internación, Ambulatorio)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto.idEpisodio",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto.idEpisodio",
+        "short": "Identificador del episodio clínico, si aplica",
+        "definition": "Identificador del episodio clínico, si aplica",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto.desEfectorProcesamiento",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto.desEfectorProcesamiento",
+        "short": "Efector o instalación de salud donde se tomó la muestra",
+        "definition": "Efector o instalación de salud donde se tomó la muestra",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto.desAmbitoDetalle",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto.desAmbitoDetalle",
+        "short": "Descripción detallada del ámbito de la solicitud",
+        "definition": "Descripción detallada del ámbito de la solicitud",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto.desServicioDetalle",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto.desServicioDetalle",
+        "short": "Servicio o área jerárquica donde se originó la solicitud",
+        "definition": "Servicio o área jerárquica donde se originó la solicitud",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto.desAreaJerarquicaSolicitud",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto.desAreaJerarquicaSolicitud",
+        "short": "Área jerárquica de la solicitud",
+        "definition": "Área jerárquica de la solicitud",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosContexto.idPedido",
+        "path": "RecuperoLaboratorioSolicitud.DatosContexto.idPedido",
+        "short": "Identificador de la solicitud (Id_solicitud)",
+        "definition": "Identificador de la solicitud (Id_solicitud)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo",
+        "path": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo",
+        "short": "Información de Diagnósticos",
+        "definition": "Información de Diagnósticos",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoTm",
+        "path": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoTm",
+        "short": "Identificador del código de diagnóstico local",
+        "definition": "Identificador del código de diagnóstico local",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoTm",
+        "path": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoTm",
+        "short": "Descripción del diagnóstico local",
+        "definition": "Descripción del diagnóstico local",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed",
+        "path": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed",
+        "short": "Identificador SNOMED CT para el diagnóstico",
+        "definition": "Identificador SNOMED CT para el diagnóstico",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed",
+        "path": "RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed",
+        "short": "Descripción SNOMED CT para el diagnóstico",
+        "definition": "Descripción SNOMED CT para el diagnóstico",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante",
+        "short": "Información del Profesional (Solicitante)",
+        "definition": "Información del Profesional (Solicitante)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante",
+        "short": "Identificador de la profesión del profesional solicitante",
+        "definition": "Identificador de la profesión del profesional solicitante",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante",
+        "short": "Profesión del profesional solicitante",
+        "definition": "Profesión del profesional solicitante",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante",
+        "short": "Tipo de matrícula profesional del profesional solicitante",
+        "definition": "Tipo de matrícula profesional del profesional solicitante",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante",
+        "short": "Número de matrícula del profesional solicitante",
+        "definition": "Número de matrícula del profesional solicitante",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalEfector",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalEfector",
+        "short": "Información del Profesional (Firmante/Atendedor)",
+        "definition": "Información del Profesional (Firmante/Atendedor)",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante",
+        "short": "Identificador de la profesión del profesional firmante/atendedor",
+        "definition": "Identificador de la profesión del profesional firmante/atendedor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante",
+        "short": "Profesión del profesional firmante/atendedor",
+        "definition": "Profesión del profesional firmante/atendedor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional",
+        "short": "Nombre del profesional firmante/atendedor",
+        "definition": "Nombre del profesional firmante/atendedor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante",
+        "short": "Identificador de la matrícula del profesional firmante/atendedor",
+        "definition": "Identificador de la matrícula del profesional firmante/atendedor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante",
+        "path": "RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante",
+        "short": "Número de matrícula del profesional firmante/atendedor",
+        "definition": "Número de matrícula del profesional firmante/atendedor",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.FechasServicio",
+        "path": "RecuperoLaboratorioSolicitud.FechasServicio",
+        "short": "Fechas del Servicio Realizado",
+        "definition": "Fechas del Servicio Realizado",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra",
+        "path": "RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra",
+        "short": "Fecha en que se tomó la muestra",
+        "definition": "Fecha en que se tomó la muestra",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado",
+        "path": "RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado",
+        "short": "Fecha en que se obtuvo el resultado",
+        "definition": "Fecha en que se obtuvo el resultado",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosCobertura",
+        "path": "RecuperoLaboratorioSolicitud.DatosCobertura",
+        "short": "Cobertura del Servicio",
+        "definition": "Cobertura del Servicio",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura",
+        "path": "RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura",
+        "short": "Codigo de Cobertura",
+        "definition": "Codigo de Cobertura",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura",
+        "path": "RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura",
+        "short": "Descripción de la cobertura/seguro del paciente",
+        "definition": "Descripción de la cobertura/seguro del paciente",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura",
+        "path": "RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura",
+        "short": "Numero de Carnet del Paciente",
+        "definition": "Numero de Carnet del Paciente",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.documentacionAuditoria",
+        "path": "RecuperoLaboratorioSolicitud.documentacionAuditoria",
+        "short": "Archivos Adjuntos Documentando Servicio",
+        "definition": "Archivos Adjuntos Documentando Servicio",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "RecuperoLaboratorioSolicitud.prestaciones",
+        "path": "RecuperoLaboratorioSolicitud.prestaciones",
+        "short": "Lista de servicios/procedimientos solicitados",
+        "definition": "Lista de servicios/procedimientos solicitados",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioPrestacion"
+          }
+        ]
+      }
+    ]
+  }
+}

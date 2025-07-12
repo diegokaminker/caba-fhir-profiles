@@ -1,0 +1,70 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperocoberturas-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoCoberturasVS",
+      "title" : "Recupero Coberturas ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero coberturas",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem"
+      ]
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperodiagnosticos-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoDiagnosticosVS",
+      "title" : "Recupero Diagnosticos ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero diagnosticos",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem"
+      ]
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoProcedimientosVS",
+      "title" : "Recupero Procedimientos ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero procedimientos",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"
+      ]
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperoprofesiones-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoProfesionesVS",
+      "title" : "Recupero Profesiones ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero profesiones",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem"
+      ]
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposdocumento-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoTiposDocumentoVS",
+      "title" : "Recupero TiposDocumento ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero tiposdocumento",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem"
+      ]
+    },
+    {
+      "url" : "http://recuperocaba.gob.ar/ValueSet/recuperotiposmatricula-valueset",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "RecuperoTiposMatriculaVS",
+      "title" : "Recupero TiposMatricula ValueSet",
+      "description" : "ValueSet que incluye todos los códigos del sistema recupero tiposmatricula",
+      "systems" : [
+        "http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem"
+      ]
+    }
+  ]
+}

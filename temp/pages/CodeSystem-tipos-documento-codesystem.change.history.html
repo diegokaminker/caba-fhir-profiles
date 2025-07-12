@@ -1,0 +1,21 @@
+---
+---
+<!-- layouts\layout-changehistory.html -->
+<!-- get modelType -->
+
+
+{% include fragment-pagebegin.html %}
+
+<div style="counter-reset: section 10" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Publish Box goes here</p><!--EndReleaseHeader-->
+  {% include fragment-base-navtabs.html type='CodeSystem' id='tipos-documento-codesystem' active='history' %}
+
+  <a name="root"> </a>
+  <h2 id="root">{{type}}: RecuperoTiposDocumentoCS - Change History</h2>
+  <p>History of changes for tipos-documento-codesystem {{type | downcase}}.</p>
+
+  {%include CodeSystem-tipos-documento-codesystem-history.xhtml%}
+
+</div>
+{% assign includetabscripts = 'true' %}
+{% include fragment-pageend.html %}

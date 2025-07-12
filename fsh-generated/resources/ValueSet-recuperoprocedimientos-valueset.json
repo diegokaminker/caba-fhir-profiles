@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RecuperoProcedimientosVS",
+  "id": "recuperoprocedimientos-valueset",
+  "title": "Recupero Procedimientos ValueSet",
+  "description": "ValueSet que incluye todos los códigos del sistema recupero procedimientos",
+  "url": "http://recuperocaba.gob.ar/ValueSet/recuperoprocedimientos-valueset",
+  "version": "1.0.0",
+  "experimental": false,
+  "publisher": "CABA",
+  "contact": [
+    {
+      "name": "CABA"
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "AR",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "compose": {
+    "include": [
+      {
+        "system": "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"
+      }
+    ]
+  }
+}

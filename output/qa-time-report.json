@@ -1,0 +1,1456 @@
+{
+  "date" : "Sat, 12 Jul, 2025 16:20:38 -0300",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [
+    {
+      "name" : "/fsh-generated/resources/ImplementationGuide-recupero-caba.json",
+      "size" : 7800,
+      "processes" : [
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 21
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 46
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 33,
+          "length" : 142
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 9131
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 53,
+          "length" : 218
+        },
+        {
+          "activity" : "generate2",
+          "start" : 62,
+          "length" : 189
+        },
+        {
+          "activity" : "generateExampleZip",
+          "start" : 109,
+          "length" : 1
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 6
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 135,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/Bundle-RecuperoCABABundleEjemplo.json",
+      "size" : 12229,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 41
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 95
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 2
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 33,
+          "length" : 1004
+        },
+        {
+          "activity" : "validate",
+          "start" : 52,
+          "length" : 581
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 118
+        },
+        {
+          "activity" : "generate2",
+          "start" : 62,
+          "length" : 264
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 101,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 4
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-coberturas-codesystem.json",
+      "size" : 9081,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 18
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 54
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "loadDepInfo",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 57
+        },
+        {
+          "activity" : "validate",
+          "start" : 35,
+          "length" : 297
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 79
+        },
+        {
+          "activity" : "generate2",
+          "start" : 63,
+          "length" : 2727
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-diagnosticos-codesystem.json",
+      "size" : 39396,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 26
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 36
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 76
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 498
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 216
+        },
+        {
+          "activity" : "generate2",
+          "start" : 65,
+          "length" : 609
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 14
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-procedimientos-codesystem.json",
+      "size" : 10751,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 10
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 57
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 32
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 108
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 76
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 208
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 8
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-profesiones-codesystem.json",
+      "size" : 30859,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 24
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 35
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 35
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 143
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 179
+        },
+        {
+          "activity" : "generate2",
+          "start" : 66,
+          "length" : 255
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 19
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tipos-documento-codesystem.json",
+      "size" : 1074,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 4
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 18
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 21
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 67
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 61
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 9
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/CodeSystem-tipos-matricula-codesystem.json",
+      "size" : 30965,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 15
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 22
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 23
+        },
+        {
+          "activity" : "validate",
+          "start" : 36,
+          "length" : 173
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 54,
+          "length" : 311
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 311
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 7
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-BundleCabaRecupero.json",
+      "size" : 5372,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 9
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 54
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 31,
+          "length" : 1030
+        },
+        {
+          "activity" : "loadInfo",
+          "start" : 33,
+          "length" : 3
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 223
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 2419
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 4
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 55,
+          "length" : 974
+        },
+        {
+          "activity" : "generate2",
+          "start" : 67,
+          "length" : 4962
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 6023
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 22
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 135,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 12
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ClaimCabaRecupero.json",
+      "size" : 5428,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 7
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 26
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 272
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 34,
+          "length" : 317
+        },
+        {
+          "activity" : "validate",
+          "start" : 39,
+          "length" : 1562
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 3
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 672
+        },
+        {
+          "activity" : "generate2",
+          "start" : 72,
+          "length" : 4215
+        },
+        {
+          "activity" : "generate2",
+          "start" : 94,
+          "length" : 846
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 12
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 135,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 17
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-DocumentReferenceCabaRecupero.json",
+      "size" : 2417,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 66
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 60
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 443
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 4
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 56,
+          "length" : 329
+        },
+        {
+          "activity" : "generate2",
+          "start" : 76,
+          "length" : 1550
+        },
+        {
+          "activity" : "generate2",
+          "start" : 95,
+          "length" : 216
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 5
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 135,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 6
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-EncounterCabaRecupero.json",
+      "size" : 1610,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 137
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 76
+        },
+        {
+          "activity" : "validate",
+          "start" : 41,
+          "length" : 458
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 57,
+          "length" : 331
+        },
+        {
+          "activity" : "generate2",
+          "start" : 78,
+          "length" : 1362
+        },
+        {
+          "activity" : "generate2",
+          "start" : 95,
+          "length" : 264
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ExtensionFathersFamilyName.json",
+      "size" : 1534,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 6
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 1
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 36
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 20
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 63
+        },
+        {
+          "activity" : "generate1",
+          "start" : 57,
+          "length" : 49
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 380
+        },
+        {
+          "activity" : "generate2",
+          "start" : 96,
+          "length" : 69
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ExtensionMothersFamilyName.json",
+      "size" : 1538,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 2
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 23
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 48
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 57,
+          "length" : 46
+        },
+        {
+          "activity" : "generate2",
+          "start" : 79,
+          "length" : 309
+        },
+        {
+          "activity" : "generate2",
+          "start" : 96,
+          "length" : 37
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PatientCabaRecupero.json",
+      "size" : 5780,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 7
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 112
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 96
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 510
+        },
+        {
+          "activity" : "checkConformanceResources",
+          "start" : 52,
+          "length" : 4
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 5
+        },
+        {
+          "activity" : "generate1",
+          "start" : 57,
+          "length" : 435
+        },
+        {
+          "activity" : "generate2",
+          "start" : 80,
+          "length" : 2591
+        },
+        {
+          "activity" : "generate2",
+          "start" : 96,
+          "length" : 280
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-PractitionerCabaRecupero.json",
+      "size" : 1915,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 3
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 46
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 32
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 200
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 57,
+          "length" : 187
+        },
+        {
+          "activity" : "generate2",
+          "start" : 82,
+          "length" : 1167
+        },
+        {
+          "activity" : "generate2",
+          "start" : 96,
+          "length" : 111
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 4
+        },
+        {
+          "activity" : "scanProfilesForR5",
+          "start" : 135,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-RecuperoLaboratorioPrestacion.json",
+      "size" : 2480,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 4
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 8
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 19
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 8
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 33
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 43
+        },
+        {
+          "activity" : "generate2",
+          "start" : 83,
+          "length" : 330
+        },
+        {
+          "activity" : "generate2",
+          "start" : 96,
+          "length" : 23
+        },
+        {
+          "activity" : "generateLogicals",
+          "start" : 99,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-RecuperoLaboratorioSolicitud.json",
+      "size" : 19793,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 11
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 67
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 48
+        },
+        {
+          "activity" : "validate",
+          "start" : 42,
+          "length" : 374
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 2
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 335
+        },
+        {
+          "activity" : "generate2",
+          "start" : 84,
+          "length" : 1705
+        },
+        {
+          "activity" : "generate2",
+          "start" : 96,
+          "length" : 192
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 5
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 3
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/StructureDefinition-ServiceRequestCabaRecupero.json",
+      "size" : 4318,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 5
+        },
+        {
+          "activity" : "load",
+          "start" : 31,
+          "length" : 15
+        },
+        {
+          "activity" : "generateSnapshots",
+          "start" : 32,
+          "length" : 54
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 56
+        },
+        {
+          "activity" : "validate",
+          "start" : 43,
+          "length" : 405
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 270
+        },
+        {
+          "activity" : "generate2",
+          "start" : 85,
+          "length" : 1295
+        },
+        {
+          "activity" : "generate2",
+          "start" : 96,
+          "length" : 171
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 6
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 5
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-recuperocoberturas-valueset.json",
+      "size" : 751,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 10
+        },
+        {
+          "activity" : "scan",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "checkR4R4B",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 80
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 50
+        },
+        {
+          "activity" : "scanForUsageStats",
+          "start" : 52,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 13
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 293
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 2
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-recuperodiagnosticos-valueset.json",
+      "size" : 763,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "load-configure",
+          "start" : 33,
+          "length" : 1
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 10
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 389
+        },
+        {
+          "activity" : "makeDependencies",
+          "start" : 101,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-recuperoprocedimientos-valueset.json",
+      "size" : 775,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 3
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 7
+        },
+        {
+          "activity" : "generate2",
+          "start" : 87,
+          "length" : 193
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-recuperoprofesiones-valueset.json",
+      "size" : 757,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 1
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 4
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 8
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 245
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-recuperotiposdocumento-valueset.json",
+      "size" : 776,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 2
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 5
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 9
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 85
+        },
+        {
+          "activity" : "generateValidationPack",
+          "start" : 110,
+          "length" : 1
+        },
+        {
+          "activity" : "scanExamplesForR5",
+          "start" : 135,
+          "length" : 1
+        }
+      ]
+    },
+    {
+      "name" : "fsh-generated/resources/ValueSet-recuperotiposmatricula-valueset.json",
+      "size" : 776,
+      "processes" : [
+        {
+          "activity" : "loadResources",
+          "start" : 30,
+          "length" : 3
+        },
+        {
+          "activity" : "load",
+          "start" : 30,
+          "length" : 2
+        },
+        {
+          "activity" : "generateNarratives",
+          "start" : 35,
+          "length" : 2
+        },
+        {
+          "activity" : "validate",
+          "start" : 37,
+          "length" : 4
+        },
+        {
+          "activity" : "processProvenanceDetails",
+          "start" : 53,
+          "length" : 1
+        },
+        {
+          "activity" : "generate1",
+          "start" : 58,
+          "length" : 12
+        },
+        {
+          "activity" : "generate2",
+          "start" : 88,
+          "length" : 257
+        }
+      ]
+    }
+  ]
+}
