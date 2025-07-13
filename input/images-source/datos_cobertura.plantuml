@@ -1,0 +1,22 @@
+@startuml DatosCobertura
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+package "DatosCobertura" {
+  class DatosCobertura {
+    + codCobertura: string (0..1)
+    + desCobertura: string (0..1)
+    + idCobertura: string (0..1)
+  }
+}
+
+note right of DatosCobertura
+  Cobertura del Servicio
+  - Código de cobertura
+  - Descripción de cobertura
+  - Número de carnet del paciente
+  - Información de seguro
+end note
+
+@enduml 

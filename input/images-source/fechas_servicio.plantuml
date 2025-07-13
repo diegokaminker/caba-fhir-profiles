@@ -1,0 +1,20 @@
+@startuml FechasServicio
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+package "FechasServicio" {
+  class FechasServicio {
+    + fechaMuestra: date (0..1)
+    + fechaResultado: date (0..1)
+  }
+}
+
+note right of FechasServicio
+  Fechas del Servicio Realizado
+  - Fecha de toma de muestra
+  - Fecha de resultado
+  - Timeline del servicio
+end note
+
+@enduml 

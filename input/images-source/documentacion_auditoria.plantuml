@@ -1,0 +1,20 @@
+@startuml DocumentacionAuditoria
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+package "DocumentacionAuditoria" {
+  class DocumentacionAuditoria {
+    + documentacionAuditoria: string[] (0..*)
+  }
+}
+
+note right of DocumentacionAuditoria
+  Archivos Adjuntos Documentando Servicio
+  - Múltiples archivos permitidos
+  - Documentación de auditoría
+  - Evidencia del servicio
+  - Archivos de respaldo
+end note
+
+@enduml 

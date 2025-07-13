@@ -1,0 +1,17 @@
+@startmindmap RecuperoLaboratorioSolicitud
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+* RecuperoLaboratorioSolicitud
+** DatosPaciente
+** DatosContexto
+** DiagnosticoPresuntivo
+** ProfesionalSolicitante
+** ProfesionalEfector
+** FechasServicio
+** DatosCobertura
+** documentacionAuditoria
+** prestaciones
+
+@endmindmap 

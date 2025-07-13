@@ -1,0 +1,29 @@
+@startuml DatosPaciente
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+package "DatosPaciente" {
+  class DatosPaciente {
+    + idPaciente: BackboneElement
+    + apellidoPaciente: string (1..1)
+    + otroApellidoPaciente: string (0..1)
+    + nombrePaciente: string (1..1)
+    + otroNombrePaciente: string (0..1)
+    + nombreAutopercibidoPaciente: string (0..1)
+    + tipoDocumentoPaciente: string (1..1)
+    + documentoPaciente: string (1..1)
+    + codSexoPaciente: string (1..1)
+    + fechaNacimientoPaciente: date (1..1)
+  }
+}
+
+note right of DatosPaciente
+  Información del Paciente
+  - Identificación única
+  - Nombres y apellidos
+  - Documento de identidad
+  - Datos demográficos
+end note
+
+@enduml 
