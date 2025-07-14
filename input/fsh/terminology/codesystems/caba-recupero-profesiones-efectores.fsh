@@ -2,6 +2,12 @@ CodeSystem: RecuperoProfesionesEfectoresCS
 Id: profesiones-efectores-codesystem
 Title: "Profesiones Efectores para Recupero"
 Description:  "Listado de Profesiones para Efectores" 
+* ^version = "1.0.0"
+* ^status = #active
+* ^experimental = false
+* ^caseSensitive = true
+* ^content = #complete
+
 * #27 "Bioquímico" "Bioquímico"
 * #28 "Licenciado en bioquímica" "Licenciado en bioquímica"
 * #29 "Profesiones de análisis clínicos" "Profesiones de análisis clínicos"

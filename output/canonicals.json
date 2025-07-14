@@ -46,7 +46,7 @@
     "type" : "CodeSystem",
     "url" : "http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem",
     "version" : "0.1.0",
-    "name" : "RecuperoTiposMatricula"
+    "name" : "RecuperoTiposMatriculaCS"
   },
   {
     "id" : "recupero-caba",
@@ -54,6 +54,13 @@
     "url" : "http://recuperocaba.gob.ar/ImplementationGuide/recupero-caba",
     "version" : "0.1.0",
     "name" : "RecuperoCABA"
+  },
+  {
+    "id" : "renaper-dni",
+    "type" : "NamingSystem",
+    "url" : "http://recuperocaba.gob.ar/NamingSystem/renaper-dni",
+    "version" : "0.1.0",
+    "name" : "RenaperDNI"
   },
   {
     "id" : "BundleCabaRecupero",

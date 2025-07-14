@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Practica Implementacion - Recupero CABA v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/corear.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.msobs.gov.py/index.php">
+            <img height="71" alt="Project home" src="assets/images/logo-mspbs.jpeg"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://funcapy.org"><img height="70" alt="FUNCA Website" src="assets/images/logo-funca.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Recupero CABA</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="casosdeuso.html">Casos de Uso</a>
+  </li>
+  <li>
+    <a href="modelologico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="practica_implementacion.html">Didáctica</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Practica Implementacion</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Recupero CABA - Local Development build (v0.1.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='http://recuperocaba.gob.ar/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Practica Implementacion</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#guía-de-implementación---práctica-recupero-caba" id="markdown-toc-guía-de-implementación---práctica-recupero-caba">Guía de Implementación - Práctica Recupero CABA</a>    <ul>
+      <li><a href="#índice-temático" id="markdown-toc-índice-temático">Índice Temático</a>        <ul>
+          <li><a href="#técnicas-de-ig-publisher" id="markdown-toc-técnicas-de-ig-publisher">Técnicas de IG Publisher</a></li>
+          <li><a href="#técnicas-de-fsh" id="markdown-toc-técnicas-de-fsh">Técnicas de FSH</a></li>
+          <li><a href="#implementaciones-de-referencia" id="markdown-toc-implementaciones-de-referencia">Implementaciones de Referencia</a></li>
+        </ul>
+      </li>
+      <li><a href="#técnicas-de-ig-publisher-1" id="markdown-toc-técnicas-de-ig-publisher-1">Técnicas de IG Publisher</a>        <ul>
+          <li><a href="#páginas-adicionales-y-menú" id="markdown-toc-páginas-adicionales-y-menú">Páginas Adicionales y Menú</a></li>
+          <li><a href="#logo-y-template-personalizado" id="markdown-toc-logo-y-template-personalizado">Logo y Template Personalizado</a></li>
+          <li><a href="#estructura-de-carpetas" id="markdown-toc-estructura-de-carpetas">Estructura de Carpetas</a></li>
+          <li><a href="#subir-recursos-de-conformidad" id="markdown-toc-subir-recursos-de-conformidad">Subir Recursos de Conformidad</a></li>
+          <li><a href="#incluir-imágenes" id="markdown-toc-incluir-imágenes">Incluir Imágenes</a></li>
+          <li><a href="#url-canónica" id="markdown-toc-url-canónica">URL Canónica</a></li>
+        </ul>
+      </li>
+      <li><a href="#técnicas-de-fsh-1" id="markdown-toc-técnicas-de-fsh-1">Técnicas de FSH</a>        <ul>
+          <li><a href="#modelos-lógicos" id="markdown-toc-modelos-lógicos">Modelos Lógicos</a></li>
+          <li><a href="#restricciones-a-nivel-de-recurso" id="markdown-toc-restricciones-a-nivel-de-recurso">Restricciones a Nivel de Recurso</a></li>
+          <li><a href="#restricciones-a-nivel-de-elemento" id="markdown-toc-restricciones-a-nivel-de-elemento">Restricciones a Nivel de Elemento</a></li>
+          <li><a href="#slicing" id="markdown-toc-slicing">Slicing</a></li>
+          <li><a href="#restricciones-terminológicas" id="markdown-toc-restricciones-terminológicas">Restricciones Terminológicas</a></li>
+          <li><a href="#definición-de-extensiones" id="markdown-toc-definición-de-extensiones">Definición de Extensiones</a></li>
+          <li><a href="#definición-y-validación-de-bundles" id="markdown-toc-definición-y-validación-de-bundles">Definición y Validación de Bundles</a></li>
+          <li><a href="#definición-de-alias" id="markdown-toc-definición-de-alias">Definición de Alias</a></li>
+          <li><a href="#definición-de-ejemplos" id="markdown-toc-definición-de-ejemplos">Definición de Ejemplos</a></li>
+          <li><a href="#definición-de-naming-systems" id="markdown-toc-definición-de-naming-systems">Definición de Naming Systems</a></li>
+        </ul>
+      </li>
+      <li><a href="#implementaciones-de-referencia-1" id="markdown-toc-implementaciones-de-referencia-1">Implementaciones de Referencia</a>        <ul>
+          <li><a href="#clientes" id="markdown-toc-clientes">Clientes</a></li>
+          <li><a href="#servidores" id="markdown-toc-servidores">Servidores</a></li>
+          <li><a href="#otros-actores" id="markdown-toc-otros-actores">Otros Actores</a></li>
+        </ul>
+      </li>
+      <li><a href="#conclusión" id="markdown-toc-conclusión">Conclusión</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="guía-de-implementación---práctica-recupero-caba">Guía de Implementación - Práctica Recupero CABA</h1>
+
+<p>Este documento demuestra las técnicas utilizadas para la generación de guías de implementación HL7 FHIR, incluyendo ejemplos prácticos del proyecto Recupero CABA.</p>
+
+<blockquote>
+  <p><strong>Nota:</strong> Cualquier coincidencia con proyectos reales es pura coincidencia. Está prohibido utilizar cualquiera de los artefactos que acompañan esta guía con pacientes reales, ya que se trata de una guía realizada con objetivos didácticos.</p>
+</blockquote>
+
+<h2 id="índice-temático">Índice Temático</h2>
+
+<h3 id="técnicas-de-ig-publisher">Técnicas de IG Publisher</h3>
+<ul>
+  <li><a href="#páginas-adicionales-y-menú">Páginas Adicionales y Menú</a></li>
+  <li><a href="#logo-y-template-personalizado">Logo y Template Personalizado</a></li>
+  <li><a href="#estructura-de-carpetas">Estructura de Carpetas</a></li>
+  <li><a href="#subir-recursos-de-conformidad">Subir Recursos de Conformidad</a></li>
+  <li><a href="#incluir-imágenes">Incluir Imágenes</a></li>
+  <li><a href="#url-canónica">URL Canónica</a></li>
+</ul>
+
+<h3 id="técnicas-de-fsh">Técnicas de FSH</h3>
+<ul>
+  <li><a href="#modelos-lógicos">Modelos Lógicos</a></li>
+  <li><a href="#restricciones-a-nivel-de-recurso">Restricciones a Nivel de Recurso</a></li>
+  <li><a href="#restricciones-a-nivel-de-elemento">Restricciones a Nivel de Elemento</a></li>
+  <li><a href="#slicing">Slicing</a></li>
+  <li><a href="#restricciones-terminológicas">Restricciones Terminológicas</a></li>
+  <li><a href="#definición-de-extensiones">Definición de Extensiones</a></li>
+  <li><a href="#definición-y-validación-de-bundles">Definición y Validación de Bundles</a></li>
+  <li><a href="#definición-de-alias">Definición de Alias</a></li>
+  <li><a href="#definición-de-ejemplos">Definición de Ejemplos</a></li>
+  <li><a href="#definición-de-naming-systems">Definición de Naming Systems</a></li>
+</ul>
+
+<h3 id="implementaciones-de-referencia">Implementaciones de Referencia</h3>
+<ul>
+  <li><a href="#clientes">Clientes</a></li>
+  <li><a href="#servidores">Servidores</a></li>
+  <li><a href="#otros-actores">Otros Actores</a></li>
+</ul>
+
+<hr />
+
+<h2 id="técnicas-de-ig-publisher-1">Técnicas de IG Publisher</h2>
+
+<h3 id="páginas-adicionales-y-menú">Páginas Adicionales y Menú</h3>
+
+<p>Se pueden agregar páginas adicionales al IG y configurar el menú de navegación.</p>
+
+<p><strong>Configuración en sushi-config.yaml:</strong></p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">menu</span><span class="pi">:</span>
+  <span class="na">Home</span><span class="pi">:</span> <span class="s">index.html</span>
+  <span class="na">Artefactos</span><span class="pi">:</span> <span class="s">artifacts.html</span>
+  <span class="na">Casos de Uso</span><span class="pi">:</span> <span class="s">casosdeuso.html</span>
+  <span class="na">Modelo Lógico</span><span class="pi">:</span> <span class="s">modelologico.html</span>
+</code></pre></div></div>
+
+<p><strong>Páginas en input/pagecontent/:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">index.md</code> - Página principal</li>
+  <li><code class="language-plaintext highlighter-rouge">modelologico.md</code> - Documentación del modelo lógico</li>
+  <li><code class="language-plaintext highlighter-rouge">practica_implementacion.md</code> - Esta guía de implementación</li>
+</ul>
+
+<h3 id="logo-y-template-personalizado">Logo y Template Personalizado</h3>
+
+<p>Se puede personalizar el logo y usar templates diferentes al default.</p>
+
+<blockquote>
+  <p><strong>Implementado:</strong> Se utiliza el template default de HL7, pero se puede personalizar agregando archivos en <code class="language-plaintext highlighter-rouge">input/includes/</code> y <code class="language-plaintext highlighter-rouge">input/assets/</code>.</p>
+</blockquote>
+
+<h3 id="estructura-de-carpetas">Estructura de Carpetas</h3>
+
+<p>Organización de archivos siguiendo las convenciones de IG Publisher.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>input/
+├── fsh/
+│   ├── logical_models/     # Modelos lógicos
+│   ├── profiles/          # Perfiles FHIR
+│   ├── extensions/        # Extensiones personalizadas
+│   ├── examples/          # Ejemplos de recursos
+│   ├── terminology/       # CodeSystems y ValueSets
+│   ├── alias/            # Definiciones de alias
+│   └── naming_systems/   # Sistemas de nombres
+├── pagecontent/          # Páginas de documentación
+├── images/              # Imágenes generadas
+├── images_source/       # Fuentes de diagramas PlantUML
+└── includes/            # Archivos incluidos
+</code></pre></div></div>
+
+<h3 id="subir-recursos-de-conformidad">Subir Recursos de Conformidad</h3>
+
+<p>Scripts para subir recursos de conformidad al servidor FHIR.</p>
+
+<p><strong>Script uploadig.sh:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c"># Sube recursos individuales al servidor FHIR</span>
+<span class="c"># Uso: ./uploadig.sh [folder_path] [server_url]</span>
+
+<span class="c"># Verifica existencia y sube CodeSystems, ValueSets, StructureDefinitions</span>
+</code></pre></div></div>
+
+<p><strong>Script verify_upload.sh:</strong></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+<span class="c"># Verifica que todos los recursos estén correctamente subidos</span>
+<span class="c"># Genera reporte de estado de cada recurso</span>
+</code></pre></div></div>
+
+<h3 id="incluir-imágenes">Incluir Imágenes</h3>
+
+<p>Inclusión de diagramas PlantUML en la documentación.</p>
+
+<p><strong>Sintaxis en markdown:</strong></p>
+<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">![</span><span class="nv">MindMap</span><span class="p">](</span><span class="sx">recupero_laboratorio_mindmap.svg</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Diagramas creados:</strong></p>
+<ul>
+  <li>Mindmap general del modelo</li>
+  <li>Diagramas detallados de cada backbone element</li>
+  <li>Fuentes en <code class="language-plaintext highlighter-rouge">input/images_source/</code></li>
+</ul>
+
+<h3 id="url-canónica">URL Canónica</h3>
+
+<p>Configuración de la URL canónica del Implementation Guide.</p>
+
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">canonical</span><span class="pi">:</span> <span class="s">http://recuperocaba.gob.ar</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="técnicas-de-fsh-1">Técnicas de FSH</h2>
+
+<h3 id="modelos-lógicos">Modelos Lógicos</h3>
+
+<p>Definición de modelos lógicos para representar necesidades de negocio.</p>
+
+<p><strong>Ejemplo: RecuperoLaboratorioSolicitud</strong></p>
+
+<pre><code class="language-fsh">Logical: RecuperoLaboratorioSolicitud
+Parent: Base
+Description: "Representa una solicitud de recupero de gastos de laboratorio"
+
+* DatosPaciente 1..1 BackboneElement "Información del Paciente"
+  * apellidoPaciente 1..1 string "Apellido(s) del paciente"
+  * nombrePaciente 1..1 string "Nombre(s) del paciente"
+  // ... más elementos
+</code></pre>
+
+<blockquote>
+  <p><strong>Propósito:</strong> Los modelos lógicos representan las necesidades del negocio previo a su estandarización utilizando FHIR, y no constituyen artefactos de interoperabilidad.</p>
+</blockquote>
+
+<h3 id="restricciones-a-nivel-de-recurso">Restricciones a Nivel de Recurso</h3>
+
+<p>Definición de perfiles que restringen recursos FHIR base.</p>
+
+<p><strong>Ejemplo: Perfil de Patient</strong></p>
+
+<pre><code class="language-fsh">Profile: CABA-RecuperoPatient
+Parent: Patient
+Id: caba-recupero-patient
+Title: "CABA Recupero Patient"
+Description: "Perfil de paciente para el sistema de recupero de CABA"
+</code></pre>
+
+<p><strong>Perfiles implementados:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-patient.fsh</code> - Perfil de paciente</li>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-claim.fsh</code> - Perfil de claim</li>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-practitioner.fsh</code> - Perfil de profesional</li>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-bundle.fsh</code> - Perfil de bundle</li>
+</ul>
+
+<h3 id="restricciones-a-nivel-de-elemento">Restricciones a Nivel de Elemento</h3>
+
+<p>Restricciones específicas en elementos de recursos FHIR.</p>
+
+<p><strong>Ejemplo: Restricción en nombre del paciente</strong></p>
+
+<pre><code class="language-fsh">* name 1..* HumanName "Nombre completo del paciente"
+  * family 1..1 string "Apellido del paciente"
+  * given 1..* string "Nombre(s) del paciente"
+  * extension contains
+    caba-recupero-fathersfamilyname named fathersFamilyName 0..1
+    caba-recupero-mothersfamilyname named mothersFamilyName 0..1
+</code></pre>
+
+<h3 id="slicing">Slicing</h3>
+
+<p>Técnica para dividir arrays en subconjuntos específicos.</p>
+
+<blockquote>
+  <p><strong>Ejemplo:</strong> Slicing en identificadores del paciente para separar DNI de identificadores internos del sistema.</p>
+</blockquote>
+
+<h3 id="restricciones-terminológicas">Restricciones Terminológicas</h3>
+
+<p>Definición de CodeSystems y ValueSets para estandarizar terminología.</p>
+
+<p><strong>CodeSystems implementados:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-profesiones.fsh</code> - Profesiones médicas</li>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-coberturas.fsh</code> - Tipos de cobertura</li>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-procedimientos.fsh</code> - Procedimientos de laboratorio</li>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-diagnostico.fsh</code> - Diagnósticos</li>
+</ul>
+
+<p><strong>Ejemplo de CodeSystem:</strong></p>
+
+<pre><code class="language-fsh">CodeSystem: CABA-RecuperoProfesiones
+Id: caba-recupero-profesiones
+Title: "CABA Recupero Profesiones"
+Description: "Códigos de profesiones médicas para el sistema de recupero"
+* #MED "Médico"
+* #BIO "Bioquímico"
+* #ENF "Enfermero"
+</code></pre>
+
+<h3 id="definición-de-extensiones">Definición de Extensiones</h3>
+
+<p>Extensiones personalizadas para agregar elementos específicos del dominio.</p>
+
+<p><strong>Extensiones implementadas:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-fathersfamilyname.fsh</code> - Apellido paterno</li>
+  <li><code class="language-plaintext highlighter-rouge">caba-recupero-mothersfamilyname.fsh</code> - Apellido materno</li>
+</ul>
+
+<p><strong>Ejemplo de extensión:</strong></p>
+
+<pre><code class="language-fsh">Extension: CABA-RecuperoFathersFamilyName
+Id: caba-recupero-fathersfamilyname
+Title: "CABA Recupero Father's Family Name"
+Description: "Apellido paterno del paciente"
+* value[x] only string
+</code></pre>
+
+<h3 id="definición-y-validación-de-bundles">Definición y Validación de Bundles</h3>
+
+<p>Definición de bundles para agrupar recursos relacionados.</p>
+
+<p><strong>Perfil de Bundle:</strong></p>
+
+<pre><code class="language-fsh">Profile: CABA-RecuperoBundle
+Parent: Bundle
+Id: caba-recupero-bundle
+Title: "CABA Recupero Bundle"
+Description: "Bundle para solicitudes de recupero de laboratorio"
+
+* type = #collection
+* entry 1..* BackboneElement
+  * resource 1..1 Resource
+</code></pre>
+
+<h3 id="definición-de-alias">Definición de Alias</h3>
+
+<p>Definición de alias para simplificar referencias en FSH.</p>
+
+<blockquote>
+  <p><strong>Implementado:</strong> Se pueden definir alias en <code class="language-plaintext highlighter-rouge">input/fsh/alias/</code> para simplificar referencias a recursos y terminologías frecuentemente utilizadas.</p>
+</blockquote>
+
+<h3 id="definición-de-ejemplos">Definición de Ejemplos</h3>
+
+<p>Ejemplos de recursos que cumplen con los perfiles definidos.</p>
+
+<p><strong>Ejemplo implementado:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">ejemplo-1-recupero-claim.fsh</code> - Ejemplo completo de claim con todos los recursos</li>
+</ul>
+
+<pre><code class="language-fsh">Instance: ejemplo-1-recupero-claim
+InstanceOf: CABA-RecuperoClaim
+Title: "Ejemplo 1 - Recupero Claim"
+Description: "Ejemplo completo de una solicitud de recupero"
+</code></pre>
+
+<h3 id="definición-de-naming-systems">Definición de Naming Systems</h3>
+
+<p>Definición de sistemas de nombres para identificadores específicos del dominio.</p>
+
+<blockquote>
+  <p><strong>Implementado:</strong> Se pueden definir naming systems en <code class="language-plaintext highlighter-rouge">input/fsh/naming_systems/</code> para estandarizar identificadores como DNIs, matrículas profesionales, etc.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="implementaciones-de-referencia-1">Implementaciones de Referencia</h2>
+
+<h3 id="clientes">Clientes</h3>
+
+<p>Implementaciones de clientes para interactuar con el sistema de recupero.</p>
+
+<p><strong>RecuperoWebApp:</strong></p>
+<ul>
+  <li>Aplicación web para generar bundles de recupero</li>
+  <li>Modo aleatorio y manual de generación</li>
+  <li>Integración con servidor FHIR</li>
+  <li>Generación de PDFs como attachments</li>
+</ul>
+
+<p><strong>RecuperoViewer:</strong></p>
+<ul>
+  <li>Visor web para consultar bundles del servidor</li>
+  <li>Filtrado por fechas</li>
+  <li>Visualización detallada de recursos</li>
+  <li>Interfaz en español</li>
+</ul>
+
+<h3 id="servidores">Servidores</h3>
+
+<p>Configuración y uso de servidores FHIR para el sistema de recupero.</p>
+
+<p><strong>Servidor de prueba:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://fhirserver.hl7fundamentals.org/fhir
+</code></pre></div></div>
+
+<p><strong>Scripts de gestión:</strong></p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">uploadig.sh</code> - Subida de recursos de conformidad</li>
+  <li><code class="language-plaintext highlighter-rouge">verify_upload.sh</code> - Verificación de recursos subidos</li>
+</ul>
+
+<h3 id="otros-actores">Otros Actores</h3>
+
+<p>Otros componentes del ecosistema de recupero.</p>
+
+<p><strong>Componentes adicionales:</strong></p>
+<ul>
+  <li><strong>Template:</strong> Plantillas JSON para generación de bundles</li>
+  <li><strong>Scripts de generación:</strong> Herramientas para crear datos de prueba</li>
+  <li><strong>Documentación:</strong> Guías de implementación generadas automáticamente</li>
+</ul>
+
+<hr />
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Esta práctica demuestra la implementación completa de un sistema de recupero de laboratorio utilizando estándares HL7 FHIR, desde la definición de modelos lógicos hasta la implementación de clientes y servidores de referencia.</p>
+
+<p>Cada técnica mostrada en esta guía ha sido implementada y probada en el contexto del proyecto Recupero CABA, proporcionando ejemplos prácticos y reales de cómo aplicar las mejores prácticas de desarrollo de Implementation Guides FHIR.</p>
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 14, 2025 12:58-0300">2025-07-14</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+             
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

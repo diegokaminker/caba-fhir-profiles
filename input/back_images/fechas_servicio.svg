@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="134px" preserveAspectRatio="none" style="width:434px;height:134px;" version="1.1" viewBox="0 0 434 134" width="434px" zoomAndPan="magnify"><defs><filter height="300%" id="fjiraqrm6jhf1" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[befc46d34f333a54788c53fecc7acf41]
+cluster FechasServicio--><polygon fill="#FFFFFF" filter="url(#fjiraqrm6jhf1)" points="16,6,111,6,118,25.7988,220,25.7988,220,127.6,16,127.6,16,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="118" y1="25.7988" y2="25.7988"/><text fill="#000000" font-family="Arial" font-size="12" font-weight="bold" lengthAdjust="spacing" textLength="89" x="20" y="19.2559">FechasServicio</text><!--MD5=[afbf3b6279fcbba4d4912a30e6632a70]
+class FechasServicio--><rect codeLine="6" fill="#FEFECE" filter="url(#fjiraqrm6jhf1)" height="73.5977" id="FechasServicio" style="stroke:#A80036;stroke-width:1.5;" width="172" x="32" y="38"/><ellipse cx="72.1" cy="53" fill="#ADD1B2" rx="10" ry="10" style="stroke:#A80036;stroke-width:1.0;"/><path d="M73.934,57.248 Q73.5238,57.459 73.0727,57.5645 Q72.6215,57.6699 72.1234,57.6699 Q70.3539,57.6699 69.4223,56.5039 Q68.4906,55.3379 68.4906,53.1348 Q68.4906,50.9258 69.4223,49.7598 Q70.3539,48.5938 72.1234,48.5938 Q72.6215,48.5938 73.0785,48.6992 Q73.5355,48.8047 73.934,49.0156 L73.934,50.9375 Q73.4887,50.5273 73.0697,50.3369 Q72.6508,50.1465 72.2055,50.1465 Q71.2563,50.1465 70.7729,50.8994 Q70.2895,51.6523 70.2895,53.1348 Q70.2895,54.6113 70.7729,55.3643 Q71.2563,56.1172 72.2055,56.1172 Q72.6508,56.1172 73.0697,55.9268 Q73.4887,55.7363 73.934,55.3262 Z " fill="#000000"/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacing" textLength="84" x="90.9" y="57.3564">FechasServicio</text><line style="stroke:#A80036;stroke-width:1.5;" x1="33" x2="203" y1="68" y2="68"/><line style="stroke:#A80036;stroke-width:1.5;" x1="33" x2="203" y1="76" y2="76"/><ellipse cx="43" cy="87" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacing" textLength="135" x="51" y="91.2559">fechaMuestra: date (0..1)</text><ellipse cx="43" cy="100.7988" fill="#84BE84" rx="3" ry="3" style="stroke:#038048;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacing" textLength="147" x="51" y="105.0547">fechaResultado: date (0..1)</text><path d="M238.5,42.2 L238.5,70.8 L204.1,74.8 L238.5,78.8 L238.5,107.3953 A0,0 0 0 0 238.5,107.3953 L425.5,107.3953 A0,0 0 0 0 425.5,107.3953 L425.5,52.2 L415.5,42.2 L238.5,42.2 A0,0 0 0 0 238.5,42.2 " fill="#FBFB77" filter="url(#fjiraqrm6jhf1)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M415.5,42.2 L415.5,52.2 L425.5,52.2 L415.5,42.2 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacing" textLength="166" x="244.5" y="58.4559">Fechas del Servicio Realizado</text><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacing" textLength="152" x="244.5" y="72.2547">- Fecha de toma de muestra</text><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacing" textLength="112" x="244.5" y="86.0535">- Fecha de resultado</text><text fill="#000000" font-family="Arial" font-size="12" lengthAdjust="spacing" textLength="119" x="244.5" y="99.8523">- Timeline del servicio</text><!--MD5=[a6723d1b76d2186d27bc8c0fa4bee651]
+@startuml FechasServicio
+skinparam backgroundColor white
+skinparam defaultFontName Arial
+skinparam defaultFontSize 12
+
+package "FechasServicio" {
+  class FechasServicio {
+    + fechaMuestra: date (0..1)
+    + fechaResultado: date (0..1)
+  }
+}
+
+note right of FechasServicio
+  Fechas del Servicio Realizado
+  - Fecha de toma de muestra
+  - Fecha de resultado
+  - Timeline del servicio
+end note
+
+@enduml
+
+PlantUML version 1.2021.00(Sun Jan 10 07:25:05 ART 2021)
+(MIT source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: AR
+--></g></svg>

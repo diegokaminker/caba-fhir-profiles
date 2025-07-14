@@ -1,4 +1,4 @@
-CodeSystem: RecuperoTiposMatricula
+CodeSystem: RecuperoTiposMatriculaCS
 Id: tipos-matricula-codesystem
 Title: "Tipos de Matricula"
 Description:  "Listado de Entidades certificantes de matriculas para REFEPS Codesystem"
@@ -122,7 +122,7 @@ Description:  "Listado de Entidades certificantes de matriculas para REFEPS Code
 * #75063712116582 "Colegio de TRABAJADORES SOCIALES - SAN MARTIN, de GENERAL SAN MARTÍN"
 * #75067632116583 "Colegio de TRABAJADORES SOCIALES - SAN NICOLAS, de SAN NICOLÁS"
 * #75068262116584 "Colegio de TRABAJADORES SOCIALES - TRENQUE LAUQUEN, de TRENQUE LAUQUEN"
-* #75068822116585 "Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE "
+* #75068822116585 "Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE"
 * #75100002124679 "Colegio de ASISTENTES SOCIALES, de Catamarca"
 * #75100492124617 "Colegio de BIOQUIMICOS, de Catamarca"
 * #75100002124684 "COLEGIO MATRICULACION de LICENCIADO ENFERMERÍA de la Provincia de Catamarca"
@@ -189,7 +189,7 @@ Description:  "Listado de Entidades certificantes de matriculas para REFEPS Code
 * #75420002154040 "Colegio de MÉDICOS, de La Pampa"
 * #75420002154036 "Colegio de NUTRICIONISTAS, de La Pampa"
 * #75460002155489 "Colegio de ASISTENTES SOCIALES, de La Rioja"
-* #75460142355627 " COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja"
+* #75460142355627 "COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja"
 * #75460002155493 "Colegio de FARMACÉUTICOS, de La Rioja"
 * #75460002155490 "Colegio de KINESIÓLOGOS, de La Rioja"
 * #75460002155487 "Colegio de LICENCIADOS EN DIAGNÓSTICO POR IMÁGENES, de La Rioja"

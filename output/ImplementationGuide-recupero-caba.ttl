@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "RecuperoCABA"] ; # 
   fhir:title [ fhir:v "Recupero CABA"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-12T17:02:17-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-14T12:58:17-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Argentina"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Argentina" ] ;
@@ -1242,6 +1242,131 @@
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [
            a fhir:string ;
+           fhir:v "Claim"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/Claim/RecuperoCABAClaimEjemplo> ;
+         fhir:reference [ fhir:v "Claim/RecuperoCABAClaimEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "RecuperoCABAClaimEjemplo" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero"^^xsd:anyURI ;
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "DocumentReference"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo> ;
+         fhir:reference [ fhir:v "DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "RecuperoCABADocumentacionAdicionalEjemplo" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v true
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Encounter"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/Encounter/RecuperoCABAEncounterEjemplo> ;
+         fhir:reference [ fhir:v "Encounter/RecuperoCABAEncounterEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "RecuperoCABAEncounterEjemplo" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero"^^xsd:anyURI ;
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Patient"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/Patient/RecuperoCABAPacienteEjemplo> ;
+         fhir:reference [ fhir:v "Patient/RecuperoCABAPacienteEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "RecuperoCABAPacienteEjemplo" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero"^^xsd:anyURI ;
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/Practitioner/RecuperoCABAProfesionalFirmanteEjemplo> ;
+         fhir:reference [ fhir:v "Practitioner/RecuperoCABAProfesionalFirmanteEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "RecuperoCABAProfesionalFirmanteEjemplo" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero"^^xsd:anyURI ;
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "Practitioner"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo> ;
+         fhir:reference [ fhir:v "Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "RecuperoCABAProfesionalSolicitanteEjemplo" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero"^^xsd:anyURI ;
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "ServiceRequest"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/ServiceRequest/RecuperoCABAServiceRequestEjemplo> ;
+         fhir:reference [ fhir:v "ServiceRequest/RecuperoCABAServiceRequestEjemplo" ]
+       ] ;
+       fhir:name [ fhir:v "RecuperoCABAServiceRequestEjemplo" ] ;
+       fhir:example [
+         a fhir:canonical ;
+         fhir:v "http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero"^^xsd:anyURI ;
+         fhir:link <http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
            fhir:v "StructureDefinition:logical"
          ]
        ] ) ;
@@ -1269,6 +1394,24 @@
        ] ;
        fhir:name [ fhir:v "RecuperoLaboratorioSolicitud" ] ;
        fhir:description [ fhir:v "Representa una solicitud de recupero de gastos de laboratorio, incluyendo la información relevante" ] ;
+       fhir:example [
+         a fhir:boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:string ;
+           fhir:v "NamingSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://recuperocaba.gob.ar/NamingSystem/renaper-dni> ;
+         fhir:reference [ fhir:v "NamingSystem/renaper-dni" ]
+       ] ;
+       fhir:name [ fhir:v "renaper-dni" ] ;
+       fhir:description [ fhir:v "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)." ] ;
        fhir:example [
          a fhir:boolean ;
          fhir:v false
@@ -1355,6 +1498,48 @@
            fhir:v "index.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "casosdeuso.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "casosdeuso.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Casosdeuso" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "modelologico.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "modelologico.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Modelologico" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "practica_implementacion.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "practica_implementacion.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Practica Implementacion" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

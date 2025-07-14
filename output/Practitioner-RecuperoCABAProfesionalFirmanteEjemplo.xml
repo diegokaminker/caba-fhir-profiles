@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="RecuperoCABAProfesionalFirmanteEjemplo"/>
+  <meta>
+    <profile value="http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Practitioner RecuperoCABAProfesionalFirmanteEjemplo</b></p><a name="RecuperoCABAProfesionalFirmanteEjemplo"> </a><a name="hcRecuperoCABAProfesionalFirmanteEjemplo"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-PractitionerCabaFirmanteRecupero.html">Practitioner Firmante para Recupero CABA</a></p></div><p><b>identifier</b>: <code>http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000</code>/116772b</p><p><b>name</b>: DELIA JUAN</p><h3>Qualifications</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem 27}">Bioquímico</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000"/>
+    <value value="116772b"/>
+  </identifier>
+  <name>
+    <text value="DELIA JUAN"/>
+  </name>
+  <qualification>
+    <code>
+      <coding>
+        <system value="http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem"/>
+        <code value="27"/>
+        <display value="Bioquímico"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

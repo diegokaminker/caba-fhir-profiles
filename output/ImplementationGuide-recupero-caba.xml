@@ -11,7 +11,7 @@
   <name value="RecuperoCABA"/>
   <title value="Recupero CABA"/>
   <status value="draft"/>
-  <date value="2025-07-12T17:02:17-03:00"/>
+  <date value="2025-07-14T12:58:17-03:00"/>
   <publisher value="HL7 Argentina"/>
   <contact>
     <name value="HL7 Argentina"/>
@@ -702,6 +702,76 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Claim"/>
+      </extension>
+      <reference>
+        <reference value="Claim/RecuperoCABAClaimEjemplo"/>
+      </reference>
+      <name value="RecuperoCABAClaimEjemplo"/>
+      <exampleCanonical value="http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="DocumentReference"/>
+      </extension>
+      <reference>
+        <reference value="DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo"/>
+      </reference>
+      <name value="RecuperoCABADocumentacionAdicionalEjemplo"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/RecuperoCABAEncounterEjemplo"/>
+      </reference>
+      <name value="RecuperoCABAEncounterEjemplo"/>
+      <exampleCanonical value="http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/RecuperoCABAPacienteEjemplo"/>
+      </reference>
+      <name value="RecuperoCABAPacienteEjemplo"/>
+      <exampleCanonical value="http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/RecuperoCABAProfesionalFirmanteEjemplo"/>
+      </reference>
+      <name value="RecuperoCABAProfesionalFirmanteEjemplo"/>
+      <exampleCanonical value="http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo"/>
+      </reference>
+      <name value="RecuperoCABAProfesionalSolicitanteEjemplo"/>
+      <exampleCanonical value="http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ServiceRequest"/>
+      </extension>
+      <reference>
+        <reference value="ServiceRequest/RecuperoCABAServiceRequestEjemplo"/>
+      </reference>
+      <name value="RecuperoCABAServiceRequestEjemplo"/>
+      <exampleCanonical value="http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:logical"/>
       </extension>
       <reference>
@@ -720,6 +790,17 @@
       </reference>
       <name value="RecuperoLaboratorioSolicitud"/>
       <description value="Representa una solicitud de recupero de gastos de laboratorio, incluyendo la información relevante"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="NamingSystem"/>
+      </extension>
+      <reference>
+        <reference value="NamingSystem/renaper-dni"/>
+      </reference>
+      <name value="renaper-dni"/>
+      <description value="This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -768,6 +849,30 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="casosdeuso.html"/>
+        </extension>
+        <nameUrl value="casosdeuso.html"/>
+        <title value="Casosdeuso"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modelologico.html"/>
+        </extension>
+        <nameUrl value="modelologico.html"/>
+        <title value="Modelologico"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="practica_implementacion.html"/>
+        </extension>
+        <nameUrl value="practica_implementacion.html"/>
+        <title value="Practica Implementacion"/>
         <generation value="markdown"/>
       </page>
     </page>

@@ -24,6 +24,7 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/corear.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -45,12 +46,30 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2.11"}
-    h3,h4,h5,h6{--heading-prefix:"2.11"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.11"}
+    h3,h4,h5,h6{--heading-prefix:"5.11"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.msobs.gov.py/index.php">
+            <img height="71" alt="Project home" src="assets/images/logo-mspbs.jpeg"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://funcapy.org"><img height="70" alt="FUNCA Website" src="assets/images/logo-funca.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
 
 
         <div id="ig-status">
@@ -87,7 +106,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="casosdeuso.html">Casos de Uso</a>
+  </li>
+  <li>
+    <a href="modelologico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="practica_implementacion.html">Didáctica</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -152,6 +180,16 @@
 
 
 
+  
+    
+      <li>
+        <a href="StructureDefinition-ServiceRequestCabaRecupero-examples.html">Examples</a>
+      </li>
+    
+  
+
+
+
 
   
     <li>
@@ -210,7 +248,7 @@
         
           Draft
           
-            as of 2025-07-12
+            as of 2025-07-14
           
         
       </td>
@@ -241,6 +279,7 @@
 <ul>
  <li>Use this Profile: <a href="StructureDefinition-BundleCabaRecupero.html">Bundle Recupero Para CABA</a></li>
  <li>Refer to this Profile: <a href="StructureDefinition-ClaimCabaRecupero.html">Claim Recupero Para CABA</a></li>
+ <li>Examples for this Profile: <a href="ServiceRequest-RecuperoCABAServiceRequestEjemplo.html">ServiceRequest/RecuperoCABAServiceRequestEjemplo</a></li>
 </ul>
 
 
@@ -445,7 +484,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DatosContexto.desAreaJerarquicaSolicitud</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1eb5e1b8-2d27-4a3c-ad5e-8af4dd7ce36c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // db6b8a08-a67c-43b2-a513-3143d6ed996c
 document.getElementById('cbServiceRequestCabaRecuperoK-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ServiceRequestCabaRecuperoK'), 'binding', document.getElementById('cbServiceRequestCabaRecuperoK-binding').checked, document.getElementById('ppServiceRequestCabaRecuperoK'));
 document.getElementById('cbServiceRequestCabaRecuperoK-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -594,7 +633,7 @@ filterDesc(document.getElementById('ServiceRequestCabaRecuperoK'), 'obligation',
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DatosContexto.desAreaJerarquicaSolicitud</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1eb5e1b8-2d27-4a3c-ad5e-8af4dd7ce36c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // db6b8a08-a67c-43b2-a513-3143d6ed996c
 document.getElementById('cbServiceRequestCabaRecuperoD-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ServiceRequestCabaRecuperoD'), 'binding', document.getElementById('cbServiceRequestCabaRecuperoD-binding').checked, document.getElementById('ppServiceRequestCabaRecuperoD'));
 document.getElementById('cbServiceRequestCabaRecuperoD-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -977,7 +1016,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Request provenance<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1eb5e1b8-2d27-4a3c-ad5e-8af4dd7ce36c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // db6b8a08-a67c-43b2-a513-3143d6ed996c
 document.getElementById('cbServiceRequestCabaRecuperoS-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ServiceRequestCabaRecuperoS'), 'binding', document.getElementById('cbServiceRequestCabaRecuperoS-binding').checked, document.getElementById('ppServiceRequestCabaRecuperoS'));
 document.getElementById('cbServiceRequestCabaRecuperoS-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1341,7 +1380,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DatosContexto.desAreaJerarquicaSolicitud</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1eb5e1b8-2d27-4a3c-ad5e-8af4dd7ce36c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // db6b8a08-a67c-43b2-a513-3143d6ed996c
 document.getElementById('cbServiceRequestCabaRecuperoKA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ServiceRequestCabaRecuperoKA'), 'binding', document.getElementById('cbServiceRequestCabaRecuperoKA-binding').checked, document.getElementById('ppServiceRequestCabaRecuperoKA'));
 document.getElementById('cbServiceRequestCabaRecuperoKA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1490,7 +1529,7 @@ filterDesc(document.getElementById('ServiceRequestCabaRecuperoKA'), 'obligation'
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..<span style="opacity: 0.5">1</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">DatosContexto.desAreaJerarquicaSolicitud</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1eb5e1b8-2d27-4a3c-ad5e-8af4dd7ce36c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // db6b8a08-a67c-43b2-a513-3143d6ed996c
 document.getElementById('cbServiceRequestCabaRecuperoDA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ServiceRequestCabaRecuperoDA'), 'binding', document.getElementById('cbServiceRequestCabaRecuperoDA-binding').checked, document.getElementById('ppServiceRequestCabaRecuperoDA'));
 document.getElementById('cbServiceRequestCabaRecuperoDA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -1872,7 +1911,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/provenance.html">Provenance</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Request provenance<br/></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1eb5e1b8-2d27-4a3c-ad5e-8af4dd7ce36c
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // db6b8a08-a67c-43b2-a513-3143d6ed996c
 document.getElementById('cbServiceRequestCabaRecuperoSA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('ServiceRequestCabaRecuperoSA'), 'binding', document.getElementById('cbServiceRequestCabaRecuperoSA-binding').checked, document.getElementById('ppServiceRequestCabaRecuperoSA'));
 document.getElementById('cbServiceRequestCabaRecuperoSA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2099,13 +2138,15 @@ Summary
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 12, 2025 17:02-0300">2025-07-12</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 14, 2025 12:58-0300">2025-07-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+             
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

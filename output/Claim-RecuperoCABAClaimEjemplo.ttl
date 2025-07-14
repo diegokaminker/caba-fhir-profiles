@@ -1,0 +1,144 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://recuperocaba.gob.ar/Claim/RecuperoCABAClaimEjemplo> a fhir:Claim ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecuperoCABAClaimEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Claim RecuperoCABAClaimEjemplo</b></p><a name=\"RecuperoCABAClaimEjemplo\"> </a><a name=\"hcRecuperoCABAClaimEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-ClaimCabaRecupero.html\">Claim Recupero Para CABA</a></p></div><p><b>status</b>: Active</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claim-type institutional}\">Institutional</span></p><p><b>use</b>: Claim</p><p><b>patient</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-de45db8b-8e3f-404e-a7af-910a289eeb8c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>created</b>: 2025-03-13 07:19:12-0300</p><p><b>provider</b>: Hospital 1 - Laboratorio de Análisis Clínicos</p><p><b>priority</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/processpriority normal}\">Normal</span></p><p><b>referral</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-e4caeb31-9418-494e-a945-8799a90fb08c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p><p><b>facility</b>: Hospital 1 - Clínica Médica</p><h3>SupportingInfos</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Category</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/claiminformationcategory attachment}\">Attachment</span></td><td><a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-59a1159e-3016-4c84-a936-0725edc823a0\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></td></tr></table><h3>Diagnoses</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Diagnosis[x]</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td><span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem A010}\">Fiebre tifoidea</span></td></tr></table><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 1</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 475}\">HEMOGRAMA COMPLETO</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 2</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 171}\">COAGULOGRAMA</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 3</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 481}\">HEPATOGRAMA COMPLETO</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 4</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 902}\">UREMIA</span></p></blockquote><blockquote><p><b>procedure</b></p><p><b>sequence</b>: 5</p><p><b>date</b>: 2025-03-13</p><p><b>procedure</b>: <span title=\"Codes:{http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem 192}\">CREATININA</span></p></blockquote><h3>Insurances</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Sequence</b></td><td><b>Focal</b></td><td><b>Coverage</b></td></tr><tr><td style=\"display: none\">*</td><td>1</td><td>true</td><td>Medicus (Identifier: <code>http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem</code>/MP004)</td></tr></table></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:type [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claim-type"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "institutional" ] ;
+       fhir:display [ fhir:v "Institutional" ]
+     ] )
+  ] ; # 
+  fhir:use [ fhir:v "claim"] ; # 
+  fhir:patient [
+     fhir:reference [ fhir:v "urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c" ]
+  ] ; # 
+  fhir:created [ fhir:v "2025-03-13T07:19:12-03:00"^^xsd:dateTime] ; # 
+  fhir:provider [
+     fhir:display [ fhir:v "Hospital 1 - Laboratorio de Análisis Clínicos" ]
+  ] ; # 
+  fhir:priority [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/processpriority"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "normal" ]
+     ] )
+  ] ; # 
+  fhir:referral [
+     fhir:reference [ fhir:v "urn:uuid:e4caeb31-9418-494e-a945-8799a90fb08c" ]
+  ] ; # 
+  fhir:facility [
+     fhir:display [ fhir:v "Hospital 1 - Clínica Médica" ]
+  ] ; # 
+  fhir:supportingInfo ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:category [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/claiminformationcategory"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "attachment" ] ;
+         fhir:display [ fhir:v "Attachment" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Reference ;
+       fhir:reference [ fhir:v "urn:uuid:59a1159e-3016-4c84-a936-0725edc823a0" ]
+     ]
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:diagnosis [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "A010" ] ;
+         fhir:display [ fhir:v "Fiebre tifoidea" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:procedure ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "475" ] ;
+         fhir:display [ fhir:v "HEMOGRAMA COMPLETO" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "2"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "171" ] ;
+         fhir:display [ fhir:v "COAGULOGRAMA" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "3"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "481" ] ;
+         fhir:display [ fhir:v "HEPATOGRAMA COMPLETO" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "4"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "902" ] ;
+         fhir:display [ fhir:v "UREMIA" ]
+       ] )
+     ]
+  ] [
+     fhir:sequence [ fhir:v "5"^^xsd:positiveInteger ] ;
+     fhir:date [ fhir:v "2025-03-13"^^xsd:date ] ;
+     fhir:procedure [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "192" ] ;
+         fhir:display [ fhir:v "CREATININA" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:insurance ( [
+     fhir:sequence [ fhir:v "1"^^xsd:positiveInteger ] ;
+     fhir:focal [ fhir:v true ] ;
+     fhir:coverage [
+       fhir:identifier [
+         fhir:system [ fhir:v "http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MP004" ]
+       ] ;
+       fhir:display [ fhir:v "Medicus" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

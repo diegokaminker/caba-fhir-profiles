@@ -27,7 +27,7 @@
     {
       "url" : "http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "RecuperoProfesionesCS",
       "title" : "Profesiones Solicitantes para Recupero",
       "description" : "Listado de Profesiones para Solicitantes"
@@ -35,7 +35,7 @@
     {
       "url" : "http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem",
       "version" : "0.1.0",
-      "status" : "draft",
+      "status" : "active",
       "name" : "RecuperoProfesionesEfectoresCS",
       "title" : "Profesiones Efectores para Recupero",
       "description" : "Listado de Profesiones para Efectores"
@@ -52,7 +52,7 @@
       "url" : "http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem",
       "version" : "0.1.0",
       "status" : "draft",
-      "name" : "RecuperoTiposMatricula",
+      "name" : "RecuperoTiposMatriculaCS",
       "title" : "Tipos de Matricula",
       "description" : "Listado de Entidades certificantes de matriculas para REFEPS Codesystem"
     }

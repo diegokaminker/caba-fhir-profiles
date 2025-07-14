@@ -12,9 +12,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.1"],
       "uses" : {
       },
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
       "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
@@ -605,12 +605,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.45"],
       "uses" : {
       },
-      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
-      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA",
       "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
       "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
@@ -625,12 +625,12 @@
       "sources" : ["2.16.840.1.113883.4.642.3.57"],
       "uses" : {
       },
-      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
-      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA",
       "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
       "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {
@@ -645,15 +645,15 @@
       "sources" : ["2.16.840.1.113883.4.642.3.20"],
       "uses" : {
       },
-      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
-      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
-      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA",
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-ServiceRequestCabaRecupero.html" : "ServiceRequest para Recupero CABA",
       "StructureDefinition-BundleCabaRecupero.html" : "Bundle Recupero Para CABA",
-      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
-      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
+      "StructureDefinition-EncounterCabaRecupero.html" : "Encuentro para Recupero CABA",
+      "StructureDefinition-ClaimCabaRecupero.html" : "Claim Recupero Para CABA",
+      "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
+      "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
+      "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA",
+      "StructureDefinition-DocumentReferenceCabaRecupero.html" : "DocumentReference Recupero Para CABA"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/link-type",
@@ -756,9 +756,9 @@
       "sources" : ["2.16.840.1.113883.4.642.3.65"],
       "uses" : {
       },
+      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-PractitionerCabaFirmanteRecupero.html" : "Practitioner Firmante para Recupero CABA",
       "StructureDefinition-PractitionerCabaRecupero.html" : "Practitioner para Recupero CABA",
-      "StructureDefinition-PatientCabaRecupero.html" : "Paciente para Recupero CABA",
       "StructureDefinition-PractitionerCabaSolicitanteRecupero.html" : "Practitioner Solicitante para Recupero CABA"
     },
     {

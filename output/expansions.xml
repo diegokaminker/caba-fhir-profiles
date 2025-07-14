@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="e11c5d90-3077-4045-af81-20b9811d1eb3"/>
+  <id value="5554ad31-9752-4690-8b9e-da95f3ca67f3"/>
   <meta>
-    <lastUpdated value="2025-07-12T17:02:50.744-03:00"/>
+    <lastUpdated value="2025-07-14T12:58:59.064-03:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -783,10 +783,10 @@
         <title value="Recupero Coberturas ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-07-12T17:02:17-03:00"/>
+        <date value="2025-07-14T12:58:17-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:80afea17-6131-49f6-9cea-eb1f258fc137"/>
-          <timestamp value="2025-07-12T17:03:51-03:00"/>
+          <identifier value="urn:uuid:edc45a0b-5da0-4c53-aa89-f42fd3a2c43a"/>
+          <timestamp value="2025-07-14T13:00:14-03:00"/>
           <total value="93"/>
           <offset value="0"/>
           <parameter>
@@ -4471,10 +4471,10 @@
         <title value="Recupero Diagnosticos ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-07-12T17:02:17-03:00"/>
+        <date value="2025-07-14T12:58:17-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:9571ed00-71c7-40ac-8297-301b37d54497"/>
-          <timestamp value="2025-07-12T17:03:51-03:00"/>
+          <identifier value="urn:uuid:be2407ea-bcfe-49f1-9f9c-af2c1a6ab4f5"/>
+          <timestamp value="2025-07-14T13:00:14-03:00"/>
           <total value="395"/>
           <offset value="0"/>
           <parameter>
@@ -7533,10 +7533,10 @@
         <title value="Recupero Procedimientos ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-07-12T17:02:17-03:00"/>
+        <date value="2025-07-14T12:58:17-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:c6aed64d-97ea-4f4b-86a5-3f4361f64ed1"/>
-          <timestamp value="2025-07-12T17:03:51-03:00"/>
+          <identifier value="urn:uuid:71d6f27f-f92f-4d8a-a469-18e1ead8f7e9"/>
+          <timestamp value="2025-07-14T13:00:14-03:00"/>
           <total value="128"/>
           <offset value="0"/>
           <parameter>
@@ -8257,10 +8257,10 @@
         <title value="Recupero Profesiones ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-07-12T17:02:17-03:00"/>
+        <date value="2025-07-14T12:58:17-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:8f8d149b-57f6-4c48-96bb-0de9cdfc5d25"/>
-          <timestamp value="2025-07-12T17:03:52-03:00"/>
+          <identifier value="urn:uuid:38fe1dde-7b9e-4684-84eb-305bb7735626"/>
+          <timestamp value="2025-07-14T13:00:15-03:00"/>
           <total value="2"/>
           <offset value="0"/>
           <parameter>
@@ -8278,10 +8278,6 @@
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="warning-draft"/>
-            <valueUri value="http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem|0.1.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -8517,10 +8513,10 @@
         <title value="Recupero Profesiones Efectores ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-07-12T17:02:17-03:00"/>
+        <date value="2025-07-14T12:58:17-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:7813058b-b40d-4e8b-8030-973cf879d8b4"/>
-          <timestamp value="2025-07-12T17:03:52-03:00"/>
+          <identifier value="urn:uuid:82f28e82-e3dd-4eb2-9f6e-07f344034775"/>
+          <timestamp value="2025-07-14T13:00:15-03:00"/>
           <total value="20"/>
           <offset value="0"/>
           <parameter>
@@ -8538,10 +8534,6 @@
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="warning-draft"/>
-            <valueUri value="http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem|0.1.0"/>
           </parameter>
           <parameter>
             <name value="used-codesystem"/>
@@ -8756,10 +8748,10 @@
         <title value="Recupero TiposDocumento ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-07-12T17:02:17-03:00"/>
+        <date value="2025-07-14T12:58:17-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:9c42fdba-7600-4e90-97e6-151a0434bef9"/>
-          <timestamp value="2025-07-12T17:03:52-03:00"/>
+          <identifier value="urn:uuid:588aa8a9-e262-4182-9a64-a962a212f8a7"/>
+          <timestamp value="2025-07-14T13:00:15-03:00"/>
           <total value="9"/>
           <offset value="0"/>
           <parameter>
@@ -9825,7 +9817,7 @@
                   <a href="CodeSystem-tipos-matricula-codesystem.html#tipos-matricula-codesystem-75068822116585">75068822116585</a>
                 </td>
                 <td>http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem</td>
-                <td>Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE </td>
+                <td>Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -10361,7 +10353,7 @@
                   <a href="CodeSystem-tipos-matricula-codesystem.html#tipos-matricula-codesystem-75460142355627">75460142355627</a>
                 </td>
                 <td>http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem</td>
-                <td> COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja</td>
+                <td>COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -11084,10 +11076,10 @@
         <title value="Recupero TiposMatricula ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2025-07-12T17:02:17-03:00"/>
+        <date value="2025-07-14T12:58:17-03:00"/>
         <expansion>
-          <identifier value="urn:uuid:fa5dd5a2-e7ee-487b-b2bf-bf038ed36208"/>
-          <timestamp value="2025-07-12T17:03:52-03:00"/>
+          <identifier value="urn:uuid:235a4cc1-2c2b-4687-9a67-fec4109565fb"/>
+          <timestamp value="2025-07-14T13:00:15-03:00"/>
           <total value="277"/>
           <offset value="0"/>
           <parameter>
@@ -11717,7 +11709,7 @@
           <contains>
             <system value="http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem"/>
             <code value="75068822116585"/>
-            <display value="Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE "/>
+            <display value="Colegio de TRABAJADORES SOCIALES - ZARATE - CAMPANA, de ZÁRATE"/>
           </contains>
           <contains>
             <system value="http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem"/>
@@ -12052,7 +12044,7 @@
           <contains>
             <system value="http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem"/>
             <code value="75460142355627"/>
-            <display value=" COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja"/>
+            <display value="COLEGIO PROFESIONAL DE ENFERMERIA, de La Rioja"/>
           </contains>
           <contains>
             <system value="http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem"/>

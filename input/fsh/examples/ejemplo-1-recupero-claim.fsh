@@ -22,7 +22,7 @@ Usage: #example
 
 Instance: RecuperoCABAClaimEjemplo
 InstanceOf: ClaimCabaRecupero
-Usage: #inline
+Usage: #example
 * priority = http://terminology.hl7.org/CodeSystem/processpriority#normal
 * status = #active
 * type = $claim-type#institutional "Institutional"
@@ -43,7 +43,7 @@ Usage: #inline
 * procedure[=].procedureCodeableConcept = $codificacion-laboratorio#475 "HEMOGRAMA COMPLETO"
 * procedure[+].sequence = 2
 * procedure[=].date = "2025-03-13"
-* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#171 "COAGULOGRAMA COMPLETO"
+* procedure[=].procedureCodeableConcept = $codificacion-laboratorio#171 "COAGULOGRAMA"
 * procedure[+].sequence = 3
 * procedure[=].date = "2025-03-13"
 * procedure[=].procedureCodeableConcept = $codificacion-laboratorio#481 "HEPATOGRAMA COMPLETO"
@@ -59,7 +59,7 @@ Usage: #inline
 
 Instance: RecuperoCABAPacienteEjemplo
 InstanceOf: PatientCabaRecupero
-Usage: #inline
+Usage: #example
 * identifier[IdentificadorInterno].use = #usual
 * identifier[IdentificadorInterno].value = "7699001"
 * identifier[IdentificadorInterno].system = "http://hospital1.gob.ar/pacientes"
@@ -81,7 +81,7 @@ Usage: #inline
 
 Instance: RecuperoCABAServiceRequestEjemplo
 InstanceOf: ServiceRequestCabaRecupero
-Usage: #inline
+Usage: #example
 * status = #completed
 * intent = #order
 * locationCode.text = "Laboratorio de Análisis Clínicos"
@@ -97,7 +97,7 @@ Usage: #inline
 
 Instance: RecuperoCABAEncounterEjemplo
 InstanceOf: EncounterCabaRecupero
-Usage: #inline
+Usage: #example
 * status = #unknown
 * class = $v3-ActCode#AMB "ambulatory"
 * type.text = "Immunología"
@@ -106,16 +106,16 @@ Usage: #inline
 * identifier.value = "130145562"
 
 Instance: RecuperoCABAProfesionalFirmanteEjemplo
-InstanceOf: PractitionerCabaRecupero
-Usage: #inline
+InstanceOf: PractitionerCabaFirmanteRecupero
+Usage: #example
 * identifier.system = "http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10002001110000"
 * identifier.value = "116772b"
 * name.text = "DELIA JUAN"
 * qualification.code = $recupero-profesiones-efectores#27 "Bioquímico"
 
 Instance: RecuperoCABAProfesionalSolicitanteEjemplo
-InstanceOf: PractitionerCabaRecupero
-Usage: #inline
+InstanceOf: PractitionerCabaSolicitanteRecupero
+Usage: #example
 * identifier.system = "http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/10006441714000"
 * identifier.value = "16772"
 * name.text = "CARRERA VALERIA"
@@ -123,10 +123,10 @@ Usage: #inline
 
 Instance: RecuperoCABADocumentacionAdicionalEjemplo
 InstanceOf: DocumentReference
-Usage: #inline
+Usage: #example
 * status = #current
 * type = $loinc#11502-2 "Laboratory Report"
 * subject = Reference(urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c)
 * date = "2025-03-13T07:19:12-03:00"
 * content.attachment.contentType = #application/pdf
-* content.attachment.data = "JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoK MiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagoz IDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQy XQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9u dCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5 cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1Jv bWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAov RjEgMjAgVGYKMjIwIDQwMCBUZAooRHVtbXkgUERGKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCnhy ZWYKMCA2CjAwMDAwMDAwMDAgNjU1MzUgZgowMDAwMDAwMDA5IDAwMDAwIG4KMDAwMDAwMDA2MyAw MDAwMCBuCjAwMDAwMDAxMjQgMDAwMDAgbgowMDAwMDAwMjc3IDAwMDAwIG4KMDAwMDAwMDM5MiAw MDAwMCBuCnRyYWlsZXIKPDwvU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgo0OTUKJSVFT0YK"
+* content.attachment.data = "JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQyXQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9udCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAovRjEgMjAgVGYKMjIwIDQwMCBUZAooRHVtbXkgUERGKSBUagpFVAplbmRzdHJlYW0KZW5kb2JqCnhyZWYKMCA2CjAwMDAwMDAwMDAgNjU1MzUgZgowMDAwMDAwMDA5IDAwMDAwIG4KMDAwMDAwMDA2MyAwMDAwMCBuCjAwMDAwMDAxMjQgMDAwMDAgbgowMDAwMDAwMjc3IDAwMDAwIG4KMDAwMDAwMDM5MiAwMDAwMCBuCnRyYWlsZXIKPDwvU2l6ZSA2Ci9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgo0OTUKJSVFT0YK"

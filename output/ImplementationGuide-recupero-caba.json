@@ -10,7 +10,7 @@
   "name" : "RecuperoCABA",
   "title" : "Recupero CABA",
   "status" : "draft",
-  "date" : "2025-07-12T17:02:17-03:00",
+  "date" : "2025-07-14T12:58:17-03:00",
   "publisher" : "HL7 Argentina",
   "contact" : [{
     "name" : "HL7 Argentina",
@@ -880,6 +880,83 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Claim"
+      }],
+      "reference" : {
+        "reference" : "Claim/RecuperoCABAClaimEjemplo"
+      },
+      "name" : "RecuperoCABAClaimEjemplo",
+      "exampleCanonical" : "http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DocumentReference"
+      }],
+      "reference" : {
+        "reference" : "DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo"
+      },
+      "name" : "RecuperoCABADocumentacionAdicionalEjemplo",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/RecuperoCABAEncounterEjemplo"
+      },
+      "name" : "RecuperoCABAEncounterEjemplo",
+      "exampleCanonical" : "http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/RecuperoCABAPacienteEjemplo"
+      },
+      "name" : "RecuperoCABAPacienteEjemplo",
+      "exampleCanonical" : "http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/RecuperoCABAProfesionalFirmanteEjemplo"
+      },
+      "name" : "RecuperoCABAProfesionalFirmanteEjemplo",
+      "exampleCanonical" : "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Practitioner"
+      }],
+      "reference" : {
+        "reference" : "Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo"
+      },
+      "name" : "RecuperoCABAProfesionalSolicitanteEjemplo",
+      "exampleCanonical" : "http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ServiceRequest"
+      }],
+      "reference" : {
+        "reference" : "ServiceRequest/RecuperoCABAServiceRequestEjemplo"
+      },
+      "name" : "RecuperoCABAServiceRequestEjemplo",
+      "exampleCanonical" : "http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:logical"
       }],
       "reference" : {
@@ -899,6 +976,18 @@
       },
       "name" : "RecuperoLaboratorioSolicitud",
       "description" : "Representa una solicitud de recupero de gastos de laboratorio, incluyendo la información relevante",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "NamingSystem"
+      }],
+      "reference" : {
+        "reference" : "NamingSystem/renaper-dni"
+      },
+      "name" : "renaper-dni",
+      "description" : "This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).",
       "exampleBoolean" : false
     },
     {
@@ -952,6 +1041,33 @@
         }],
         "nameUrl" : "index.html",
         "title" : "Home",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "casosdeuso.html"
+        }],
+        "nameUrl" : "casosdeuso.html",
+        "title" : "Casosdeuso",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "modelologico.html"
+        }],
+        "nameUrl" : "modelologico.html",
+        "title" : "Modelologico",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "practica_implementacion.html"
+        }],
+        "nameUrl" : "practica_implementacion.html",
+        "title" : "Practica Implementacion",
         "generation" : "markdown"
       }]
     },

@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://recuperocaba.gob.ar/Encounter/RecuperoCABAEncounterEjemplo> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RecuperoCABAEncounterEjemplo"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero"^^xsd:anyURI ;
+       fhir:link <http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Encounter RecuperoCABAEncounterEjemplo</b></p><a name=\"RecuperoCABAEncounterEjemplo\"> </a><a name=\"hcRecuperoCABAEncounterEjemplo\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-EncounterCabaRecupero.html\">Encuentro para Recupero CABA</a></p></div><p><b>identifier</b>: <code>http://hospital1.gob.ar/episodios</code>/130145562</p><p><b>status</b>: Unknown</p><p><b>class</b>: <a href=\"http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html#v3-ActCode-AMB\">ActCode AMB</a>: ambulatory</p><p><b>type</b>: <span title=\"Codes:\">Immunología</span></p><p><b>subject</b>: <a href=\"Bundle-RecuperoCABABundleEjemplo.html#urn-uuid-de45db8b-8e3f-404e-a7af-910a289eeb8c\">Bundle: identifier = http://hospital1.gob.ar/recuperos#1234567890; type = collection; timestamp = 2025-03-13 07:19:12-0300</a></p></div>"^^rdf:XMLLiteral
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://hospital1.gob.ar/episodios"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "130145562" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "AMB" ] ;
+     fhir:display [ fhir:v "ambulatory" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:text [ fhir:v "Immunología" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:reference [ fhir:v "urn:uuid:de45db8b-8e3f-404e-a7af-910a289eeb8c" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

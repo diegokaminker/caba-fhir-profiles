@@ -3,14 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="profesiones-codesystem"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem profesiones-codesystem</b></p><a name="profesiones-codesystem"> </a><a name="hcprofesiones-codesystem"> </a><p>This  code system <code>http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="profesiones-codesystem-1"> </a></td><td>Médico</td><td>Médico</td></tr><tr><td style="white-space:nowrap">2<a name="profesiones-codesystem-2"> </a></td><td>Odontólogo</td><td>Odontólogo</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem profesiones-codesystem</b></p><a name="profesiones-codesystem"> </a><a name="hcprofesiones-codesystem"> </a><p>This case-sensitive code system <code>http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">1<a name="profesiones-codesystem-1"> </a></td><td>Médico</td><td>Médico</td></tr><tr><td style="white-space:nowrap">2<a name="profesiones-codesystem-2"> </a></td><td>Odontólogo</td><td>Odontólogo</td></tr></table></div>
   </text>
   <url value="http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem"/>
   <version value="0.1.0"/>
   <name value="RecuperoProfesionesCS"/>
   <title value="Profesiones Solicitantes para Recupero"/>
-  <status value="draft"/>
-  <date value="2025-07-12T17:02:17-03:00"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2025-07-14T12:58:17-03:00"/>
   <publisher value="HL7 Argentina"/>
   <contact>
     <name value="HL7 Argentina"/>
@@ -24,6 +25,7 @@
     </telecom>
   </contact>
   <description value="Listado de Profesiones para Solicitantes"/>
+  <caseSensitive value="true"/>
   <content value="complete"/>
   <count value="2"/>
   <concept>

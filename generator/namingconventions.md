@@ -1,6 +1,6 @@
 Expresión Técnica (Naming Conventions)
 Se debe asignar un conjunto system/value globalmente único a cada identificador, por lo cual expresamos esta propuesta de estrategias de identificación:
-Identificadores Únicos para cada Hospital/Laboratorio
+A) Identificadores Únicos para cada Hospital/Laboratorio
 Generamos primero una uri base de dominio para cada efector
 Efector
 URI Dominio
@@ -26,7 +26,7 @@ http://laboratorio1.gob.ar/pedidos
 El identificador del pedido en el lab
 
 
-Identificadores Únicos para cada Tipo de Matricula
+B) Identificadores Únicos para cada Tipo de Matricula
 Generamos primero un identificador base de dominio para las matrículas (deberia ser REFEPS, pero para este proyecto vamos a definir uno propio)
 http://recupero.gob.ar/matriculas/
 Para definir el sistema de identificación, le agregamos al final el código de entidad.
@@ -57,7 +57,7 @@ http://recupero.gob.ar/coberturas/MP056/
  1234567890-1
 
 
-Identificadores Únicos para cada Tipo de Documento 
+C) Identificadores Únicos para cada Tipo de Documento 
 Documento de Identidad Argentino: http://renaper.gob.ar/dni
 Pasaportes:
 http://recupero.gob.ar/pasaportes/

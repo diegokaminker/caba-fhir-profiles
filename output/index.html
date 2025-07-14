@@ -20,6 +20,7 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/corear.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -46,7 +47,25 @@
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.msobs.gov.py/index.php">
+            <img height="71" alt="Project home" src="assets/images/logo-mspbs.jpeg"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://funcapy.org"><img height="70" alt="FUNCA Website" src="assets/images/logo-funca.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
 
 
         <div id="ig-status">
@@ -83,7 +102,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="casosdeuso.html">Casos de Uso</a>
+  </li>
+  <li>
+    <a href="modelologico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="practica_implementacion.html">Didáctica</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -148,7 +176,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
         
           Draft
           
-            as of 2025-07-12
+            as of 2025-07-14
           
         
       </td>
@@ -172,12 +200,66 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h1>.</h1>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#guia-de-implementacion-de-solicitudes-de-recupero" id="markdown-toc-guia-de-implementacion-de-solicitudes-de-recupero">Guia de Implementacion de Solicitudes de Recupero</a>    <ul>
+      <li><a href="#introducción" id="markdown-toc-introducción">Introducción</a></li>
+      <li><a href="#tecnicas-de-ig-publisher" id="markdown-toc-tecnicas-de-ig-publisher">Tecnicas de IG Publisher</a>        <ul>
+          <li><a href="#como-incluir-páginas-adicionales-e-incluirlas-en-el-menú" id="markdown-toc-como-incluir-páginas-adicionales-e-incluirlas-en-el-menú">Como incluir páginas adicionales e incluirlas en el menú</a></li>
+          <li><a href="#como-incluir-un-logo" id="markdown-toc-como-incluir-un-logo">Como incluir un logo</a></li>
+          <li><a href="#como-establecer-una-estructura-de-carpetas" id="markdown-toc-como-establecer-una-estructura-de-carpetas">Como establecer una estructura de carpetas</a></li>
+          <li><a href="#como-subir-los-recursos-de-conformidad-a-su-servidor-fhir" id="markdown-toc-como-subir-los-recursos-de-conformidad-a-su-servidor-fhir">Como subir los recursos de conformidad a su servidor FHIR</a></li>
+          <li><a href="#como-incluir-imágenes-en-las-páginas" id="markdown-toc-como-incluir-imágenes-en-las-páginas">Como incluir imágenes en las páginas</a></li>
+        </ul>
+      </li>
+      <li><a href="#tecnicas-de-fsh" id="markdown-toc-tecnicas-de-fsh">Tecnicas de FSH</a>        <ul>
+          <li><a href="#definiciones-de-modelos-lógicos" id="markdown-toc-definiciones-de-modelos-lógicos">Definiciones de Modelos Lógicos</a></li>
+          <li><a href="#restricciones-a-nivel-de-recurso" id="markdown-toc-restricciones-a-nivel-de-recurso">Restricciones a nivel de recurso</a></li>
+          <li><a href="#restricciones-a-nivel-de-elemento" id="markdown-toc-restricciones-a-nivel-de-elemento">Restricciones a nivel de elemento</a></li>
+          <li><a href="#slicing" id="markdown-toc-slicing">Slicing</a></li>
+          <li><a href="#restricciones-terminologicas" id="markdown-toc-restricciones-terminologicas">Restricciones Terminologicas</a></li>
+          <li><a href="#definicion-de-extensiones" id="markdown-toc-definicion-de-extensiones">Definicion de Extensiones</a></li>
+          <li><a href="#definicion-y-validación-de-bundles" id="markdown-toc-definicion-y-validación-de-bundles">Definicion y Validación de Bundles</a></li>
+        </ul>
+      </li>
+      <li><a href="#implementaciones-de-referencia" id="markdown-toc-implementaciones-de-referencia">Implementaciones de Referencia</a>        <ul>
+          <li><a href="#clientes" id="markdown-toc-clientes">Clientes</a></li>
+          <li><a href="#servidores" id="markdown-toc-servidores">Servidores</a></li>
+          <li><a href="#otros-actores-según-el-caso-de-uso" id="markdown-toc-otros-actores-según-el-caso-de-uso">Otros Actores según el caso de uso</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<p>Feel free to modify this index page with your own awesome content!</p>
+</div>
+<h1 id="guia-de-implementacion-de-solicitudes-de-recupero">Guia de Implementacion de Solicitudes de Recupero</h1>
+
+<h2 id="introducción">Introducción</h2>
+
+<p>Este documento tiene como propósito demostrar las distintas técnicas utilizadas para la generación de guías de implementación HL7, incluyendo</p>
+<h2 id="tecnicas-de-ig-publisher">Tecnicas de IG Publisher</h2>
+<h3 id="como-incluir-páginas-adicionales-e-incluirlas-en-el-menú">Como incluir páginas adicionales e incluirlas en el menú</h3>
+<h3 id="como-incluir-un-logo">Como incluir un logo</h3>
+<h3 id="como-establecer-una-estructura-de-carpetas">Como establecer una estructura de carpetas</h3>
+<h3 id="como-subir-los-recursos-de-conformidad-a-su-servidor-fhir">Como subir los recursos de conformidad a su servidor FHIR</h3>
+<h3 id="como-incluir-imágenes-en-las-páginas">Como incluir imágenes en las páginas</h3>
+<h2 id="tecnicas-de-fsh">Tecnicas de FSH</h2>
+<h3 id="definiciones-de-modelos-lógicos">Definiciones de Modelos Lógicos</h3>
+<h3 id="restricciones-a-nivel-de-recurso">Restricciones a nivel de recurso</h3>
+<h3 id="restricciones-a-nivel-de-elemento">Restricciones a nivel de elemento</h3>
+<h3 id="slicing">Slicing</h3>
+<h3 id="restricciones-terminologicas">Restricciones Terminologicas</h3>
+<h3 id="definicion-de-extensiones">Definicion de Extensiones</h3>
+<h3 id="definicion-y-validación-de-bundles">Definicion y Validación de Bundles</h3>
+<h2 id="implementaciones-de-referencia">Implementaciones de Referencia</h2>
+<h3 id="clientes">Clientes</h3>
+<h3 id="servidores">Servidores</h3>
+<h3 id="otros-actores-según-el-caso-de-uso">Otros Actores según el caso de uso</h3>
+
+<p>Cualquier coincidencia con proyectos reales es pura coincidencia.
+Está prohibido utilizar cualquiera de los artefactos que acompañan esta guía con pacientes reales, ya que se trata de una guía realizada con objetivos didácticos</p>
+
 
 
 
@@ -197,13 +279,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 12, 2025 17:02-0300">2025-07-12</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 14, 2025 12:58-0300">2025-07-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+             
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->

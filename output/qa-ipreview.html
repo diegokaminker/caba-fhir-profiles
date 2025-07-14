@@ -8,20 +8,20 @@
     <h2>Unattributed Code Systems</h2>
     <ul>
       <li>
-        <a href="Bundle-RecuperoCABABundleEjemplo.html">
+        <a href="Claim-RecuperoCABAClaimEjemplo.html">
 <code>http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem</code>        </a>
       </li>
       <li>
-        <a href="Bundle-RecuperoCABABundleEjemplo.html">
+        <a href="Claim-RecuperoCABAClaimEjemplo.html">
 <code>http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem</code>        </a>
       </li>
       <li>
-        <a href="Bundle-RecuperoCABABundleEjemplo.html">
+        <a href="Practitioner-RecuperoCABAProfesionalSolicitanteEjemplo.html">
 <code>http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem</code>        </a>
       </li>
       <li>
-        <a href="Bundle-RecuperoCABABundleEjemplo.html">
-<code>http://recuperocaba.gob.ar/CodeSystem/profesionesefectores-codesystem</code>        </a>
+        <a href="Practitioner-RecuperoCABAProfesionalFirmanteEjemplo.html">
+<code>http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem</code>        </a>
       </li>
     </ul>
     <h2>Copyright Fragment</h2>
@@ -46,6 +46,7 @@ This material contains content from           <a href="http://loinc.org">LOINC</
               <li>
                 <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-loinc.html">LOINC</a>
 :                 <a href="Bundle-RecuperoCABABundleEjemplo.html">Bundle/RecuperoCABABundleEjemplo</a>
+,                 <a href="DocumentReference-RecuperoCABADocumentacionAdicionalEjemplo.html">DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo</a>
  and                 <a href="StructureDefinition-DocumentReferenceCabaRecupero.html">DocumentReferenceCabaRecupero</a>
               </li>
 
@@ -69,6 +70,7 @@ This material contains content that is copyright of SNOMED International. Implem
               <li>
                 <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
 :                 <a href="Bundle-RecuperoCABABundleEjemplo.html">Bundle/RecuperoCABABundleEjemplo</a>
+,                 <a href="ServiceRequest-RecuperoCABAServiceRequestEjemplo.html">ServiceRequest/RecuperoCABAServiceRequestEjemplo</a>
  and                 <a href="StructureDefinition-ServiceRequestCabaRecupero.html">ServiceRequestCabaRecupero</a>
               </li>
 
@@ -91,23 +93,27 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
               <li>
                 <a href="http://terminology.hl7.org/6.5.0/CodeSystem-claim-type.html">Claim Type Codes</a>
 :                 <a href="Bundle-RecuperoCABABundleEjemplo.html">Bundle/RecuperoCABABundleEjemplo</a>
+ and                 <a href="Claim-RecuperoCABAClaimEjemplo.html">Claim/RecuperoCABAClaimEjemplo</a>
               </li>
 
               <li>
                 <a href="http://terminology.hl7.org/6.5.0/CodeSystem-claiminformationcategory.html">Claim Information Category Codes</a>
 :                 <a href="Bundle-RecuperoCABABundleEjemplo.html">Bundle/RecuperoCABABundleEjemplo</a>
+,                 <a href="Claim-RecuperoCABAClaimEjemplo.html">Claim/RecuperoCABAClaimEjemplo</a>
  and                 <a href="StructureDefinition-ClaimCabaRecupero.html">ClaimCabaRecupero</a>
               </li>
 
               <li>
                 <a href="http://terminology.hl7.org/6.5.0/CodeSystem-processpriority.html">Process Priority Codes</a>
 :                 <a href="Bundle-RecuperoCABABundleEjemplo.html">Bundle/RecuperoCABABundleEjemplo</a>
+,                 <a href="Claim-RecuperoCABAClaimEjemplo.html">Claim/RecuperoCABAClaimEjemplo</a>
  and                 <a href="StructureDefinition-ClaimCabaRecupero.html">ClaimCabaRecupero</a>
               </li>
 
               <li>
                 <a href="http://terminology.hl7.org/6.5.0/CodeSystem-v3-ActCode.html">ActCode</a>
 :                 <a href="Bundle-RecuperoCABABundleEjemplo.html">Bundle/RecuperoCABABundleEjemplo</a>
+,                 <a href="Encounter-RecuperoCABAEncounterEjemplo.html">Encounter/RecuperoCABAEncounterEjemplo</a>
  and                 <a href="StructureDefinition-EncounterCabaRecupero.html">EncounterCabaRecupero</a>
               </li>
 
@@ -127,13 +133,15 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
     <ul>
       <li>
 
-          IG &copy; 2025+ HL7 Argentina.  Package recupero-caba#0.1.0 based on FHIR 4.0.1. Generated 2025-07-12 
+          IG &copy; 2025+ HL7 Argentina.  Package recupero-caba#0.1.0 based on FHIR 4.0.1. Generated 2025-07-14 
           
           
                       Links: Table of Contents |
                  QA Report
                  
                 
+  CC0 |
+             
            
          (        <a href="toc.html">src</a>
 )
@@ -144,6 +152,10 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
              
                 CC0
          (        <a href="searchform.html">src</a>
+)
+      </li>
+      <li>
+- Códigos locales (TM) (        <a href="assets/images/diagnostico_presuntivo.svg">src</a>
 )
       </li>
       <li>
@@ -163,6 +175,40 @@ Recupero CABA - Local Development build (v0.1.0) built by the FHIR (HL7&reg; FHI
         <th>
           <b>Content</b>
         </th>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-RecuperoCABABundleEjemplo.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="https://www.msobs.gov.py/index.php">www.msobs.gov.py</a>
+        </td>
+        <td>
+
+                    <a no-external="true" id="project-logo" href="https://www.msobs.gov.py/index.php">
+
+            <img src="assets/images/logo-mspbs.jpeg" alt="Project home" height="71"/>
+          
+          </a>
+
+        
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="Bundle-RecuperoCABABundleEjemplo.change.history.html">web</a>
+        </td>
+        <td>
+          <a href="http://funcapy.org">funcapy.org</a>
+        </td>
+        <td>
+
+                    <a no-external="true" id="family-logo" href="http://funcapy.org">
+<img src="assets/images/logo-funca.png" alt="FUNCA Website" height="70"/> 
+          </a>
+
+        
+        </td>
       </tr>
       <tr>
         <td>

@@ -5,7 +5,7 @@ Alias: $claiminformationcategory = http://terminology.hl7.org/CodeSystem/claimin
 Alias: $sct = http://snomed.info/sct
 Alias: $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
 Alias: $recupero-profesiones = http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem
-Alias: $recupero-profesiones-efectores = http://recuperocaba.gob.ar/CodeSystem/profesionesefectores-codesystem
+Alias: $recupero-profesiones-efectores = http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem
 Alias: $loinc = http://loinc.org
 
 Alias:  IDENT_DNI = http://www.renaper.gob.ar/dni

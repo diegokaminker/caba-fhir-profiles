@@ -12,8 +12,6 @@ Description:    "Perfil de Practitioner Para RECUPERO CABA"
 * identifier.value 1..1
 * name.text 1..1
 * qualification.code 1..1
-
-
 * identifier.system ^short = "ProfesionalEfector.codTipoMatriculaFirmante / Solicitante"
 * identifier.value ^short = "ProfesionalEfector.idMatriculaFirmante / Solicitante"
 * name.text ^short = "profesionalFirmante / Solicitante"

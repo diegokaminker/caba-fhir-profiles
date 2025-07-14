@@ -20,6 +20,7 @@
   	<link href="assets/css/prism.css" rel="stylesheet" />
   	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/corear.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -41,12 +42,30 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"2"}
-    h3,h4,h5,h6{--heading-prefix:"2.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
-        <!-- Placeholder for child template header declarations -->
+        <!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://www.msobs.gov.py/index.php">
+            <img height="71" alt="Project home" src="assets/images/logo-mspbs.jpeg"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://funcapy.org"><img height="70" alt="FUNCA Website" src="assets/images/logo-funca.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
 
 
         <div id="ig-status">
@@ -83,7 +102,16 @@
     <a href="index.html">Home</a>
   </li>
   <li>
-    <a href="artifacts.html">Artifacts</a>
+    <a href="artifacts.html">Artefactos</a>
+  </li>
+  <li>
+    <a href="casosdeuso.html">Casos de Uso</a>
+  </li>
+  <li>
+    <a href="modelologico.html">Modelo Lógico</a>
+  </li>
+  <li>
+    <a href="practica_implementacion.html">Didáctica</a>
   </li>
 </ul>
             </div>  <!-- /.nav-collapse -->
@@ -144,7 +172,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <a href="#5">Terminology: Code Systems</a>
       </li>
       <li>
-         <a href="#6">Example: Example Instances</a>
+         <a href="#6">Terminology: Naming Systems</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
       </li>
    </ul>
 </div>
@@ -436,6 +467,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       </tbody>
    </table>
    <a name="6"> </a>
+   <h3>Terminology: Naming Systems </h3>
+    <p>These define identifier and/or code system identities used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="NamingSystem-renaper-dni.html" title="NamingSystem/renaper-dni">renaper-dni</a>
+            </td>
+            <td>
+<p>This NamingSystem defines the official identification document issued by RENAPER in Argentina, the Documento Nacional de Identidad (DNI).</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
    <h3>Example: Example Instances </h3>
     <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
 <table class="grid">
@@ -445,6 +492,48 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <td style="column-width:30%">
                <a href="Bundle-RecuperoCABABundleEjemplo.html"
                   title="Bundle/RecuperoCABABundleEjemplo">RecuperoCABABundleEjemplo</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Claim-RecuperoCABAClaimEjemplo.html"
+                  title="Claim/RecuperoCABAClaimEjemplo">RecuperoCABAClaimEjemplo</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="DocumentReference-RecuperoCABADocumentacionAdicionalEjemplo.html"
+                  title="DocumentReference/RecuperoCABADocumentacionAdicionalEjemplo">RecuperoCABADocumentacionAdicionalEjemplo</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-RecuperoCABAEncounterEjemplo.html"
+                  title="Encounter/RecuperoCABAEncounterEjemplo">RecuperoCABAEncounterEjemplo</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-RecuperoCABAPacienteEjemplo.html"
+                  title="Patient/RecuperoCABAPacienteEjemplo">RecuperoCABAPacienteEjemplo</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-RecuperoCABAProfesionalFirmanteEjemplo.html"
+                  title="Practitioner/RecuperoCABAProfesionalFirmanteEjemplo">RecuperoCABAProfesionalFirmanteEjemplo</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Practitioner-RecuperoCABAProfesionalSolicitanteEjemplo.html"
+                  title="Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo">RecuperoCABAProfesionalSolicitanteEjemplo</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ServiceRequest-RecuperoCABAServiceRequestEjemplo.html"
+                  title="ServiceRequest/RecuperoCABAServiceRequestEjemplo">RecuperoCABAServiceRequestEjemplo</a>
             </td>
          </tr>
       </tbody>
@@ -467,13 +556,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Jul 12, 2025 17:02-0300">2025-07-12</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 14, 2025 12:58-0300">2025-07-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
                  
                 
+  <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R4/license.html"><img style="border-style: none;" alt="CC0" src="cc0.png"/></a> |
+             
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
