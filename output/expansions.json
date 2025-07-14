@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5554ad31-9752-4690-8b9e-da95f3ca67f3",
+  "id" : "e3663156-de39-4e3f-babe-71c2c3f8adae",
   "meta" : {
-    "lastUpdated" : "2025-07-14T12:58:59.064-03:00"
+    "lastUpdated" : "2025-07-14T16:53:29.864-03:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,10 +19,10 @@
       "title" : "Recupero Coberturas ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-07-14T12:58:17-03:00",
+      "date" : "2025-07-14T16:52:57-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:edc45a0b-5da0-4c53-aa89-f42fd3a2c43a",
-        "timestamp" : "2025-07-14T13:00:14-03:00",
+        "identifier" : "urn:uuid:909e30fe-158a-4601-ab16-63c7b657a836",
+        "timestamp" : "2025-07-14T16:54:50-03:00",
         "total" : 93,
         "offset" : 0,
         "parameter" : [{
@@ -527,10 +527,10 @@
       "title" : "Recupero Diagnosticos ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-07-14T12:58:17-03:00",
+      "date" : "2025-07-14T16:52:57-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:be2407ea-bcfe-49f1-9f9c-af2c1a6ab4f5",
-        "timestamp" : "2025-07-14T13:00:14-03:00",
+        "identifier" : "urn:uuid:7753d09e-29ec-4b4c-9804-393a4d87b92c",
+        "timestamp" : "2025-07-14T16:54:50-03:00",
         "total" : 395,
         "offset" : 0,
         "parameter" : [{
@@ -2545,10 +2545,10 @@
       "title" : "Recupero Procedimientos ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-07-14T12:58:17-03:00",
+      "date" : "2025-07-14T16:52:57-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:71d6f27f-f92f-4d8a-a469-18e1ead8f7e9",
-        "timestamp" : "2025-07-14T13:00:14-03:00",
+        "identifier" : "urn:uuid:1065a662-63b1-48f0-8a48-896df18816c6",
+        "timestamp" : "2025-07-14T16:54:50-03:00",
         "total" : 128,
         "offset" : 0,
         "parameter" : [{
@@ -3228,10 +3228,10 @@
       "title" : "Recupero Profesiones ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-07-14T12:58:17-03:00",
+      "date" : "2025-07-14T16:52:57-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:38fe1dde-7b9e-4684-84eb-305bb7735626",
-        "timestamp" : "2025-07-14T13:00:15-03:00",
+        "identifier" : "urn:uuid:d1043e36-46c8-4f77-86e8-caa9fd27a167",
+        "timestamp" : "2025-07-14T16:54:51-03:00",
         "total" : 2,
         "offset" : 0,
         "parameter" : [{
@@ -3281,10 +3281,10 @@
       "title" : "Recupero Profesiones Efectores ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-07-14T12:58:17-03:00",
+      "date" : "2025-07-14T16:52:57-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:82f28e82-e3dd-4eb2-9f6e-07f344034775",
-        "timestamp" : "2025-07-14T13:00:15-03:00",
+        "identifier" : "urn:uuid:9f4e341b-5278-4f95-a139-1a814abfe359",
+        "timestamp" : "2025-07-14T16:54:51-03:00",
         "total" : 20,
         "offset" : 0,
         "parameter" : [{
@@ -3424,10 +3424,10 @@
       "title" : "Recupero TiposDocumento ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-07-14T12:58:17-03:00",
+      "date" : "2025-07-14T16:52:57-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:588aa8a9-e262-4182-9a64-a962a212f8a7",
-        "timestamp" : "2025-07-14T13:00:15-03:00",
+        "identifier" : "urn:uuid:6c46aac6-9518-43b8-9959-ee5012bc6c53",
+        "timestamp" : "2025-07-14T16:54:51-03:00",
         "total" : 9,
         "offset" : 0,
         "parameter" : [{
@@ -3516,10 +3516,10 @@
       "title" : "Recupero TiposMatricula ValueSet",
       "status" : "active",
       "experimental" : false,
-      "date" : "2025-07-14T12:58:17-03:00",
+      "date" : "2025-07-14T16:52:57-03:00",
       "expansion" : {
-        "identifier" : "urn:uuid:235a4cc1-2c2b-4687-9a67-fec4109565fb",
-        "timestamp" : "2025-07-14T13:00:15-03:00",
+        "identifier" : "urn:uuid:5a6975aa-551e-4784-9749-7eedd621be94",
+        "timestamp" : "2025-07-14T16:54:51-03:00",
         "total" : 277,
         "offset" : 0,
         "parameter" : [{

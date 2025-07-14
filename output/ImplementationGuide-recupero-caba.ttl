@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "RecuperoCABA"] ; # 
   fhir:title [ fhir:v "Recupero CABA"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2025-07-14T12:58:17-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-14T16:52:57-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Argentina"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Argentina" ] ;
@@ -1518,6 +1518,20 @@
            fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
            fhir:value [
              a fhir:url ;
+             fhir:v "mapping_logical_to_bundle.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "mapping_logical_to_bundle.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Mapping Logical to Bundle" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
              fhir:v "modelologico.html"^^xsd:anyURI
            ]
          ] ) ;
@@ -1540,6 +1554,34 @@
            fhir:v "practica_implementacion.html"^^xsd:anyURI
          ] ;
          fhir:title [ fhir:v "Practica Implementacion" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "refimpl.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "refimpl.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Refimpl" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [
+             a fhir:url ;
+             fhir:v "xba-manual.html"^^xsd:anyURI
+           ]
+         ] ) ;
+         fhir:name [
+           a fhir:url ;
+           fhir:v "xba-manual.html"^^xsd:anyURI
+         ] ;
+         fhir:title [ fhir:v "Xba Manual" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] )
      ] ;

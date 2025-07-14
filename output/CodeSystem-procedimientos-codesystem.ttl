@@ -19,7 +19,7 @@
   fhir:title [ fhir:v "Procedimientos para Recupero"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:experimental [ fhir:v false] ; # 
-  fhir:date [ fhir:v "2025-07-14T12:58:17-03:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2025-07-14T16:52:57-03:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "HL7 Argentina"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "HL7 Argentina" ] ;

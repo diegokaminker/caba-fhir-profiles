@@ -21,7 +21,7 @@
    <name value="RecuperoCABA"/>
    <title value="Recupero CABA"/>
    <status value="draft"/>
-   <date value="2025-07-14T12:58:17-03:00"/>
+   <date value="2025-07-14T16:52:57-03:00"/>
    <publisher value="HL7 Argentina"/>
    <contact>
       <name value="HL7 Argentina"/>
@@ -1035,6 +1035,14 @@
          </page>
          <page>
             <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="mapping_logical_to_bundle.html"/>
+            </extension>
+            <nameUrl value="mapping_logical_to_bundle.html"/>
+            <title value="Mapping Logical to Bundle"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
                <valueUrl value="modelologico.html"/>
             </extension>
             <nameUrl value="modelologico.html"/>
@@ -1047,6 +1055,22 @@
             </extension>
             <nameUrl value="practica_implementacion.html"/>
             <title value="Practica Implementacion"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="refimpl.html"/>
+            </extension>
+            <nameUrl value="refimpl.html"/>
+            <title value="Refimpl"/>
+            <generation value="markdown"/>
+         </page>
+         <page>
+            <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+               <valueUrl value="xba-manual.html"/>
+            </extension>
+            <nameUrl value="xba-manual.html"/>
+            <title value="Xba Manual"/>
             <generation value="markdown"/>
          </page>
       </page>

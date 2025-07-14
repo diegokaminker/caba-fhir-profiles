@@ -10,7 +10,7 @@
   "name" : "RecuperoCABA",
   "title" : "Recupero CABA",
   "status" : "draft",
-  "date" : "2025-07-14T12:58:17-03:00",
+  "date" : "2025-07-14T16:52:57-03:00",
   "publisher" : "HL7 Argentina",
   "contact" : [{
     "name" : "HL7 Argentina",
@@ -1055,6 +1055,15 @@
       {
         "extension" : [{
           "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "mapping_logical_to_bundle.html"
+        }],
+        "nameUrl" : "mapping_logical_to_bundle.html",
+        "title" : "Mapping Logical to Bundle",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
           "valueUrl" : "modelologico.html"
         }],
         "nameUrl" : "modelologico.html",
@@ -1068,6 +1077,24 @@
         }],
         "nameUrl" : "practica_implementacion.html",
         "title" : "Practica Implementacion",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "refimpl.html"
+        }],
+        "nameUrl" : "refimpl.html",
+        "title" : "Refimpl",
+        "generation" : "markdown"
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name",
+          "valueUrl" : "xba-manual.html"
+        }],
+        "nameUrl" : "xba-manual.html",
+        "title" : "Xba Manual",
         "generation" : "markdown"
       }]
     },

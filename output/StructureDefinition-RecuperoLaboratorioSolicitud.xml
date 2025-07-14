@@ -29,32 +29,37 @@
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed" title="Identificador SNOMED CT para el diagnóstico">codDiagnosticoSnomed</a><a name="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador SNOMED CT para el diagnóstico</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed" title="Descripción SNOMED CT para el diagnóstico">desDiagnosticoSnomed</a><a name="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Descripción SNOMED CT para el diagnóstico</td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante" title="Información del Profesional (Solicitante)">ProfesionalSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Información del Profesional (Solicitante)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante" title="Identificador de la profesión del profesional solicitante">codProfesionSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador de la profesión del profesional solicitante</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante" title="Profesión del profesional solicitante">desProfesionSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Profesión del profesional solicitante</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante" title="Tipo de matrícula profesional del profesional solicitante">codTipoMatriculaSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tipo de matrícula profesional del profesional solicitante</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante" title="Número de matrícula del profesional solicitante">idMatriculaSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Número de matrícula del profesional solicitante</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector" title="Información del Profesional (Firmante/Atendedor)">ProfesionalEfector</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Información del Profesional (Firmante/Atendedor)</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante" title="Identificador de la profesión del profesional firmante/atendedor">codProfesionFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador de la profesión del profesional firmante/atendedor</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante" title="Profesión del profesional firmante/atendedor">desProfesionFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Profesión del profesional firmante/atendedor</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional" title="Nombre del profesional firmante/atendedor">profesional</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre del profesional firmante/atendedor</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante" title="Identificador de la matrícula del profesional firmante/atendedor">codTipoMatriculaFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador de la matrícula del profesional firmante/atendedor</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante" title="Número de matrícula del profesional firmante/atendedor">idMatriculaFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Número de matrícula del profesional firmante/atendedor</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.FechasServicio" title="Fechas del Servicio Realizado">FechasServicio</a><a name="RecuperoLaboratorioSolicitud.FechasServicio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fechas del Servicio Realizado</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra" title="Fecha en que se tomó la muestra">fechaMuestra</a><a name="RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha en que se tomó la muestra</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado" title="Fecha en que se obtuvo el resultado">fechaResultado</a><a name="RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha en que se obtuvo el resultado</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura" title="Cobertura del Servicio">DatosCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Cobertura del Servicio</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura" title="Codigo de Cobertura">codCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codigo de Cobertura</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura" title="Descripción de la cobertura/seguro del paciente">desCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Descripción de la cobertura/seguro del paciente</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura" title="Numero de Carnet del Paciente">idCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numero de Carnet del Paciente</td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.documentacionAuditoria" title="Archivos Adjuntos Documentando Servicio">documentacionAuditoria</a><a name="RecuperoLaboratorioSolicitud.documentacionAuditoria"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Archivos Adjuntos Documentando Servicio<br/></td></tr>
-<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: white; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.prestaciones" title="Lista de servicios/procedimientos solicitados">prestaciones</a><a name="RecuperoLaboratorioSolicitud.prestaciones"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-RecuperoLaboratorioPrestacion.html">RecuperoLaboratorioPrestacion</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lista de servicios/procedimientos solicitados<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante" title="Identificador de la profesión del profesional solicitante">codProfesionSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador de la profesión del profesional solicitante</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante" title="Profesión del profesional solicitante">desProfesionSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Profesión del profesional solicitante</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante" title="Tipo de matrícula profesional del profesional solicitante">codTipoMatriculaSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Tipo de matrícula profesional del profesional solicitante</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante" title="Número de matrícula del profesional solicitante">idMatriculaSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Número de matrícula del profesional solicitante</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalSolicitante.profesionalSolicitante" title="Nombre del Profesional Solicitante">profesionalSolicitante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.profesionalSolicitante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre del Profesional Solicitante</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector" title="Información del Profesional (Firmante/Atendedor)">ProfesionalEfector</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Información del Profesional (Firmante/Atendedor)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante" title="Identificador de la profesión del profesional firmante/atendedor">codProfesionFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador de la profesión del profesional firmante/atendedor</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante" title="Profesión del profesional firmante/atendedor">desProfesionFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Profesión del profesional firmante/atendedor</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional" title="Nombre del profesional firmante/atendedor">profesional</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Nombre del profesional firmante/atendedor</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante" title="Identificador de la matrícula del profesional firmante/atendedor">codTipoMatriculaFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Identificador de la matrícula del profesional firmante/atendedor</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante" title="Número de matrícula del profesional firmante/atendedor">idMatriculaFirmante</a><a name="RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Número de matrícula del profesional firmante/atendedor</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.FechasServicio" title="Fechas del Servicio Realizado">FechasServicio</a><a name="RecuperoLaboratorioSolicitud.FechasServicio"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fechas del Servicio Realizado</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra" title="Fecha en que se tomó la muestra">fechaMuestra</a><a name="RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha en que se tomó la muestra</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado" title="Fecha en que se obtuvo el resultado">fechaResultado</a><a name="RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#date">date</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Fecha en que se obtuvo el resultado</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura" title="Cobertura del Servicio">DatosCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#BackboneElement">BackboneElement</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Cobertura del Servicio</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura" title="Codigo de Cobertura">codCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Codigo de Cobertura</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck110.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura" title="Descripción de la cobertura/seguro del paciente">desCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Descripción de la cobertura/seguro del paciente</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck100.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vline.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura" title="Numero de Carnet del Paciente">idCobertura</a><a name="RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Numero de Carnet del Paciente</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.documentacionAuditoria" title="Archivos Adjuntos Documentando Servicio">documentacionAuditoria</a><a name="RecuperoLaboratorioSolicitud.documentacionAuditoria"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Archivos Adjuntos Documentando Servicio<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck01.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_resource.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Resource" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.prestaciones" title="Lista de servicios/procedimientos solicitados">prestaciones</a><a name="RecuperoLaboratorioSolicitud.prestaciones"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..*</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="StructureDefinition-RecuperoLaboratorioPrestacion.html">RecuperoLaboratorioPrestacion</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lista de servicios/procedimientos solicitados<br/></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.prestaciones.codPrestacion">codPrestacion</a><a name="RecuperoLaboratorioSolicitud.prestaciones.codPrestacion"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identificador de la prestación/procedimiento</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.prestaciones.desPrestacion">desPrestacion</a><a name="RecuperoLaboratorioSolicitud.prestaciones.desPrestacion"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">1</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Descripción de la prestación/procedimiento</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck010.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.prestaciones.codSnomed">codSnomed</a><a name="RecuperoLaboratorioSolicitud.prestaciones.codSnomed"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Identificador SNOMED CT para la prestación/procedimiento</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck000.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_blank.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-RecuperoLaboratorioSolicitud-definitions.html#RecuperoLaboratorioSolicitud.prestaciones.desPrestacionSnomed">desPrestacionSnomed</a><a name="RecuperoLaboratorioSolicitud.prestaciones.desPrestacionSnomed"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">1</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a style="opacity: 0.5; opacity: 0.5" href="http://hl7.org/fhir/R4/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">Descripción SNOMED CT para la prestación/procedimiento</span></td></tr>
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
   </text>
   <url value="http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioSolicitud"/>
   <version value="0.1.0"/>
   <name value="RecuperoLaboratorioSolicitud"/>
   <status value="draft"/>
-  <date value="2025-07-14T12:58:17-03:00"/>
+  <date value="2025-07-14T16:52:57-03:00"/>
   <publisher value="HL7 Argentina"/>
   <contact>
     <name value="HL7 Argentina"/>
@@ -69,6 +74,12 @@
   </contact>
   <description value="Representa una solicitud de recupero de gastos de laboratorio, incluyendo la información relevante"/>
   <fhirVersion value="4.0.1"/>
+  <mapping>
+    <identity value="recupero-laboratorio-to-bundle"/>
+    <uri value="BundleCabaRecupero"/>
+    <name value="Mapping from RecuperoLaboratorioSolicitud Logical Model to FHIR Bundle"/>
+    <comment value="Maps the logical model RecuperoLaboratorioSolicitud to the FHIR bundle structure containing Claim, Patient, ServiceRequest, Encounter, Practitioner, and DocumentReference resources"/>
+  </mapping>
   <kind value="logical"/>
   <abstract value="false"/>
   <type value="http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioSolicitud"/>
@@ -113,6 +124,31 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource"/>
+        <comment value="Patient resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.patient.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in Claim"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.subject.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.subject.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in Encounter"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[6].resource.subject.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in DocumentReference"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.id">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.id"/>
@@ -244,6 +280,23 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0]"/>
+        <comment value="Internal patient identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0].system = performerSite.url + '/pacientes'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0].value"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0].use = #usual"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.apellidoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.apellidoPaciente"/>
@@ -259,6 +312,23 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0].family"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[1]"/>
+        <comment value="Mother's family name extension"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[1].url = 'http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[1].valueString"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.otroApellidoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.otroApellidoPaciente"/>
@@ -274,6 +344,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[0]"/>
+        <comment value="Father's family name extension"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[0].url = 'http://recuperocaba.gob.ar/StructureDefinition/ExtensionFathersFamilyName'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[0].valueString"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.nombrePaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.nombrePaciente"/>
@@ -289,6 +372,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0].given"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.otroNombrePaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.otroNombrePaciente"/>
@@ -304,6 +391,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0].given"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.nombreAutopercibidoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.nombreAutopercibidoPaciente"/>
@@ -319,6 +410,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[1]"/>
+        <comment value="Usual name"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[1].use = #usual"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[1].given"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.tipoDocumentoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.tipoDocumentoPaciente"/>
@@ -334,6 +438,15 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1]"/>
+        <comment value="Official document identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1].system = 'http://renaper.gob.ar/dni'"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.documentoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.documentoPaciente"/>
@@ -349,6 +462,14 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1].value"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1].use = #official"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.codSexoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.codSexoPaciente"/>
@@ -364,6 +485,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.gender"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.fechaNacimientoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.fechaNacimientoPaciente"/>
@@ -379,6 +504,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.birthDate"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto"/>
@@ -402,6 +531,36 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource"/>
+        <comment value="ServiceRequest resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.encounter.reference = 'urn:uuid:' + encounterUuid"/>
+        <comment value="Encounter reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.requester.reference = 'urn:uuid:' + requesterUuid"/>
+        <comment value="Requester reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.performer[0].reference = 'urn:uuid:' + performerUuid"/>
+        <comment value="Performer reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.referral.reference = 'urn:uuid:' + serviceRequestUuid"/>
+        <comment value="ServiceRequest reference in Claim"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.supportingInfo[0].valueReference.reference = 'urn:uuid:' + documentUuid"/>
+        <comment value="DocumentReference reference in Claim"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.id">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.id"/>
@@ -533,6 +692,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Service location description"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.idEpisodio">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.idEpisodio"/>
@@ -548,6 +712,24 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource"/>
+        <comment value="Encounter resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.identifier[0]"/>
+        <comment value="Episode identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.identifier[0].system = performerSite.url + '/episodios'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.identifier[0].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desEfectorProcesamiento">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desEfectorProcesamiento"/>
@@ -563,6 +745,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Processing facility"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desAmbitoDetalle">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desAmbitoDetalle"/>
@@ -578,6 +765,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Detailed scope"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desServicioDetalle">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desServicioDetalle"/>
@@ -593,6 +785,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Service detail"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desAreaJerarquicaSolicitud">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desAreaJerarquicaSolicitud"/>
@@ -608,6 +805,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Hierarchical area"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.idPedido">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.idPedido"/>
@@ -623,6 +825,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.identifier[0]"/>
+        <comment value="Service request identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.identifier[0].system = requesterSite.url + '/pedidos'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.identifier[0].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo"/>
@@ -646,6 +861,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource"/>
+        <comment value="Claim resource"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.id">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.id"/>
@@ -777,6 +997,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0]"/>
+        <comment value="Local diagnosis code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoTm">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoTm"/>
@@ -792,6 +1025,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed"/>
@@ -807,6 +1044,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1]"/>
+        <comment value="SNOMED diagnosis code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1].system = 'http://snomed.info/sct'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed"/>
@@ -822,6 +1072,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante"/>
@@ -845,6 +1099,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource"/>
+        <comment value="Practitioner (Solicitante) resource"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.id">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.id"/>
@@ -966,61 +1225,110 @@
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante"/>
       <short value="Identificador de la profesión del profesional solicitante"/>
       <definition value="Identificador de la profesión del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
       </base>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0]"/>
+        <comment value="Profession code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante"/>
       <short value="Profesión del profesional solicitante"/>
       <definition value="Profesión del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
       </base>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante"/>
       <short value="Tipo de matrícula profesional del profesional solicitante"/>
       <definition value="Tipo de matrícula profesional del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
       </base>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.identifier[0]"/>
+        <comment value="License identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.identifier[0].system = 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/' + codTipoMatriculaSolicitante"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante"/>
       <short value="Número de matrícula del profesional solicitante"/>
       <definition value="Número de matrícula del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <base>
         <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante"/>
-        <min value="0"/>
+        <min value="1"/>
         <max value="1"/>
       </base>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.identifier[0].value"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.profesionalSolicitante">
+      <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.profesionalSolicitante"/>
+      <short value="Nombre del Profesional Solicitante"/>
+      <definition value="Nombre del Profesional Solicitante"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.profesionalSolicitante"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.name[0].text"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector"/>
@@ -1044,6 +1352,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource"/>
+        <comment value="Practitioner (Firmante) resource"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.id">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.id"/>
@@ -1175,6 +1488,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0]"/>
+        <comment value="Profession code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante"/>
@@ -1190,6 +1516,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional"/>
@@ -1205,6 +1535,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.name[0].text"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante"/>
@@ -1220,6 +1554,15 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.identifier[0]"/>
+        <comment value="License identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.identifier[0].system = 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/' + codTipoMatriculaFirmante"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante"/>
@@ -1235,6 +1578,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.identifier[0].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.FechasServicio">
       <path value="RecuperoLaboratorioSolicitud.FechasServicio"/>
@@ -1258,6 +1605,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource"/>
+        <comment value="ServiceRequest dates"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.FechasServicio.id">
       <path value="RecuperoLaboratorioSolicitud.FechasServicio.id"/>
@@ -1389,6 +1741,11 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.occurrenceDateTime"/>
+        <comment value="Sample collection date"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado">
       <path value="RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado"/>
@@ -1404,6 +1761,11 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.authoredOn"/>
+        <comment value="Result date"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura"/>
@@ -1427,6 +1789,11 @@
         <xpath value="@value|f:*|h:div"/>
         <source value="http://hl7.org/fhir/StructureDefinition/Element"/>
       </constraint>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource"/>
+        <comment value="Claim insurance"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura.id">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura.id"/>
@@ -1558,6 +1925,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier"/>
+        <comment value="Insurance identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier.system = 'http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier.value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura"/>
@@ -1573,6 +1953,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura"/>
@@ -1588,6 +1972,15 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier[1]"/>
+        <comment value="Patient card number"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier[1].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.documentacionAuditoria">
       <path value="RecuperoLaboratorioSolicitud.documentacionAuditoria"/>
@@ -1603,6 +1996,16 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[6].resource"/>
+        <comment value="DocumentReference resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[6].resource.content[0].attachment.data"/>
+        <comment value="Base64 encoded document data"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.prestaciones">
       <path value="RecuperoLaboratorioSolicitud.prestaciones"/>
@@ -1618,6 +2021,105 @@
       <type>
         <code value="http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioPrestacion"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure"/>
+        <comment value="Claim procedures"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.codPrestacion">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.codPrestacion"/>
+      <short value="Identificador de la prestación/procedimiento"/>
+      <definition value="Identificador de la prestación/procedimiento"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="RecuperoLaboratorioPrestacion.codPrestacion"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0]"/>
+        <comment value="Local procedure code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0].code"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.desPrestacion">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.desPrestacion"/>
+      <short value="Descripción de la prestación/procedimiento"/>
+      <definition value="Descripción de la prestación/procedimiento"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="RecuperoLaboratorioPrestacion.desPrestacion"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0].display"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.codSnomed">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.codSnomed"/>
+      <short value="Identificador SNOMED CT para la prestación/procedimiento"/>
+      <definition value="Identificador SNOMED CT para la prestación/procedimiento"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="RecuperoLaboratorioPrestacion.codSnomed"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1]"/>
+        <comment value="SNOMED procedure code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1].system = 'http://snomed.info/sct'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1].code"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.desPrestacionSnomed">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.desPrestacionSnomed"/>
+      <short value="Descripción SNOMED CT para la prestación/procedimiento"/>
+      <definition value="Descripción SNOMED CT para la prestación/procedimiento"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="RecuperoLaboratorioPrestacion.desPrestacionSnomed"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1].display"/>
+      </mapping>
     </element>
   </snapshot>
   <differential>
@@ -1635,6 +2137,31 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource"/>
+        <comment value="Patient resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.patient.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in Claim"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.subject.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.subject.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in Encounter"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[6].resource.subject.reference = 'urn:uuid:' + patientUuid"/>
+        <comment value="Patient reference in DocumentReference"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.idPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.idPaciente"/>
@@ -1645,6 +2172,23 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0]"/>
+        <comment value="Internal patient identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0].system = performerSite.url + '/pacientes'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0].value"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[0].use = #usual"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.apellidoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.apellidoPaciente"/>
@@ -1655,6 +2199,23 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0].family"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[1]"/>
+        <comment value="Mother's family name extension"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[1].url = 'http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[1].valueString"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.otroApellidoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.otroApellidoPaciente"/>
@@ -1665,6 +2226,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[0]"/>
+        <comment value="Father's family name extension"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[0].url = 'http://recuperocaba.gob.ar/StructureDefinition/ExtensionFathersFamilyName'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0]._family.extension[0].valueString"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.nombrePaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.nombrePaciente"/>
@@ -1675,6 +2249,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0].given"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.otroNombrePaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.otroNombrePaciente"/>
@@ -1685,6 +2263,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[0].given"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.nombreAutopercibidoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.nombreAutopercibidoPaciente"/>
@@ -1695,6 +2277,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[1]"/>
+        <comment value="Usual name"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[1].use = #usual"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.name[1].given"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.tipoDocumentoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.tipoDocumentoPaciente"/>
@@ -1705,6 +2300,15 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1]"/>
+        <comment value="Official document identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1].system = 'http://renaper.gob.ar/dni'"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.documentoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.documentoPaciente"/>
@@ -1715,6 +2319,14 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1].value"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.identifier[1].use = #official"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.codSexoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.codSexoPaciente"/>
@@ -1725,6 +2337,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.gender"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosPaciente.fechaNacimientoPaciente">
       <path value="RecuperoLaboratorioSolicitud.DatosPaciente.fechaNacimientoPaciente"/>
@@ -1735,6 +2351,10 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[0].resource.birthDate"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto"/>
@@ -1745,6 +2365,36 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource"/>
+        <comment value="ServiceRequest resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.encounter.reference = 'urn:uuid:' + encounterUuid"/>
+        <comment value="Encounter reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.requester.reference = 'urn:uuid:' + requesterUuid"/>
+        <comment value="Requester reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.performer[0].reference = 'urn:uuid:' + performerUuid"/>
+        <comment value="Performer reference in ServiceRequest"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.referral.reference = 'urn:uuid:' + serviceRequestUuid"/>
+        <comment value="ServiceRequest reference in Claim"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.supportingInfo[0].valueReference.reference = 'urn:uuid:' + documentUuid"/>
+        <comment value="DocumentReference reference in Claim"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.codAmbito">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.codAmbito"/>
@@ -1755,6 +2405,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Service location description"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.idEpisodio">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.idEpisodio"/>
@@ -1765,6 +2420,24 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource"/>
+        <comment value="Encounter resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.identifier[0]"/>
+        <comment value="Episode identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.identifier[0].system = performerSite.url + '/episodios'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[2].resource.identifier[0].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desEfectorProcesamiento">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desEfectorProcesamiento"/>
@@ -1775,6 +2448,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Processing facility"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desAmbitoDetalle">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desAmbitoDetalle"/>
@@ -1785,6 +2463,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Detailed scope"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desServicioDetalle">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desServicioDetalle"/>
@@ -1795,6 +2478,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Service detail"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.desAreaJerarquicaSolicitud">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.desAreaJerarquicaSolicitud"/>
@@ -1805,6 +2493,11 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.locationCode[0].text"/>
+        <comment value="Hierarchical area"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosContexto.idPedido">
       <path value="RecuperoLaboratorioSolicitud.DatosContexto.idPedido"/>
@@ -1815,6 +2508,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.identifier[0]"/>
+        <comment value="Service request identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.identifier[0].system = requesterSite.url + '/pedidos'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.identifier[0].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo"/>
@@ -1825,6 +2531,11 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource"/>
+        <comment value="Claim resource"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoTm">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoTm"/>
@@ -1835,6 +2546,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0]"/>
+        <comment value="Local diagnosis code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoTm">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoTm"/>
@@ -1845,6 +2569,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[0].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.codDiagnosticoSnomed"/>
@@ -1855,6 +2583,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1]"/>
+        <comment value="SNOMED diagnosis code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1].system = 'http://snomed.info/sct'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed">
       <path value="RecuperoLaboratorioSolicitud.DiagnosticoPresuntivo.desDiagnosticoSnomed"/>
@@ -1865,6 +2606,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.diagnosis[0].diagnosisCodeableConcept.coding[1].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante"/>
@@ -1875,46 +2620,95 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource"/>
+        <comment value="Practitioner (Solicitante) resource"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codProfesionSolicitante"/>
       <short value="Identificador de la profesión del profesional solicitante"/>
       <definition value="Identificador de la profesión del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0]"/>
+        <comment value="Profession code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.desProfesionSolicitante"/>
       <short value="Profesión del profesional solicitante"/>
       <definition value="Profesión del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.qualification[0].code.coding[0].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.codTipoMatriculaSolicitante"/>
       <short value="Tipo de matrícula profesional del profesional solicitante"/>
       <definition value="Tipo de matrícula profesional del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.identifier[0]"/>
+        <comment value="License identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.identifier[0].system = 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/' + codTipoMatriculaSolicitante"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.idMatriculaSolicitante"/>
       <short value="Número de matrícula del profesional solicitante"/>
       <definition value="Número de matrícula del profesional solicitante"/>
-      <min value="0"/>
+      <min value="1"/>
       <max value="1"/>
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.identifier[0].value"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.profesionalSolicitante">
+      <path value="RecuperoLaboratorioSolicitud.ProfesionalSolicitante.profesionalSolicitante"/>
+      <short value="Nombre del Profesional Solicitante"/>
+      <definition value="Nombre del Profesional Solicitante"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[4].resource.name[0].text"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector"/>
@@ -1925,6 +2719,11 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource"/>
+        <comment value="Practitioner (Firmante) resource"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.codProfesionFirmante"/>
@@ -1935,6 +2734,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0]"/>
+        <comment value="Profession code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0].code"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.desProfesionFirmante"/>
@@ -1945,6 +2757,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.qualification[0].code.coding[0].display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.profesional"/>
@@ -1955,6 +2771,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.name[0].text"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.codTipoMatriculaFirmante"/>
@@ -1965,6 +2785,15 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.identifier[0]"/>
+        <comment value="License identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.identifier[0].system = 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/' + codTipoMatriculaFirmante"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante">
       <path value="RecuperoLaboratorioSolicitud.ProfesionalEfector.idMatriculaFirmante"/>
@@ -1975,6 +2804,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[5].resource.identifier[0].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.FechasServicio">
       <path value="RecuperoLaboratorioSolicitud.FechasServicio"/>
@@ -1985,6 +2818,11 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource"/>
+        <comment value="ServiceRequest dates"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra">
       <path value="RecuperoLaboratorioSolicitud.FechasServicio.fechaMuestra"/>
@@ -1995,6 +2833,11 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.occurrenceDateTime"/>
+        <comment value="Sample collection date"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado">
       <path value="RecuperoLaboratorioSolicitud.FechasServicio.fechaResultado"/>
@@ -2005,6 +2848,11 @@
       <type>
         <code value="date"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[1].resource.authoredOn"/>
+        <comment value="Result date"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura"/>
@@ -2015,6 +2863,11 @@
       <type>
         <code value="BackboneElement"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource"/>
+        <comment value="Claim insurance"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura.codCobertura"/>
@@ -2025,6 +2878,19 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier"/>
+        <comment value="Insurance identifier"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier.system = 'http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier.value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura.desCobertura"/>
@@ -2035,6 +2901,10 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.display"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura">
       <path value="RecuperoLaboratorioSolicitud.DatosCobertura.idCobertura"/>
@@ -2045,6 +2915,15 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier[1]"/>
+        <comment value="Patient card number"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.insurance[0].coverage.identifier[1].value"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.documentacionAuditoria">
       <path value="RecuperoLaboratorioSolicitud.documentacionAuditoria"/>
@@ -2055,6 +2934,16 @@
       <type>
         <code value="string"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[6].resource"/>
+        <comment value="DocumentReference resource"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[6].resource.content[0].attachment.data"/>
+        <comment value="Base64 encoded document data"/>
+      </mapping>
     </element>
     <element id="RecuperoLaboratorioSolicitud.prestaciones">
       <path value="RecuperoLaboratorioSolicitud.prestaciones"/>
@@ -2065,6 +2954,57 @@
       <type>
         <code value="http://recuperocaba.gob.ar/StructureDefinition/RecuperoLaboratorioPrestacion"/>
       </type>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure"/>
+        <comment value="Claim procedures"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.codPrestacion">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.codPrestacion"/>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0]"/>
+        <comment value="Local procedure code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0].system = 'http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0].code"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.desPrestacion">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.desPrestacion"/>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[0].display"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.codSnomed">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.codSnomed"/>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1]"/>
+        <comment value="SNOMED procedure code"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1].system = 'http://snomed.info/sct'"/>
+      </mapping>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1].code"/>
+      </mapping>
+    </element>
+    <element id="RecuperoLaboratorioSolicitud.prestaciones.desPrestacionSnomed">
+      <path value="RecuperoLaboratorioSolicitud.prestaciones.desPrestacionSnomed"/>
+      <mapping>
+        <identity value="recupero-laboratorio-to-bundle"/>
+        <map value="Bundle.entry[3].resource.procedure[].procedureCodeableConcept.coding[1].display"/>
+      </mapping>
     </element>
   </differential>
 </StructureDefinition>

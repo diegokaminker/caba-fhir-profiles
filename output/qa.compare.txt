@@ -1,7 +1,7 @@
 RecuperoCABA : Validation Results
 =========================================
 
-err = 0, warn = 134, info = 5
+err = 0, warn = 136, info = 5
 $--
 Generated $--. FHIR version $-- for recupero-caba#$-- (canonical = http://recuperocaba.gob.ar)
  Build Errors : 10 / 12 / 0
@@ -33,7 +33,7 @@ Generated $--. FHIR version $-- for recupero-caba#$-- (canonical = http://recupe
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PractitionerCabaRecupero : 0 / 1 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-PractitionerCabaSolicitanteRecupero : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-RecuperoLaboratorioPrestacion : 0 / 0 / 1
- /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-RecuperoLaboratorioSolicitud : 0 / 105 / 1
+ /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-RecuperoLaboratorioSolicitud : 0 / 107 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/StructureDefinition-ServiceRequestCabaRecupero : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperocoberturas-valueset : 0 / 0 / 1
  /Users/diego/Dropbox/cursoprofiling/fsh-generated/resources/ValueSet-recuperodiagnosticos-valueset : 0 / 0 / 1
@@ -52,16 +52,16 @@ WARNING: Unable to find ImplementationGuide.definition.resource.description for 
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/RecuperoCABAProfesionalFirmanteEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Practitioner/RecuperoCABAProfesionalSolicitanteEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource ServiceRequest/RecuperoCABAServiceRequestEjemplo.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 197, column 5: The image source 'recupero_laboratorio_mindmap.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 205, column 5: The image source 'datos_paciente.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 284, column 5: The image source 'datos_contexto.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 345, column 5: The image source 'diagnostico_presuntivo.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 388, column 5: The image source 'profesional_solicitante.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 431, column 5: The image source 'profesional_efector.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 480, column 5: The image source 'fechas_servicio.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 511, column 5: The image source 'datos_cobertura.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 548, column 5: The image source 'prestaciones.svg' cannot be resolved
-ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 612, column 5: The image source 'documentacion_auditoria.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 206, column 5: The image source 'recupero_laboratorio_mindmap.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 214, column 5: The image source 'datos_paciente.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 293, column 5: The image source 'datos_contexto.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 354, column 5: The image source 'diagnostico_presuntivo.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 397, column 5: The image source 'profesional_solicitante.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 440, column 5: The image source 'profesional_efector.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 489, column 5: The image source 'fechas_servicio.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 520, column 5: The image source 'datos_cobertura.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 557, column 5: The image source 'prestaciones.svg' cannot be resolved
+ERROR: modelologico.html#/html/body/div/div/div/div/div/p/img at Line 621, column 5: The image source 'documentacion_auditoria.svg' cannot be resolved
 WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
 WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml, dependency-table-nontech.xhtml] is not included anywhere in the produced implementation guide
@@ -180,6 +180,7 @@ WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.s
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.snapshot.element[61]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.snapshot.element[62]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.snapshot.element[63]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.snapshot.element[64]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.differential.element[1]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.differential.element[2]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.differential.element[3]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
@@ -222,6 +223,7 @@ WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.d
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.differential.element[40]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.differential.element[41]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.differential.element[42]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
+WARNING: StructureDefinition/RecuperoLaboratorioSolicitud: StructureDefinition.differential.element[43]: Constraint failed: eld-20: 'Element names should be simple alphanumerics with a max of 64 characters, or code generation tools may be broken'
 == fsh-generated/resources/StructureDefinition-ServiceRequestCabaRecupero.json ==
 == fsh-generated/resources/ValueSet-recuperocoberturas-valueset.json ==
 == fsh-generated/resources/ValueSet-recuperodiagnosticos-valueset.json ==

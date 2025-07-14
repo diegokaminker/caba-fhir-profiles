@@ -81,6 +81,8 @@ menu:
   Modelo Lógico: modelologico.html
   Manual X-BA: xba-manual.html
   Didáctica: practica_implementacion.html
+  RefImpl: refimpl.html
+  Mapeo Lógico-Bundle: mapping_logical_to_bundle.html
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │

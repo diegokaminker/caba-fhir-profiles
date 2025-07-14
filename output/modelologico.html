@@ -42,8 +42,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script src="assets/js/mermaid.js" type="text/javascript"></script>
     <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
-    <style type="text/css">h2{--heading-prefix:"3"}
-    h3,h4,h5,h6{--heading-prefix:"3"}</style>
+    <style type="text/css">h2{--heading-prefix:"4"}
+    h3,h4,h5,h6{--heading-prefix:"4"}</style>
     <div id="segment-header" class="segment">    <!-- segment-header -->
       <div class="container">    <!-- container -->
 
@@ -109,7 +109,16 @@
     <a href="modelologico.html">Modelo Lógico</a>
   </li>
   <li>
+    <a href="xba-manual.html">Manual X-BA</a>
+  </li>
+  <li>
     <a href="practica_implementacion.html">Didáctica</a>
+  </li>
+  <li>
+    <a href="refimpl.html">RefImpl</a>
+  </li>
+  <li>
+    <a href="mapping_logical_to_bundle.html">Mapeo Lógico-Bundle</a>
   </li>
 </ul>
             </div>    <!-- /.nav-collapse -->
@@ -192,7 +201,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h2 id="estructura-general-del-modelo">Estructura General del Modelo</h2>
 
-<p><a name="l363">​</a><img src="recupero_laboratorio_mindmap.svg" alt="MindMap"/></p>
+<p><a name="l381">​</a><img src="recupero_laboratorio_mindmap.svg" alt="MindMap"/></p>
 
 <h2 id="elementos-del-modelo">Elementos del Modelo</h2>
 
@@ -200,7 +209,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Información completa del paciente que recibe el servicio de laboratorio.</p>
 
-<p><a name="l375">​</a><img src="datos_paciente.svg" alt="MindMap"/></p>
+<p><a name="l393">​</a><img src="datos_paciente.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -279,7 +288,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Contexto del servicio realizado, incluyendo información sobre el ámbito, efector y servicio.</p>
 
-<p><a name="l558">​</a><img src="datos_contexto.svg" alt="MindMap"/></p>
+<p><a name="l576">​</a><img src="datos_contexto.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -340,7 +349,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Información de diagnósticos asociados al servicio de laboratorio.</p>
 
-<p><a name="l696">​</a><img src="diagnostico_presuntivo.svg" alt="MindMap"/></p>
+<p><a name="l714">​</a><img src="diagnostico_presuntivo.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -383,7 +392,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Información del profesional que solicita el servicio de laboratorio.</p>
 
-<p><a name="l789">​</a><img src="profesional_solicitante.svg" alt="MindMap"/></p>
+<p><a name="l807">​</a><img src="profesional_solicitante.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -426,7 +435,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Información del profesional que firma o atiende el servicio (firmante/atendedor).</p>
 
-<p><a name="l882">​</a><img src="profesional_efector.svg" alt="MindMap"/></p>
+<p><a name="l900">​</a><img src="profesional_efector.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -475,7 +484,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Fechas relacionadas con el servicio de laboratorio.</p>
 
-<p><a name="l990">​</a><img src="fechas_servicio.svg" alt="MindMap"/></p>
+<p><a name="l1008">​</a><img src="fechas_servicio.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -506,7 +515,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Información de cobertura del servicio.</p>
 
-<p><a name="l1053">​</a><img src="datos_cobertura.svg" alt="MindMap"/></p>
+<p><a name="l1071">​</a><img src="datos_cobertura.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -543,7 +552,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Lista de servicios/procedimientos solicitados.</p>
 
-<p><a name="l1131">​</a><img src="prestaciones.svg" alt="MindMap"/></p>
+<p><a name="l1149">​</a><img src="prestaciones.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -607,7 +616,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Archivos adjuntos que documentan el servicio.</p>
 
-<p><a name="l1266">​</a><img src="documentacion_auditoria.svg" alt="MindMap"/></p>
+<p><a name="l1284">​</a><img src="documentacion_auditoria.svg" alt="MindMap"/></p>
 
 <table>
   <thead>
@@ -677,7 +686,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 14, 2025 12:58-0300">2025-07-14</span>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.org.ar">HL7 Argentina</a>.  Package recupero-caba#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Jul 14, 2025 16:53-0300">2025-07-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

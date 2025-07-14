@@ -30,11 +30,12 @@ Description: "Representa una solicitud de recupero de gastos de laboratorio, inc
   * desDiagnosticoSnomed 0..1 string "Descripción SNOMED CT para el diagnóstico"
 
 * ProfesionalSolicitante 1..1 BackboneElement "Información del Profesional (Solicitante)"
-  * codProfesionSolicitante 0..1 string "Identificador de la profesión del profesional solicitante"
-  * desProfesionSolicitante 0..1 string "Profesión del profesional solicitante"
-  * codTipoMatriculaSolicitante 0..1 string "Tipo de matrícula profesional del profesional solicitante"
-  * idMatriculaSolicitante 0..1 string "Número de matrícula del profesional solicitante"
-
+  * codProfesionSolicitante 1..1 string "Identificador de la profesión del profesional solicitante"
+  * desProfesionSolicitante 1..1 string "Profesión del profesional solicitante"
+  * codTipoMatriculaSolicitante 1..1 string "Tipo de matrícula profesional del profesional solicitante"
+  * idMatriculaSolicitante 1..1 string "Número de matrícula del profesional solicitante"
+  * profesionalSolicitante 1..1 string "Nombre del Profesional Solicitante"
+  
 * ProfesionalEfector 1..1 BackboneElement "Información del Profesional (Firmante/Atendedor)"
   * codProfesionFirmante 0..1 string "Identificador de la profesión del profesional firmante/atendedor"
   * desProfesionFirmante 0..1 string "Profesión del profesional firmante/atendedor"
