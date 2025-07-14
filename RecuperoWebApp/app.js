@@ -170,22 +170,171 @@ class RecuperoWebApp {
                 { code: 'BIO', display: 'Bioquímico' },
                 { code: 'FAR', display: 'Farmacéutico' },
                 { code: 'ENF', display: 'Enfermero' }
+            ],
+            diagnosticos: [
+                { code: 'A010', display: 'Fiebre tifoidea' },
+                { code: 'A011', display: 'Fiebre paratifoidea A' },
+                { code: 'A012', display: 'Fiebre paratifoidea B' },
+                { code: 'A020', display: 'Enteritis debida a Salmonella' },
+                { code: 'A021', display: 'Sepsis debida a Salmonella' },
+                { code: 'A030', display: 'Shigelosis debida a Shigella dysenteriae' },
+                { code: 'A040', display: 'Infeccion debida a Escherichia coli enteropatogena' },
+                { code: 'A050', display: 'Intoxicacion alimentaria estafilococica' },
+                { code: 'A060', display: 'Disenteria amebiana aguda' },
+                { code: 'A070', display: 'Balantidiasis' },
+                { code: 'A080', display: 'Enteritis debida a rotavirus' },
+                { code: 'A090', display: 'Otras gastroenteritis y colitis de origen infeccioso' },
+                { code: 'A150', display: 'Tuberculosis del pulmon, confirmada por hallazgo microscopico del bacilo tuberculoso en esputo, con o sin cultivo' },
+                { code: 'B000', display: 'Eczema herpetico' },
+                { code: 'B001', display: 'Dermatitis vesicular herpetica' },
+                { code: 'B010', display: 'Meningitis debida a varicela' },
+                { code: 'B020', display: 'Encefalitis debida a herpes zoster' },
+                { code: 'B050', display: 'Sarampion complicado con encefalitis' },
+                { code: 'B060', display: 'Rubeola con complicaciones neurologicas' },
+                { code: 'B150', display: 'Hepatitis aguda tipo A, con coma hepatico' },
+                { code: 'B160', display: 'Hepatitis aguda tipo B, con agente delta (coinfeccion), con coma hepatico' },
+                { code: 'C000', display: 'Tumor maligno del labio superior, cara externa' },
+                { code: 'C001', display: 'Tumor maligno del labio inferior, cara externa' },
+                { code: 'D000', display: 'Carcinoma in situ del labio, de la cavidad bucal y de la faringe' },
+                { code: 'E000', display: 'Sindrome congenito de deficiencia de yodo, tipo neurologico' },
+                { code: 'E010', display: 'Bocio difuso (endemico) relacionado con deficiencia de yodo' },
+                { code: 'E030', display: 'Hipotiroidismo congenito con bocio difuso' },
+                { code: 'F000', display: 'Demencia en la enfermedad de Alzheimer, de comienzo temprano' },
+                { code: 'F010', display: 'Demencia vascular de comienzo agudo' },
+                { code: 'G000', display: 'Meningitis por hemofilos' },
+                { code: 'G001', display: 'Meningitis neumococica' },
+                { code: 'H000', display: 'Orzuelo y otras inflamaciones profundas del parpado' },
+                { code: 'I000', display: 'Fiebre reumatica sin mencion de complicacion cardiaca' },
+                { code: 'I010', display: 'Pericarditis reumatica aguda' },
+                { code: 'J000', display: 'Rinofaringitis aguda [resfriado comun]' },
+                { code: 'J010', display: 'Sinusitis maxilar aguda' },
+                { code: 'J020', display: 'Faringitis estreptococica' },
+                { code: 'Z000', display: 'Examen medico general' },
+                { code: 'Z001', display: 'Control de salud de rutina del nino' },
+                { code: 'Z010', display: 'Examen de ojos y de la vision' },
+                { code: 'Z011', display: 'Examen de oidos y de la audicion' },
+                { code: 'Z012', display: 'Examen odontologico' },
+                { code: 'Z013', display: 'Examen de la presion sanguinea' },
+                { code: 'Z014', display: 'Examen ginecologico (general) (de rutina)' },
+                { code: 'Z015', display: 'Pruebas de sensibilizacion y diagnostico cutaneo' },
+                { code: 'Z016', display: 'Examen radiologico, no clasificado en otra parte' },
+                { code: 'Z017', display: 'Examen de laboratorio' }
             ]
         };
 
         // Entity Lists
         this.entityLists = {
             patients: [
-                { name: 'María González', birthDate: '1985-03-15', gender: 'female', dni: '12345678', internalId: 'P001' },
-                { name: 'Carlos Rodríguez', birthDate: '1978-07-22', gender: 'male', dni: '23456789', internalId: 'P002' },
-                { name: 'Ana Martínez', birthDate: '1992-11-08', gender: 'female', dni: '34567890', internalId: 'P003' },
-                { name: 'Luis Fernández', birthDate: '1965-04-30', gender: 'male', dni: '45678901', internalId: 'P004' },
-                { name: 'Sofía López', birthDate: '1989-09-12', gender: 'female', dni: '56789012', internalId: 'P005' },
-                { name: 'Diego Pérez', birthDate: '1982-12-25', gender: 'male', dni: '67890123', internalId: 'P006' },
-                { name: 'Carmen Silva', birthDate: '1975-06-18', gender: 'female', dni: '78901234', internalId: 'P007' },
-                { name: 'Roberto Torres', birthDate: '1990-01-05', gender: 'male', dni: '89012345', internalId: 'P008' },
-                { name: 'Elena Ruiz', birthDate: '1987-08-14', gender: 'female', dni: '90123456', internalId: 'P009' },
-                { name: 'Miguel Castro', birthDate: '1973-10-28', gender: 'male', dni: '01234567', internalId: 'P010' }
+                { 
+                    givenNames: ['María', 'Elena'], 
+                    familyName: 'González Silva', 
+                    fathersFamilyName: 'González', 
+                    mothersFamilyName: 'Silva', 
+                    usualName: 'María',
+                    birthDate: '1985-03-15', 
+                    gender: 'female', 
+                    dni: '12345678', 
+                    internalId: 'P001' 
+                },
+                { 
+                    givenNames: ['Carlos', 'Alberto'], 
+                    familyName: 'Rodríguez Pérez', 
+                    fathersFamilyName: 'Rodríguez', 
+                    mothersFamilyName: 'Pérez', 
+                    usualName: 'Carlos',
+                    birthDate: '1978-07-22', 
+                    gender: 'male', 
+                    dni: '23456789', 
+                    internalId: 'P002' 
+                },
+                { 
+                    givenNames: ['Ana', 'Sofía'], 
+                    familyName: 'Martínez López', 
+                    fathersFamilyName: 'Martínez', 
+                    mothersFamilyName: 'López', 
+                    usualName: 'Ana',
+                    birthDate: '1992-11-08', 
+                    gender: 'female', 
+                    dni: '34567890', 
+                    internalId: 'P003' 
+                },
+                { 
+                    givenNames: ['Luis', 'Miguel'], 
+                    familyName: 'Fernández Castro', 
+                    fathersFamilyName: 'Fernández', 
+                    mothersFamilyName: 'Castro', 
+                    usualName: 'Luis',
+                    birthDate: '1965-04-30', 
+                    gender: 'male', 
+                    dni: '45678901', 
+                    internalId: 'P004' 
+                },
+                { 
+                    givenNames: ['Sofía', 'Isabella'], 
+                    familyName: 'López Torres', 
+                    fathersFamilyName: 'López', 
+                    mothersFamilyName: 'Torres', 
+                    usualName: 'Sofía',
+                    birthDate: '1989-09-12', 
+                    gender: 'female', 
+                    dni: '56789012', 
+                    internalId: 'P005' 
+                },
+                { 
+                    givenNames: ['Diego', 'Alejandro'], 
+                    familyName: 'Pérez Ruiz', 
+                    fathersFamilyName: 'Pérez', 
+                    mothersFamilyName: 'Ruiz', 
+                    usualName: 'Diego',
+                    birthDate: '1982-12-25', 
+                    gender: 'male', 
+                    dni: '67890123', 
+                    internalId: 'P006' 
+                },
+                { 
+                    givenNames: ['Carmen', 'Rosa'], 
+                    familyName: 'Silva Mendoza', 
+                    fathersFamilyName: 'Silva', 
+                    mothersFamilyName: 'Mendoza', 
+                    usualName: 'Carmen',
+                    birthDate: '1975-06-18', 
+                    gender: 'female', 
+                    dni: '78901234', 
+                    internalId: 'P007' 
+                },
+                { 
+                    givenNames: ['Roberto', 'Luis'], 
+                    familyName: 'Torres Herrera', 
+                    fathersFamilyName: 'Torres', 
+                    mothersFamilyName: 'Herrera', 
+                    usualName: 'Roberto',
+                    birthDate: '1990-01-05', 
+                    gender: 'male', 
+                    dni: '89012345', 
+                    internalId: 'P008' 
+                },
+                { 
+                    givenNames: ['Elena', 'Patricia'], 
+                    familyName: 'Ruiz Vega', 
+                    fathersFamilyName: 'Ruiz', 
+                    mothersFamilyName: 'Vega', 
+                    usualName: 'Elena',
+                    birthDate: '1987-08-14', 
+                    gender: 'female', 
+                    dni: '90123456', 
+                    internalId: 'P009' 
+                },
+                { 
+                    givenNames: ['Miguel', 'Ángel'], 
+                    familyName: 'Castro Díaz', 
+                    fathersFamilyName: 'Castro', 
+                    mothersFamilyName: 'Díaz', 
+                    usualName: 'Miguel',
+                    birthDate: '1973-10-28', 
+                    gender: 'male', 
+                    dni: '01234567', 
+                    internalId: 'P010' 
+                }
             ],
             clinicians: [
                 { name: 'Dr. Juan Morales', profession: 'Médico', matricula: '12345', tipoMatricula: '10006441714000' },
@@ -268,6 +417,10 @@ class RecuperoWebApp {
             this.updateCurrentSelection('insurance', e.target.value);
         });
 
+        document.getElementById('diagnosisSelect').addEventListener('change', (e) => {
+            this.updateCurrentSelection('diagnosis', e.target.value);
+        });
+
         document.getElementById('randomizeProcedures').addEventListener('click', () => {
             this.randomizeProcedures();
         });
@@ -314,7 +467,8 @@ class RecuperoWebApp {
         this.entityLists.patients.forEach(patient => {
             const option = document.createElement('option');
             option.value = patient.internalId;
-            option.textContent = `${patient.name} (DNI: ${patient.dni})`;
+            const fullName = `${patient.givenNames.join(' ')} ${patient.familyName}`;
+            option.textContent = `${fullName} (DNI: ${patient.dni})`;
             patientSelect.appendChild(option);
         });
 
@@ -359,6 +513,15 @@ class RecuperoWebApp {
             option.value = insurance.code;
             option.textContent = insurance.display;
             insuranceSelect.appendChild(option);
+        });
+
+        // Populate diagnosis dropdown
+        const diagnosisSelect = document.getElementById('diagnosisSelect');
+        this.masterLists.diagnosticos.forEach(diagnosis => {
+            const option = document.createElement('option');
+            option.value = diagnosis.code;
+            option.textContent = `${diagnosis.code} - ${diagnosis.display}`;
+            diagnosisSelect.appendChild(option);
         });
     }
 
@@ -405,6 +568,9 @@ class RecuperoWebApp {
         // Random insurance
         const randomInsurance = this.masterLists.coberturas[Math.floor(Math.random() * this.masterLists.coberturas.length)];
         
+        // Random diagnosis
+        const randomDiagnosis = this.masterLists.diagnosticos[Math.floor(Math.random() * this.masterLists.diagnosticos.length)];
+        
         // Random procedures (3-20)
         const procedureCount = Math.floor(Math.random() * 18) + 3; // 3 to 20
         const shuffledProcedures = [...this.masterLists.procedimientos].sort(() => 0.5 - Math.random());
@@ -418,6 +584,7 @@ class RecuperoWebApp {
             requesterSite: randomRequesterSite,
             performerSite: randomPerformerSite,
             insurance: randomInsurance,
+            diagnosis: randomDiagnosis,
             procedures: randomProcedures
         };
 
@@ -439,6 +606,8 @@ class RecuperoWebApp {
             this.currentSelection.performerSite = this.entityLists.performerSites.find(s => s.url === value);
         } else if (key === 'insurance') {
             this.currentSelection.insurance = this.masterLists.coberturas.find(i => i.code === value);
+        } else if (key === 'diagnosis') {
+            this.currentSelection.diagnosis = this.masterLists.diagnosticos.find(d => d.code === value);
         }
         
         this.updateCurrentSelectionDisplay();
@@ -464,7 +633,8 @@ class RecuperoWebApp {
         let html = '';
         
         if (this.currentSelection.patient) {
-            html += `<div class="selection-item"><strong>Paciente:</strong> ${this.currentSelection.patient.name} (DNI: ${this.currentSelection.patient.dni})</div>`;
+            const fullName = `${this.currentSelection.patient.givenNames.join(' ')} ${this.currentSelection.patient.familyName}`;
+            html += `<div class="selection-item"><strong>Paciente:</strong> ${fullName} (DNI: ${this.currentSelection.patient.dni})</div>`;
         }
         
         if (this.currentSelection.requester) {
@@ -485,6 +655,10 @@ class RecuperoWebApp {
         
         if (this.currentSelection.insurance) {
             html += `<div class="selection-item"><strong>Cobertura:</strong> ${this.currentSelection.insurance.display}</div>`;
+        }
+        
+        if (this.currentSelection.diagnosis) {
+            html += `<div class="selection-item"><strong>Diagnóstico:</strong> ${this.currentSelection.diagnosis.code} - ${this.currentSelection.diagnosis.display}</div>`;
         }
         
         if (this.currentSelection.procedures) {
@@ -567,7 +741,8 @@ class RecuperoWebApp {
         }
 
         const now = new Date();
-        const bundleId = 'bundle-' + Date.now();
+        // Remove bundleId and id field
+        // const bundleId = 'bundle-' + Date.now();
         
         // Use exact GUIDs from template
         const patientUuid = 'urn:uuid:' + this.TEMPLATE_GUIDS.patient;
@@ -582,15 +757,26 @@ class RecuperoWebApp {
         const serviceDate = new Date(now.getTime() - (Math.random() * 7 + 1) * 24 * 60 * 60 * 1000);
         const createdDate = new Date(serviceDate.getTime() - Math.random() * 24 * 60 * 60 * 1000);
 
+        // Helper to generate UUID v4
+        function generateUUID() {
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);
+                return v.toString(16);
+            });
+        }
+
+        // Ensure performerSite.url ends with a slash
+        let performerBaseUrl = this.currentSelection.performerSite.url;
+        if (!performerBaseUrl.endsWith('/')) performerBaseUrl += '/';
+
         const bundle = {
             resourceType: 'Bundle',
-            id: bundleId,
             meta: {
                 profile: ['http://recuperocaba.gob.ar/StructureDefinition/BundleCabaRecupero']
             },
             identifier: {
-                system: this.currentSelection.requesterSite.url + 'recuperos',
-                value: Math.floor(Math.random() * 9000000000) + 1000000000
+                system: performerBaseUrl + 'recuperos',
+                value: generateUUID()
             },
             type: 'collection',
             timestamp: now.toISOString(),
@@ -602,6 +788,10 @@ class RecuperoWebApp {
             resourceType: 'Claim',
             meta: {
                 profile: ['http://recuperocaba.gob.ar/StructureDefinition/ClaimCabaRecupero']
+            },
+            text: {
+                status: 'generated',
+                div: `<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Claim</b></p><p><b>Status:</b> Active</p><p><b>Type:</b> Institutional</p><p><b>Patient:</b> ${this.currentSelection.patient.givenNames.join(' ')} ${this.currentSelection.patient.familyName}</p><p><b>Provider:</b> ${this.currentSelection.performerSite.name} - Laboratorio de Análisis Clínicos</p><p><b>Facility:</b> ${this.currentSelection.requesterSite.name} - Clínica Médica</p><p><b>Diagnosis:</b> ${this.currentSelection.diagnosis ? this.currentSelection.diagnosis.display : 'A010 - Fiebre tifoidea'}</p><p><b>Procedures:</b> ${this.currentSelection.procedures.map(p => p.display).join(', ')}</p><p><b>Insurance:</b> ${this.currentSelection.insurance.display}</p></div>`
             },
             status: 'active',
             type: {
@@ -621,7 +811,9 @@ class RecuperoWebApp {
             },
             priority: {
                 coding: [{
-                    code: 'routine'
+                    system: 'http://terminology.hl7.org/CodeSystem/processpriority',
+                    code: 'normal',
+                    display: 'Normal'
                 }]
             },
             referral: {
@@ -647,9 +839,9 @@ class RecuperoWebApp {
                 sequence: 1,
                 diagnosisCodeableConcept: {
                     coding: [{
-                        system: 'http://recuperocaba.gob.ar/CodeSystem/recupero-diagnosticos',
-                        code: 'A010',
-                        display: 'Fiebre tifoidea'
+                        system: 'http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem',
+                        code: this.currentSelection.diagnosis ? this.currentSelection.diagnosis.code : 'A010',
+                        display: this.currentSelection.diagnosis ? this.currentSelection.diagnosis.display : 'Fiebre tifoidea'
                     }]
                 }
             }],
@@ -658,7 +850,7 @@ class RecuperoWebApp {
                 date: serviceDate.toISOString().split('T')[0],
                 procedureCodeableConcept: {
                     coding: [{
-                        system: 'http://recuperocaba.gob.ar/CodeSystem/codificacion-laboratorio',
+                        system: 'http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem',
                         code: procedure.code,
                         display: procedure.display
                     }]
@@ -688,9 +880,13 @@ class RecuperoWebApp {
             meta: {
                 profile: ['http://recuperocaba.gob.ar/StructureDefinition/PatientCabaRecupero']
             },
+            text: {
+                status: 'generated',
+                div: `<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Patient</b></p><p><b>Name:</b> ${this.currentSelection.patient.givenNames.join(' ')} ${this.currentSelection.patient.familyName}</p><p><b>Usual Name:</b> ${this.currentSelection.patient.usualName}</p><p><b>Gender:</b> ${this.currentSelection.patient.gender}</p><p><b>Birth Date:</b> ${this.currentSelection.patient.birthDate}</p><p><b>Internal ID:</b> ${this.currentSelection.patient.internalId}</p><p><b>DNI:</b> ${this.currentSelection.patient.dni}</p></div>`
+            },
             identifier: [{
                 use: 'usual',
-                system: this.currentSelection.performerSite.url + 'pacientes',
+                system: this.currentSelection.performerSite.url.replace(/\/$/, '') + '/pacientes',
                 value: this.currentSelection.patient.internalId
             },
             {
@@ -700,7 +896,22 @@ class RecuperoWebApp {
             }],
             name: [{
                 use: 'official',
-                text: this.currentSelection.patient.name
+                family: this.currentSelection.patient.familyName,
+                _family: {
+                    extension: [{
+                        url: 'http://recuperocaba.gob.ar/StructureDefinition/ExtensionFathersFamilyName',
+                        valueString: this.currentSelection.patient.fathersFamilyName
+                    },
+                    {
+                        url: 'http://recuperocaba.gob.ar/StructureDefinition/ExtensionMothersFamilyName',
+                        valueString: this.currentSelection.patient.mothersFamilyName
+                    }]
+                },
+                given: this.currentSelection.patient.givenNames
+            },
+            {
+                use: 'usual',
+                given: [this.currentSelection.patient.usualName]
             }],
             gender: this.currentSelection.patient.gender,
             birthDate: this.currentSelection.patient.birthDate
@@ -717,9 +928,13 @@ class RecuperoWebApp {
             meta: {
                 profile: ['http://recuperocaba.gob.ar/StructureDefinition/ServiceRequestCabaRecupero']
             },
+            text: {
+                status: 'generated',
+                div: `<div xmlns="http://www.w3.org/1999/xhtml"><p><b>ServiceRequest</b></p><p><b>Status:</b> Completed</p><p><b>Intent:</b> Order</p><p><b>Category:</b> Laboratory Procedure</p><p><b>Subject:</b> ${this.currentSelection.patient.givenNames.join(' ')} ${this.currentSelection.patient.familyName}</p><p><b>Requester:</b> ${this.currentSelection.requester.name}</p><p><b>Performer:</b> ${this.currentSelection.performer.name}</p><p><b>Location:</b> Laboratorio de Análisis Clínicos</p><p><b>Occurrence:</b> ${serviceDate.toISOString()}</p><p><b>Authored On:</b> ${createdDate.toISOString()}</p></div>`
+            },
             identifier: [{
-                system: this.currentSelection.requesterSite.url + 'pedidos',
-                value: Math.floor(Math.random() * 90000) + 10000
+                system: this.currentSelection.requesterSite.url.replace(/\/$/, '') + '/pedidos',
+                value: generateUUID()
             }],
             status: 'completed',
             intent: 'order',
@@ -760,9 +975,13 @@ class RecuperoWebApp {
             meta: {
                 profile: ['http://recuperocaba.gob.ar/StructureDefinition/EncounterCabaRecupero']
             },
+            text: {
+                status: 'generated',
+                div: `<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Encounter</b></p><p><b>Status:</b> Unknown</p><p><b>Class:</b> Ambulatory</p><p><b>Type:</b> Immunología</p><p><b>Subject:</b> ${this.currentSelection.patient.givenNames.join(' ')} ${this.currentSelection.patient.familyName}</p><p><b>Identifier:</b> 130145562</p></div>`
+            },
             identifier: [{
-                system: this.currentSelection.requesterSite.url + 'episodios',
-                value: Math.floor(Math.random() * 900000000) + 100000000
+                system: this.currentSelection.performerSite.url.replace(/\/$/, '') + '/episodios',
+                value: '130145562'
             }],
             status: 'unknown',
             class: {
@@ -771,7 +990,7 @@ class RecuperoWebApp {
                 display: 'ambulatory'
             },
             type: [{
-                text: 'Laboratorio'
+                text: 'Immunología'
             }],
             subject: {
                 reference: patientUuid
@@ -787,7 +1006,11 @@ class RecuperoWebApp {
         const performer = {
             resourceType: 'Practitioner',
             meta: {
-                profile: ['http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero']
+                profile: ['http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaFirmanteRecupero']
+            },
+            text: {
+                status: 'generated',
+                div: `<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Practitioner Firmante</b></p><p><b>Name:</b> ${this.currentSelection.performer.name}</p><p><b>Identifier:</b> ${this.currentSelection.performer.matricula}</p><p><b>Qualification:</b> ${this.currentSelection.performer.profession}</p></div>`
             },
             identifier: [{
                 system: 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/' + this.currentSelection.performer.tipoMatricula,
@@ -799,7 +1022,7 @@ class RecuperoWebApp {
             qualification: [{
                 code: {
                     coding: [{
-                        system: 'http://recuperocaba.gob.ar/CodeSystem/recupero-profesiones',
+                        system: 'http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem',
                         code: this.currentSelection.performer.profession === 'Bioquímico' ? '27' : '1',
                         display: this.currentSelection.performer.profession
                     }]
@@ -816,7 +1039,11 @@ class RecuperoWebApp {
         const requester = {
             resourceType: 'Practitioner',
             meta: {
-                profile: ['http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaRecupero']
+                profile: ['http://recuperocaba.gob.ar/StructureDefinition/PractitionerCabaSolicitanteRecupero']
+            },
+            text: {
+                status: 'generated',
+                div: `<div xmlns="http://www.w3.org/1999/xhtml"><p><b>Practitioner Solicitante</b></p><p><b>Name:</b> ${this.currentSelection.requester.name}</p><p><b>Identifier:</b> ${this.currentSelection.requester.matricula}</p><p><b>Qualification:</b> ${this.currentSelection.requester.profession}</p></div>`
             },
             identifier: [{
                 system: 'http://recuperocaba.gob.ar/CodeSystem/recupero-tipos-matricula/' + this.currentSelection.requester.tipoMatricula,
@@ -828,7 +1055,7 @@ class RecuperoWebApp {
             qualification: [{
                 code: {
                     coding: [{
-                        system: 'http://recuperocaba.gob.ar/CodeSystem/recupero-profesiones',
+                        system: 'http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem',
                         code: this.currentSelection.requester.profession === 'Médico' ? '1' : '27',
                         display: this.currentSelection.requester.profession
                     }]
@@ -842,7 +1069,8 @@ class RecuperoWebApp {
         });
 
         // DocumentReference (PDF attachment)
-        const pdfData = await this.generatePDFData(this.currentSelection.patient.name);
+        const patientFullName = `${this.currentSelection.patient.givenNames.join(' ')} ${this.currentSelection.patient.familyName}`;
+        const pdfData = await this.generatePDFData(patientFullName);
         const documentReference = {
             resourceType: 'DocumentReference',
             status: 'current',
@@ -987,7 +1215,7 @@ class RecuperoWebApp {
                     <div class="result-item result-success">
                         <h6>Bundle Generado y Enviado</h6>
                         <p><strong>ID del Bundle:</strong> ${bundle.id}</p>
-                        <p><strong>Paciente:</strong> ${this.currentSelection.patient.name}</p>
+                        <p><strong>Paciente:</strong> ${patientFullName}</p>
                         <p><strong>Prestaciones:</strong> ${this.currentSelection.procedures.length}</p>
                         <p><strong>Servidor:</strong> ${this.fhirServer}</p>
                         <p><strong>Respuesta del servidor:</strong> ${result.resourceType} ${result.id}</p>
