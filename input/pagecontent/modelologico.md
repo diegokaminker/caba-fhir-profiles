@@ -4,9 +4,6 @@
 
 El modelo lógico `RecuperoLaboratorioSolicitud` representa una solicitud de recupero de gastos de laboratorio, incluyendo toda la información relevante para el procesamiento y auditoría del servicio.
 
-## Estructura General del Modelo
-
-![MindMap](recupero_laboratorio_mindmap.svg)
 
 
 ## Elementos del Modelo
@@ -14,8 +11,6 @@ El modelo lógico `RecuperoLaboratorioSolicitud` representa una solicitud de rec
 ### 1. DatosPaciente
 
 Información completa del paciente que recibe el servicio de laboratorio.
-
-![MindMap](datos_paciente.svg)
 
 
 | Campo | Tipo | Cardinalidad | Descripción |
@@ -35,8 +30,6 @@ Información completa del paciente que recibe el servicio de laboratorio.
 
 Contexto del servicio realizado, incluyendo información sobre el ámbito, efector y servicio.
 
-![MindMap](datos_contexto.svg)
-
 | Campo | Tipo | Cardinalidad | Descripción |
 |-------|------|--------------|-------------|
 | codAmbito | string | 1..1 | Contexto de la solicitud (ej., Guardia, Internación, Ambulatorio) |
@@ -51,8 +44,6 @@ Contexto del servicio realizado, incluyendo información sobre el ámbito, efect
 
 Información de diagnósticos asociados al servicio de laboratorio.
 
-![MindMap](diagnostico_presuntivo.svg)
-
 | Campo | Tipo | Cardinalidad | Descripción |
 |-------|------|--------------|-------------|
 | codDiagnosticoTm | string | 0..1 | Identificador del código de diagnóstico local |
@@ -64,8 +55,6 @@ Información de diagnósticos asociados al servicio de laboratorio.
 
 Información del profesional que solicita el servicio de laboratorio.
 
-![MindMap](profesional_solicitante.svg)
-
 | Campo | Tipo | Cardinalidad | Descripción |
 |-------|------|--------------|-------------|
 | codProfesionSolicitante | string | 0..1 | Identificador de la profesión del profesional solicitante |
@@ -76,8 +65,6 @@ Información del profesional que solicita el servicio de laboratorio.
 ### 5. ProfesionalEfector
 
 Información del profesional que firma o atiende el servicio (firmante/atendedor).
-
-![MindMap](profesional_efector.svg)
 
 | Campo | Tipo | Cardinalidad | Descripción |
 |-------|------|--------------|-------------|
@@ -91,8 +78,6 @@ Información del profesional que firma o atiende el servicio (firmante/atendedor
 
 Fechas relacionadas con el servicio de laboratorio.
 
-![MindMap](fechas_servicio.svg)
-
 | Campo | Tipo | Cardinalidad | Descripción |
 |-------|------|--------------|-------------|
 | fechaMuestra | date | 0..1 | Fecha en que se tomó la muestra |
@@ -101,8 +86,6 @@ Fechas relacionadas con el servicio de laboratorio.
 ### 7. DatosCobertura
 
 Información de cobertura del servicio.
-
-![MindMap](datos_cobertura.svg)
 
 | Campo | Tipo | Cardinalidad | Descripción |
 |-------|------|--------------|-------------|
@@ -113,8 +96,6 @@ Información de cobertura del servicio.
 ### 8. Prestaciones
 
 Lista de servicios/procedimientos solicitados.
-
-![MindMap](prestaciones.svg)
 
 
 | Campo | Tipo | Cardinalidad | Descripción |
@@ -133,8 +114,6 @@ Lista de servicios/procedimientos solicitados.
 ### 9. DocumentacionAuditoria
 
 Archivos adjuntos que documentan el servicio.
-
-![MindMap](documentacion_auditoria.svg)
 
 | Campo | Tipo | Cardinalidad | Descripción |
 |-------|------|--------------|-------------|

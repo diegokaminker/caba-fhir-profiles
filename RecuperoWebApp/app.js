@@ -19,13 +19,13 @@ class RecuperoWebApp {
 
         // CodeSystem URLs for fetching from FHIR server
         this.codeSystemUrls = {
-            coberturas: 'http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem',
-            diagnosticos: 'http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem',
-            procedimientos: 'http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem',
-            tiposDocumento: 'http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem',
-            tiposMatricula: 'http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem',
-            profesiones: 'http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem',
-            profesionesEfectores: 'http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem'
+            coberturas: 'https://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem',
+            diagnosticos: 'https://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem',
+            procedimientos: 'https://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem',
+            tiposDocumento: 'https://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem',
+            tiposMatricula: 'https://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem',
+            profesiones: 'https://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem',
+            profesionesEfectores: 'https://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem'
         };
 
         // Entity Lists
