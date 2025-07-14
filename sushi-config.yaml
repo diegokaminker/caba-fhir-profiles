@@ -79,6 +79,7 @@ menu:
   Artefactos: artifacts.html
   Casos de Uso: casosdeuso.html
   Modelo Lógico: modelologico.html
+  Manual X-BA: xba-manual.html
   Didáctica: practica_implementacion.html
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │

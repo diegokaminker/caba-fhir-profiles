@@ -60,15 +60,26 @@ check_resource_exists() {
     local http_code="${response: -3}"
     
     if [ "$http_code" = "200" ]; then
-        # Resource exists, extract the server-assigned ID from entry.resource.id
-        # First try with jq if available
+        # Check if the response contains any resources (total > 0)
         if command -v jq &> /dev/null; then
-            local id=$(jq -r '.entry[0].resource.id' /tmp/resource_check.json 2>/dev/null)
+            local total=$(jq -r '.total' /tmp/resource_check.json 2>/dev/null)
         else
             # Fallback to grep/sed approach
-            local id=$(grep -A 20 '"entry"' /tmp/resource_check.json | grep -A 10 '"resource"' | grep '"id"' | head -1 | sed 's/.*"id"[[:space:]]*:[[:space:]]*\([0-9]*\).*/\1/')
+            local total=$(grep -o '"total"[[:space:]]*:[[:space:]]*[0-9]*' /tmp/resource_check.json | head -1 | sed 's/.*"total"[[:space:]]*:[[:space:]]*\([0-9]*\).*/\1/')
         fi
-        echo "$id"
+        
+        if [ "$total" -gt 0 ]; then
+            # Resource exists, extract the server-assigned ID from entry.resource.id
+            if command -v jq &> /dev/null; then
+                local id=$(jq -r '.entry[0].resource.id' /tmp/resource_check.json 2>/dev/null)
+            else
+                # Fallback to grep/sed approach
+                local id=$(grep -A 20 '"entry"' /tmp/resource_check.json | grep -A 10 '"resource"' | grep '"id"' | head -1 | sed 's/.*"id"[[:space:]]*:[[:space:]]*\([0-9]*\).*/\1/')
+            fi
+            echo "$id"
+        else
+            echo ""
+        fi
     else
         echo ""
     fi
