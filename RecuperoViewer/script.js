@@ -56,7 +56,7 @@ async function searchBundles() {
         showLoading(false);
         
         if (currentBundles.length === 0) {
-            showError('No se encontraron bundles para el rango de fechas seleccionado');
+            showError('No se encontraron solicitudes para el rango de fechas seleccionado');
         }
         
     } catch (error) {
@@ -71,14 +71,14 @@ function displayBundleList() {
     const bundleList = document.getElementById('bundleList');
     
     if (currentBundles.length === 0) {
-        bundleList.innerHTML = '<div class="text-muted text-center">No se encontraron bundles</div>';
+        bundleList.innerHTML = '<div class="text-muted text-center">No se encontraron solicitudes</div>';
         return;
     }
     
     bundleList.innerHTML = currentBundles.map((entry, index) => {
         const bundle = entry.resource;
         const timestamp = bundle.timestamp ? new Date(bundle.timestamp).toLocaleString() : 'N/A';
-        const identifier = bundle.identifier?.value || bundle.id || `Bundle-${index + 1}`;
+        const identifier = bundle.identifier?.value || bundle.id || `Solicitud-${index + 1}`;
         
         return `
             <div class="list-group-item bundle-item" onclick="selectBundle(${index})">
@@ -117,29 +117,25 @@ function displayBundleDetails(bundle) {
     const claim = findResourceByType(bundle, 'Claim');
     const serviceRequest = findResourceByType(bundle, 'ServiceRequest');
     const practitioners = findAllResourcesByType(bundle, 'Practitioner');
-    const organization = findResourceByType(bundle, 'Organization');
     const documentReference = findResourceByType(bundle, 'DocumentReference');
     const encounter = findResourceByType(bundle, 'Encounter');
     
     // Display Patient Demographics
     displayPatientDemographics(patient);
     
-    // Display Service Details
+    // Display Service Details (Claim, ServiceRequest, Encounter)
     displayServiceDetails(claim, serviceRequest, encounter);
     
-    // Display Coverage
-    displayCoverage(claim);
+    // Display Insurance (from Claim.insurance)
+    displayInsurance(claim);
     
-    // Display Requesting Clinician
-    displayRequestingClinician(serviceRequest, practitioners);
+    // Display Requesting Clinician (from ServiceRequest.requester)
+    displayRequestingClinician(serviceRequest, practitioners, bundle);
     
-    // Display Performing Clinician
-    displayPerformingClinician(claim, practitioners);
+    // Display Performing Clinician (from ServiceRequest.performer)
+    displayPerformingClinician(serviceRequest, practitioners, bundle);
     
-    // Display Insurance
-    displayInsurance(claim, organization);
-    
-    // Display Attachments
+    // Display Attachments (from DocumentReference)
     displayAttachments(documentReference);
 }
 
@@ -212,7 +208,21 @@ function displayServiceDetails(claim, serviceRequest, encounter) {
     
     let html = '';
     
-    // Claim information
+    // ServiceRequest information (primary service details)
+    if (serviceRequest) {
+        html += `
+            <div class="data-row">
+                <span class="data-label">Fecha de Solicitud:</span>
+                <span class="data-value">${serviceRequest.authoredOn ? new Date(serviceRequest.authoredOn).toLocaleString() : 'N/A'}</span>
+            </div>
+            <div class="data-row">
+                <span class="data-label">Fecha de Servicio:</span>
+                <span class="data-value">${serviceRequest.occurrenceDateTime ? new Date(serviceRequest.occurrenceDateTime).toLocaleString() : 'N/A'}</span>
+            </div>
+        `;
+    }
+    
+    // Claim information (billing details)
     if (claim) {
         html += `
             <div class="data-row">
@@ -229,14 +239,38 @@ function displayServiceDetails(claim, serviceRequest, encounter) {
             </div>
         `;
         
+        // Provider information
+        if (claim.provider) {
+            html += `
+                <div class="data-row">
+                    <span class="data-label">Proveedor:</span>
+                    <span class="data-value">${claim.provider.display || 'N/A'}</span>
+                </div>
+            `;
+        }
+        
         // Facility information
         if (claim.facility) {
             html += `
                 <div class="data-row">
-                    <span class="data-label">Servicio:</span>
+                    <span class="data-label">Institución:</span>
                     <span class="data-value">${claim.facility.display || 'N/A'}</span>
                 </div>
             `;
+        }
+        
+        // Diagnosis
+        if (claim.diagnosis && claim.diagnosis.length > 0) {
+            html += '<div class="mt-3"><strong>Diagnósticos:</strong></div>';
+            claim.diagnosis.forEach(diag => {
+                const coding = diag.diagnosisCodeableConcept?.coding?.[0];
+                html += `
+                    <div class="diagnosis-item">
+                        <div class="diagnosis-code">${coding?.code || 'N/A'}</div>
+                        <div class="diagnosis-description">${coding?.display || 'N/A'}</div>
+                    </div>
+                `;
+            });
         }
         
         // Procedures
@@ -254,19 +288,7 @@ function displayServiceDetails(claim, serviceRequest, encounter) {
             });
         }
         
-        // Diagnoses
-        if (claim.diagnosis && claim.diagnosis.length > 0) {
-            html += '<div class="mt-3"><strong>Diagnósticos:</strong></div>';
-            claim.diagnosis.forEach(diag => {
-                const coding = diag.diagnosisCodeableConcept?.coding?.[0];
-                html += `
-                    <div class="procedure-item" style="border-left-color: #dc3545;">
-                        <div class="procedure-code">${coding?.code || 'N/A'}</div>
-                        <div class="procedure-description">${coding?.display || 'N/A'}</div>
-                    </div>
-                `;
-            });
-        }
+
     }
     
     // Encounter information
@@ -274,7 +296,7 @@ function displayServiceDetails(claim, serviceRequest, encounter) {
         html += `
             <div class="data-row">
                 <span class="data-label">Número de Encuentro:</span>
-                <span class="data-value">${encounter.id || 'N/A'}</span>
+                <span class="data-value">${encounter.identifier?.[0]?.value || encounter.id || 'N/A'}</span>
             </div>
             <div class="data-row">
                 <span class="data-label">Estado del Encuentro:</span>
@@ -292,51 +314,13 @@ function displayServiceDetails(claim, serviceRequest, encounter) {
         }
     }
     
-    // ServiceRequest information
-    if (serviceRequest) {
-        html += `
-            <div class="data-row">
-                <span class="data-label">ID de Solicitud de Servicio:</span>
-                <span class="data-value">${serviceRequest.id || 'N/A'}</span>
-            </div>
-            <div class="data-row">
-                <span class="data-label">Estado:</span>
-                <span class="data-value">${serviceRequest.status || 'N/A'}</span>
-            </div>
-            <div class="data-row">
-                <span class="data-label">Intención:</span>
-                <span class="data-value">${serviceRequest.intent || 'N/A'}</span>
-            </div>
-        `;
-    }
-    
     container.innerHTML = html;
 }
 
-// Display Coverage
-function displayCoverage(claim) {
-    const container = document.getElementById('coverageDetails');
-    
-    if (!claim || !claim.insurance) {
-        container.innerHTML = '<div class="text-muted">No hay información de cobertura disponible</div>';
-        return;
-    }
-    
-    let html = '';
-    claim.insurance.forEach((ins, index) => {
-        html += `
-            <div class="data-row">
-                <span class="data-label">Seguro ${index + 1}:</span>
-                <span class="data-value">${ins.coverage?.display || ins.coverage?.identifier?.value || 'N/A'}</span>
-            </div>
-        `;
-    });
-    
-    container.innerHTML = html;
-}
+
 
 // Display Requesting Clinician
-function displayRequestingClinician(serviceRequest, practitioners) {
+function displayRequestingClinician(serviceRequest, practitioners, bundle) {
     const container = document.getElementById('requestingClinician');
     
     if (!serviceRequest) {
@@ -345,22 +329,31 @@ function displayRequestingClinician(serviceRequest, practitioners) {
     }
     
     const requester = serviceRequest.requester;
-    let html = `
-        <div class="data-row">
-            <span class="data-label">Referencia del Solicitante:</span>
-            <span class="data-value">${requester?.reference || 'N/A'}</span>
-        </div>
-    `;
+    let html = '';
     
-    // Find the practitioner that matches the requester reference
-    const requestingPractitioner = practitioners.find(p => 
-        requester?.reference?.includes(p.id) || 
-        requester?.reference?.includes(p.identifier?.[0]?.value)
-    );
+    // Find the practitioner by matching the reference UUID with the bundle entry fullUrl
+    let requestingPractitioner = null;
+    if (requester?.reference && bundle?.entry) {
+        const referenceUUID = requester.reference.replace('urn:uuid:', '');
+        const practitionerEntry = bundle.entry.find(entry => 
+            entry.fullUrl && entry.fullUrl.includes(referenceUUID)
+        );
+        if (practitionerEntry && practitionerEntry.resource?.resourceType === 'Practitioner') {
+            requestingPractitioner = practitionerEntry.resource;
+        }
+    }
     
     if (requestingPractitioner) {
         const name = requestingPractitioner.name?.[0];
-        const fullName = name ? `${name.given?.join(' ') || ''} ${name.family || ''}`.trim() : 'N/A';
+        // Handle both structured name (given/family) and text name
+        let fullName = 'N/A';
+        if (name) {
+            if (name.text) {
+                fullName = name.text;
+            } else {
+                fullName = `${name.given?.join(' ') || ''} ${name.family || ''}`.trim();
+            }
+        }
         
         html += `
             <div class="data-row">
@@ -382,10 +375,11 @@ function displayRequestingClinician(serviceRequest, practitioners) {
         // Display practitioner qualification
         if (requestingPractitioner.qualification && requestingPractitioner.qualification.length > 0) {
             const qualification = requestingPractitioner.qualification[0];
+            const coding = qualification.code?.coding?.[0];
             html += `
                 <div class="data-row">
                     <span class="data-label">Especialidad:</span>
-                    <span class="data-value">${qualification.code?.display || qualification.code?.code || 'N/A'}</span>
+                    <span class="data-value">${coding?.display || coding?.code || 'N/A'}</span>
                 </div>
             `;
         }
@@ -395,27 +389,43 @@ function displayRequestingClinician(serviceRequest, practitioners) {
 }
 
 // Display Performing Clinician
-function displayPerformingClinician(claim, practitioners) {
+function displayPerformingClinician(serviceRequest, practitioners, bundle) {
     const container = document.getElementById('performingClinician');
     
-    if (!claim) {
+    if (!serviceRequest) {
         container.innerHTML = '<div class="text-muted">No hay información del médico ejecutante disponible</div>';
         return;
     }
     
-    let html = '<div class="text-muted">Información no disponible en la estructura actual del bundle</div>';
+    let html = '';
     
-    // Try to find performing practitioner from claim information
-    // This might be in claim.provider, claim.careTeam, or other fields
-    if (claim.provider) {
-        const performingPractitioner = practitioners.find(p => 
-            claim.provider?.reference?.includes(p.id) || 
-            claim.provider?.reference?.includes(p.identifier?.[0]?.value)
-        );
+    // Try to find performing practitioner from service request performer
+    if (serviceRequest.performer && serviceRequest.performer.length > 0) {
+        const performer = serviceRequest.performer[0]; // Get first performer
+        
+        // Find the practitioner by matching the reference UUID with the bundle entry fullUrl
+        let performingPractitioner = null;
+        if (performer?.reference && bundle?.entry) {
+            const referenceUUID = performer.reference.replace('urn:uuid:', '');
+            const practitionerEntry = bundle.entry.find(entry => 
+                entry.fullUrl && entry.fullUrl.includes(referenceUUID)
+            );
+            if (practitionerEntry && practitionerEntry.resource?.resourceType === 'Practitioner') {
+                performingPractitioner = practitionerEntry.resource;
+            }
+        }
         
         if (performingPractitioner) {
             const name = performingPractitioner.name?.[0];
-            const fullName = name ? `${name.given?.join(' ') || ''} ${name.family || ''}`.trim() : 'N/A';
+            // Handle both structured name (given/family) and text name
+            let fullName = 'N/A';
+            if (name) {
+                if (name.text) {
+                    fullName = name.text;
+                } else {
+                    fullName = `${name.given?.join(' ') || ''} ${name.family || ''}`.trim();
+                }
+            }
             
             html = `
                 <div class="data-row">
@@ -437,10 +447,11 @@ function displayPerformingClinician(claim, practitioners) {
             // Display practitioner qualification
             if (performingPractitioner.qualification && performingPractitioner.qualification.length > 0) {
                 const qualification = performingPractitioner.qualification[0];
+                const coding = qualification.code?.coding?.[0];
                 html += `
                     <div class="data-row">
                         <span class="data-label">Especialidad:</span>
-                        <span class="data-value">${qualification.code?.display || qualification.code?.code || 'N/A'}</span>
+                        <span class="data-value">${coding?.display || coding?.code || 'N/A'}</span>
                     </div>
                 `;
             }
@@ -451,25 +462,20 @@ function displayPerformingClinician(claim, practitioners) {
 }
 
 // Display Insurance
-function displayInsurance(claim, organization) {
+function displayInsurance(claim) {
     const container = document.getElementById('insuranceDetails');
     
     if (!claim || !claim.insurance) {
-        container.innerHTML = '<div class="text-muted">No hay información de seguro disponible</div>';
+        container.innerHTML = '<div class="text-muted">No hay información de cobertura disponible</div>';
         return;
     }
     
     let html = '';
     claim.insurance.forEach((ins, index) => {
-        const coverage = ins.coverage;
         html += `
             <div class="data-row">
-                <span class="data-label">ID del Seguro ${index + 1}:</span>
-                <span class="data-value">${coverage?.identifier?.value || 'N/A'}</span>
-            </div>
-            <div class="data-row">
-                <span class="data-label">Sistema del Seguro ${index + 1}:</span>
-                <span class="data-value">${coverage?.identifier?.system || 'N/A'}</span>
+                <span class="data-label">Seguro ${index + 1}:</span>
+                <span class="data-value">${ins.coverage?.display || ins.coverage?.identifier?.value || 'N/A'}</span>
             </div>
         `;
     });
@@ -501,18 +507,17 @@ function displayAttachments(documentReference) {
         </div>
     `;
     
-    // Add attachment links if available
+    // Add attachment buttons if available
     if (documentReference.content && documentReference.content.length > 0) {
         html += '<div class="mt-3"><strong>Adjuntos:</strong></div>';
         documentReference.content.forEach((content, index) => {
             const attachment = content.attachment;
-            if (attachment && attachment.url) {
+            if (attachment && attachment.data) {
                 html += `
                     <div class="mt-2">
-                        <a href="${attachment.url}" target="_blank" class="attachment-link">
-                            <i class="bi bi-file-earmark-pdf"></i> 
-                            Ver Adjunto ${index + 1}
-                        </a>
+                        <button class="btn btn-outline-primary btn-sm" onclick="viewPDF('${attachment.data}', '${attachment.contentType || 'application/pdf'}')">
+                            <i class="bi bi-file-earmark-pdf"></i> Ver PDF
+                        </button>
                     </div>
                 `;
             }
@@ -522,10 +527,80 @@ function displayAttachments(documentReference) {
     container.innerHTML = html;
 }
 
+// View PDF from base64 data
+function viewPDF(base64Data, contentType) {
+    try {
+        // Convert base64 to blob
+        const byteCharacters = atob(base64Data);
+        const byteNumbers = new Array(byteCharacters.length);
+        for (let i = 0; i < byteCharacters.length; i++) {
+            byteNumbers[i] = byteCharacters.charCodeAt(i);
+        }
+        const byteArray = new Uint8Array(byteNumbers);
+        const blob = new Blob([byteArray], { type: contentType });
+        
+        // Create URL for the blob
+        const url = URL.createObjectURL(blob);
+        
+        // Open PDF in new window/tab
+        window.open(url, '_blank');
+        
+        // Clean up the URL after a delay
+        setTimeout(() => {
+            URL.revokeObjectURL(url);
+        }, 1000);
+        
+    } catch (error) {
+        console.error('Error viewing PDF:', error);
+        alert('Error al mostrar el PDF. Verifique que los datos sean válidos.');
+    }
+}
+
+// Show JSON in modal
+function showJSON() {
+    if (!selectedBundle) {
+        showError('No hay solicitud seleccionada para mostrar');
+        return;
+    }
+    
+    const jsonTextarea = document.getElementById('jsonTextarea');
+    const formattedJSON = JSON.stringify(selectedBundle, null, 2);
+    jsonTextarea.value = formattedJSON;
+    
+    // Show the modal
+    const modal = new bootstrap.Modal(document.getElementById('jsonModal'));
+    modal.show();
+}
+
+// Copy JSON to clipboard
+function copyJSON() {
+    const jsonTextarea = document.getElementById('jsonTextarea');
+    jsonTextarea.select();
+    jsonTextarea.setSelectionRange(0, 99999); // For mobile devices
+    
+    try {
+        document.execCommand('copy');
+        // Show success message
+        const copyButton = document.querySelector('#jsonModal .btn-primary');
+        const originalText = copyButton.textContent;
+        copyButton.textContent = '¡Copiado!';
+        copyButton.classList.remove('btn-primary');
+        copyButton.classList.add('btn-success');
+        
+        setTimeout(() => {
+            copyButton.textContent = originalText;
+            copyButton.classList.remove('btn-success');
+            copyButton.classList.add('btn-primary');
+        }, 2000);
+    } catch (err) {
+        console.error('Error copying to clipboard:', err);
+    }
+}
+
 // Export current bundle as JSON
 function exportBundle() {
     if (!selectedBundle) {
-        showError('No hay bundle seleccionado para exportar');
+        showError('No hay solicitud seleccionada para exportar');
         return;
     }
     
@@ -534,7 +609,7 @@ function exportBundle() {
     
     const link = document.createElement('a');
     link.href = URL.createObjectURL(dataBlob);
-    link.download = `bundle-${selectedBundle.id || 'export'}.json`;
+    link.download = `solicitud-${selectedBundle.id || 'export'}.json`;
     link.click();
 }
 

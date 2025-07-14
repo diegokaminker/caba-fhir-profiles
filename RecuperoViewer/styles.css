@@ -98,6 +98,24 @@ body {
     font-size: 0.9em;
 }
 
+.diagnosis-item {
+    background-color: #fff3cd;
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 4px solid #ffc107;
+}
+
+.diagnosis-code {
+    font-weight: 600;
+    color: #495057;
+}
+
+.diagnosis-description {
+    color: #6c757d;
+    font-size: 0.9em;
+}
+
 .procedure-date {
     color: #007bff;
     font-size: 0.8em;

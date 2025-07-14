@@ -21,7 +21,7 @@ A modern web-based FHIR Bundle viewer and analyzer that allows users to query FH
 ## Usage
 
 ### 1. Server Configuration
-- Enter the FHIR server URL (default: `http://fhirserver.hl7fundamentals.org/fhir/Bundle`)
+- Enter the FHIR server URL (default: `https://fhirserver.hl7fundamentals.org/fhir/Bundle`)
 - Select a date filter to query bundles from that date onwards
 - Click "Search Bundles" to fetch data from the server
 
@@ -73,7 +73,7 @@ The application uses the following query format:
 
 Example:
 ```
-http://fhirserver.hl7fundamentals.org/fhir/Bundle?timestamp=ge2025-03-13T00:00:10-03:00
+https://fhirserver.hl7fundamentals.org/fhir/Bundle?timestamp=ge2025-03-13T00:00:10-03:00
 ```
 
 ### Supported FHIR Resources
@@ -113,7 +113,7 @@ npx http-server
 php -S localhost:8000
 ```
 
-Then open `http://localhost:8000` in your browser.
+Then open `http://localhost:8001` in your browser.
 
 ## Configuration
 
