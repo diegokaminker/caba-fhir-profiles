@@ -7,219 +7,25 @@ class RecuperoWebApp {
         this.currentSelection = {};
         this.selectedProcedures = [];
         
-        // Master Lists (from codeSystems)
+        // Master Lists (will be populated from FHIR server)
         this.masterLists = {
-            coberturas: [
-                { code: 'MP004', display: 'Medicus' },
-                { code: 'MP056', display: 'Medifé' },
-                { code: 'OS001', display: 'OSDE' },
-                { code: 'SW001', display: 'Swiss Medical' },
-                { code: 'GA001', display: 'Galeno' },
-                { code: 'OM001', display: 'Omint' },
-                { code: 'PA001', display: 'Particular' }
-            ],
-            diagnostico: [
-                { code: 'I10', display: 'Hipertensión esencial' },
-                { code: 'E11', display: 'Diabetes mellitus tipo 2' },
-                { code: 'J44', display: 'EPOC' },
-                { code: 'I25', display: 'Enfermedad cardíaca isquémica' },
-                { code: 'E78', display: 'Dislipidemia' }
-            ],
-            procedimientos: [
-                { code: '133', display: 'CALCEMIA TOTAL (CA)' },
-                { code: '136', display: 'CALCIO - URINARIO' },
-                { code: '144', display: 'CEA - ANTIGENO CARCINOEMBRIOGENICO' },
-                { code: '171', display: 'COAGULOGRAMA' },
-                { code: '174', display: 'COLESTEROL TOTAL' },
-                { code: '189', display: 'CORTISOL' },
-                { code: '190', display: 'CPK' },
-                { code: '192', display: 'CREATININA' },
-                { code: '193', display: 'CREATININA, CLEARENCE DE DEPURACION' },
-                { code: '2004', display: 'APOLIPOPROTEINA A (APO A)' },
-                { code: '2005', display: 'APOLIPOPROTEINA B (APO B)' },
-                { code: '2006', display: 'FOLICO, ACIDO' },
-                { code: '2007', display: 'ASCORBICO, ACIDO' },
-                { code: '2014', display: 'COLESTEROL HDL. (HDL-C)' },
-                { code: '2015', display: 'LDL COLESTEROL' },
-                { code: '2020', display: 'VITAMINA D 25 (OH)' },
-                { code: '2024', display: 'DEHIDROEPIANDROSTERONA, SULFATO - DHEA-S' },
-                { code: '2026', display: 'ANDROSTENEDIONA, DELTA 4 - (DELTA4)' },
-                { code: '2040', display: 'FERRITINA' },
-                { code: '2043', display: 'SUBUNIDAD BETA DE GONADOTROFINA CORIÓNICA (CUANTIT' },
-                { code: '2045C', display: 'HEMOGLOBINA GLICOSILADA (HB A1C)' },
-                { code: '2052', display: 'MARCADOR TUMORAL DE COLON (CA. 19. 9)' },
-                { code: '2053', display: 'MARCADOR TUMORAL DE OVARIO (CA 125)' },
-                { code: '2063', display: 'OSTEOCALCINA' },
-                { code: '2064', display: 'PEPTIDO C' },
-                { code: '2078', display: 'TESTOSTERONA LIBRE, TO-L' },
-                { code: '2084', display: 'VITAMINA B12' },
-                { code: '2095', display: 'TESTOSTERONA BIODISPONIBLE' },
-                { code: '2096', display: 'ZINC (ZN) - SERICO' },
-                { code: '2111', display: 'GLOBULINA LIGADORA DE ANDROGENOS Y ESTROGENOS (GLA' },
-                { code: '2146', display: 'ANTICOAGULANTE LUPICO, SIN INHIBICIÒN' },
-                { code: '21471', display: 'CARDIOLIPINAS, AC. IGG ANTI-' },
-                { code: '21472', display: 'CARDIOLIPINAS, AC. IGM ANTI-' },
-                { code: '2155', display: 'VITAMINA B6 (PIRIDOXINA)' },
-                { code: '2181', display: 'PEROXIDASA TIROIDEO, AC. ANTI- (ATPO / TPO)' },
-                { code: '2182', display: 'TIROGLOBULINA, AC. ULTRASENSIBLE' },
-                { code: '2227', display: 'PROGESTERONA (Monitoreo de ovulación)' },
-                { code: '2250', display: 'SELENIO' },
-                { code: '2263', display: 'LIPOPROTEINA A - LP(A)' },
-                { code: '2302U', display: 'PROTEINA C REACTIVA - ULTRASENSIBLE (PCRUS)' },
-                { code: '2373', display: 'PROTEINA C FUNCIONAL - CROMOGENICO' },
-                { code: '2374', display: 'PROTEINA S LIBRE = INMUNOTURBIDIMETRIO' },
-                { code: '241', display: 'CHAGAS (AD)' },
-                { code: '2494', display: 'HOMOCISTEINA' },
-                { code: '2529', display: 'FOSFOLIPIDOS, AC TOTALES ANTI- (IGA, IGG, IGM)' },
-                { code: '2562', display: 'BETA CROSS LAPS - CTX - C- TELOPEPTIDO DE COLAGENO' },
-                { code: '2676', display: 'ANTIGENO PROSTATICO ESPECIFICO LIBRE + TOTAL (PSA-' },
-                { code: '2798', display: 'MICROALBUMINURIA / ALBUMINA URINARIA' },
-                { code: '2872', display: 'TRIIODOTIRONINA LIBRE (T3L)' },
-                { code: '297', display: 'ERITROSEDIMENTACION DE 1? HO' },
-                { code: '300', display: 'ESTRADIOL' },
-                { code: '3006', display: 'CITOMEGALOVIRUS, AC. IGG ANTI- (CMV-IGG)' },
-                { code: '3014', display: 'HEPATITIS A AC. ANTI- IGG (HVA IGG) Ò AC. TOTALES' },
-                { code: '3016', display: 'HEPATITIS B AC. DE SUPERFICIE ANTI- (HBSAC)' },
-                { code: '3018', display: 'HEPATITIS B ANTÍGENO DE SUPERFICIE (AG. HBS)' },
-                { code: '3019', display: 'Anticuerpos totales anti-CORE de HEPATITIS B HBCG' },
-                { code: '3023', display: 'HEPATITIS C AC. IGG ANTI- (HCV AC. IGG)' },
-                { code: '3037', display: 'RUBEOLA, AC. IGG ANTI-' },
-                { code: '3038', display: 'RUBEOLA, AC. IGM ANTI-' },
-                { code: '3042', display: 'TOXOPLASMOSIS, AC. IGM ANTI (ELISA)' },
-                { code: '3052', display: 'SARAMPION, AC. IGM ANTI-' },
-                { code: '3053', display: 'SARAMPION, AC. IGG ANTI-' },
-                { code: '3091', display: 'TOXOPLASMOSIS, AC. IGG ANTI- (ELISA)' },
-                { code: '3108', display: 'VARICELA ZOSTER AC. IGM ANTI-' },
-                { code: '3117', display: 'CHAGAS, AC. IGM ANTI- (IFI)' },
-                { code: '3130', display: 'VARICELA-ZOSTER, AC. IGG ANTI-' },
-                { code: '3144', display: 'CITOMEGALOVIRUS. AC. IGM ANTI- (CMV-IGM)' },
-                { code: '343', display: 'FERREMIA' },
-                { code: '357', display: 'FOSFATASA ALCALINA (FAL)' },
-                { code: '35F', display: 'ANTIBIOGRAMA FLUJO (solo facturacion)' },
-                { code: '35M', display: 'ANTIBIOGRAMA DE MOCO (solo facturacion)' },
-                { code: '361', display: 'FOSFATASA ALCALINA - ISOENZIMAS' },
-                { code: '362', display: 'FOSFATEMIA (P)' },
-                { code: '363', display: 'FOSFATURIA (P)' },
-                { code: '370', display: 'FSH - HORMONA FOLICULO ESTIMULANTE' },
-                { code: '412', display: 'GLUCEMIA' },
-                { code: '4120', display: 'INDICE DE INSULINO RESISTENCIA' },
-                { code: '420', display: 'GLUTAMIL TRANSPEPTIDASA' },
-                { code: '430', display: 'GRAHAM, TEST DE' },
-                { code: '433', display: 'GRUPO SANGUINEO Y FACTOR RH' },
-                { code: '46', display: 'ANTICUERPOS ANTITIROGLOBULINA (ATG)' },
-                { code: '475', display: 'HEMOGRAMA COMPLETO' },
-                { code: '481', display: 'HEPATOGRAMA COMPLETO' },
-                { code: '5074', display: 'PSA - ANTIGENO PROSTATICO ES' },
-                { code: '5131', display: 'HDL COLESTEROL' },
-                { code: '5174', display: 'FERRITINA' },
-                { code: '5180', display: 'HEMOGLOBINA GLICOSILADA' },
-                { code: '543', display: 'INSULINA' },
-                { code: '546', display: 'IONOGRAMA PLASMATICO' },
-                { code: '58', display: 'ANTITROMBINA III - CON CALIBRACION DE TRES (3) PUN' },
-                { code: '6118', display: 'BETA 2 GLICOPROTEINA, AC. IGG ANTI-' },
-                { code: '6119', display: 'BETA 2 GLICOPROTEINA, AC. IGM ANTI-' },
-                { code: '612', display: 'LH - HORMONA LUTEINIZANTE' },
-                { code: '6132', display: 'CHLAMYDIA TRACHOMATIS, AG PCR' },
-                { code: '614', display: 'LIPIDOS TOTALES' },
-                { code: '63', display: 'ANTICUERPOS ANTI HIV - (ELISA)' },
-                { code: '653', display: 'MAGNESIO' },
-                { code: '677', display: 'MATERIAL DESCARTABLE' },
-                { code: '680', display: 'ACTO PROFESIONAL BIOQUIMICO' },
-                { code: '7057', display: 'MYCOPLASMA Y UREAPLASMA CULTIVO' },
-                { code: '7100', display: 'MYCOPLASMA HOMINIS, CULTIVO - AISLAMIENTO' },
-                { code: '711', display: 'EXAMEN DE ORINA' },
-                { code: '736', display: 'PARASITOLOGICO SERIADO' },
-                { code: '739', display: 'PARATHORMONA - PTH' },
-                { code: '746', display: 'PLAQUETAS, RECUENTO DE' },
-                { code: '759', display: 'PROLACTINA (PRL)' },
-                { code: '761', display: 'PCR CUANTITATIVA' },
-                { code: '762', display: 'ALBUMINA (SERICA O URINARIA - C/U)' },
-                { code: '763', display: 'PROTEINA TOTALES' },
-                { code: '813', display: 'FACTOR RH' },
-                { code: '8526', display: 'CREATININA, SERICA O URINARIA ESPONTÁNEA' },
-                { code: '863', display: 'TESTOSTERONA - TO' },
-                { code: '865', display: 'TSH - TIROTROFINA sSica' },
-                { code: '866', display: 'TIROXINA TOTAL - T4' },
-                { code: '867', display: 'T4L-TIROXINA LIBRE' },
-                { code: '873', display: 'TRANSAMINASA, GLUTAMICO OXALACETICA. (GOT/AST)' },
-                { code: '874', display: 'TRANSAMINASA, GLUTAMICO PIRUVICA (GPT / AGT)' },
-                { code: '875', display: 'TRANSFERRINA (IDR / TURBIDIMETRIA)' },
-                { code: '876', display: 'TRIGLICERIDEMIA' },
-                { code: '877', display: 'TRIIODOTIRONINA TOTAL - T3' },
-                { code: '902', display: 'UREMIA' },
-                { code: '904', display: 'URICEMIA' },
-                { code: '931', display: 'VAGINAL EXUDADO O FLUJO (DIRECTO Y CULTIVO)' },
-                { code: '931M', display: 'CULTIVO DE MOCO CERVICAL (Endocervix)' },
-                { code: '933', display: 'VDRL / USR - CUALITATIVA' },
-                { code: '998', display: 'TOMA DE MUESTRA' },
-                { code: 'GL0', display: 'GLUCEMIA O GLUCOSURIA (C/U)' },
-                { code: 'GL120', display: 'GLUCEMIA O GLUCOSURIA (C/U)' }
-            ],
-            tiposDocumento: [
-                { code: 'DNI', display: 'Documento Nacional de Identidad' },
-                { code: 'PAS', display: 'Pasaporte' },
-                { code: 'LC', display: 'Libreta Cívica' },
-                { code: 'LE', display: 'Libreta de Enrolamiento' }
-            ],
-            tiposMatricula: [
-                { code: '10006441714000', display: 'Ministerio de Salud CABA' },
-                { code: '75060562116524', display: 'Colegio de Bioquímicos Zona I Bahía Blanca' }
-            ],
-            profesiones: [
-                { code: 'MED', display: 'Médico' },
-                { code: 'BIO', display: 'Bioquímico' },
-                { code: 'FAR', display: 'Farmacéutico' },
-                { code: 'ENF', display: 'Enfermero' }
-            ],
-            diagnosticos: [
-                { code: 'A010', display: 'Fiebre tifoidea' },
-                { code: 'A011', display: 'Fiebre paratifoidea A' },
-                { code: 'A012', display: 'Fiebre paratifoidea B' },
-                { code: 'A020', display: 'Enteritis debida a Salmonella' },
-                { code: 'A021', display: 'Sepsis debida a Salmonella' },
-                { code: 'A030', display: 'Shigelosis debida a Shigella dysenteriae' },
-                { code: 'A040', display: 'Infeccion debida a Escherichia coli enteropatogena' },
-                { code: 'A050', display: 'Intoxicacion alimentaria estafilococica' },
-                { code: 'A060', display: 'Disenteria amebiana aguda' },
-                { code: 'A070', display: 'Balantidiasis' },
-                { code: 'A080', display: 'Enteritis debida a rotavirus' },
-                { code: 'A090', display: 'Otras gastroenteritis y colitis de origen infeccioso' },
-                { code: 'A150', display: 'Tuberculosis del pulmon, confirmada por hallazgo microscopico del bacilo tuberculoso en esputo, con o sin cultivo' },
-                { code: 'B000', display: 'Eczema herpetico' },
-                { code: 'B001', display: 'Dermatitis vesicular herpetica' },
-                { code: 'B010', display: 'Meningitis debida a varicela' },
-                { code: 'B020', display: 'Encefalitis debida a herpes zoster' },
-                { code: 'B050', display: 'Sarampion complicado con encefalitis' },
-                { code: 'B060', display: 'Rubeola con complicaciones neurologicas' },
-                { code: 'B150', display: 'Hepatitis aguda tipo A, con coma hepatico' },
-                { code: 'B160', display: 'Hepatitis aguda tipo B, con agente delta (coinfeccion), con coma hepatico' },
-                { code: 'C000', display: 'Tumor maligno del labio superior, cara externa' },
-                { code: 'C001', display: 'Tumor maligno del labio inferior, cara externa' },
-                { code: 'D000', display: 'Carcinoma in situ del labio, de la cavidad bucal y de la faringe' },
-                { code: 'E000', display: 'Sindrome congenito de deficiencia de yodo, tipo neurologico' },
-                { code: 'E010', display: 'Bocio difuso (endemico) relacionado con deficiencia de yodo' },
-                { code: 'E030', display: 'Hipotiroidismo congenito con bocio difuso' },
-                { code: 'F000', display: 'Demencia en la enfermedad de Alzheimer, de comienzo temprano' },
-                { code: 'F010', display: 'Demencia vascular de comienzo agudo' },
-                { code: 'G000', display: 'Meningitis por hemofilos' },
-                { code: 'G001', display: 'Meningitis neumococica' },
-                { code: 'H000', display: 'Orzuelo y otras inflamaciones profundas del parpado' },
-                { code: 'I000', display: 'Fiebre reumatica sin mencion de complicacion cardiaca' },
-                { code: 'I010', display: 'Pericarditis reumatica aguda' },
-                { code: 'J000', display: 'Rinofaringitis aguda [resfriado comun]' },
-                { code: 'J010', display: 'Sinusitis maxilar aguda' },
-                { code: 'J020', display: 'Faringitis estreptococica' },
-                { code: 'Z000', display: 'Examen medico general' },
-                { code: 'Z001', display: 'Control de salud de rutina del nino' },
-                { code: 'Z010', display: 'Examen de ojos y de la vision' },
-                { code: 'Z011', display: 'Examen de oidos y de la audicion' },
-                { code: 'Z012', display: 'Examen odontologico' },
-                { code: 'Z013', display: 'Examen de la presion sanguinea' },
-                { code: 'Z014', display: 'Examen ginecologico (general) (de rutina)' },
-                { code: 'Z015', display: 'Pruebas de sensibilizacion y diagnostico cutaneo' },
-                { code: 'Z016', display: 'Examen radiologico, no clasificado en otra parte' },
-                { code: 'Z017', display: 'Examen de laboratorio' }
-            ]
+            coberturas: [],
+            diagnosticos: [],
+            procedimientos: [],
+            tiposDocumento: [],
+            tiposMatricula: [],
+            profesiones: []
+        };
+
+        // CodeSystem URLs for fetching from FHIR server
+        this.codeSystemUrls = {
+            coberturas: 'http://recuperocaba.gob.ar/CodeSystem/coberturas-codesystem',
+            diagnosticos: 'http://recuperocaba.gob.ar/CodeSystem/diagnosticos-codesystem',
+            procedimientos: 'http://recuperocaba.gob.ar/CodeSystem/procedimientos-codesystem',
+            tiposDocumento: 'http://recuperocaba.gob.ar/CodeSystem/tipos-documento-codesystem',
+            tiposMatricula: 'http://recuperocaba.gob.ar/CodeSystem/tipos-matricula-codesystem',
+            profesiones: 'http://recuperocaba.gob.ar/CodeSystem/profesiones-codesystem',
+            profesionesEfectores: 'http://recuperocaba.gob.ar/CodeSystem/profesiones-efectores-codesystem'
         };
 
         // Entity Lists
@@ -360,21 +166,79 @@ class RecuperoWebApp {
             ]
         };
 
-        this.init();
+        this.init().catch(error => {
+            console.error('Error initializing app:', error);
+        });
     }
 
-    init() {
+    async fetchCodeSystem(codesystemUrl) {
+        try {
+            const response = await fetch(`${this.fhirServer}/CodeSystem/?url=${encodeURIComponent(codesystemUrl)}`);
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+            }
+            
+            const result = await response.json();
+            
+            if (result.entry && result.entry.length > 0) {
+                const codeSystem = result.entry[0].resource;
+                if (codeSystem.concept) {
+                    return codeSystem.concept.map(concept => ({
+                        code: concept.code,
+                        display: concept.display
+                    }));
+                }
+            }
+            
+            return [];
+        } catch (error) {
+            console.error(`Error fetching CodeSystem ${codesystemUrl}:`, error);
+            return [];
+        }
+    }
+
+    async loadAllCodeSystems() {
+        console.log('Loading CodeSystems from FHIR server...');
+        
+        // Fetch all CodeSystems in parallel
+        const promises = Object.entries(this.codeSystemUrls).map(async ([key, url]) => {
+            const codes = await this.fetchCodeSystem(url);
+            this.masterLists[key] = codes;
+            console.log(`Loaded ${codes.length} codes for ${key}`);
+            return { key, codes };
+        });
+        
+        try {
+            await Promise.all(promises);
+            console.log('All CodeSystems loaded successfully');
+            this.populateDropdowns(); // Refresh dropdowns with new data
+        } catch (error) {
+            console.error('Error loading CodeSystems:', error);
+        }
+    }
+
+    async init() {
         this.setupEventListeners();
-        this.populateDropdowns();
         this.updateModeDisplay(); // Will show "Seleccionar Modo" initially
         this.testServerConnection();
+        this.updateSendButtonState(); // Initialize button state
+        
+        // Load CodeSystems from FHIR server
+        await this.loadAllCodeSystems();
     }
 
     setupEventListeners() {
-        // Mode toggle
-        document.getElementById('modeToggle').addEventListener('change', (e) => {
+        // Mode toggles - both switches control the same mode
+        document.getElementById('modeToggleManual').addEventListener('change', (e) => {
             this.currentMode = e.target.checked ? 'manual' : 'random';
             this.updateModeDisplay();
+            this.updateSendButtonState(); // Update button state when mode changes
+        });
+
+        document.getElementById('modeToggleRandom').addEventListener('change', (e) => {
+            this.currentMode = e.target.checked ? 'manual' : 'random';
+            this.updateModeDisplay();
+            this.updateSendButtonState(); // Update button state when mode changes
         });
 
         // Server test
@@ -425,6 +289,28 @@ class RecuperoWebApp {
             this.randomizeProcedures();
         });
 
+        // New procedure management buttons
+        document.getElementById('clearProcedures').addEventListener('click', () => {
+            this.clearProcedures();
+        });
+
+        document.getElementById('selectProcedures').addEventListener('click', () => {
+            this.openProcedureSelectionModal();
+        });
+
+        // Procedure selection modal events
+        document.getElementById('procedureSearch').addEventListener('input', (e) => {
+            this.filterProcedures(e.target.value);
+        });
+
+        document.getElementById('selectAllProcedures').addEventListener('change', (e) => {
+            this.toggleSelectAllProcedures(e.target.checked);
+        });
+
+        document.getElementById('addSelectedProcedures').addEventListener('click', () => {
+            this.addSelectedProcedures();
+        });
+
         // Generate and send
         document.getElementById('generateAndSend').addEventListener('click', () => {
             this.generateAndSendBundle();
@@ -441,23 +327,36 @@ class RecuperoWebApp {
     }
 
     updateModeDisplay() {
-        const modeLabel = document.getElementById('modeLabel');
+        const modeLabelManual = document.getElementById('modeLabelManual');
+        const modeLabelRandom = document.getElementById('modeLabelRandom');
+        const modeToggleManual = document.getElementById('modeToggleManual');
+        const modeToggleRandom = document.getElementById('modeToggleRandom');
         const manualControls = document.getElementById('manualControls');
         const randomPanel = document.getElementById('randomPanel');
 
         if (this.currentMode === 'manual') {
-            modeLabel.textContent = 'Modo Manual';
+            modeLabelManual.textContent = 'Modo Manual';
+            modeLabelRandom.textContent = 'Modo Manual';
+            modeToggleManual.checked = true;
+            modeToggleRandom.checked = true;
             manualControls.style.display = 'block';
             randomPanel.style.display = 'none';
         } else if (this.currentMode === 'random') {
-            modeLabel.textContent = 'Modo Aleatorio';
+            modeLabelManual.textContent = 'Modo Aleatorio';
+            modeLabelRandom.textContent = 'Modo Aleatorio';
+            modeToggleManual.checked = false;
+            modeToggleRandom.checked = false;
             manualControls.style.display = 'none';
             randomPanel.style.display = 'block';
         } else {
-            // No mode selected yet
-            modeLabel.textContent = 'Seleccionar Modo';
+            // No mode selected yet - default to random mode
+            this.currentMode = 'random';
+            modeLabelManual.textContent = 'Modo Aleatorio';
+            modeLabelRandom.textContent = 'Modo Aleatorio';
+            modeToggleManual.checked = false;
+            modeToggleRandom.checked = false;
             manualControls.style.display = 'none';
-            randomPanel.style.display = 'none';
+            randomPanel.style.display = 'block';
         }
     }
 
@@ -678,6 +577,136 @@ class RecuperoWebApp {
             div.textContent = `${procedure.code} - ${procedure.display}`;
             proceduresContainer.appendChild(div);
         });
+    }
+
+    clearProcedures() {
+        this.selectedProcedures = [];
+        this.currentSelection.procedures = [];
+        this.updateProceduresDisplay();
+        this.updateCurrentSelectionDisplay();
+    }
+
+    openProcedureSelectionModal() {
+        this.loadProceduresInModal();
+        const modal = new bootstrap.Modal(document.getElementById('procedureSelectionModal'));
+        modal.show();
+    }
+
+    loadProceduresInModal() {
+        const procedureList = document.getElementById('procedureList');
+        procedureList.innerHTML = '';
+        
+        this.masterLists.procedimientos.forEach(procedure => {
+            const div = document.createElement('div');
+            div.className = 'procedure-option d-flex align-items-center p-2 border-bottom';
+            div.innerHTML = `
+                <div class="form-check me-3">
+                    <input class="form-check-input procedure-checkbox" type="checkbox" 
+                           value="${procedure.code}" data-display="${procedure.display}">
+                </div>
+                <div class="flex-grow-1">
+                    <strong>${procedure.code}</strong> - ${procedure.display}
+                </div>
+            `;
+            
+            // Add click event to the entire row
+            div.addEventListener('click', (e) => {
+                if (e.target.type !== 'checkbox') {
+                    const checkbox = div.querySelector('.procedure-checkbox');
+                    checkbox.checked = !checkbox.checked;
+                    this.updateSelectAllState();
+                }
+            });
+            
+            // Add change event to the checkbox
+            const checkbox = div.querySelector('.procedure-checkbox');
+            checkbox.addEventListener('change', () => {
+                this.updateSelectAllState();
+            });
+            
+            procedureList.appendChild(div);
+        });
+        
+        // Initialize select all state
+        this.updateSelectAllState();
+    }
+
+    filterProcedures(searchTerm) {
+        const procedureOptions = document.querySelectorAll('.procedure-option');
+        const searchLower = searchTerm.toLowerCase();
+        
+        procedureOptions.forEach(option => {
+            const text = option.textContent.toLowerCase();
+            if (text.includes(searchLower)) {
+                option.style.display = 'block';
+            } else {
+                option.style.display = 'none';
+            }
+        });
+        
+        // Update select all checkbox state
+        this.updateSelectAllState();
+    }
+
+    toggleSelectAllProcedures(checked) {
+        const visibleCheckboxes = document.querySelectorAll('.procedure-checkbox:not([style*="display: none"])');
+        visibleCheckboxes.forEach(checkbox => {
+            checkbox.checked = checked;
+        });
+    }
+
+    updateSelectAllState() {
+        const visibleCheckboxes = document.querySelectorAll('.procedure-checkbox:not([style*="display: none"])');
+        const checkedCheckboxes = document.querySelectorAll('.procedure-checkbox:not([style*="display: none"]):checked');
+        const selectAllCheckbox = document.getElementById('selectAllProcedures');
+        
+        if (visibleCheckboxes.length === 0) {
+            selectAllCheckbox.indeterminate = false;
+            selectAllCheckbox.checked = false;
+        } else if (checkedCheckboxes.length === visibleCheckboxes.length) {
+            selectAllCheckbox.indeterminate = false;
+            selectAllCheckbox.checked = true;
+        } else if (checkedCheckboxes.length > 0) {
+            selectAllCheckbox.indeterminate = true;
+            selectAllCheckbox.checked = false;
+        } else {
+            selectAllCheckbox.indeterminate = false;
+            selectAllCheckbox.checked = false;
+        }
+    }
+
+    addSelectedProcedures() {
+        const selectedCheckboxes = document.querySelectorAll('.procedure-checkbox:checked');
+        const newProcedures = [];
+        
+        selectedCheckboxes.forEach(checkbox => {
+            const code = checkbox.value;
+            const display = checkbox.dataset.display;
+            const procedure = this.masterLists.procedimientos.find(p => p.code === code);
+            
+            if (procedure && !this.selectedProcedures.some(p => p.code === code)) {
+                newProcedures.push(procedure);
+            }
+        });
+        
+        // Add new procedures to the current list
+        this.selectedProcedures = [...this.selectedProcedures, ...newProcedures];
+        this.currentSelection.procedures = this.selectedProcedures;
+        
+        // Update displays
+        this.updateProceduresDisplay();
+        this.updateCurrentSelectionDisplay();
+        
+        // Close modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('procedureSelectionModal'));
+        modal.hide();
+        
+        // Show feedback
+        if (newProcedures.length > 0) {
+            alert(`${newProcedures.length} prestación(es) agregada(s) exitosamente.`);
+        } else {
+            alert('No se agregaron nuevas prestaciones (posiblemente ya estaban seleccionadas).');
+        }
     }
 
     generatePDF(patientName) {
@@ -1073,6 +1102,10 @@ class RecuperoWebApp {
         const pdfData = await this.generatePDFData(patientFullName);
         const documentReference = {
             resourceType: 'DocumentReference',
+            text: {
+                status: 'generated',
+                div: `<div xmlns="http://www.w3.org/1999/xhtml"><p><b>DocumentReference</b></p><p><b>Status:</b> Current</p><p><b>Type:</b> Laboratory Report</p><p><b>Subject:</b> ${patientFullName}</p><p><b>Date:</b> ${createdDate.toISOString().split('T')[0]}</p><p><b>Content:</b> PDF Report Attachment</p></div>`
+            },
             status: 'current',
             type: {
                 coding: [{
@@ -1112,6 +1145,7 @@ class RecuperoWebApp {
             // Validate mode selection
             if (!this.currentMode) {
                 bundlePreview.value = 'Error: Debe seleccionar un modo (Aleatorio o Manual)';
+                this.updateSendButtonState();
                 return;
             }
 
@@ -1121,8 +1155,38 @@ class RecuperoWebApp {
             // Display formatted JSON
             bundlePreview.value = JSON.stringify(bundle, null, 2);
             
+            // Update send button state
+            this.updateSendButtonState();
+            
         } catch (error) {
             bundlePreview.value = 'Error al generar bundle: ' + error.message;
+            this.updateSendButtonState();
+        }
+    }
+
+    updateSendButtonState() {
+        const bundlePreview = document.getElementById('bundlePreview');
+        const sendButton = document.getElementById('generateAndSend');
+        
+        // Enable button if there's a valid bundle in the preview OR if we're in random mode
+        const hasValidBundle = bundlePreview.value && 
+                              !bundlePreview.value.includes('Error') && 
+                              bundlePreview.value.trim() !== '';
+        
+        const isRandomMode = this.currentMode === 'random';
+        
+        sendButton.disabled = !hasValidBundle && !isRandomMode;
+        
+        // Update button text based on state
+        if (hasValidBundle) {
+            sendButton.textContent = 'Generar Bundle y Enviar al Servidor';
+            sendButton.title = 'Enviar el bundle actual al servidor FHIR';
+        } else if (isRandomMode) {
+            sendButton.textContent = 'Generar Bundle y Enviar al Servidor';
+            sendButton.title = 'Generar un bundle aleatorio y enviarlo al servidor FHIR';
+        } else {
+            sendButton.textContent = 'Generar Bundle y Enviar al Servidor';
+            sendButton.title = 'Debe generar un bundle primero';
         }
     }
 
@@ -1156,17 +1220,31 @@ class RecuperoWebApp {
             if (response.ok) {
                 const result = await response.json();
                 
+                // Check if there are any validation issues
                 if (result.issue && result.issue.length > 0) {
-                    // Validation warnings or errors
-                    let issuesHtml = '<div class="status-warning">⚠ Bundle válido con advertencias:</div><ul>';
-                    result.issue.forEach(issue => {
-                        const severity = issue.severity === 'error' ? '❌' : '⚠️';
-                        issuesHtml += `<li>${severity} ${issue.diagnostics || issue.code?.text || 'Problema de validación'}</li>`;
-                    });
-                    issuesHtml += '</ul>';
-                    validationStatus.innerHTML = issuesHtml;
+                    // Check if all issues are just informational or if there are actual warnings/errors
+                    const hasWarningsOrErrors = result.issue.some(issue => 
+                        issue.severity === 'warning' || issue.severity === 'error'
+                    );
+                    
+                    if (hasWarningsOrErrors) {
+                        // Validation warnings or errors
+                        let issuesHtml = '<div class="status-warning">⚠ Bundle válido con advertencias:</div><ul>';
+                        result.issue.forEach(issue => {
+                            if (issue.severity === 'warning' || issue.severity === 'error') {
+                                const severity = issue.severity === 'error' ? '❌' : '⚠️';
+                                issuesHtml += `<li>${severity} ${issue.diagnostics || issue.code?.text || 'Problema de validación'}</li>`;
+                            }
+                        });
+                        issuesHtml += '</ul>';
+                        validationStatus.innerHTML = issuesHtml;
+                    } else {
+                        // Only informational issues - bundle is completely valid
+                        validationStatus.innerHTML = '<div class="status-success">✓ Bundle válido</div>';
+                    }
                 } else {
-                    validationStatus.innerHTML = '<div class="status-success">✓ Bundle válido sin problemas</div>';
+                    // No issues at all - bundle is completely valid
+                    validationStatus.innerHTML = '<div class="status-success">✓ Bundle válido</div>';
                 }
             } else {
                 const errorText = await response.text();
@@ -1178,23 +1256,35 @@ class RecuperoWebApp {
     }
 
     async generateAndSendBundle() {
+        const bundlePreview = document.getElementById('bundlePreview');
         const generationStatus = document.getElementById('generationStatus');
         const resultsSection = document.getElementById('resultsSection');
         const resultsContent = document.getElementById('resultsContent');
 
-        // Validate mode selection
-        if (!this.currentMode) {
-            generationStatus.innerHTML = '<div class="status-error">✗ Error: Debe seleccionar un modo (Aleatorio o Manual)</div>';
+        // Check if we have a valid bundle in the preview
+        const hasValidBundle = bundlePreview.value && 
+                              !bundlePreview.value.includes('Error') && 
+                              bundlePreview.value.trim() !== '';
+
+        if (!hasValidBundle && this.currentMode !== 'random') {
+            generationStatus.innerHTML = '<div class="status-error">✗ Error: Debe generar un bundle primero</div>';
             return;
         }
 
         try {
-            generationStatus.innerHTML = '<div class="loading-spinner"></div> Generando bundle...';
+            generationStatus.innerHTML = '<div class="loading-spinner"></div> Enviando bundle al servidor FHIR...';
             
-            // Generate bundle
-            const bundle = await this.generateBundle();
+            let bundle;
             
-            generationStatus.innerHTML = '<div class="loading-spinner"></div> Enviando al servidor FHIR...';
+            if (hasValidBundle) {
+                // Use the bundle from the preview
+                bundle = JSON.parse(bundlePreview.value);
+            } else if (this.currentMode === 'random') {
+                // Generate a new random bundle for sending
+                bundle = await this.generateBundle();
+            } else {
+                throw new Error('No se pudo generar el bundle');
+            }
             
             // Send to FHIR server
             const response = await fetch(this.fhirServer + '/Bundle', {
@@ -1210,15 +1300,42 @@ class RecuperoWebApp {
                 const result = await response.json();
                 generationStatus.innerHTML = '<div class="status-success">✓ Bundle enviado exitosamente</div>';
                 
+                // Extract bundle ID from Location header
+                const locationHeader = response.headers.get('Location');
+                let bundleId = 'N/A';
+                if (locationHeader) {
+                    // Extract ID from Location header (e.g., "https://server.com/Bundle/123" -> "123")
+                    const match = locationHeader.match(/\/Bundle\/([^\/]+)$/);
+                    if (match) {
+                        bundleId = match[1];
+                    } else {
+                        bundleId = locationHeader;
+                    }
+                }
+                
+                // Extract patient name from Patient resource
+                const patientEntry = bundle.entry?.find(entry => entry.resource.resourceType === 'Patient');
+                let patientFullName = 'N/A';
+                if (patientEntry && patientEntry.resource.name && patientEntry.resource.name.length > 0) {
+                    const patientName = patientEntry.resource.name[0];
+                    if (patientName.given && patientName.family) {
+                        patientFullName = `${patientName.given.join(' ')} ${patientName.family}`;
+                    } else if (patientName.text) {
+                        patientFullName = patientName.text;
+                    }
+                }
+                
+                const proceduresCount = bundle.entry?.find(entry => entry.resource.resourceType === 'Claim')?.resource.procedure?.length || 0;
+                
                 resultsSection.style.display = 'block';
                 resultsContent.innerHTML = `
                     <div class="result-item result-success">
-                        <h6>Bundle Generado y Enviado</h6>
-                        <p><strong>ID del Bundle:</strong> ${bundle.id}</p>
+                        <h6>Bundle Enviado</h6>
+                        <p><strong>ID del Bundle:</strong> ${bundleId}</p>
                         <p><strong>Paciente:</strong> ${patientFullName}</p>
-                        <p><strong>Prestaciones:</strong> ${this.currentSelection.procedures.length}</p>
+                        <p><strong>Prestaciones:</strong> ${proceduresCount}</p>
                         <p><strong>Servidor:</strong> ${this.fhirServer}</p>
-                        <p><strong>Respuesta del servidor:</strong> ${result.resourceType} ${result.id}</p>
+                        <p><strong>Respuesta del servidor:</strong> ${result.resourceType} ${result.id || 'N/A'}</p>
                     </div>
                 `;
             } else {

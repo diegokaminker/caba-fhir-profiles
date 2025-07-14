@@ -13,17 +13,9 @@
         <!-- Header -->
         <header class="bg-primary text-white p-3 mb-4">
             <div class="row align-items-center">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <h1><i class="fas fa-hospital"></i> Recupero Web App</h1>
                     <p class="mb-0">Generador de Bundles FHIR para Recupero</p>
-                </div>
-                <div class="col-md-4 text-end">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" id="modeToggle">
-                        <label class="form-check-label" for="modeToggle">
-                            <span id="modeLabel">Modo Aleatorio</span>
-                        </label>
-                    </div>
                 </div>
             </div>
         </header>
@@ -61,6 +53,12 @@
                 <div class="card mb-4">
                     <div class="card-header">
                         <h5><i class="fas fa-hand-pointer"></i> Selección Manual</h5>
+                        <div class="form-check form-switch mt-2">
+                            <input class="form-check-input" type="checkbox" id="modeToggleManual">
+                            <label class="form-check-label" for="modeToggleManual">
+                                <span id="modeLabelManual">Modo Aleatorio</span>
+                            </label>
+                        </div>
                     </div>
                     <div class="card-body">
                         <!-- Patient Selection -->
@@ -125,8 +123,14 @@
                             <div class="d-flex align-items-center mb-2">
                                 <input type="number" class="form-control me-2" id="procedureCount" 
                                        min="3" max="20" value="5" style="width: 80px;">
-                                <button class="btn btn-sm btn-outline-secondary" id="randomizeProcedures">
+                                <button class="btn btn-sm btn-outline-secondary me-1" id="randomizeProcedures">
                                     <i class="fas fa-random"></i> Aleatorizar
+                                </button>
+                                <button class="btn btn-sm btn-outline-danger me-1" id="clearProcedures">
+                                    <i class="fas fa-trash"></i> Limpiar
+                                </button>
+                                <button class="btn btn-sm btn-outline-primary" id="selectProcedures">
+                                    <i class="fas fa-plus"></i> Seleccionar
                                 </button>
                             </div>
                             <div id="selectedProcedures" class="border rounded p-2" style="max-height: 200px; overflow-y: auto;">
@@ -150,6 +154,12 @@
                 <div class="card mb-4" id="randomPanel">
                     <div class="card-header">
                         <h5><i class="fas fa-dice"></i> Modo Aleatorio</h5>
+                        <div class="form-check form-switch mt-2">
+                            <input class="form-check-input" type="checkbox" id="modeToggleRandom">
+                            <label class="form-check-label" for="modeToggleRandom">
+                                <span id="modeLabelRandom">Modo Manual</span>
+                            </label>
+                        </div>
                     </div>
                     <div class="card-body text-center">
                         <p class="text-muted">Haz clic en el botón para generar un bundle completamente aleatorio</p>
@@ -217,6 +227,41 @@
                     <div class="card-body">
                         <div id="resultsContent"></div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Procedure Selection Modal -->
+    <div class="modal fade" id="procedureSelectionModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-list"></i> Seleccionar Prestaciones</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="procedureSearch" 
+                               placeholder="Buscar prestaciones...">
+                    </div>
+                    <div class="mb-3">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="selectAllProcedures">
+                            <label class="form-check-label" for="selectAllProcedures">
+                                Seleccionar todas las prestaciones mostradas
+                            </label>
+                        </div>
+                    </div>
+                    <div id="procedureList" class="border rounded p-2" style="max-height: 400px; overflow-y: auto;">
+                        <!-- Procedures will be loaded here -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="addSelectedProcedures">
+                        <i class="fas fa-plus"></i> Agregar Seleccionadas
+                    </button>
                 </div>
             </div>
         </div>

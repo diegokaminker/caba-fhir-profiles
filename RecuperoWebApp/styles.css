@@ -231,4 +231,69 @@ body {
 .alert-info {
     background-color: #d1ecf1;
     color: #0c5460;
+}
+
+/* Procedure selection modal styling */
+.procedure-option {
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.procedure-option:hover {
+    background-color: #f8f9fa;
+}
+
+.procedure-option:last-child {
+    border-bottom: none !important;
+}
+
+.procedure-checkbox {
+    margin: 0;
+}
+
+#procedureList {
+    background-color: #fff;
+}
+
+#procedureList::-webkit-scrollbar {
+    width: 6px;
+}
+
+#procedureList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+#procedureList::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+#procedureList::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Procedure search styling */
+#procedureSearch {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+#procedureSearch:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+/* Select all checkbox styling */
+#selectAllProcedures {
+    margin-right: 8px;
+}
+
+/* Modal footer button spacing */
+.modal-footer .btn {
+    margin-left: 8px;
+}
+
+.modal-footer .btn:first-child {
+    margin-left: 0;
 } 
