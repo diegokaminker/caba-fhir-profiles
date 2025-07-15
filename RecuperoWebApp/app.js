@@ -1231,13 +1231,13 @@ class RecuperoWebApp {
         
         // Update button text based on state
         if (hasValidBundle) {
-            sendButton.textContent = 'Generar Bundle y Enviar al Servidor';
+            sendButton.textContent = 'Enviar al Servidor';
             sendButton.title = 'Enviar el bundle actual al servidor FHIR';
         } else if (isRandomMode) {
-            sendButton.textContent = 'Generar Bundle y Enviar al Servidor';
+            sendButton.textContent = 'Enviar al Servidor';
             sendButton.title = 'Generar un bundle aleatorio y enviarlo al servidor FHIR';
         } else {
-            sendButton.textContent = 'Generar Bundle y Enviar al Servidor';
+            sendButton.textContent = 'Enviar al Servidor';
             sendButton.title = 'Debe generar un bundle primero';
         }
     }
