@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía Completa: Terminologías FHIR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa;
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 384px;
+            }
+        }
+        .flow-diagram-node {
+            background-color: #0D6EFD;
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            min-width: 150px;
+        }
+        .flow-diagram-arrow-down {
+            width: 2px;
+            height: 2rem;
+            background-color: #0A58CA;
+            position: relative;
+            margin: 0.5rem auto;
+        }
+        .flow-diagram-arrow-down::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid #0A58CA;
+        }
+        .flow-diagram-arrow-horizontal {
+            width: 2rem;
+            height: 2px;
+            background-color: #0A58CA;
+            position: relative;
+            margin: auto 0.5rem;
+        }
+        .flow-diagram-arrow-horizontal::after {
+            content: '';
+            position: absolute;
+            right: -1px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+            border-left: 8px solid #0A58CA;
+        }
+        .concept-box {
+            background-color: #EAF4FF;
+            border: 2px solid #A3C9FF;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            text-align: center;
+            font-weight: 600;
+            color: #0A58CA;
+        }
+        .code-example {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-[#0D6EFD]">Infografía: Terminologías en FHIR</h1>
+            <p class="text-gray-600 mt-1">Comprendiendo los Códigos, Sistemas y Conjuntos de Valores en FHIR</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6 text-center">
+                <h2 class="text-2xl font-bold text-[#0A58CA] mb-2">Introducción a las Terminologías FHIR</h2>
+                <p class="max-w-4xl mx-auto text-gray-700">
+                    En FHIR, muchos elementos tienen un valor codificado, una secuencia de caracteres que identifica un "concepto" definido. Estos códigos son cruciales para la interoperabilidad y la comprensión unívoca de los datos de salud. Se basan en un marco fundamental que distingue entre sistemas de códigos y conjuntos de valores.
+                </p>
+            </div>
+
+            <div class="lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4">¿De Dónde Vienen los Códigos?</h3>
+                <p class="text-gray-600 mb-6">Los códigos en los recursos FHIR pueden originarse de diversas fuentes, asegurando flexibilidad y estandarización.</p>
+                <div class="flex flex-col items-center justify-center gap-4">
+                    <div class="flow-diagram-node">Especificación FHIR</div>
+                    <div class="flow-diagram-arrow-down"></div>
+                    <div class="flow-diagram-node">RFCs de Internet (ej. tipo MIME, idioma)</div>
+                    <div class="flow-diagram-arrow-down"></div>
+                    <div class="flow-diagram-node">Especificaciones HL7 (v3, v2)</div>
+                    <div class="flow-diagram-arrow-down"></div>
+                    <div class="flow-diagram-node">Terminologías Externas (LOINC, SNOMED CT)</div>
+                    <div class="flow-diagram-arrow-down"></div>
+                    <div class="flow-diagram-node">Diccionarios Locales</div>
+                </div>
+                <p class="text-gray-600 mt-6 text-center">Todas estas fuentes se denominan colectivamente "sistemas de códigos".</p>
+            </div>
+            
+            <div class="bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4">Representación de Valores Codificados</h3>
+                <p class="text-gray-600 mb-4">Los valores codificados en FHIR siempre se tratan como un par "sistema" y "código". Un ejemplo común es un código LOINC.</p>
+                <div class="code-example mb-4">
+                    <pre><code>
+{
+  "system": "http://loinc.org",
+  "version": "2.62",
+  "code": "55423-8",
+  "display": "Number of steps in unspecified time Pedometer"
+}
+                    </code></pre>
+                </div>
+                <p class="text-gray-600">El `system` es una URL que identifica el sistema de códigos, y el `code` identifica el concepto dentro de ese sistema.</p>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Tipos de Datos para Valores Codificados</h3>
+                <p class="text-gray-600 mb-6 text-center">FHIR utiliza varios tipos de datos para transportar valores codificados, cada uno con un propósito específico.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">code</h4>
+                        <p class="text-sm text-gray-700">Solo código, sistema implícito. El más simple de los tipos codificados.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Coding</h4>
+                        <p class="text-sm text-gray-700">Código y sistema explícito. Incluye system, code, display y version.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">CodeableConcept</h4>
+                        <p class="text-sm text-gray-700">Texto y/o codificación. Permite múltiples codificaciones con texto.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">CodeableReference</h4>
+                        <p class="text-sm text-gray-700">Referencia o CodeableConcept. Útil para referencias que pueden ser codificadas.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Quantity</h4>
+                        <p class="text-sm text-gray-700">Código para tipo de unidad. Incluye valor, comparador, unidad y sistema.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">string</h4>
+                        <p class="text-sm text-gray-700">Tratado como elemento codificado cuando se aplica un binding.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">uri</h4>
+                        <p class="text-sm text-gray-700">Tratado como elemento codificado cuando se aplica un binding.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">La Distinción Clave: Sistemas de Códigos vs. Conjuntos de Valores</h3>
+                <p class="text-gray-600 mb-6 text-center">Es fundamental entender la diferencia entre un sistema de códigos y un conjunto de valores para una interoperabilidad efectiva.</p>
+                <div class="flex flex-col items-center justify-center gap-4">
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="concept-box">Sistema de Códigos</div>
+                        <div class="flow-diagram-arrow-horizontal"></div>
+                        <div class="concept-box">Conjunto de Valores</div>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4 mt-4 text-sm text-gray-700">
+                        <div class="w-full md:w-1/2 p-2">
+                            <p class="font-semibold text-[#0D6EFD]">Sistema de Códigos (Code System):</p>
+                            <ul class="list-disc list-inside">
+                                <li>Define conceptos y les da significado.</li>
+                                <li>Asigna códigos que representan los conceptos.</li>
+                                <li>Ejemplo: LOINC, SNOMED CT.</li>
+                            </ul>
+                        </div>
+                        <div class="w-full md:w-1/2 p-2">
+                            <p class="font-semibold text-[#0D6EFD]">Conjunto de Valores (Value Set):</p>
+                            <ul class="list-disc list-inside">
+                                <li>Especifica un conjunto de códigos (de uno o más sistemas) que pueden usarse en un contexto específico.</li>
+                                <li>Define qué códigos *están permitidos* para un elemento.</li>
+                                <li>Ejemplo: Un conjunto de valores para "género" que incluye "masculino", "femenino", "otro".</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mt-4 text-center">Los <strong class="text-[#0D6EFD]">Bindings</strong> aplican un conjunto de valores a un elemento, especificando las reglas de uso.</p>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Fortalezas de Binding (Enlace)</h3>
+                <p class="text-gray-600 mb-6 text-center">La fuerza de un binding define cuán estrictamente se debe seguir el conjunto de valores asociado.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Requerido (Required)</h4>
+                        <p class="text-sm text-gray-700">El concepto DEBE ser del conjunto de valores especificado para ser conforme. Usado para control estricto.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Extensible</h4>
+                        <p class="text-sm text-gray-700">El concepto DEBE ser del conjunto de valores si aplica; si no, se pueden usar codificaciones alternativas. Permite flexibilidad.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Preferido (Preferred)</h4>
+                        <p class="text-sm text-gray-700">Se ANIMA a usar los códigos especificados para interoperabilidad, pero no es obligatorio para la conformidad.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Ejemplo (Example)</h4>
+                        <p class="text-sm text-gray-700">El conjunto de valores solo proporciona EJEMPLOS de los tipos de conceptos. No hay expectativa de uso.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Descriptivo (Descriptive)</h4>
+                        <p class="text-sm text-gray-700">No hay restricción a nivel raíz, pero puede haber bindings adicionales en contextos específicos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Referencias a Conjuntos de Valores</h3>
+                <p class="text-gray-600 mb-6 text-center">Los conjuntos de valores pueden ser referenciados de dos maneras principales: Directa y Lógica.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Referencia Directa</h4>
+                        <p class="text-sm text-gray-700">Tipo <code class="bg-gray-200 px-1 rounded">Reference</code>. Apunta directamente a un ValueSet por URL (ej. API REST de FHIR). Útil en ecosistemas controlados, pero puede ser frágil.</p>
+                        <div class="code-example mt-3 text-xs">
+                            <pre><code>
+&lt;reference value="ValueSet/234234"/&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Referencia Lógica</h4>
+                        <p class="text-sm text-gray-700">Tipo <code class="bg-gray-200 px-1 rounded">uri</code>. Usa una URI absoluta que coincide con <code class="bg-gray-200 px-1 rounded">ValueSet.url</code>. Preferida por ser más robusta, puede resolverse vía servidor de terminología. Permite versiones.</p>
+                        <div class="code-example mt-3 text-xs">
+                            <pre><code>
+&lt;valueSet value="http://hl7.org/fhir/ValueSet/clinical-findings"/&gt;
+                            </code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Consideraciones para Datos Heredados (Legacy Data)</h3>
+                <p class="text-gray-600 mb-6 text-center">Los sistemas con datos preexistentes pueden enfrentar desafíos al cumplir con los requisitos de terminología de los bindings.</p>
+                <ul class="list-disc list-inside text-gray-700 space-y-2">
+                    <li>Los bindings <strong class="text-[#0D6EFD]">requeridos</strong> y <strong class="text-[#0D6EFD]">extensibles</strong> imponen la expectativa de mapear datos existentes al conjunto de valores.</li>
+                    <li>Para bindings <strong class="text-[#0D6EFD]">requeridos</strong>, si no es posible un mapeo, el elemento no puede ser enviado.</li>
+                    <li>Para bindings <strong class="text-[#0D6EFD]">extensibles</strong>, si no hay un concepto correspondiente después del mapeo, los datos heredados pueden enviarse libremente.</li>
+                    <li>La extensión <code class="bg-gray-200 px-1 rounded">Additional Binding</code> (con propósito 'current') permite diferenciar requisitos para datos nuevos vs. históricos/externos.</li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Servicio de Terminología FHIR</h3>
+                <p class="text-gray-600 mb-6 text-center">FHIR define una especificación de Servicio de Terminología que establece los requisitos para los sistemas que soportan el uso de códigos, conjuntos de valores y sistemas de códigos, facilitando la resolución y expansión de terminologías.</p>
+            </div>
+            <div class="md:col-span-3 card">
+                <h2 class="section-title">Servicio de Terminología FHIR: Operaciones Clave</h2>
+                <p class="text-gray-600 mb-6 text-center">El Servicio de Terminología FHIR proporciona operaciones para trabajar dinámicamente con códigos y conjuntos de valores.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Expandir ($expand)</h4>
+                        <p class="text-sm text-gray-700">Obtener la lista completa de códigos en un conjunto de valores.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Buscar ($lookup)</h4>
+                        <p class="text-sm text-gray-700">Obtener información detallada sobre un código específico en un sistema.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Validar Código ($validate-code)</h4>
+                        <p class="text-sm text-gray-700">Verificar si un código es válido dentro de un conjunto de valores.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Subsumir ($subsumes)</h4>
+                        <p class="text-sm text-gray-700">Probar la relación jerárquica (subsumption) entre dos códigos.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Traducir ($translate)</h4>
+                        <p class="text-sm text-gray-700">Convertir un concepto de un sistema de códigos a otro usando mapas de conceptos.</p>
+                    </div>
+                    <div class="bg-[#EAF4FF] p-4 rounded-lg shadow-sm">
+                        <h4 class="font-bold text-[#0D6EFD] mb-2">Tabla de Cierre ($closure)</h4>
+                        <p class="text-sm text-gray-700">Mantener una tabla de relaciones de subsumption para búsquedas complejas.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="bg-white mt-8 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>Infografía generada con base en el documento "TerminologiesFHIR.pdf".</p>
+            <p class="mt-1">Esta es una representación visual y no un documento oficial de HL7 FHIR.</p>
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const brilliantBlues = {
+                primary: '#0D6EFD',
+                dark: '#0A58CA',
+                light: '#6EA8FE',
+                lighter: '#A3C9FF',
+                text: '#212529'
+            };
+
+            const wrapLabel = (label, maxLength = 16) => {
+                if (typeof label !== 'string' || label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + ' ' + word).trim().length > maxLength && currentLine.length > 0) {
+                        lines.push(currentLine);
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                }
+                if (currentLine.length > 0) {
+                    lines.push(currentLine);
+                }
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+            
+            const sharedChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: brilliantBlues.text,
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            };
+
+
+        })();
+    </script>
+
+</body>
+</html>
