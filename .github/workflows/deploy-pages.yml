@@ -1,10 +1,12 @@
-name: Deploy RecuperoViewer to GitHub Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [ main ]
     paths:
       - 'RecuperoViewer/**'
+      - 'RecuperoWebApp/**'
+      - 'index.html'
   workflow_dispatch:
 
 permissions:
@@ -32,7 +34,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './RecuperoViewer'
+          path: '.'
           
       - name: Deploy to GitHub Pages
         id: deployment
