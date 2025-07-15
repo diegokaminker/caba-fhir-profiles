@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: Modelos Lógicos de Información (Logical Models)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f9fa; 
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 320px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 384px;
+            }
+        }
+        .flow-diagram-arrow {
+            position: relative;
+            width: 2px;
+            background-color: #0d6efd;
+            margin: 0 1rem;
+        }
+        .flow-diagram-arrow::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 0;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            border-top: 8px solid #0d6efd;
+        }
+        .view-comparison-box {
+            border: 2px solid #a3c9ff;
+            background-color: #eaf4ff;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-top: 1rem;
+        }
+        .code-block {
+            background-color: #e9ecef;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 0.9em;
+            color: #343a40;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <div class="container mx-auto px-6 py-4">
+            <h1 class="text-2xl md:text-3xl font-bold text-[#0D6EFD]">Modelos Lógicos de Información</h1>
+            <p class="text-gray-600 mt-1">El primer paso para la interoperabilidad</p>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6 text-center">
+                <h2 class="text-2xl font-bold text-[#0A58CA] mb-2">¿Qué son los Modelos Lógicos de Información?</h2>
+                <p class="max-w-4xl mx-auto text-gray-700">
+                    Los Modelos Lógicos ofrecen una perspectiva neutral sobre los datos clínicos o administrativos, diseñados para ser validados por expertos sin atarse a una tecnología específica. Definen elementos, reglas y relaciones para un intercambio de datos claro y funcional, siguiendo el estándar <strong class="text-[#0D6EFD]">ISO 13972</strong>.
+                </p>
+            </div>
+
+            <div class="lg:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4">El Principio Clave: Agnosticismo Tecnológico</h3>
+                <p class="text-gray-600 mb-6">Aunque se publican usando herramientas FHIR, los modelos en sí mismos no son FHIR. Son planos lógicos que pueden implementarse en cualquier sistema (FHIR, XML, bases de datos, etc.), garantizando que la estructura de datos sea consistente en todas partes.</p>
+                <div class="flex flex-col items-center justify-center h-64">
+                    <div class="text-center bg-[#0D6EFD] text-white font-semibold py-3 px-6 rounded-lg shadow-md">
+                        Modelo Lógico (El Plano)
+                    </div>
+                    <div class="flex h-24">
+                        <div class="flow-diagram-arrow"></div>
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-4">
+                        <div class="bg-gray-200 text-gray-800 py-2 px-4 rounded-full text-sm">Implementación FHIR</div>
+                        <div class="bg-gray-200 text-gray-800 py-2 px-4 rounded-full text-sm">Implementación XML</div>
+                        <div class="bg-gray-200 text-gray-800 py-2 px-4 rounded-full text-sm">Base de Datos</div>
+                        <div class="bg-gray-200 text-gray-800 py-2 px-4 rounded-full text-sm">Otro Estándar</div>
+                    </div>
+                </div>
+            </div>
+            
+       
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Bloques de Construcción: Tipos de Datos Comunes</h3>
+                <p class="text-gray-600 mb-6 text-center">Los modelos utilizan un conjunto estandarizado de tipos de datos de FHIR para definir los elementos. El gráfico a continuación muestra una representación de la frecuencia de uso conceptual de los tipos de datos más importantes.</p>
+                <div class="w-full max-w-4xl mx-auto h-96 md:h-[450px]">
+                    <canvas id="dataTypesChart"></canvas>
+                </div>
+            </div>
+            
+            <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6">
+                 <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Definiendo Modelos Lógicos</h3>
+                 <p class="text-gray-600 mb-6">Los modelos lógicos permiten a los autores definir nuevas estructuras que representan contenido arbitrario. A diferencia de los perfiles que solo pueden añadir propiedades como extensiones formales, los modelos lógicos añaden propiedades como elementos estándar con rutas estándar. Tienen muchos usos, como se describe en la especificación FHIR, pero a menudo se utilizan para transmitir conceptos específicos del dominio de una manera fácil de usar.</p>
+                 <p class="text-gray-600 mb-6">Los modelos lógicos se definen utilizando la declaración <strong class="text-[#0D6EFD]">Logical</strong>, con las palabras clave <strong class="text-[#0D6EFD]">Id, Title, y Description</strong>, y la palabra clave <strong class="text-[#0D6EFD]">Parent</strong>. Si no se especifica un <code class="bg-gray-200 px-1 rounded">Parent</code>, se asumirá el tipo <code class="bg-gray-200 px-1 rounded">Base</code> vacío como padre predeterminado.</p>
+                 <p class="text-gray-600 mb-6">Las reglas que definen el modelo lógico siguen inmediatamente después de la sección de palabras clave. Los tipos de reglas que se aplican a los Lógicos son: <code class="bg-gray-200 px-1 rounded">Add Element</code>, <code class="bg-gray-200 px-1 rounded">Assignment</code>, <code class="bg-gray-200 px-1 rounded">Binding</code>, <code class="bg-gray-200 px-1 rounded">Cardinality</code>, <code class="bg-gray-200 px-1 rounded">Flag</code>, <code class="bg-gray-200 px-1 rounded">Insert</code>, <code class="bg-gray-200 px-1 rounded">Obeys</code>, <code class="bg-gray-200 px-1 rounded">Path</code>, y <code class="bg-gray-200 px-1 rounded">Type</code>. Las reglas de <code class="bg-gray-200 px-1 rounded">Flag</code> NO deben incluir banderas <code class="bg-gray-200 px-1 rounded">MS</code>.</p>
+                 <h4 class="font-semibold text-lg text-center text-[#0A58CA] mb-4">Ejemplo de Modelo Lógico: Humano</h4>
+                 <div class="code-block">
+                    <pre><code>
+Logical:         Human
+Id:              human-being-logical-model
+Title:           "Human Being"
+Description:     "A member of the Homo sapiens species."
+Characteristics: #can-be-target
+// url, status, purpose, and other metadata could be defined here using caret syntax (omitted)
+* name 0..* SU HumanName "Name(s) of the human" "The names by which the human is or has been known"
+* birthDate 0..1 SU dateTime "The date of birth, if known"  "The date on which the person was born. Approximations may be used if exact date is unknown."
+* deceased[x] 0..1 SU boolean or dateTime or Age "Indication if the human is deceased"  "An indication if the human has died. Boolean should not be used if date or age at death are known."
+* family 0..1 BackboneElement "Family" "Members of the human's immediate family."
+  * mother 0..2 FamilyMember "Mother" "Biological mother, current adoptive mother, or both."
+  * father 0..2 FamilyMember "Father" "Biological father, current adoptive father, or both."
+  * sibling 0..* FamilyMember "Sibling" "Other children of the human's mother and/or father."
+
+Logical:        FamilyMember
+Id:             family-member
+Title:          "Family Member"
+Description:    "A reference to a family member (not necessarily biologically related)."
+* human 1..1 SU Reference(Human) "Family member" "A reference to the human family member"
+* biological 0..1 boolean "Biologically related?"
+    "A family member may not be biologically related due to adoption, blended families, etc."
+                    </code></pre>
+
+        </div>
+
+        <!-- Nueva sección: Proceso de Definición -->
+        <div class="md:col-span-2 lg:col-span-3 bg-white rounded-lg shadow-lg p-6 mt-8">
+            <h3 class="text-xl font-bold text-[#0A58CA] mb-4 text-center">Proceso de Definición</h3>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Tareas -->
+                <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-[#0D6EFD]">
+                    <h4 class="font-semibold text-lg text-[#0A58CA] mb-2">Tareas</h4>
+                    <p class="text-gray-700 text-sm">
+                        Realizar una lluvia de ideas y/o una serie de entrevistas con sectores interesados y definir objetivos y alcance, relación con otras especificaciones, y finalmente enumerar las interacciones y los elementos de datos relevantes (por ejemplo, ID de paciente, códigos de diagnóstico, resultados de laboratorio, nombres de medicamentos, fechas de visita, marcadores genómicos, estado de consentimiento, etc.). Justificar por qué cada elemento de datos es crítico para el éxito del proyecto. Considerar la granularidad y las posibles fuentes de estos datos.
+                    </p>
+                </div>
+
+                <!-- Output -->
+                <div class="bg-green-50 p-4 rounded-lg border-l-4 border-green-500">
+                    <h4 class="font-semibold text-lg text-green-700 mb-2">Output</h4>
+                    <p class="text-gray-700 text-sm">
+                        Una lista de actores e interacciones, incluyendo la descripción de la interacción, los requerimientos temporales (batch/on line) y los elementos intercambiados.
+                    </p>
+                </div>
+
+                <!-- Representación -->
+                <div class="bg-purple-50 p-4 rounded-lg border-l-4 border-purple-500">
+                    <h4 class="font-semibold text-lg text-purple-700 mb-2">Representación</h4>
+                    <p class="text-gray-700 text-sm">
+                        El output de este proceso debería ser un modelo lógico. No es necesario rigor técnico en cuanto a FHIR, pero sí cierta uniformidad en el nombre de los elementos.
+                    </p>
+                </div>
+
+                <!-- Buena Práctica -->
+                <div class="bg-orange-50 p-4 rounded-lg border-l-4 border-orange-500">
+                    <h4 class="font-semibold text-lg text-orange-700 mb-2">Buena Práctica</h4>
+                    <p class="text-gray-700 text-sm">
+                        Los elementos comienzan en "fecha" para fechas, "id" para identificadores, "cod" para clasificaciones o códigos.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white mt-8 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-500 text-sm">
+            <p>Infografía generada con base en la documentación de Modelos Lógicos de EHDS por Xt-EHR.</p>
+            <p class="mt-1">Esta es una representación visual y no un documento oficial. La acción Xt-EHR está cofinanciada por la Unión Europea.</p>
+            <!-- 
+                Narrative and Structure Plan:
+                1. Introduction: Hook with what logical models are and their core standard (ISO 13972).
+                2. Core Idea: Visually explain the crucial concept of technology agnosticism using a simple flowchart.
+                3. Available Formats: Use a donut chart to quickly show the variety of download options.
+                4. Navigation Guide: Use comparison cards to explain the different views (Tree vs. Detailed, Differential vs. Snapshot).
+                5. Data Types: A bar chart visualizes the conceptual frequency/importance of common data types.
+                6. Defining Logical Models: New section explaining how logical models are defined, including keywords, rules, and an example.
+
+                Visualization Selection Plan:
+                - Introduction: Large text and a key fact. Goal: Inform. Method: HTML/CSS. NO SVG.
+                - Agnosticism Flowchart: Goal: Organize. Method: HTML/CSS with Tailwind. NO SVG, NO Mermaid JS.
+                - Formats Chart: Data Point: Format types. Goal: Inform/Compare. Chosen Visualization: Donut Chart. Justification: Shows parts of a whole simply. Library: Chart.js (Canvas). NO SVG.
+                - Views Comparison: Data Point: View types. Goal: Compare/Organize. Chosen Visualization: Styled cards. Justification: Best for comparing distinct text-based concepts. Method: HTML/CSS. NO SVG.
+                - Data Types Chart: Data Point: Common data types. Goal: Compare/Rank. Chosen Visualization: Horizontal Bar Chart. Justification: Easy to compare values across categories. Library: Chart.js (Canvas). NO SVG.
+                - Defining Logical Models: Goal: Inform/Explain. Chosen Visualization: Text, highlighted keywords, and a code block for example. Justification: Best for conveying detailed technical definitions and syntax. Method: HTML/CSS. NO SVG.
+                
+                Chosen Color Palette: Brilliant Blues (#0D6EFD, #0A58CA, #6EA8FE, #A3C9FF, #F8F9FA, #212529).
+                Confirmation: NEITHER Mermaid JS NOR SVG were used anywhere in this output. All visualizations are pure HTML/CSS or Chart.js on Canvas.
+            -->
+        </div>
+    </footer>
+
+    <script>
+        (function() {
+            const brilliantBlues = {
+                primary: '#0D6EFD',
+                dark: '#0A58CA',
+                light: '#6EA8FE',
+                lighter: '#A3C9FF',
+                text: '#212529'
+            };
+
+            const wrapLabel = (label, maxLength = 16) => {
+                if (typeof label !== 'string' || label.length <= maxLength) {
+                    return label;
+                }
+                const words = label.split(' ');
+                const lines = [];
+                let currentLine = '';
+                for (const word of words) {
+                    if ((currentLine + ' ' + word).trim().length > maxLength && currentLine.length > 0) {
+                        lines.push(currentLine);
+                        currentLine = word;
+                    } else {
+                        currentLine = (currentLine + ' ' + word).trim();
+                    }
+                }
+                if (currentLine.length > 0) {
+                    lines.push(currentLine);
+                }
+                return lines;
+            };
+
+            const tooltipTitleCallback = (tooltipItems) => {
+                const item = tooltipItems[0];
+                let label = item.chart.data.labels[item.dataIndex];
+                if (Array.isArray(label)) {
+                    return label.join(' ');
+                } else {
+                    return label;
+                }
+            };
+            
+            const sharedChartOptions = {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: brilliantBlues.text,
+                            font: {
+                                family: "'Inter', sans-serif"
+                            }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            title: tooltipTitleCallback
+                        }
+                    }
+                }
+            };
+
+            const formatsCtx = document.getElementById('formatsChart');
+            if (formatsCtx) {
+                new Chart(formatsCtx, {
+                    type: 'doughnut',
+                    data: {
+                        labels: ['Formatos de Datos (JSON, XML, etc.)', 'Vistas Visuales (Árbol, Detallada)', 'Código Fuente (GitHub)'],
+                        datasets: [{
+                            label: 'Tipos de Formatos',
+                            data: [4, 2, 1],
+                            backgroundColor: [
+                                brilliantBlues.primary,
+                                brilliantBlues.light,
+                                brilliantBlues.lighter
+                            ],
+                            borderColor: '#ffffff',
+                            borderWidth: 2
+                        }]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        plugins: {
+                            ...sharedChartOptions.plugins,
+                             legend: {
+                                position: 'bottom',
+                                labels: {
+                                    color: brilliantBlues.text,
+                                    font: {
+                                        family: "'Inter', sans-serif"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            const dataTypesCtx = document.getElementById('dataTypesChart');
+            if (dataTypesCtx) {
+                const rawLabels = ['CodeableConcept', 'string', 'dateTime', 'Identifier', 'Quantity', 'Period', 'boolean'];
+                const processedLabels = rawLabels.map(label => wrapLabel(label));
+
+                new Chart(dataTypesCtx, {
+                    type: 'bar',
+                    data: {
+                        labels: processedLabels,
+                        datasets: [{
+                            label: 'Frecuencia de Uso Conceptual',
+                            data: [85, 90, 80, 75, 70, 45, 50],
+                            backgroundColor: brilliantBlues.primary,
+                            borderColor: brilliantBlues.dark,
+                            borderWidth: 1,
+                            borderRadius: 4,
+                        }]
+                    },
+                    options: {
+                        ...sharedChartOptions,
+                        indexAxis: 'y',
+                        scales: {
+                            x: {
+                                beginAtZero: true,
+                                grid: {
+                                    color: '#e9ecef'
+                                },
+                                ticks: {
+                                    color: brilliantBlues.text
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    display: false
+                                },
+                                ticks: {
+                                    color: brilliantBlues.text,
+                                    font: {
+                                        size: 12
+                                    }
+                                }
+                            }
+                        },
+                         plugins: {
+                            ...sharedChartOptions.plugins,
+                             legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            }
+        })();
+    </script>
+
+</body>
+</html>
