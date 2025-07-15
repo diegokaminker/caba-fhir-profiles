@@ -185,6 +185,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           <li><a href="#9-documentacionauditoria" id="markdown-toc-9-documentacionauditoria">9. DocumentacionAuditoria</a></li>
         </ul>
       </li>
+      <li><a href="#proceso-de-definición" id="markdown-toc-proceso-de-definición">Proceso de Definición</a>        <ul>
+          <li><a href="#tareas" id="markdown-toc-tareas">Tareas</a></li>
+          <li><a href="#output" id="markdown-toc-output">Output</a></li>
+          <li><a href="#representación" id="markdown-toc-representación">Representación</a></li>
+          <li><a href="#buena-práctica" id="markdown-toc-buena-práctica">Buena Práctica</a></li>
+        </ul>
+      </li>
       <li><a href="#uso-del-modelo" id="markdown-toc-uso-del-modelo">Uso del Modelo</a></li>
       <li><a href="#relaciones-con-fhir" id="markdown-toc-relaciones-con-fhir">Relaciones con FHIR</a></li>
       <li><a href="#validaciones" id="markdown-toc-validaciones">Validaciones</a></li>
@@ -636,6 +643,24 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     </tr>
   </tbody>
 </table>
+
+<h2 id="proceso-de-definición">Proceso de Definición</h2>
+
+<h3 id="tareas">Tareas</h3>
+
+<p>Realizar una lluvia de ideas y/o una serie de entrevistas con sectores interesados y definir objetivos y alcance, relación con otras especificaciones, y finalmente enumerar las interacciones y los elementos de datos relevantes (por ejemplo, ID de paciente, códigos de diagnóstico, resultados de laboratorio, nombres de medicamentos, fechas de visita, marcadores genómicos, estado de consentimiento, etc.). Justificar por qué cada elemento de datos es crítico para el éxito del proyecto. Considerar la granularidad y las posibles fuentes de estos datos.</p>
+
+<h3 id="output">Output</h3>
+
+<p>Una lista de actores e interacciones, incluyendo la descripción de la interacción, los requerimientos temporales (batch/on line) y los elementos intercambiados</p>
+
+<h3 id="representación">Representación</h3>
+
+<p>El output de este proceso debería ser un modelo lógico. No es necesario rigor técnico en cuanto a FHIR, pero sí cierta uniformidad en el nombre de los elementos</p>
+
+<h3 id="buena-práctica">Buena Práctica</h3>
+
+<p>Los elementos comienzan en "fecha" para fechas, "id" para identificadores, "cod" para clasificaciones o códigos.</p>
 
 <h2 id="uso-del-modelo">Uso del Modelo</h2>
 
