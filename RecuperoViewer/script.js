@@ -494,10 +494,6 @@ function displayAttachments(documentReference) {
     
     let html = `
         <div class="data-row">
-            <span class="data-label">ID del Documento:</span>
-            <span class="data-value">${documentReference.id || 'N/A'}</span>
-        </div>
-        <div class="data-row">
             <span class="data-label">Estado del Documento:</span>
             <span class="data-value">${documentReference.status || 'N/A'}</span>
         </div>
