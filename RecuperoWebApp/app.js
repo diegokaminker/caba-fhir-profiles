@@ -6,6 +6,7 @@ class RecuperoWebApp {
         this.fhirServer = 'https://fhirserver.hl7fundamentals.org/fhir';
         this.currentSelection = {};
         this.selectedProcedures = [];
+        this.uploadedPDFFile = null; // Store uploaded PDF file
         
         // Master Lists (will be populated from FHIR server)
         this.masterLists = {
@@ -323,6 +324,11 @@ class RecuperoWebApp {
 
         document.getElementById('validateBundle').addEventListener('click', () => {
             this.validateBundle();
+        });
+
+        // PDF file upload handling
+        document.getElementById('pdfUpload').addEventListener('change', (e) => {
+            this.handlePDFUpload(e.target.files[0]);
         });
     }
 
@@ -730,7 +736,53 @@ class RecuperoWebApp {
         documentReference: "59a1159e-3016-4c84-a936-0725edc823a0"
     };
 
+    handlePDFUpload(file) {
+        if (file) {
+            console.log('PDF file uploaded:', file.name);
+            this.uploadedPDFFile = file;
+            // Show feedback to user
+            const uploadInfo = document.createElement('div');
+            uploadInfo.className = 'alert alert-success mt-2';
+            uploadInfo.innerHTML = `<i class="fas fa-check"></i> PDF cargado: ${file.name} <button type="button" class="btn-close" onclick="this.parentElement.remove(); app.clearUploadedPDF();"></button>`;
+            
+            // Remove any existing upload info
+            const existingInfo = document.querySelector('.alert-success');
+            if (existingInfo) {
+                existingInfo.remove();
+            }
+            
+            document.getElementById('pdfUpload').parentNode.appendChild(uploadInfo);
+        } else {
+            this.clearUploadedPDF();
+        }
+    }
+
+    clearUploadedPDF() {
+        this.uploadedPDFFile = null;
+        document.getElementById('pdfUpload').value = '';
+        // Remove any existing upload info
+        const existingInfo = document.querySelector('.alert-success');
+        if (existingInfo) {
+            existingInfo.remove();
+        }
+    }
+
     generatePDFData(patientName) {
+        // Check if there's an uploaded PDF file
+        if (this.uploadedPDFFile) {
+            return new Promise((resolve, reject) => {
+                const reader = new FileReader();
+                reader.onload = () => {
+                    // Get base64 string without data URL prefix
+                    const base64 = reader.result.split(',')[1];
+                    resolve(base64);
+                };
+                reader.onerror = reject;
+                reader.readAsDataURL(this.uploadedPDFFile);
+            });
+        }
+        
+        // Fallback to generating a default PDF
         try {
             // Generate a proper PDF using jsPDF
             const { jsPDF } = window.jspdf;
@@ -760,7 +812,7 @@ class RecuperoWebApp {
         } catch (error) {
             console.error('Error generating PDF:', error);
             // Fallback to a simple base64 PDF
-            return Promise.resolve('JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQyXQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9udCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAovRjEgMjAgVGYKMjIwIDQwMCBUZAooQVRUQUNITUVOVCBGT1IgUEFUSUVOVCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYKMDAwMDAwMDAwOSAwMDAwMCBuCjAwMDAwMDAwNjMgMDAwMDAgbgowMDAwMDAwMTI0IDAwMDAwIG4KMDAwMDAwMDI3NyAwMDAwMCBuCjAwMDAwMDAzOTIgMDAwMDAgbgp0cmFpbGVyCjw8L1NpemUgNgovUm9vdCAxIDAgUgo+PgpzdGFydHhyZWYKNDk1CiUlRU9G');
+            return Promise.resolve('JVBERi0xLjQKMSAwIG9iago8PC9UeXBlIC9DYXRhbG9nCi9QYWdlcyAyIDAgUgo+PgplbmRvYmoKMiAwIG9iago8PC9UeXBlIC9QYWdlcwovS2lkcyBbMyAwIFJdCi9Db3VudCAxCj4+CmVuZG9iagozIDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQyXQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9udCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iagozIDAgb2JqCjw8L1R5cGUgL1BhZ2UKL1BhcmVudCAyIDAgUgovTWVkaWFCb3ggWzAgMCA1OTUgODQyXQovQ29udGVudHMgNSAwIFIKL1Jlc291cmNlcyA8PC9Qcm9jU2V0IFsvUERGIC9UZXh0XQovRm9udCA8PC9GMSA0IDAgUj4+Cj4+Cj4+CmVuZG9iago0IDAgb2JqCjw8L1R5cGUgL0ZvbnQKL1N1YnR5cGUgL1R5cGUxCi9OYW1lIC9GMQovQmFzZUZvbnQgL0hlbHZldGljYQovRW5jb2RpbmcgL01hY1JvbWFuRW5jb2RpbmcKPj4KZW5kb2JqCjUgMCBvYmoKPDwvTGVuZ3RoIDUzCj4+CnN0cmVhbQpCVAovRjEgMjAgVGYKMjIwIDQwMCBUZAooQVRUQUNITUVOVCBGT1IgUEFUSUVOVCkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4cmVmCjAgNgowMDAwMDAwMDAwIDY1NTM1IGYKMDAwMDAwMDAwOSAwMDAwMCBuCjAwMDAwMDAwNjMgMDAwMDAgbgowMDAwMDAwMTI0IDAwMDAwIG4KMDAwMDAwMDI3NyAwMDAwMCBuCjAwMDAwMDAzOTIgMDAwMDAgbgp0cmFpbGVyCjw8L1NpemUgNgovUm9vdCAxIDAgUgo+PgpzdGFydHhyZWYKNDk1CiUlRU9G');
         }
     }
 
